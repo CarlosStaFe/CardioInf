@@ -1,0 +1,18 @@
+*****=Conexión al Servidor SQL Server
+Conexion=Data Source=SERVIDOR\DATASERVER;Initial Catalog=DBCardioInf;Persist Security Info=True;User ID=Admin;Password=administrador
+*****=Datos para enviar mail
+MailOrigen=martillerosfe@martilleros.org.ar
+PasswordMail=Martilleros_2023
+SMTP=smtp.hostinger.com
+Puerto=587
+*****=Directorios de uso del sistema
+PathBoletas=E:\DBColegMart\Boletas\
+PathCIC=E:\DBColegMart\CIC\
+PathCIP=E:\DBColegMart\CIP\
+PathNCR=E:\DBColegMart\NCR\
+PathCajas=E:\DBColegMart\Cajas\
+PathCobroBanco=E:\DBColegMart\Cobro Banco\
+PathBackup=E:\DBColegMart\Backup\
+PathFotos=E:\DBColegMart\Fotos\
+PathReclamo1=E:\DBColegMart\Reclamo1\
+PathReclamo2=E:\DBColegMart\Reclamo2\
