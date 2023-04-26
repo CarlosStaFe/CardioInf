@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CE_Botones.cs" />
+    <Compile Include="CE_Profesionales.cs" />
     <Compile Include="CE_UserLogin.cs" />
     <Compile Include="CE_Usuarios.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

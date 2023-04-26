@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CD_Botones.cs" />
+    <Compile Include="CD_Profesionales.cs" />
     <Compile Include="CD_Usuarios.cs" />
     <Compile Include="Conexion.cs" />
     <Compile Include="Proceso.cs" />

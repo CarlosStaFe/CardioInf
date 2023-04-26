@@ -171,30 +171,21 @@ namespace ColegMart
         #region SUBMENU
         private void Personalizar()
         {
-            pnlSubmenuColegiados.Visible = false;
-            pnlSubmenuSociedades.Visible = false;
-            pnlSubmenuCajaDiaria.Visible = false;
-            pnlSubmenuMesaEntradas.Visible = false;
-            pnlSubmenuProveedores.Visible = false;
-            pnlSubmenuTesoreria.Visible = false;
+            pnlSubmenuPacientes.Visible = false;
+            pnlSubmenuConsultorio.Visible = false;
+            pnlSubmenuObraSocial.Visible = false;
             pnlSubmenuMantenedor.Visible = false;
             pnlSubmenuSistema.Visible = false;
         }
 
         private void OcultarSubmenu()
         {
-            if (pnlSubmenuColegiados.Visible == true)
-                pnlSubmenuColegiados.Visible = false;
-            if (pnlSubmenuSociedades.Visible == true)
-                pnlSubmenuSociedades.Visible = false;
-            if (pnlSubmenuCajaDiaria.Visible == true)
-                pnlSubmenuCajaDiaria.Visible = false;
-            if (pnlSubmenuMesaEntradas.Visible == true)
-                pnlSubmenuMesaEntradas.Visible = false;
-            if (pnlSubmenuProveedores.Visible == true)
-                pnlSubmenuProveedores.Visible = false;
-            if (pnlSubmenuTesoreria.Visible == true)
-                pnlSubmenuTesoreria.Visible = false;
+            if (pnlSubmenuPacientes.Visible == true)
+                pnlSubmenuPacientes.Visible = false;
+            if (pnlSubmenuConsultorio.Visible == true)
+                pnlSubmenuConsultorio.Visible = false;
+            if (pnlSubmenuObraSocial.Visible == true)
+                pnlSubmenuObraSocial.Visible = false;
             if (pnlSubmenuMantenedor.Visible == true)
                 pnlSubmenuMantenedor.Visible = false;
             if (pnlSubmenuSistema.Visible == true)
@@ -232,113 +223,48 @@ namespace ColegMart
         }
         #endregion
 
-        //***** MENÚ COLEGIADOS *****
-        #region MENÚ COLEGIADOS
-        private void btnColegiados_Click(object sender, System.EventArgs e)
+        //***** MENÚ PACIENTES *****
+        #region MENÚ PACIENTES
+        private void btnPacientes_Click(object sender, System.EventArgs e)
         {
             ActivarBoton(sender);
-            MostrarSubmenu(pnlSubmenuColegiados);
+            MostrarSubmenu(pnlSubmenuPacientes);
         }
 
-        private void btnActualizarCol_Click_1(object sender, System.EventArgs e)
-        {
-            //AbrirFormHijo(new frmColegiados());
-            //OcultarSubmenu();
-        }
-
-        #endregion
-
-        //***** MENÚ SOCIEDADES *****
-        #region MENÚ SOCIEDADES
-        private void btnSociedades_Click(object sender, System.EventArgs e)
-        {
-            ActivarBoton(sender);
-            MostrarSubmenu(pnlSubmenuSociedades);
-        }
-
-        private void btnActualizaSoc_Click(object sender, System.EventArgs e)
+        private void btnActualizarPac_Click(object sender, System.EventArgs e)
         {
         }
 
         #endregion
 
-        //***** MENÚ CAJA DIARIA *****
-        #region MENÚ CAJA DIARIA
-        private void btnCajaDiaria_Click(object sender, System.EventArgs e)
-        {
-            ActivarBoton(sender);
-            MostrarSubmenu(pnlSubmenuCajaDiaria);
-        }
-        private void btnCobrarPendientes_Click(object sender, System.EventArgs e)
-        {
-        }
-
-        private void btnCobrarVarios_Click(object sender, System.EventArgs e)
-        {
-        }
+        //***** MENÚ CONSULTORIO *****
+        #region MENÚ CONSULTORIO
 
         #endregion
 
-        //***** MENÚ MESA DE ENTRADAS *****
-        #region MENÚ MESA DE ENTRADAS
-        private void btnMesaEntradas_Click(object sender, System.EventArgs e)
-        {
-            ActivarBoton(sender);
-            MostrarSubmenu(pnlSubmenuMesaEntradas);
-        }
-        #endregion
+        //***** MENÚ OBRA SOCIALES *****
+        #region MENÚ OBRA SOCIALES
 
-        //***** MENÚ PROVEEDORES *****
-        #region MENÚ PROVEEDORES 
-        private void btnProveedores_Click(object sender, System.EventArgs e)
-        {
-            ActivarBoton(sender);
-            MostrarSubmenu(pnlSubmenuProveedores);
-        }
-        #endregion
-
-        //***** MENÚ TESORERÍA *****
-        #region MENÚ TESORERÍA
-        private void btnTesoreria_Click(object sender, System.EventArgs e)
-        {
-            ActivarBoton(sender);
-            MostrarSubmenu(pnlSubmenuTesoreria);
-        }
         #endregion
 
         //***** MENÚ MANTENEDOR *****
-        #region MENÚ PARÁMETROS
+        #region MENÚ MANTENEDOR
         private void btnMantenedor_Click(object sender, System.EventArgs e)
         {
             ActivarBoton(sender);
             MostrarSubmenu(pnlSubmenuMantenedor);
         }
-        private void btnCodPostales_Click_1(object sender, System.EventArgs e)
-        {
-        }
 
-        private void btnDebitos_Click(object sender, System.EventArgs e)
+        private void btnProfesionales_Click(object sender, System.EventArgs e)
         {
+            AbrirFormHijo(new frmProfesionales());
+            OcultarSubmenu();
         }
 
         #endregion
 
         //***** MENÚ SISTEMA *****
         #region MENÚ SISTEMA
-        private void btnSistema_Click(object sender, System.EventArgs e)
-        {
-            ActivarBoton(sender);
-            MostrarSubmenu(pnlSubmenuSistema);
-        }
-        private void btnBackupRestore_Click(object sender, System.EventArgs e)
-        {
-        }
-        private void btnUsuarios_Click_1(object sender, System.EventArgs e)
-        {
-        }
-        private void btnBotones_Click(object sender, System.EventArgs e)
-        {
-        }
 
         #endregion
 
