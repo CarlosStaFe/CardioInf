@@ -255,7 +255,13 @@ namespace ColegMart
             MostrarSubmenu(pnlSubmenuMantenedor);
         }
 
-        private void btnProfesionales_Click(object sender, System.EventArgs e)
+        private void btnCodPostales_Click(object sender, System.EventArgs e)
+        {
+            AbrirFormHijo(new frmCodPostales());
+            OcultarSubmenu();
+        }
+
+        private void btnProfesionales_Click_1(object sender, System.EventArgs e)
         {
             AbrirFormHijo(new frmProfesionales());
             OcultarSubmenu();

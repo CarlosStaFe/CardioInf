@@ -52,6 +52,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pnlSubmenuMantenedor = new System.Windows.Forms.Panel();
             this.btnProfesionales = new FontAwesome.Sharp.IconButton();
+            this.btnCodPostales = new FontAwesome.Sharp.IconButton();
             this.pnlSubmenuObraSocial = new System.Windows.Forms.Panel();
             this.btnActualizarOS = new FontAwesome.Sharp.IconButton();
             this.pnlSubmenuConsultorio = new System.Windows.Forms.Panel();
@@ -423,6 +424,7 @@
             // 
             this.pnlSubmenuMantenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.pnlSubmenuMantenedor.Controls.Add(this.btnProfesionales);
+            this.pnlSubmenuMantenedor.Controls.Add(this.btnCodPostales);
             this.pnlSubmenuMantenedor.Font = new System.Drawing.Font("Cascadia Code", 11.25F);
             this.pnlSubmenuMantenedor.Location = new System.Drawing.Point(345, 0);
             this.pnlSubmenuMantenedor.Name = "pnlSubmenuMantenedor";
@@ -444,14 +446,38 @@
             this.btnProfesionales.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnProfesionales.IconSize = 15;
             this.btnProfesionales.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProfesionales.Location = new System.Drawing.Point(0, 0);
+            this.btnProfesionales.Location = new System.Drawing.Point(0, 33);
             this.btnProfesionales.Name = "btnProfesionales";
             this.btnProfesionales.Size = new System.Drawing.Size(160, 33);
-            this.btnProfesionales.TabIndex = 0;
+            this.btnProfesionales.TabIndex = 2;
             this.btnProfesionales.Text = "Profesionales";
             this.btnProfesionales.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnProfesionales.UseVisualStyleBackColor = true;
-            this.btnProfesionales.Click += new System.EventHandler(this.btnProfesionales_Click);
+            this.btnProfesionales.Click += new System.EventHandler(this.btnProfesionales_Click_1);
+            // 
+            // btnCodPostales
+            // 
+            this.btnCodPostales.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCodPostales.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCodPostales.FlatAppearance.BorderSize = 0;
+            this.btnCodPostales.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.btnCodPostales.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnCodPostales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCodPostales.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.btnCodPostales.ForeColor = System.Drawing.Color.Aqua;
+            this.btnCodPostales.IconChar = FontAwesome.Sharp.IconChar.Check;
+            this.btnCodPostales.IconColor = System.Drawing.Color.White;
+            this.btnCodPostales.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnCodPostales.IconSize = 15;
+            this.btnCodPostales.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCodPostales.Location = new System.Drawing.Point(0, 0);
+            this.btnCodPostales.Name = "btnCodPostales";
+            this.btnCodPostales.Size = new System.Drawing.Size(160, 33);
+            this.btnCodPostales.TabIndex = 1;
+            this.btnCodPostales.Text = "Códigos Postales";
+            this.btnCodPostales.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCodPostales.UseVisualStyleBackColor = true;
+            this.btnCodPostales.Click += new System.EventHandler(this.btnCodPostales_Click);
             // 
             // pnlSubmenuObraSocial
             // 
@@ -687,13 +713,14 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel pnlSubmenuObraSocial;
         private System.Windows.Forms.Panel pnlSubmenuMantenedor;
-        private FontAwesome.Sharp.IconButton btnProfesionales;
         private FontAwesome.Sharp.IconButton iconButton23;
         private System.Windows.Forms.Panel pnlSubmenuSistema;
         internal System.Windows.Forms.Label label1;
         private FontAwesome.Sharp.IconButton btnActualizarOS;
         private FontAwesome.Sharp.IconButton btnPadronCol;
         private FontAwesome.Sharp.IconButton btnHistorial;
+        private FontAwesome.Sharp.IconButton btnProfesionales;
+        private FontAwesome.Sharp.IconButton btnCodPostales;
     }
 }
 
