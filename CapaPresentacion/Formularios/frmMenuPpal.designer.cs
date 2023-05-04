@@ -48,9 +48,10 @@
             this.btnPacientes = new FontAwesome.Sharp.IconButton();
             this.pnlContenedor = new System.Windows.Forms.Panel();
             this.pnlSubmenuSistema = new System.Windows.Forms.Panel();
-            this.iconButton23 = new FontAwesome.Sharp.IconButton();
+            this.btnBackupRestore = new FontAwesome.Sharp.IconButton();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pnlSubmenuMantenedor = new System.Windows.Forms.Panel();
+            this.btnPasaje = new FontAwesome.Sharp.IconButton();
             this.btnProfesionales = new FontAwesome.Sharp.IconButton();
             this.btnCodPostales = new FontAwesome.Sharp.IconButton();
             this.pnlSubmenuObraSocial = new System.Windows.Forms.Panel();
@@ -269,6 +270,7 @@
             this.btnSistema.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnSistema.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnSistema.UseVisualStyleBackColor = true;
+            this.btnSistema.Click += new System.EventHandler(this.btnSistema_Click);
             // 
             // btnMantenedor
             // 
@@ -378,35 +380,36 @@
             // pnlSubmenuSistema
             // 
             this.pnlSubmenuSistema.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.pnlSubmenuSistema.Controls.Add(this.iconButton23);
+            this.pnlSubmenuSistema.Controls.Add(this.btnBackupRestore);
             this.pnlSubmenuSistema.Font = new System.Drawing.Font("Cascadia Code", 11.25F);
             this.pnlSubmenuSistema.Location = new System.Drawing.Point(459, 0);
             this.pnlSubmenuSistema.Name = "pnlSubmenuSistema";
             this.pnlSubmenuSistema.Size = new System.Drawing.Size(160, 283);
             this.pnlSubmenuSistema.TabIndex = 16;
             // 
-            // iconButton23
+            // btnBackupRestore
             // 
-            this.iconButton23.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconButton23.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton23.FlatAppearance.BorderSize = 0;
-            this.iconButton23.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.iconButton23.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.iconButton23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton23.Font = new System.Drawing.Font("Century Gothic", 9F);
-            this.iconButton23.ForeColor = System.Drawing.Color.Yellow;
-            this.iconButton23.IconChar = FontAwesome.Sharp.IconChar.Check;
-            this.iconButton23.IconColor = System.Drawing.Color.White;
-            this.iconButton23.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton23.IconSize = 15;
-            this.iconButton23.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton23.Location = new System.Drawing.Point(0, 0);
-            this.iconButton23.Name = "iconButton23";
-            this.iconButton23.Size = new System.Drawing.Size(160, 33);
-            this.iconButton23.TabIndex = 0;
-            this.iconButton23.Text = "Copia Seguridad";
-            this.iconButton23.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton23.UseVisualStyleBackColor = true;
+            this.btnBackupRestore.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBackupRestore.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnBackupRestore.FlatAppearance.BorderSize = 0;
+            this.btnBackupRestore.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.btnBackupRestore.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnBackupRestore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBackupRestore.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.btnBackupRestore.ForeColor = System.Drawing.Color.Yellow;
+            this.btnBackupRestore.IconChar = FontAwesome.Sharp.IconChar.Check;
+            this.btnBackupRestore.IconColor = System.Drawing.Color.White;
+            this.btnBackupRestore.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnBackupRestore.IconSize = 15;
+            this.btnBackupRestore.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBackupRestore.Location = new System.Drawing.Point(0, 0);
+            this.btnBackupRestore.Name = "btnBackupRestore";
+            this.btnBackupRestore.Size = new System.Drawing.Size(160, 33);
+            this.btnBackupRestore.TabIndex = 0;
+            this.btnBackupRestore.Text = "Copia Seguridad";
+            this.btnBackupRestore.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnBackupRestore.UseVisualStyleBackColor = true;
+            this.btnBackupRestore.Click += new System.EventHandler(this.btnBackupRestore_Click);
             // 
             // pictureBox2
             // 
@@ -423,6 +426,7 @@
             // pnlSubmenuMantenedor
             // 
             this.pnlSubmenuMantenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.pnlSubmenuMantenedor.Controls.Add(this.btnPasaje);
             this.pnlSubmenuMantenedor.Controls.Add(this.btnProfesionales);
             this.pnlSubmenuMantenedor.Controls.Add(this.btnCodPostales);
             this.pnlSubmenuMantenedor.Font = new System.Drawing.Font("Cascadia Code", 11.25F);
@@ -430,6 +434,30 @@
             this.pnlSubmenuMantenedor.Name = "pnlSubmenuMantenedor";
             this.pnlSubmenuMantenedor.Size = new System.Drawing.Size(160, 283);
             this.pnlSubmenuMantenedor.TabIndex = 15;
+            // 
+            // btnPasaje
+            // 
+            this.btnPasaje.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPasaje.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnPasaje.FlatAppearance.BorderSize = 0;
+            this.btnPasaje.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.btnPasaje.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnPasaje.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPasaje.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.btnPasaje.ForeColor = System.Drawing.Color.Aqua;
+            this.btnPasaje.IconChar = FontAwesome.Sharp.IconChar.Check;
+            this.btnPasaje.IconColor = System.Drawing.Color.White;
+            this.btnPasaje.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnPasaje.IconSize = 15;
+            this.btnPasaje.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPasaje.Location = new System.Drawing.Point(0, 66);
+            this.btnPasaje.Name = "btnPasaje";
+            this.btnPasaje.Size = new System.Drawing.Size(160, 33);
+            this.btnPasaje.TabIndex = 3;
+            this.btnPasaje.Text = "Pasaje";
+            this.btnPasaje.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnPasaje.UseVisualStyleBackColor = true;
+            this.btnPasaje.Click += new System.EventHandler(this.btnPasaje_Click);
             // 
             // btnProfesionales
             // 
@@ -713,7 +741,7 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel pnlSubmenuObraSocial;
         private System.Windows.Forms.Panel pnlSubmenuMantenedor;
-        private FontAwesome.Sharp.IconButton iconButton23;
+        private FontAwesome.Sharp.IconButton btnBackupRestore;
         private System.Windows.Forms.Panel pnlSubmenuSistema;
         internal System.Windows.Forms.Label label1;
         private FontAwesome.Sharp.IconButton btnActualizarOS;
@@ -721,6 +749,7 @@
         private FontAwesome.Sharp.IconButton btnHistorial;
         private FontAwesome.Sharp.IconButton btnProfesionales;
         private FontAwesome.Sharp.IconButton btnCodPostales;
+        private FontAwesome.Sharp.IconButton btnPasaje;
     }
 }
 

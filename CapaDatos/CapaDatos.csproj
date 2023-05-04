@@ -43,9 +43,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CD_Botones.cs" />
+    <Compile Include="CD_CodigosNacionales.cs" />
     <Compile Include="CD_CodigosPostales.cs" />
     <Compile Include="CD_Departamentos.cs" />
     <Compile Include="CD_Localidades.cs" />
+    <Compile Include="CD_Pacientes.cs" />
     <Compile Include="CD_Profesionales.cs" />
     <Compile Include="CD_Provincias.cs" />
     <Compile Include="CD_Usuarios.cs" />

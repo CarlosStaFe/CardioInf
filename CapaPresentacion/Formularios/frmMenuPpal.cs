@@ -233,6 +233,8 @@ namespace ColegMart
 
         private void btnActualizarPac_Click(object sender, System.EventArgs e)
         {
+            AbrirFormHijo(new frmPacientes());
+            OcultarSubmenu();
         }
 
         #endregion
@@ -267,20 +269,38 @@ namespace ColegMart
             OcultarSubmenu();
         }
 
+        private void btnPasaje_Click(object sender, System.EventArgs e)
+        {
+            AbrirFormHijo(new xPasarDatos());
+            OcultarSubmenu();
+        }
+
         #endregion
 
         //***** MENÚ SISTEMA *****
         #region MENÚ SISTEMA
 
+        private void btnSistema_Click(object sender, System.EventArgs e)
+        {
+            ActivarBoton(sender);
+            MostrarSubmenu(pnlSubmenuSistema);
+        }
+
+        private void btnBackupRestore_Click(object sender, System.EventArgs e)
+        {
+            AbrirFormHijo(new frmBackupRestore());
+            OcultarSubmenu();
+        }
+
         #endregion
 
         //***** MENÚ SALIR DEL SISTEMA *****
         #region MENÚ SALIR DEL SISTEMA
+
         private void btnSalir_Click(object sender, System.EventArgs e)
         {
             Close();
         }
-
 
         #endregion
 

@@ -4,18 +4,18 @@ using System.Collections.Generic;
 
 namespace CapaNegocio
 {
-    public class CN_Profesionales
+    public class CN_Pacientes
     {
-        CD_Profesionales cD_Profesionales = new CD_Profesionales();
+        CD_Pacientes cD_Pacientes = new CD_Pacientes();
 
-        //***** LLAMO AL METODO PARA LISTAR LOS PROFESIONALES *****
-        public List<CE_Profesionales> ListaProf()
+        //***** LLAMO AL METODO PARA LISTAR LOS PACIENTES *****
+        public List<CE_Pacientes> ListaPacte()
         {
-            return cD_Profesionales.ListaProf();
+            return cD_Pacientes.ListaPacte();
         }
 
-        //***** REGISTRA UN NUEVO PROFESIONAL *****
-        public int Registrar(CE_Profesionales obj, out string mensaje)
+        //***** REGISTRA UN NUEVO PACIENTE *****
+        public int Registrar(CE_Pacientes obj, out string mensaje)
         {
             mensaje = string.Empty;
 
@@ -30,12 +30,12 @@ namespace CapaNegocio
             }
             else
             {
-                return cD_Profesionales.Registrar(obj, out mensaje);
+                return cD_Pacientes.Registrar(obj, out mensaje);
             }
         }
 
-        //***** LLAMO AL METODO PARA EDITAR UN PROFESIONAL *****
-        public bool Editar(CE_Profesionales obj, out string mensaje)
+        //***** LLAMO AL METODO PARA EDITAR UN PACIENTE *****
+        public bool Editar(CE_Pacientes obj, out string mensaje)
         {
             mensaje = string.Empty;
 
@@ -50,7 +50,7 @@ namespace CapaNegocio
             }
             else
             {
-                return cD_Profesionales.Editar(obj, out mensaje);
+                return cD_Pacientes.Editar(obj, out mensaje);
             }
         }
 

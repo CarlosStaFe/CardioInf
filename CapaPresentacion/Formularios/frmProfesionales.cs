@@ -3,6 +3,7 @@ using CapaNegocio;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
 namespace CapaPresentacion.Formularios
@@ -50,12 +51,6 @@ namespace CapaPresentacion.Formularios
             for (int i = 0; i < dgvProfesionales.Rows.Count; i++)
             {
                 DateTime dateFecha = Convert.ToDateTime(dgvProfesionales.Rows[i].Cells["FecEstado"].Value);
-
-                //if (dateFecha.Date <= DateTime.Now.Date)
-                //{
-                //    dgvProfesionales.Rows[i].Cells["FecEstado"].Style.ForeColor = Color.Black;
-                //    dgvProfesionales.Rows[i].Cells["FecEstado"].Style.BackColor = Color.DarkOrange;
-                //}
             }
         }
 
@@ -218,5 +213,32 @@ namespace CapaPresentacion.Formularios
             }
         }
 
+        //***** PROCEDIMIENTO DEL BOTON BUSCAR *****
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            string columnaFiltro = Regex.Replace(cboBusqueda.SelectedItem.ToString().Trim(), " ", String.Empty);
+
+            if (dgvProfesionales.Rows.Count > 0)
+            {
+                foreach (DataGridViewRow row in dgvProfesionales.Rows)
+                {
+                    if (row.Cells[columnaFiltro].Value.ToString().Trim().ToUpper().Contains(txtFiltro.Text.Trim().ToUpper()))
+                        row.Visible = true;
+                    else
+                        row.Visible = false;
+                }
+            }
+        }
+
+        //***** PROCEDIMIENTO DEL BOTON LIMPIAR BUSQUEDA *****
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            txtFiltro.Text = string.Empty;
+            cboBusqueda.Text = string.Empty;
+            foreach (DataGridViewRow row in dgvProfesionales.Rows)
+            {
+                row.Visible = true;
+            }
+        }
     }
 }

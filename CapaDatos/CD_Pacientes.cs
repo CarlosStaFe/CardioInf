@@ -6,12 +6,12 @@ using System.Collections.Generic;
 
 namespace CapaDatos
 {
-    public class CD_Profesionales:Conexion
+    public class CD_Pacientes:Conexion
     {
-        //***** METODO PARA LISTAR LOS PROFESIONALES *****
-        public List<CE_Profesionales> ListaProf()
+        //***** METODO PARA LISTAR LOS PACIENTES *****
+        public List<CE_Pacientes> ListaPacte()
         {
-            List<CE_Profesionales> lista = new List<CE_Profesionales>();
+            List<CE_Pacientes> lista = new List<CE_Pacientes>();
 
             using (var connection = GetConnection())
             {
@@ -21,7 +21,7 @@ namespace CapaDatos
                     try
                     {
                         command.Connection = connection;
-                        command.CommandText = "SELECT * FROM Profesionales ORDER BY ApelNombres";
+                        command.CommandText = "SELECT * FROM Pacientes ORDER BY ApelNombres";
                         command.CommandType = CommandType.Text;
                         SqlDataReader dr = command.ExecuteReader();
 
@@ -29,18 +29,20 @@ namespace CapaDatos
                         {
                             while (dr.Read())
                             {
-                                lista.Add(new CE_Profesionales()
+                                lista.Add(new CE_Pacientes()
                                 {
-                                    id_Prof = Convert.ToInt32(dr["id_Prof"]),
-                                    Matricula = Convert.ToInt32(dr["Matricula"]),
+                                    id_Pacte = Convert.ToInt32(dr["id_Pacte"]),
                                     ApelNombres = dr["ApelNombres"].ToString(),
+                                    FechaNacim = Convert.ToDateTime(dr["FechaNacim"]),
+                                    Sexo = dr["Sexo"].ToString(),
                                     TipoDoc = dr["TipoDoc"].ToString(),
                                     NumeroDoc = Convert.ToInt32(dr["NumeroDoc"]),
-                                    Sexo = dr["Sexo"].ToString(),
+                                    Domicilio = dr["Domicilio"].ToString(),
+                                    CodPostal = Convert.ToInt32(dr["CodPostal"].ToString()),
                                     Telefono = dr["Telefono"].ToString(),
                                     Email = dr["Email"].ToString(),
-                                    Estado = dr["Estado"].ToString(),
-                                    FecEstado = Convert.ToDateTime(dr["FecEstado"]),
+                                    ObraSocial = Convert.ToInt32(dr["ObraSocial"].ToString()),
+                                    PlanOS = Convert.ToInt32(dr["PlanOS"].ToString()),
                                     Obs = dr["Obs"].ToString(),
                                     UserRegistro = dr["UserRegistro"].ToString(),
                                     FechaRegistro = Convert.ToDateTime(dr["FechaRegistro"])
@@ -50,35 +52,38 @@ namespace CapaDatos
                     }
                     catch (Exception)
                     {
-                        lista = new List<CE_Profesionales>();
+                        lista = new List<CE_Pacientes>();
                     }
                 }
             }
             return lista;
         }
 
-        //***** METODO PARA REGISTRAR UN PROFESIONAL *****
-        public int Registrar(CE_Profesionales obj, out string mensaje)
+        //***** METODO PARA REGISTRAR UN PACIENTES *****
+        public int Registrar(CE_Pacientes obj, out string mensaje)
         {
-            int idProfesional = 0;
+            int idPaciente = 0;
             mensaje = string.Empty;
 
             using (var connection = GetConnection())
             {
                 connection.Open();
-                using (var command = new SqlCommand("SP_RegistrarProfesional", connection))
+                using (var command = new SqlCommand("SP_RegistrarPaciente", connection))
                 {
                     try
                     {
-                        command.Parameters.AddWithValue("Matricula", obj.Matricula);
+                        command.Parameters.AddWithValue("id_Pacte", obj.id_Pacte);
                         command.Parameters.AddWithValue("ApelNombres", obj.ApelNombres);
+                        command.Parameters.AddWithValue("FechaNacim", obj.FechaNacim);
+                        command.Parameters.AddWithValue("Sexo", obj.Sexo);
                         command.Parameters.AddWithValue("TipoDoc", obj.TipoDoc);
                         command.Parameters.AddWithValue("NumeroDoc", obj.NumeroDoc);
-                        command.Parameters.AddWithValue("Sexo", obj.Sexo);
+                        command.Parameters.AddWithValue("Domicilio", obj.Domicilio);
+                        command.Parameters.AddWithValue("CodPostal", obj.CodPostal);
                         command.Parameters.AddWithValue("Telefono", obj.Telefono);
                         command.Parameters.AddWithValue("Email", obj.Email);
-                        command.Parameters.AddWithValue("Estado", obj.Estado);
-                        command.Parameters.AddWithValue("FecEstado", obj.FecEstado);
+                        command.Parameters.AddWithValue("ObraSocial", obj.ObraSocial);
+                        command.Parameters.AddWithValue("PlanOS", obj.PlanOS);
                         command.Parameters.AddWithValue("Obs", obj.Obs);
                         command.Parameters.AddWithValue("UserRegistro", obj.UserRegistro);
                         command.Parameters.AddWithValue("FechaRegistro", DateTime.Now);
@@ -87,21 +92,21 @@ namespace CapaDatos
                         command.CommandType = CommandType.StoredProcedure;
                         command.ExecuteNonQuery();
 
-                        idProfesional = Convert.ToInt32(command.Parameters["idResultado"].Value);
+                        idPaciente = Convert.ToInt32(command.Parameters["idResultado"].Value);
                         mensaje = command.Parameters["Mensaje"].Value.ToString();
                     }
                     catch (Exception ex)
                     {
-                        idProfesional = 0;
+                        idPaciente = 0;
                         mensaje = ex.Message;
                     }
                 }
             }
-            return idProfesional;
+            return idPaciente;
         }
 
         //***** METODO PARA EDITAR UN PACIENTE *****
-        public bool Editar(CE_Profesionales obj, out string mensaje)
+        public bool Editar(CE_Pacientes obj, out string mensaje)
         {
             bool Resultado = false;
             mensaje = string.Empty;
@@ -109,19 +114,21 @@ namespace CapaDatos
             using (var connection = GetConnection())
             {
                 connection.Open();
-                using (var command = new SqlCommand("SP_EditarProfesional", connection))
+                using (var command = new SqlCommand("SP_EditarPaciente", connection))
                 {
                     try
                     {
-                        command.Parameters.AddWithValue("Matricula", obj.Matricula);
                         command.Parameters.AddWithValue("ApelNombres", obj.ApelNombres);
+                        command.Parameters.AddWithValue("FechaNacim", obj.FechaNacim);
+                        command.Parameters.AddWithValue("Sexo", obj.Sexo);
                         command.Parameters.AddWithValue("TipoDoc", obj.TipoDoc);
                         command.Parameters.AddWithValue("NumeroDoc", obj.NumeroDoc);
-                        command.Parameters.AddWithValue("Sexo", obj.Sexo);
+                        command.Parameters.AddWithValue("Domicilio", obj.Domicilio);
+                        command.Parameters.AddWithValue("CodPostal", obj.CodPostal);
                         command.Parameters.AddWithValue("Telefono", obj.Telefono);
                         command.Parameters.AddWithValue("Email", obj.Email);
-                        command.Parameters.AddWithValue("Estado", obj.Estado);
-                        command.Parameters.AddWithValue("FecEstado", obj.FecEstado);
+                        command.Parameters.AddWithValue("ObraSocial", obj.ObraSocial);
+                        command.Parameters.AddWithValue("PlanOS", obj.PlanOS);
                         command.Parameters.AddWithValue("Obs", obj.Obs);
                         command.Parameters.AddWithValue("UserRegistro", obj.UserRegistro);
                         command.Parameters.AddWithValue("FechaRegistro", DateTime.Now);
@@ -142,7 +149,6 @@ namespace CapaDatos
             }
             return Resultado;
         }
-
 
     }
 }

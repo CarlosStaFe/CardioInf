@@ -60,5 +60,11 @@ namespace CapaNegocio
             return cD_CodigosPostales.BuscaCodPos(local);
         }
 
+        ////***** BUSQUEDA DE LOS CÓDIGOS POSTALES DEL COLEGIADO *****
+        public List<CE_CodigosPostales> ListaCodigos(int codigo)
+        {
+            return cD_CodigosPostales.ListaCodigos(codigo);
+        }
+
     }
 }

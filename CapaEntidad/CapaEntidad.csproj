@@ -42,9 +42,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CE_Botones.cs" />
+    <Compile Include="CE_CodigosNacionales.cs" />
     <Compile Include="CE_CodigosPostales.cs" />
     <Compile Include="CE_Departamentos.cs" />
     <Compile Include="CE_Localidades.cs" />
+    <Compile Include="CE_Pacientes.cs" />
     <Compile Include="CE_Profesionales.cs" />
     <Compile Include="CE_Provincias.cs" />
     <Compile Include="CE_UserLogin.cs" />

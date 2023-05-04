@@ -159,7 +159,50 @@ namespace CapaDatos
             return localidad;
         }
 
+        //***** METODO PARA LISTAR LAS LOCALIDADES *****
+        public List<CE_CodigosPostales> ListaCodigos(int codigo)
+        {
+            List<CE_CodigosPostales> lista = new List<CE_CodigosPostales>();
 
+            using (var connection = GetConnection())
+            {
+                connection.Open();
+                using (var command = new SqlCommand())
+                {
+                    try
+                    {
+                        command.Parameters.AddWithValue("@codigo", codigo);
+                        command.Connection = connection;
+                        command.CommandText = "SELECT * FROM CodigosPostales WHERE CodigoPostal = @codigo";
+                        command.CommandType = CommandType.StoredProcedure;
+                        SqlDataReader dr = command.ExecuteReader();
+
+                        if (dr.HasRows)
+                        {
+                            while (dr.Read())
+                            {
+                                lista.Add(new CE_CodigosPostales()
+                                {
+                                    id_CodPos = Convert.ToInt32(dr["id_CodPos"]),
+                                    fk_Local = Convert.ToInt32(dr["fk_Local"]),
+                                    fk_Depto = Convert.ToInt32(dr["fk_Depto"]),
+                                    fk_Prov = Convert.ToInt32(dr["fk_Prov"]),
+                                    CodigoPostal = Convert.ToInt32(dr["CodigoPostal"]),
+                                    Localidad = dr["Localidad"].ToString(),
+                                    Departamento = dr["Departamento"].ToString(),
+                                    Provincia = dr["Provincia"].ToString()
+                                });
+                            }
+                        }
+                    }
+                    catch (Exception)
+                    {
+                        lista = new List<CE_CodigosPostales>();
+                    }
+                }
+            }
+            return lista;
+        }
 
 
     }

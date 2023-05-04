@@ -39,6 +39,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmProfesionales));
             this.pnlTitulo = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.txtIndice = new System.Windows.Forms.TextBox();
+            this.txtId = new System.Windows.Forms.TextBox();
+            this.txtUserRegistro = new System.Windows.Forms.TextBox();
+            this.txtFechaRegistro = new System.Windows.Forms.TextBox();
             this.pnlDeck = new System.Windows.Forms.Panel();
             this.cboSexo = new System.Windows.Forms.ComboBox();
             this.label19 = new System.Windows.Forms.Label();
@@ -47,12 +51,25 @@
             this.txtNumeroDoc = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.txtMatricula = new System.Windows.Forms.TextBox();
-            this.txtFechaRegistro = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnSalir = new FontAwesome.Sharp.IconButton();
             this.btnGuardar = new FontAwesome.Sharp.IconButton();
             this.btnClear = new FontAwesome.Sharp.IconButton();
             this.dgvProfesionales = new System.Windows.Forms.DataGridView();
+            this.Seleccionar = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.id_Coleg = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Matri = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ApellidoyNombres = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Numero = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Sexo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Obs = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.UserRegistro = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FechaRegistro = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnLimpiar = new FontAwesome.Sharp.IconButton();
             this.btnBuscar = new FontAwesome.Sharp.IconButton();
             this.txtFiltro = new System.Windows.Forms.TextBox();
@@ -70,27 +87,10 @@
             this.cboEstado = new System.Windows.Forms.ComboBox();
             this.label16 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtIndice = new System.Windows.Forms.TextBox();
-            this.txtUserRegistro = new System.Windows.Forms.TextBox();
-            this.txtId = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtApelNombres = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.Seleccionar = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.id_Coleg = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Matri = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ApellidoyNombres = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Numero = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Sexo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Obs = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.UserRegistro = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FechaRegistro = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlTitulo.SuspendLayout();
             this.pnlDeck.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -122,6 +122,55 @@
             this.label1.Size = new System.Drawing.Size(378, 30);
             this.label1.TabIndex = 0;
             this.label1.Text = "Actualización de Profesionales";
+            // 
+            // txtIndice
+            // 
+            this.txtIndice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.txtIndice.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtIndice.Enabled = false;
+            this.txtIndice.ForeColor = System.Drawing.Color.White;
+            this.txtIndice.Location = new System.Drawing.Point(782, 11);
+            this.txtIndice.Name = "txtIndice";
+            this.txtIndice.Size = new System.Drawing.Size(53, 16);
+            this.txtIndice.TabIndex = 53;
+            this.txtIndice.Visible = false;
+            // 
+            // txtId
+            // 
+            this.txtId.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.txtId.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtId.Enabled = false;
+            this.txtId.ForeColor = System.Drawing.Color.White;
+            this.txtId.Location = new System.Drawing.Point(742, 11);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(34, 16);
+            this.txtId.TabIndex = 51;
+            this.txtId.Text = "0";
+            this.txtId.Visible = false;
+            // 
+            // txtUserRegistro
+            // 
+            this.txtUserRegistro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.txtUserRegistro.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtUserRegistro.Enabled = false;
+            this.txtUserRegistro.ForeColor = System.Drawing.Color.White;
+            this.txtUserRegistro.Location = new System.Drawing.Point(841, 11);
+            this.txtUserRegistro.Name = "txtUserRegistro";
+            this.txtUserRegistro.Size = new System.Drawing.Size(53, 16);
+            this.txtUserRegistro.TabIndex = 52;
+            this.txtUserRegistro.Visible = false;
+            // 
+            // txtFechaRegistro
+            // 
+            this.txtFechaRegistro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.txtFechaRegistro.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtFechaRegistro.Enabled = false;
+            this.txtFechaRegistro.ForeColor = System.Drawing.Color.White;
+            this.txtFechaRegistro.Location = new System.Drawing.Point(900, 11);
+            this.txtFechaRegistro.Name = "txtFechaRegistro";
+            this.txtFechaRegistro.Size = new System.Drawing.Size(53, 16);
+            this.txtFechaRegistro.TabIndex = 132;
+            this.txtFechaRegistro.Visible = false;
             // 
             // pnlDeck
             // 
@@ -241,18 +290,6 @@
             this.txtMatricula.Name = "txtMatricula";
             this.txtMatricula.Size = new System.Drawing.Size(73, 23);
             this.txtMatricula.TabIndex = 0;
-            // 
-            // txtFechaRegistro
-            // 
-            this.txtFechaRegistro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.txtFechaRegistro.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtFechaRegistro.Enabled = false;
-            this.txtFechaRegistro.ForeColor = System.Drawing.Color.White;
-            this.txtFechaRegistro.Location = new System.Drawing.Point(900, 11);
-            this.txtFechaRegistro.Name = "txtFechaRegistro";
-            this.txtFechaRegistro.Size = new System.Drawing.Size(53, 16);
-            this.txtFechaRegistro.TabIndex = 132;
-            this.txtFechaRegistro.Visible = false;
             // 
             // groupBox1
             // 
@@ -399,6 +436,112 @@
             this.dgvProfesionales.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProfesionales_CellContentClick);
             this.dgvProfesionales.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dgvProfesionales_CellPainting);
             // 
+            // Seleccionar
+            // 
+            this.Seleccionar.HeaderText = "";
+            this.Seleccionar.Name = "Seleccionar";
+            this.Seleccionar.ReadOnly = true;
+            this.Seleccionar.Width = 25;
+            // 
+            // id_Coleg
+            // 
+            this.id_Coleg.HeaderText = "id";
+            this.id_Coleg.Name = "id_Coleg";
+            this.id_Coleg.ReadOnly = true;
+            this.id_Coleg.Visible = false;
+            // 
+            // Matri
+            // 
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.Matri.DefaultCellStyle = dataGridViewCellStyle3;
+            this.Matri.HeaderText = "MATRI";
+            this.Matri.Name = "Matri";
+            this.Matri.ReadOnly = true;
+            this.Matri.Width = 55;
+            // 
+            // ApellidoyNombres
+            // 
+            this.ApellidoyNombres.HeaderText = "APELLIDO Y NOMBRES";
+            this.ApellidoyNombres.Name = "ApellidoyNombres";
+            this.ApellidoyNombres.ReadOnly = true;
+            this.ApellidoyNombres.Width = 230;
+            // 
+            // Tipo
+            // 
+            this.Tipo.HeaderText = "TIPO";
+            this.Tipo.Name = "Tipo";
+            this.Tipo.ReadOnly = true;
+            this.Tipo.Width = 50;
+            // 
+            // Numero
+            // 
+            this.Numero.HeaderText = "NUMERO";
+            this.Numero.Name = "Numero";
+            this.Numero.ReadOnly = true;
+            this.Numero.Visible = false;
+            // 
+            // Sexo
+            // 
+            this.Sexo.HeaderText = "SEXO";
+            this.Sexo.Name = "Sexo";
+            this.Sexo.ReadOnly = true;
+            this.Sexo.Width = 50;
+            // 
+            // Telefono
+            // 
+            this.Telefono.HeaderText = "Telefono";
+            this.Telefono.Name = "Telefono";
+            this.Telefono.ReadOnly = true;
+            this.Telefono.Visible = false;
+            // 
+            // Email
+            // 
+            this.Email.HeaderText = "E-Mail";
+            this.Email.Name = "Email";
+            this.Email.ReadOnly = true;
+            this.Email.Width = 250;
+            // 
+            // Estado
+            // 
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Estado.DefaultCellStyle = dataGridViewCellStyle4;
+            this.Estado.HeaderText = "ESTADO";
+            this.Estado.Name = "Estado";
+            this.Estado.ReadOnly = true;
+            this.Estado.Width = 110;
+            // 
+            // Fecha
+            // 
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.Format = "d";
+            dataGridViewCellStyle5.NullValue = null;
+            this.Fecha.DefaultCellStyle = dataGridViewCellStyle5;
+            this.Fecha.HeaderText = "FECHA";
+            this.Fecha.Name = "Fecha";
+            this.Fecha.ReadOnly = true;
+            this.Fecha.Width = 80;
+            // 
+            // Obs
+            // 
+            this.Obs.HeaderText = "Obs";
+            this.Obs.Name = "Obs";
+            this.Obs.ReadOnly = true;
+            this.Obs.Visible = false;
+            // 
+            // UserRegistro
+            // 
+            this.UserRegistro.HeaderText = "UserRegistro";
+            this.UserRegistro.Name = "UserRegistro";
+            this.UserRegistro.ReadOnly = true;
+            this.UserRegistro.Visible = false;
+            // 
+            // FechaRegistro
+            // 
+            this.FechaRegistro.HeaderText = "FechaRegistro";
+            this.FechaRegistro.Name = "FechaRegistro";
+            this.FechaRegistro.ReadOnly = true;
+            this.FechaRegistro.Visible = false;
+            // 
             // btnLimpiar
             // 
             this.btnLimpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
@@ -416,6 +559,7 @@
             this.btnLimpiar.Size = new System.Drawing.Size(28, 28);
             this.btnLimpiar.TabIndex = 13;
             this.btnLimpiar.UseVisualStyleBackColor = false;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // btnBuscar
             // 
@@ -434,6 +578,7 @@
             this.btnBuscar.Size = new System.Drawing.Size(28, 28);
             this.btnBuscar.TabIndex = 12;
             this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // txtFiltro
             // 
@@ -602,43 +747,6 @@
             this.label3.TabIndex = 55;
             this.label3.Text = "Matrícula:";
             // 
-            // txtIndice
-            // 
-            this.txtIndice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.txtIndice.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtIndice.Enabled = false;
-            this.txtIndice.ForeColor = System.Drawing.Color.White;
-            this.txtIndice.Location = new System.Drawing.Point(782, 11);
-            this.txtIndice.Name = "txtIndice";
-            this.txtIndice.Size = new System.Drawing.Size(53, 16);
-            this.txtIndice.TabIndex = 53;
-            this.txtIndice.Visible = false;
-            // 
-            // txtUserRegistro
-            // 
-            this.txtUserRegistro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.txtUserRegistro.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtUserRegistro.Enabled = false;
-            this.txtUserRegistro.ForeColor = System.Drawing.Color.White;
-            this.txtUserRegistro.Location = new System.Drawing.Point(841, 11);
-            this.txtUserRegistro.Name = "txtUserRegistro";
-            this.txtUserRegistro.Size = new System.Drawing.Size(53, 16);
-            this.txtUserRegistro.TabIndex = 52;
-            this.txtUserRegistro.Visible = false;
-            // 
-            // txtId
-            // 
-            this.txtId.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.txtId.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtId.Enabled = false;
-            this.txtId.ForeColor = System.Drawing.Color.White;
-            this.txtId.Location = new System.Drawing.Point(742, 11);
-            this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(34, 16);
-            this.txtId.TabIndex = 51;
-            this.txtId.Text = "0";
-            this.txtId.Visible = false;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -678,112 +786,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(949, 42);
             this.panel1.TabIndex = 137;
-            // 
-            // Seleccionar
-            // 
-            this.Seleccionar.HeaderText = "";
-            this.Seleccionar.Name = "Seleccionar";
-            this.Seleccionar.ReadOnly = true;
-            this.Seleccionar.Width = 25;
-            // 
-            // id_Coleg
-            // 
-            this.id_Coleg.HeaderText = "id";
-            this.id_Coleg.Name = "id_Coleg";
-            this.id_Coleg.ReadOnly = true;
-            this.id_Coleg.Visible = false;
-            // 
-            // Matri
-            // 
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.Matri.DefaultCellStyle = dataGridViewCellStyle3;
-            this.Matri.HeaderText = "MATRI";
-            this.Matri.Name = "Matri";
-            this.Matri.ReadOnly = true;
-            this.Matri.Width = 55;
-            // 
-            // ApellidoyNombres
-            // 
-            this.ApellidoyNombres.HeaderText = "APELLIDO Y NOMBRES";
-            this.ApellidoyNombres.Name = "ApellidoyNombres";
-            this.ApellidoyNombres.ReadOnly = true;
-            this.ApellidoyNombres.Width = 230;
-            // 
-            // Tipo
-            // 
-            this.Tipo.HeaderText = "TIPO";
-            this.Tipo.Name = "Tipo";
-            this.Tipo.ReadOnly = true;
-            this.Tipo.Width = 50;
-            // 
-            // Numero
-            // 
-            this.Numero.HeaderText = "NUMERO";
-            this.Numero.Name = "Numero";
-            this.Numero.ReadOnly = true;
-            this.Numero.Visible = false;
-            // 
-            // Sexo
-            // 
-            this.Sexo.HeaderText = "SEXO";
-            this.Sexo.Name = "Sexo";
-            this.Sexo.ReadOnly = true;
-            this.Sexo.Width = 50;
-            // 
-            // Telefono
-            // 
-            this.Telefono.HeaderText = "Telefono";
-            this.Telefono.Name = "Telefono";
-            this.Telefono.ReadOnly = true;
-            this.Telefono.Visible = false;
-            // 
-            // Email
-            // 
-            this.Email.HeaderText = "E-Mail";
-            this.Email.Name = "Email";
-            this.Email.ReadOnly = true;
-            this.Email.Width = 250;
-            // 
-            // Estado
-            // 
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Estado.DefaultCellStyle = dataGridViewCellStyle4;
-            this.Estado.HeaderText = "ESTADO";
-            this.Estado.Name = "Estado";
-            this.Estado.ReadOnly = true;
-            this.Estado.Width = 110;
-            // 
-            // Fecha
-            // 
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.Format = "d";
-            dataGridViewCellStyle5.NullValue = null;
-            this.Fecha.DefaultCellStyle = dataGridViewCellStyle5;
-            this.Fecha.HeaderText = "FECHA";
-            this.Fecha.Name = "Fecha";
-            this.Fecha.ReadOnly = true;
-            this.Fecha.Width = 80;
-            // 
-            // Obs
-            // 
-            this.Obs.HeaderText = "Obs";
-            this.Obs.Name = "Obs";
-            this.Obs.ReadOnly = true;
-            this.Obs.Visible = false;
-            // 
-            // UserRegistro
-            // 
-            this.UserRegistro.HeaderText = "UserRegistro";
-            this.UserRegistro.Name = "UserRegistro";
-            this.UserRegistro.ReadOnly = true;
-            this.UserRegistro.Visible = false;
-            // 
-            // FechaRegistro
-            // 
-            this.FechaRegistro.HeaderText = "FechaRegistro";
-            this.FechaRegistro.Name = "FechaRegistro";
-            this.FechaRegistro.ReadOnly = true;
-            this.FechaRegistro.Visible = false;
             // 
             // frmProfesionales
             // 

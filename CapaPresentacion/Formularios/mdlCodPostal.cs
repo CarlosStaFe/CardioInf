@@ -90,7 +90,7 @@ namespace CapaPresentacion
                     if (NombreBoton == "btnLocalParti")
                     {
                         frmPacientes DomPaciente = Owner as frmPacientes;
-                        DomPaciente.lblDetLocalParti.Text = txtCodigo.Text + " - " + txtLocalidad.Text + " - " + txtDepartamento.Text + " - " + txtProvincia.Text;
+                        DomPaciente.lblLocalidad.Text = txtCodigo.Text + " - " + txtLocalidad.Text + " - " + txtDepartamento.Text + " - " + txtProvincia.Text;
                         Close();
                         Dispose();
                     }
