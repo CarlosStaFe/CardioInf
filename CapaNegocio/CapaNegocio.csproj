@@ -47,9 +47,11 @@
     <Compile Include="CN_Departamentos.cs" />
     <Compile Include="CN_Localidades.cs" />
     <Compile Include="CN_Pacientes.cs" />
+    <Compile Include="CN_Permisos.cs" />
     <Compile Include="CN_Profesionales.cs" />
     <Compile Include="CN_Provincias.cs" />
     <Compile Include="CN_Usuarios.cs" />
+    <Compile Include="CN_Valores.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

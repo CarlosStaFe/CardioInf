@@ -43,7 +43,7 @@
             this.pnlDeck = new System.Windows.Forms.Panel();
             this.cboPlanOS = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.btnLocal1 = new FontAwesome.Sharp.IconButton();
+            this.btnLocalidad = new FontAwesome.Sharp.IconButton();
             this.lblLocalidad = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -87,7 +87,6 @@
             this.txtTelefono = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
-            this.dtpFechaNacim = new CapaPresentacion.DatePicker();
             this.label17 = new System.Windows.Forms.Label();
             this.cboObraSocial = new System.Windows.Forms.ComboBox();
             this.label16 = new System.Windows.Forms.Label();
@@ -95,6 +94,8 @@
             this.txtApelNombres = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtCodPos = new System.Windows.Forms.TextBox();
+            this.dtpFechaNacim = new CapaPresentacion.DatePicker();
             this.pnlTitulo.SuspendLayout();
             this.pnlDeck.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -179,9 +180,10 @@
             // pnlDeck
             // 
             this.pnlDeck.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.pnlDeck.Controls.Add(this.txtCodPos);
             this.pnlDeck.Controls.Add(this.cboPlanOS);
             this.pnlDeck.Controls.Add(this.label4);
-            this.pnlDeck.Controls.Add(this.btnLocal1);
+            this.pnlDeck.Controls.Add(this.btnLocalidad);
             this.pnlDeck.Controls.Add(this.lblLocalidad);
             this.pnlDeck.Controls.Add(this.label23);
             this.pnlDeck.Controls.Add(this.label3);
@@ -246,20 +248,21 @@
             this.label4.TabIndex = 164;
             this.label4.Text = "Plan:";
             // 
-            // btnLocal1
+            // btnLocalidad
             // 
-            this.btnLocal1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.btnLocal1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLocal1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLocal1.IconChar = FontAwesome.Sharp.IconChar.LocationCrosshairs;
-            this.btnLocal1.IconColor = System.Drawing.Color.Aqua;
-            this.btnLocal1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnLocal1.IconSize = 20;
-            this.btnLocal1.Location = new System.Drawing.Point(163, 116);
-            this.btnLocal1.Name = "btnLocal1";
-            this.btnLocal1.Size = new System.Drawing.Size(27, 24);
-            this.btnLocal1.TabIndex = 6;
-            this.btnLocal1.UseVisualStyleBackColor = false;
+            this.btnLocalidad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.btnLocalidad.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLocalidad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLocalidad.IconChar = FontAwesome.Sharp.IconChar.LocationCrosshairs;
+            this.btnLocalidad.IconColor = System.Drawing.Color.Aqua;
+            this.btnLocalidad.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnLocalidad.IconSize = 20;
+            this.btnLocalidad.Location = new System.Drawing.Point(163, 116);
+            this.btnLocalidad.Name = "btnLocalidad";
+            this.btnLocalidad.Size = new System.Drawing.Size(27, 24);
+            this.btnLocalidad.TabIndex = 6;
+            this.btnLocalidad.UseVisualStyleBackColor = false;
+            this.btnLocalidad.Click += new System.EventHandler(this.btnLocalidad_Click);
             // 
             // lblLocalidad
             // 
@@ -268,9 +271,9 @@
             this.lblLocalidad.ForeColor = System.Drawing.Color.Aqua;
             this.lblLocalidad.Location = new System.Drawing.Point(196, 119);
             this.lblLocalidad.Name = "lblLocalidad";
-            this.lblLocalidad.Size = new System.Drawing.Size(84, 19);
+            this.lblLocalidad.Size = new System.Drawing.Size(76, 19);
             this.lblLocalidad.TabIndex = 161;
-            this.lblLocalidad.Text = "localidad1";
+            this.lblLocalidad.Text = "localidad";
             // 
             // label23
             // 
@@ -768,24 +771,6 @@
             this.txtEmail.Size = new System.Drawing.Size(421, 23);
             this.txtEmail.TabIndex = 8;
             // 
-            // dtpFechaNacim
-            // 
-            this.dtpFechaNacim.BorderColor = System.Drawing.Color.Gray;
-            this.dtpFechaNacim.BorderSize = 1;
-            this.dtpFechaNacim.CalendarFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpFechaNacim.CalendarMonthBackground = System.Drawing.Color.Silver;
-            this.dtpFechaNacim.CalendarTitleBackColor = System.Drawing.Color.Silver;
-            this.dtpFechaNacim.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpFechaNacim.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFechaNacim.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.dtpFechaNacim.Location = new System.Drawing.Point(335, 86);
-            this.dtpFechaNacim.MinimumSize = new System.Drawing.Size(4, 23);
-            this.dtpFechaNacim.Name = "dtpFechaNacim";
-            this.dtpFechaNacim.Size = new System.Drawing.Size(108, 23);
-            this.dtpFechaNacim.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.dtpFechaNacim.TabIndex = 4;
-            this.dtpFechaNacim.TextColor = System.Drawing.Color.White;
-            // 
             // label17
             // 
             this.label17.AutoSize = true;
@@ -861,6 +846,37 @@
             this.panel1.Size = new System.Drawing.Size(949, 42);
             this.panel1.TabIndex = 137;
             // 
+            // txtCodPos
+            // 
+            this.txtCodPos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.txtCodPos.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCodPos.Enabled = false;
+            this.txtCodPos.ForeColor = System.Drawing.Color.White;
+            this.txtCodPos.Location = new System.Drawing.Point(607, 119);
+            this.txtCodPos.Name = "txtCodPos";
+            this.txtCodPos.Size = new System.Drawing.Size(40, 16);
+            this.txtCodPos.TabIndex = 141;
+            this.txtCodPos.Text = "164";
+            this.txtCodPos.Visible = false;
+            // 
+            // dtpFechaNacim
+            // 
+            this.dtpFechaNacim.BorderColor = System.Drawing.Color.Gray;
+            this.dtpFechaNacim.BorderSize = 1;
+            this.dtpFechaNacim.CalendarFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpFechaNacim.CalendarMonthBackground = System.Drawing.Color.Silver;
+            this.dtpFechaNacim.CalendarTitleBackColor = System.Drawing.Color.Silver;
+            this.dtpFechaNacim.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpFechaNacim.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFechaNacim.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.dtpFechaNacim.Location = new System.Drawing.Point(335, 86);
+            this.dtpFechaNacim.MinimumSize = new System.Drawing.Size(4, 23);
+            this.dtpFechaNacim.Name = "dtpFechaNacim";
+            this.dtpFechaNacim.Size = new System.Drawing.Size(108, 23);
+            this.dtpFechaNacim.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.dtpFechaNacim.TabIndex = 4;
+            this.dtpFechaNacim.TextColor = System.Drawing.Color.White;
+            // 
             // frmPacientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
@@ -898,7 +914,7 @@
         private System.Windows.Forms.Panel pnlDeck;
         private System.Windows.Forms.ComboBox cboPlanOS;
         private System.Windows.Forms.Label label4;
-        private FontAwesome.Sharp.IconButton btnLocal1;
+        private FontAwesome.Sharp.IconButton btnLocalidad;
         public System.Windows.Forms.Label lblLocalidad;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label3;
@@ -950,5 +966,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Obs;
         private System.Windows.Forms.DataGridViewTextBoxColumn UserRegistro;
         private System.Windows.Forms.DataGridViewTextBoxColumn FechaRegistro;
+        public System.Windows.Forms.TextBox txtCodPos;
     }
 }

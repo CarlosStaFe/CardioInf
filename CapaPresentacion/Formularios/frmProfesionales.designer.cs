@@ -720,10 +720,7 @@
             this.cboEstado.FormattingEnabled = true;
             this.cboEstado.Items.AddRange(new object[] {
             "ACTIVO",
-            "BAJA",
-            "CANCELADO",
-            "SUSPENDIDO",
-            "SUSP. MOROSO"});
+            "BAJA"});
             this.cboEstado.Location = new System.Drawing.Point(620, 112);
             this.cboEstado.Name = "cboEstado";
             this.cboEstado.Size = new System.Drawing.Size(131, 25);

@@ -173,7 +173,7 @@ namespace ColegMart
         {
             pnlSubmenuPacientes.Visible = false;
             pnlSubmenuConsultorio.Visible = false;
-            pnlSubmenuObraSocial.Visible = false;
+            pnlSubmenuObrasSociales.Visible = false;
             pnlSubmenuMantenedor.Visible = false;
             pnlSubmenuSistema.Visible = false;
         }
@@ -184,8 +184,8 @@ namespace ColegMart
                 pnlSubmenuPacientes.Visible = false;
             if (pnlSubmenuConsultorio.Visible == true)
                 pnlSubmenuConsultorio.Visible = false;
-            if (pnlSubmenuObraSocial.Visible == true)
-                pnlSubmenuObraSocial.Visible = false;
+            if (pnlSubmenuObrasSociales.Visible == true)
+                pnlSubmenuObrasSociales.Visible = false;
             if (pnlSubmenuMantenedor.Visible == true)
                 pnlSubmenuMantenedor.Visible = false;
             if (pnlSubmenuSistema.Visible == true)
@@ -241,11 +241,32 @@ namespace ColegMart
 
         //***** MENÚ CONSULTORIO *****
         #region MENÚ CONSULTORIO
+        private void btnConsultorio_Click(object sender, System.EventArgs e)
+        {
+            ActivarBoton(sender);
+            MostrarSubmenu(pnlSubmenuConsultorio);
+        }
+
+        private void btnEcografia_Click(object sender, System.EventArgs e)
+        {
+            AbrirFormHijo(new frmEcografia());
+            OcultarSubmenu();
+        }
 
         #endregion
 
-        //***** MENÚ OBRA SOCIALES *****
-        #region MENÚ OBRA SOCIALES
+        //***** MENÚ OBRAS SOCIALES *****
+        #region MENÚ OBRAS SOCIALES
+        private void btnObrasSociales_Click(object sender, System.EventArgs e)
+        {
+            ActivarBoton(sender);
+            MostrarSubmenu(pnlSubmenuObrasSociales);
+        }
+        private void btnActualizarOS_Click(object sender, System.EventArgs e)
+        {
+            AbrirFormHijo(new frmObrasSociales());
+            OcultarSubmenu();
+        }
 
         #endregion
 
@@ -269,9 +290,15 @@ namespace ColegMart
             OcultarSubmenu();
         }
 
+        private void btnValores_Click(object sender, System.EventArgs e)
+        {
+            AbrirFormHijo(new frmValores());
+            OcultarSubmenu();
+        }
+
         private void btnPasaje_Click(object sender, System.EventArgs e)
         {
-            AbrirFormHijo(new xPasarDatos());
+            AbrirFormHijo(new mdlPrintEcografia());
             OcultarSubmenu();
         }
 
@@ -289,6 +316,21 @@ namespace ColegMart
         private void btnBackupRestore_Click(object sender, System.EventArgs e)
         {
             AbrirFormHijo(new frmBackupRestore());
+            OcultarSubmenu();
+        }
+        private void btnUsuarios_Click(object sender, System.EventArgs e)
+        {
+            AbrirFormHijo(new frmUsuarios());
+            OcultarSubmenu();
+        }
+        private void btnBotones_Click(object sender, System.EventArgs e)
+        {
+            AbrirFormHijo(new frmBotones());
+            OcultarSubmenu();
+        }
+        private void btnPermisos_Click(object sender, System.EventArgs e)
+        {
+            AbrirFormHijo(new frmPermisos());
             OcultarSubmenu();
         }
 

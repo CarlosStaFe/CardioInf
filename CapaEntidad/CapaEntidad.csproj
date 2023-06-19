@@ -47,10 +47,12 @@
     <Compile Include="CE_Departamentos.cs" />
     <Compile Include="CE_Localidades.cs" />
     <Compile Include="CE_Pacientes.cs" />
+    <Compile Include="CE_Permisos.cs" />
     <Compile Include="CE_Profesionales.cs" />
     <Compile Include="CE_Provincias.cs" />
     <Compile Include="CE_UserLogin.cs" />
     <Compile Include="CE_Usuarios.cs" />
+    <Compile Include="CE_Valores.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

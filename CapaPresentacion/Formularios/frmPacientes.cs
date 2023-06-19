@@ -11,6 +11,8 @@ namespace CapaPresentacion.Formularios
     public partial class frmPacientes : Form
     {
         private string respuesta;
+        int codpos = 0;
+        public string localidad;
 
         public frmPacientes()
         {
@@ -30,7 +32,7 @@ namespace CapaPresentacion.Formularios
                                                 item.Telefono, item.Email, item.ObraSocial, item.PlanOS, item.Obs, item.UserRegistro, item.FechaRegistro });
             }
 
-            Colorear();
+            //Colorear();
 
             //***** CARGO EL COMBO DE BUSQUEDA *****
             foreach (DataGridViewColumn columna in dgvPacientes.Columns)
@@ -120,6 +122,12 @@ namespace CapaPresentacion.Formularios
                     cboSexo.Text = dgvPacientes.Rows[indice].Cells["Sexo"].Value.ToString();
                     dtpFechaNacim.Value = Convert.ToDateTime(dgvPacientes.Rows[indice].Cells["Fecha"].Value.ToString());
                     txtDomicilio.Text = dgvPacientes.Rows[indice].Cells["Domicilio"].Value.ToString();
+                    txtCodPos.Text = dgvPacientes.Rows[indice].Cells["CodigoPostal"].Value.ToString();
+
+                    //***** BUSCO LA LOCALIDAD DEL PACIENTE *****
+                    codpos = Convert.ToInt32(txtCodPos.Text);
+                    localidad = new CN_CodigosPostales().BuscaCodPos(codpos);
+                    lblLocalidad.Text = localidad.ToString();
 
                     txtEmail.Text = dgvPacientes.Rows[indice].Cells["Email"].Value.ToString();
                     cboObraSocial.Text = dgvPacientes.Rows[indice].Cells["Estado"].Value.ToString();
@@ -158,6 +166,16 @@ namespace CapaPresentacion.Formularios
                 row.Visible = true;
             }
         }
+
+        //***** PROCEDIMIENTO DEL BOTON PARA BUSCAR LA LOCALIDAD *****
+        private void btnLocalidad_Click(object sender, EventArgs e)
+        {
+            mdlCodPostal CodigoPostal = new mdlCodPostal("btnLocalidad");
+            AddOwnedForm(CodigoPostal);
+            CodigoPostal.ShowDialog();
+        }
+
+
 
     }
 }

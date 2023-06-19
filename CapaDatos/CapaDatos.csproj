@@ -48,9 +48,11 @@
     <Compile Include="CD_Departamentos.cs" />
     <Compile Include="CD_Localidades.cs" />
     <Compile Include="CD_Pacientes.cs" />
+    <Compile Include="CD_Permisos.cs" />
     <Compile Include="CD_Profesionales.cs" />
     <Compile Include="CD_Provincias.cs" />
     <Compile Include="CD_Usuarios.cs" />
+    <Compile Include="CD_Valores.cs" />
     <Compile Include="Conexion.cs" />
     <Compile Include="Proceso.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
