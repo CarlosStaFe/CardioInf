@@ -175,6 +175,7 @@
     <Compile Include="Formularios\xPasarDatos.Designer.cs">
       <DependentUpon>xPasarDatos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Limpiar.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqlServerTypes\Loader.cs" />

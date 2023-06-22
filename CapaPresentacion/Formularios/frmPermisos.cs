@@ -59,7 +59,7 @@ namespace CapaPresentacion.Formularios
             //***** CARGO EL DGV *****
             foreach (CE_Permisos item in ListaPermisos)
             {
-                dgvPermisos.Rows.Add(new object[] { "", item.id_Permiso, item.fk_Usuarios, item.fk_Botones, item.Nombre, item.Detalle, item.UserRegistro });
+                dgvPermisos.Rows.Add(new object[] { "", item.id_Permiso, item.fk_Usuarios, item.fk_Botones, item.Nombre, item.Detalle, item.UserRegistro, item.FechaRegistro });
             }
         }
 
@@ -80,7 +80,8 @@ namespace CapaPresentacion.Formularios
                     id_Permiso = Convert.ToInt32(txtId.Text),
                     fk_Usuarios = Convert.ToInt32(cboUsuarios.SelectedValue),
                     fk_Botones = Convert.ToInt32(cboBotones.SelectedValue),
-                    UserRegistro = CE_UserLogin.Usuario
+                    UserRegistro = CE_UserLogin.Usuario,
+                    FechaRegistro = DateTime.Now
                 };
 
                 //*****SI EL ID DEL PERMISO = 0 REGISTRA, SINO EDITA *****
@@ -89,7 +90,7 @@ namespace CapaPresentacion.Formularios
                     int idPermiso = new CN_PermisosNew().Registrar(cE_PermisosNew, out Mensaje);
                     if (idPermiso != 0)
                     {
-                        dgvPermisos.Rows.Add(new object[] { "", idPermiso, Convert.ToInt32(cboUsuarios.SelectedValue), Convert.ToInt32(cboBotones.SelectedValue), txtUserRegistro.Text });
+                        dgvPermisos.Rows.Add(new object[] { "", idPermiso, Convert.ToInt32(cboUsuarios.SelectedValue), Convert.ToInt32(cboBotones.SelectedValue), txtUserRegistro.Text, txtFechaRegistro.Text });
                         Limpiar();
                     }
                     else
@@ -157,6 +158,7 @@ namespace CapaPresentacion.Formularios
             cboUsuarios.Text = string.Empty;
             cboBotones.Text = string.Empty;
             txtUserRegistro.Text = string.Empty;
+            txtFechaRegistro.Text = string.Empty;
             cboUsuarios.Select();
         }
 
@@ -189,6 +191,8 @@ namespace CapaPresentacion.Formularios
                     txtIndice.Text = indice.ToString();
                     txtId.Text = dgvPermisos.Rows[indice].Cells["id_Permiso"].Value.ToString();
                     cboBotones.Text = dgvPermisos.Rows[indice].Cells["Detalle"].Value.ToString();
+                    txtUserRegistro.Text = dgvPermisos.Rows[indice].Cells["UserRegistro"].Value.ToString();
+                    txtFechaRegistro.Text = dgvPermisos.Rows[indice].Cells["FechaRegistro"].Value.ToString();
                 }
             }
         }

@@ -74,8 +74,8 @@ namespace CapaDatos
                                     id_Boton = Convert.ToInt32(dr["id_Boton"]),
                                     Nombre = dr["Nombre"].ToString(),
                                     Detalle = dr["Detalle"].ToString(),
-                                    UserRegistro = dr["UserRegistro"].ToString()//,
-                                  //FechaRegistro = dr["FechaRegistro"].ToString()
+                                    UserRegistro = dr["UserRegistro"].ToString(),
+                                    FechaRegistro = Convert.ToDateTime(dr["FechaRegistro"])
                                 });
                             }
                         }

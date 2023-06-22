@@ -19,12 +19,14 @@ namespace CapaPresentacion.Formularios
 
         private void frmBotones_Load(object sender, EventArgs e)
         {
+            txtUserRegistro.Text = CE_UserLogin.Usuario;
+
             List<CE_Botones> ListaBoton = new CN_Botones().ListaBoton();
 
             //***** CARGO EL DGV *****
             foreach (CE_Botones item in ListaBoton)
             {
-                dgvBotones.Rows.Add(new object[] { "", item.id_Boton, item.Nombre, item.Detalle, item.UserRegistro });
+                dgvBotones.Rows.Add(new object[] { "", item.id_Boton, item.Nombre, item.Detalle, item.UserRegistro, item.FechaRegistro });
             }
 
             //***** CARGO EL COMBO DE BUSQUEDA *****
@@ -56,7 +58,8 @@ namespace CapaPresentacion.Formularios
                     id_Boton = Convert.ToInt32(txtId.Text),
                     Nombre = txtNombre.Text,
                     Detalle = txtDetalle.Text,
-                    UserRegistro = VarGlobales.NombreUsuario
+                    UserRegistro = txtUserRegistro.Text,
+                    FechaRegistro = DateTime.Now
                 };
 
                 //***** SI EL ID DEL BOTÓN = 0 REGISTRA, SINO EDITA *****
@@ -153,6 +156,7 @@ namespace CapaPresentacion.Formularios
             txtNombre.Text = string.Empty;
             txtDetalle.Text = string.Empty;
             txtUserRegistro.Text = string.Empty;
+            txtFechaRegistro.Text = string.Empty;
             txtNombre.Select();
         }
 
@@ -187,6 +191,7 @@ namespace CapaPresentacion.Formularios
                     txtNombre.Text = dgvBotones.Rows[indice].Cells["Nombre"].Value.ToString();
                     txtDetalle.Text = dgvBotones.Rows[indice].Cells["Detalle"].Value.ToString();
                     txtUserRegistro.Text = dgvBotones.Rows[indice].Cells["UserRegistro"].Value.ToString();
+                    txtFechaRegistro.Text = dgvBotones.Rows[indice].Cells["FechaRegistro"].Value.ToString();
                 }
             }
         }
