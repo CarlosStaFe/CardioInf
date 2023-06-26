@@ -1712,7 +1712,7 @@
             this.btnSalir.IconColor = System.Drawing.Color.Aqua;
             this.btnSalir.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnSalir.IconSize = 30;
-            this.btnSalir.Location = new System.Drawing.Point(7, 235);
+            this.btnSalir.Location = new System.Drawing.Point(7, 278);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(70, 53);
             this.btnSalir.TabIndex = 90;
@@ -1937,7 +1937,7 @@
             this.iconButton1.IconColor = System.Drawing.Color.Aqua;
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.IconSize = 30;
-            this.iconButton1.Location = new System.Drawing.Point(6, 129);
+            this.iconButton1.Location = new System.Drawing.Point(7, 158);
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Size = new System.Drawing.Size(70, 53);
             this.iconButton1.TabIndex = 91;
