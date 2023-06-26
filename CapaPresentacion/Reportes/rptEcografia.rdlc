@@ -22,7 +22,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
-        <Top>0.17639cm</Top>
+        <Top>0.07056cm</Top>
         <Left>0.28787cm</Left>
         <Height>0.6cm</Height>
         <Width>1.81208cm</Width>
@@ -54,7 +54,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>E1</rd:DefaultName>
-        <Top>0.17639cm</Top>
+        <Top>0.07056cm</Top>
         <Left>2.17051cm</Left>
         <Height>0.6cm</Height>
         <Width>4.11396cm</Width>
@@ -90,7 +90,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
-        <Top>0.81167cm</Top>
+        <Top>0.70584cm</Top>
         <Left>0.28787cm</Left>
         <Height>0.6cm</Height>
         <Width>4.48374cm</Width>
@@ -123,7 +123,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>E1</rd:DefaultName>
-        <Top>0.81167cm</Top>
+        <Top>0.70584cm</Top>
         <Left>4.84217cm</Left>
         <Height>0.6cm</Height>
         <Width>4.03942cm</Width>
@@ -159,7 +159,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
-        <Top>1.44695cm</Top>
+        <Top>1.34112cm</Top>
         <Left>0.28787cm</Left>
         <Height>0.6cm</Height>
         <Width>5.27455cm</Width>
@@ -185,6 +185,7 @@
                 <Value>3.1. AURÍCULA DERECHA:</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -194,7 +195,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
-        <Top>2.08222cm</Top>
+        <Top>1.97639cm</Top>
         <Left>0.28792cm</Left>
         <Height>0.6cm</Height>
         <Width>7.20594cm</Width>
@@ -217,7 +218,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E3_01.Value</Value>
+                <Value>=Fields!E31.Value</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -227,10 +228,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>E1</rd:DefaultName>
-        <Top>2.08222cm</Top>
+        <Top>1.97639cm</Top>
         <Left>7.56442cm</Left>
         <Height>0.6cm</Height>
-        <Width>11.98828cm</Width>
+        <Width>11.74714cm</Width>
         <ZIndex>6</ZIndex>
         <Style>
           <Border>
@@ -253,6 +254,7 @@
                 <Value>3.2. AURÍCULA IZQUIERDA:</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -262,7 +264,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
-        <Top>2.7175cm</Top>
+        <Top>2.61167cm</Top>
         <Left>0.28792cm</Left>
         <Height>0.6cm</Height>
         <Width>7.20595cm</Width>
@@ -285,7 +287,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E3_02.Value</Value>
+                <Value>=Fields!E32.Value</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -295,10 +297,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>E1</rd:DefaultName>
-        <Top>2.7175cm</Top>
+        <Top>2.61167cm</Top>
         <Left>7.56443cm</Left>
         <Height>0.6cm</Height>
-        <Width>11.98828cm</Width>
+        <Width>11.74714cm</Width>
         <ZIndex>8</ZIndex>
         <Style>
           <Border>
@@ -321,6 +323,7 @@
                 <Value>3.3. SEPTUM INTERAURICULAR:</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -330,7 +333,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
-        <Top>3.38806cm</Top>
+        <Top>3.28223cm</Top>
         <Left>0.2879cm</Left>
         <Height>0.6cm</Height>
         <Width>7.20595cm</Width>
@@ -353,7 +356,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E3_03.Value</Value>
+                <Value>=Fields!E33.Value</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -363,10 +366,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>E1</rd:DefaultName>
-        <Top>3.38806cm</Top>
+        <Top>3.28223cm</Top>
         <Left>7.56442cm</Left>
         <Height>0.6cm</Height>
-        <Width>11.98828cm</Width>
+        <Width>11.74714cm</Width>
         <ZIndex>10</ZIndex>
         <Style>
           <Border>
@@ -389,6 +392,7 @@
                 <Value>3.4. VÁLVULAS A-V:</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -398,7 +402,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
-        <Top>4.02333cm</Top>
+        <Top>3.9175cm</Top>
         <Left>0.28792cm</Left>
         <Height>0.6cm</Height>
         <Width>7.20595cm</Width>
@@ -421,7 +425,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E3_04.Value</Value>
+                <Value>=Fields!E34.Value</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -431,10 +435,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>E1</rd:DefaultName>
-        <Top>4.02333cm</Top>
+        <Top>3.9175cm</Top>
         <Left>7.56443cm</Left>
         <Height>0.6cm</Height>
-        <Width>11.98828cm</Width>
+        <Width>11.74714cm</Width>
         <ZIndex>12</ZIndex>
         <Style>
           <Border>
@@ -457,6 +461,7 @@
                 <Value>3.5. VENTRÍCULO DERECHO:</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -466,7 +471,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
-        <Top>4.65861cm</Top>
+        <Top>4.55278cm</Top>
         <Left>0.2879cm</Left>
         <Height>0.6cm</Height>
         <Width>7.20595cm</Width>
@@ -489,7 +494,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E3_05.Value</Value>
+                <Value>=Fields!E35.Value</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -499,10 +504,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>E1</rd:DefaultName>
-        <Top>4.65861cm</Top>
+        <Top>4.55278cm</Top>
         <Left>7.56442cm</Left>
         <Height>0.6cm</Height>
-        <Width>11.98828cm</Width>
+        <Width>11.74714cm</Width>
         <ZIndex>14</ZIndex>
         <Style>
           <Border>
@@ -525,6 +530,7 @@
                 <Value>3.6. VENTRÍCULO IZQUIERDO:</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -534,7 +540,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
-        <Top>5.29389cm</Top>
+        <Top>5.18806cm</Top>
         <Left>0.2879cm</Left>
         <Height>0.6cm</Height>
         <Width>7.20595cm</Width>
@@ -557,7 +563,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E3_06.Value</Value>
+                <Value>=Fields!E36.Value</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -567,10 +573,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>E1</rd:DefaultName>
-        <Top>5.29389cm</Top>
+        <Top>5.18806cm</Top>
         <Left>7.56442cm</Left>
         <Height>0.6cm</Height>
-        <Width>11.98828cm</Width>
+        <Width>11.74714cm</Width>
         <ZIndex>16</ZIndex>
         <Style>
           <Border>
@@ -593,6 +599,7 @@
                 <Value>3.7. SEPTUM INTERVENTRICULAR:</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -602,7 +609,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
-        <Top>5.92917cm</Top>
+        <Top>5.82334cm</Top>
         <Left>0.2879cm</Left>
         <Height>0.6cm</Height>
         <Width>7.20595cm</Width>
@@ -625,7 +632,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E3_07.Value</Value>
+                <Value>=Fields!E37.Value</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -635,10 +642,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>E1</rd:DefaultName>
-        <Top>5.92917cm</Top>
+        <Top>5.82334cm</Top>
         <Left>7.56442cm</Left>
         <Height>0.6cm</Height>
-        <Width>11.98828cm</Width>
+        <Width>11.74714cm</Width>
         <ZIndex>18</ZIndex>
         <Style>
           <Border>
@@ -661,6 +668,7 @@
                 <Value>3.8. DDVI:</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -670,7 +678,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
-        <Top>6.56445cm</Top>
+        <Top>6.45862cm</Top>
         <Left>5.42078cm</Left>
         <Height>0.6cm</Height>
         <Width>2.07307cm</Width>
@@ -693,7 +701,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E3_08.Value</Value>
+                <Value>=Fields!E38.Value</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -703,7 +711,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>E1</rd:DefaultName>
-        <Top>6.56445cm</Top>
+        <Top>6.45862cm</Top>
         <Left>7.56442cm</Left>
         <Height>0.6cm</Height>
         <Width>1.74051cm</Width>
@@ -729,6 +737,7 @@
                 <Value>3.9. DSVI:</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -738,7 +747,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
-        <Top>6.56445cm</Top>
+        <Top>6.45862cm</Top>
         <Left>9.85173cm</Left>
         <Height>0.6cm</Height>
         <Width>2.07307cm</Width>
@@ -761,7 +770,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E3_09.Value</Value>
+                <Value>=Fields!E39.Value</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -771,7 +780,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>E1</rd:DefaultName>
-        <Top>6.56445cm</Top>
+        <Top>6.45862cm</Top>
         <Left>11.99537cm</Left>
         <Height>0.6cm</Height>
         <Width>1.7405cm</Width>
@@ -794,9 +803,10 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>3.10.FAI:</Value>
+                <Value>3.10.FA:</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -806,7 +816,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
-        <Top>6.56445cm</Top>
+        <Top>6.45862cm</Top>
         <Left>14.27823cm</Left>
         <Height>0.6cm</Height>
         <Width>2.07307cm</Width>
@@ -829,7 +839,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E3_10.Value</Value>
+                <Value>=Fields!E310.Value</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -839,10 +849,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>E1</rd:DefaultName>
-        <Top>6.56445cm</Top>
+        <Top>6.45862cm</Top>
         <Left>16.42187cm</Left>
         <Height>0.6cm</Height>
-        <Width>1.7405cm</Width>
+        <Width>2.6714cm</Width>
         <ZIndex>24</ZIndex>
         <Style>
           <Border>
@@ -865,6 +875,7 @@
                 <Value>3.11. RETORNO VENOSO SISTÉMICO:</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -874,7 +885,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
-        <Top>7.19972cm</Top>
+        <Top>7.09389cm</Top>
         <Left>0.2879cm</Left>
         <Height>0.6cm</Height>
         <Width>7.20597cm</Width>
@@ -897,7 +908,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E3_11.Value</Value>
+                <Value>=Fields!E311.Value</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -907,10 +918,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>E1</rd:DefaultName>
-        <Top>7.19972cm</Top>
+        <Top>7.09389cm</Top>
         <Left>7.56443cm</Left>
         <Height>0.6cm</Height>
-        <Width>11.98828cm</Width>
+        <Width>11.74716cm</Width>
         <ZIndex>26</ZIndex>
         <Style>
           <Border>
@@ -933,6 +944,7 @@
                 <Value>3.12. RETORNO VENOSO PULMONAR:</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -942,7 +954,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
-        <Top>7.835cm</Top>
+        <Top>7.72917cm</Top>
         <Left>0.28792cm</Left>
         <Height>0.6cm</Height>
         <Width>7.20597cm</Width>
@@ -965,7 +977,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E3_12.Value</Value>
+                <Value>=Fields!E312.Value</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -975,10 +987,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>E1</rd:DefaultName>
-        <Top>7.835cm</Top>
+        <Top>7.72917cm</Top>
         <Left>7.56444cm</Left>
         <Height>0.6cm</Height>
-        <Width>11.98828cm</Width>
+        <Width>11.74716cm</Width>
         <ZIndex>28</ZIndex>
         <Style>
           <Border>
@@ -1001,6 +1013,7 @@
                 <Value>3.13. ARTERIA PULMONAR:</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -1010,7 +1023,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
-        <Top>8.47028cm</Top>
+        <Top>8.36445cm</Top>
         <Left>0.28788cm</Left>
         <Height>0.6cm</Height>
         <Width>7.20597cm</Width>
@@ -1033,7 +1046,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E3_13.Value</Value>
+                <Value>=Fields!E313.Value</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -1043,10 +1056,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>E1</rd:DefaultName>
-        <Top>8.47028cm</Top>
+        <Top>8.36445cm</Top>
         <Left>7.56441cm</Left>
         <Height>0.6cm</Height>
-        <Width>11.98828cm</Width>
+        <Width>11.74716cm</Width>
         <ZIndex>30</ZIndex>
         <Style>
           <Border>
@@ -1069,6 +1082,7 @@
                 <Value>3.14. ARTERIA AORTA:</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -1078,7 +1092,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
-        <Top>9.10556cm</Top>
+        <Top>8.99973cm</Top>
         <Left>0.28788cm</Left>
         <Height>0.6cm</Height>
         <Width>7.20597cm</Width>
@@ -1101,7 +1115,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E3_14.Value</Value>
+                <Value>=Fields!E314.Value</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -1111,10 +1125,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>E1</rd:DefaultName>
-        <Top>9.10556cm</Top>
+        <Top>8.99973cm</Top>
         <Left>7.56441cm</Left>
         <Height>0.6cm</Height>
-        <Width>11.98828cm</Width>
+        <Width>11.74716cm</Width>
         <ZIndex>32</ZIndex>
         <Style>
           <Border>
@@ -1137,6 +1151,7 @@
                 <Value>3.15. CAYADO AÓRTICO:</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -1146,7 +1161,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
-        <Top>9.74083cm</Top>
+        <Top>9.635cm</Top>
         <Left>0.28788cm</Left>
         <Height>0.6cm</Height>
         <Width>7.20597cm</Width>
@@ -1169,7 +1184,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E3_15.Value</Value>
+                <Value>=Fields!E315.Value</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -1179,10 +1194,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>E1</rd:DefaultName>
-        <Top>9.74083cm</Top>
+        <Top>9.635cm</Top>
         <Left>7.56441cm</Left>
         <Height>0.6cm</Height>
-        <Width>11.98828cm</Width>
+        <Width>11.74716cm</Width>
         <ZIndex>34</ZIndex>
         <Style>
           <Border>
@@ -1205,6 +1220,7 @@
                 <Value>3.16. PERICARDIO:</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -1214,7 +1230,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
-        <Top>10.37611cm</Top>
+        <Top>10.27028cm</Top>
         <Left>0.28788cm</Left>
         <Height>0.6cm</Height>
         <Width>7.20597cm</Width>
@@ -1237,7 +1253,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E3_16.Value</Value>
+                <Value>=Fields!E316.Value</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -1247,10 +1263,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>E1</rd:DefaultName>
-        <Top>10.37611cm</Top>
+        <Top>10.27028cm</Top>
         <Left>7.56441cm</Left>
         <Height>0.6cm</Height>
-        <Width>11.98828cm</Width>
+        <Width>11.74716cm</Width>
         <ZIndex>36</ZIndex>
         <Style>
           <Border>
@@ -1283,7 +1299,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
-        <Top>11.04667cm</Top>
+        <Top>10.94084cm</Top>
         <Left>0.28788cm</Left>
         <Height>0.6cm</Height>
         <Width>5.27453cm</Width>
@@ -1309,6 +1325,7 @@
                 <Value>4.1. VÁLVULA TRICÚSPIDE:</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -1318,10 +1335,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
-        <Top>12.31695cm</Top>
-        <Left>1.11214cm</Left>
+        <Top>11.57612cm</Top>
+        <Left>3.49339cm</Left>
         <Height>0.6cm</Height>
-        <Width>5.74671cm</Width>
+        <Width>4.00046cm</Width>
         <ZIndex>38</ZIndex>
         <Style>
           <Border>
@@ -1341,7 +1358,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E4_01.Value</Value>
+                <Value>=Fields!E41.Value</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -1351,10 +1368,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>E1</rd:DefaultName>
-        <Top>12.31695cm</Top>
-        <Left>6.92941cm</Left>
+        <Top>11.57612cm</Top>
+        <Left>7.56441cm</Left>
         <Height>0.6cm</Height>
-        <Width>5.22405cm</Width>
+        <Width>5.53462cm</Width>
         <ZIndex>39</ZIndex>
         <Style>
           <Border>
@@ -1377,6 +1394,7 @@
                 <Value>4.2. VÁLVULA MITRAL:</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -1386,10 +1404,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
-        <Top>12.95222cm</Top>
-        <Left>1.11214cm</Left>
+        <Top>12.21139cm</Top>
+        <Left>3.49339cm</Left>
         <Height>0.6cm</Height>
-        <Width>5.74671cm</Width>
+        <Width>4.00046cm</Width>
         <ZIndex>40</ZIndex>
         <Style>
           <Border>
@@ -1409,7 +1427,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E4_02.Value</Value>
+                <Value>=Fields!E42.Value</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -1419,10 +1437,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>E1</rd:DefaultName>
-        <Top>12.95222cm</Top>
-        <Left>6.92941cm</Left>
+        <Top>12.21139cm</Top>
+        <Left>7.56441cm</Left>
         <Height>0.6cm</Height>
-        <Width>5.22405cm</Width>
+        <Width>5.53462cm</Width>
         <ZIndex>41</ZIndex>
         <Style>
           <Border>
@@ -1445,6 +1463,7 @@
                 <Value>4.3. TSVD:</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -1454,10 +1473,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
-        <Top>13.5875cm</Top>
-        <Left>1.11214cm</Left>
+        <Top>12.84667cm</Top>
+        <Left>3.49339cm</Left>
         <Height>0.6cm</Height>
-        <Width>5.74671cm</Width>
+        <Width>4.00046cm</Width>
         <ZIndex>42</ZIndex>
         <Style>
           <Border>
@@ -1477,7 +1496,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E4_03.Value</Value>
+                <Value>=Fields!E43.Value</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -1487,10 +1506,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>E1</rd:DefaultName>
-        <Top>13.5875cm</Top>
-        <Left>6.92941cm</Left>
+        <Top>12.84667cm</Top>
+        <Left>7.56441cm</Left>
         <Height>0.6cm</Height>
-        <Width>5.22405cm</Width>
+        <Width>5.53462cm</Width>
         <ZIndex>43</ZIndex>
         <Style>
           <Border>
@@ -1513,6 +1532,7 @@
                 <Value>4.4. VÁLVULA PULMONAR:</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -1522,10 +1542,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
-        <Top>14.22278cm</Top>
-        <Left>1.11214cm</Left>
+        <Top>13.48195cm</Top>
+        <Left>3.49339cm</Left>
         <Height>0.6cm</Height>
-        <Width>5.74671cm</Width>
+        <Width>4.00046cm</Width>
         <ZIndex>44</ZIndex>
         <Style>
           <Border>
@@ -1545,7 +1565,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E4_04.Value</Value>
+                <Value>=Fields!E44.Value</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -1555,10 +1575,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>E1</rd:DefaultName>
-        <Top>14.22278cm</Top>
-        <Left>6.92941cm</Left>
+        <Top>13.48195cm</Top>
+        <Left>7.56441cm</Left>
         <Height>0.6cm</Height>
-        <Width>5.22405cm</Width>
+        <Width>5.53462cm</Width>
         <ZIndex>45</ZIndex>
         <Style>
           <Border>
@@ -1581,6 +1601,7 @@
                 <Value>4.5. RAMAS PULMONARES:</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -1590,10 +1611,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
-        <Top>14.85806cm</Top>
-        <Left>1.11214cm</Left>
+        <Top>14.11723cm</Top>
+        <Left>3.49339cm</Left>
         <Height>0.6cm</Height>
-        <Width>5.74671cm</Width>
+        <Width>4.00046cm</Width>
         <ZIndex>46</ZIndex>
         <Style>
           <Border>
@@ -1613,7 +1634,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E4_05.Value</Value>
+                <Value>=Fields!E45.Value</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -1623,10 +1644,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>E1</rd:DefaultName>
-        <Top>14.85806cm</Top>
-        <Left>6.92941cm</Left>
+        <Top>14.11723cm</Top>
+        <Left>7.56441cm</Left>
         <Height>0.6cm</Height>
-        <Width>5.22405cm</Width>
+        <Width>5.53462cm</Width>
         <ZIndex>47</ZIndex>
         <Style>
           <Border>
@@ -1649,6 +1670,7 @@
                 <Value>4.6. TSVI:</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -1658,10 +1680,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
-        <Top>15.49333cm</Top>
-        <Left>1.11214cm</Left>
+        <Top>14.7525cm</Top>
+        <Left>3.49339cm</Left>
         <Height>0.6cm</Height>
-        <Width>5.74671cm</Width>
+        <Width>4.00046cm</Width>
         <ZIndex>48</ZIndex>
         <Style>
           <Border>
@@ -1681,7 +1703,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E4_06.Value</Value>
+                <Value>=Fields!E46.Value</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -1691,10 +1713,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>E1</rd:DefaultName>
-        <Top>15.49333cm</Top>
-        <Left>6.92941cm</Left>
+        <Top>14.7525cm</Top>
+        <Left>7.56441cm</Left>
         <Height>0.6cm</Height>
-        <Width>5.22405cm</Width>
+        <Width>5.53462cm</Width>
         <ZIndex>49</ZIndex>
         <Style>
           <Border>
@@ -1717,6 +1739,7 @@
                 <Value>4.7. VÁLVULA AÓRTICA:</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -1726,10 +1749,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
-        <Top>16.12861cm</Top>
-        <Left>1.11214cm</Left>
+        <Top>15.38778cm</Top>
+        <Left>3.49339cm</Left>
         <Height>0.6cm</Height>
-        <Width>5.74671cm</Width>
+        <Width>4.00046cm</Width>
         <ZIndex>50</ZIndex>
         <Style>
           <Border>
@@ -1749,7 +1772,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E4_07.Value</Value>
+                <Value>=Fields!E47.Value</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -1759,10 +1782,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>E1</rd:DefaultName>
-        <Top>16.12861cm</Top>
-        <Left>6.92941cm</Left>
+        <Top>15.38778cm</Top>
+        <Left>7.56441cm</Left>
         <Height>0.6cm</Height>
-        <Width>5.22405cm</Width>
+        <Width>5.53462cm</Width>
         <ZIndex>51</ZIndex>
         <Style>
           <Border>
@@ -1785,6 +1808,7 @@
                 <Value>4.8. AORTA ASCENDENTE:</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -1794,10 +1818,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
-        <Top>16.76389cm</Top>
-        <Left>1.11214cm</Left>
+        <Top>16.02306cm</Top>
+        <Left>3.49339cm</Left>
         <Height>0.6cm</Height>
-        <Width>5.74671cm</Width>
+        <Width>4.00046cm</Width>
         <ZIndex>52</ZIndex>
         <Style>
           <Border>
@@ -1817,7 +1841,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E4_08.Value</Value>
+                <Value>=Fields!E48.Value</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -1827,10 +1851,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>E1</rd:DefaultName>
-        <Top>16.76389cm</Top>
-        <Left>6.92941cm</Left>
+        <Top>16.02306cm</Top>
+        <Left>7.56441cm</Left>
         <Height>0.6cm</Height>
-        <Width>5.22405cm</Width>
+        <Width>5.53462cm</Width>
         <ZIndex>53</ZIndex>
         <Style>
           <Border>
@@ -1853,6 +1877,7 @@
                 <Value>4.9. AORTA DESCENDENTE:</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -1862,10 +1887,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
-        <Top>17.39917cm</Top>
-        <Left>1.11214cm</Left>
+        <Top>16.65834cm</Top>
+        <Left>3.49339cm</Left>
         <Height>0.6cm</Height>
-        <Width>5.74671cm</Width>
+        <Width>4.00046cm</Width>
         <ZIndex>54</ZIndex>
         <Style>
           <Border>
@@ -1885,7 +1910,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E4_09.Value</Value>
+                <Value>=Fields!E49.Value</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -1895,10 +1920,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>E1</rd:DefaultName>
-        <Top>17.39917cm</Top>
-        <Left>6.92941cm</Left>
+        <Top>16.65834cm</Top>
+        <Left>7.56441cm</Left>
         <Height>0.6cm</Height>
-        <Width>5.22405cm</Width>
+        <Width>5.53462cm</Width>
         <ZIndex>55</ZIndex>
         <Style>
           <Border>
@@ -1921,6 +1946,7 @@
                 <Value>4.10. VENAS PULMONARES:</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -1930,10 +1956,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
-        <Top>18.03445cm</Top>
-        <Left>1.11214cm</Left>
+        <Top>17.29362cm</Top>
+        <Left>3.49339cm</Left>
         <Height>0.6cm</Height>
-        <Width>5.74674cm</Width>
+        <Width>4.00049cm</Width>
         <ZIndex>56</ZIndex>
         <Style>
           <Border>
@@ -1953,7 +1979,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E4_10.Value</Value>
+                <Value>=Fields!E410.Value</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -1963,10 +1989,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>E1</rd:DefaultName>
-        <Top>18.03445cm</Top>
-        <Left>6.92944cm</Left>
+        <Top>17.29362cm</Top>
+        <Left>7.56444cm</Left>
         <Height>0.6cm</Height>
-        <Width>5.22405cm</Width>
+        <Width>5.53462cm</Width>
         <ZIndex>57</ZIndex>
         <Style>
           <Border>
@@ -1999,7 +2025,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
-        <Top>18.66972cm</Top>
+        <Top>17.92889cm</Top>
         <Left>0.28788cm</Left>
         <Height>0.6cm</Height>
         <Width>5.99658cm</Width>
@@ -2022,7 +2048,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E5_01.Value</Value>
+                <Value>=Fields!E5.Value</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -2032,10 +2058,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>E1</rd:DefaultName>
-        <Top>19.305cm</Top>
+        <Top>18.56417cm</Top>
         <Left>0.28785cm</Left>
         <Height>0.6cm</Height>
-        <Width>19.23838cm</Width>
+        <Width>19.02375cm</Width>
         <ZIndex>59</ZIndex>
         <Style>
           <Border>
@@ -2068,7 +2094,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
-        <Top>19.94028cm</Top>
+        <Top>19.51695cm</Top>
         <Left>0.28785cm</Left>
         <Height>0.6cm</Height>
         <Width>3.36953cm</Width>
@@ -2092,7 +2118,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E6_01.Value</Value>
+                <Value>=Fields!E6.Value</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -2102,110 +2128,11 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>E1</rd:DefaultName>
-        <Top>20.57556cm</Top>
-        <Left>3.33056cm</Left>
+        <Top>20.15223cm</Top>
+        <Left>0.28785cm</Left>
         <Height>0.6cm</Height>
-        <Width>16.19567cm</Width>
+        <Width>19.02375cm</Width>
         <ZIndex>61</ZIndex>
-        <Style>
-          <Border>
-            <Style>None</Style>
-          </Border>
-          <VerticalAlign>Middle</VerticalAlign>
-          <PaddingLeft>2pt</PaddingLeft>
-          <PaddingRight>2pt</PaddingRight>
-          <PaddingTop>2pt</PaddingTop>
-          <PaddingBottom>2pt</PaddingBottom>
-        </Style>
-      </Textbox>
-      <Textbox Name="E33">
-        <CanGrow>true</CanGrow>
-        <KeepTogether>true</KeepTogether>
-        <Paragraphs>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>=Fields!E6_02.Value</Value>
-                <Style>
-                  <FontSize>8pt</FontSize>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <Style />
-          </Paragraph>
-        </Paragraphs>
-        <rd:DefaultName>E1</rd:DefaultName>
-        <Top>21.21083cm</Top>
-        <Left>3.33056cm</Left>
-        <Height>0.6cm</Height>
-        <Width>16.19567cm</Width>
-        <ZIndex>62</ZIndex>
-        <Style>
-          <Border>
-            <Style>None</Style>
-          </Border>
-          <VerticalAlign>Middle</VerticalAlign>
-          <PaddingLeft>2pt</PaddingLeft>
-          <PaddingRight>2pt</PaddingRight>
-          <PaddingTop>2pt</PaddingTop>
-          <PaddingBottom>2pt</PaddingBottom>
-        </Style>
-      </Textbox>
-      <Textbox Name="E34">
-        <CanGrow>true</CanGrow>
-        <KeepTogether>true</KeepTogether>
-        <Paragraphs>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>=Fields!E6_03.Value</Value>
-                <Style>
-                  <FontSize>8pt</FontSize>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <Style />
-          </Paragraph>
-        </Paragraphs>
-        <rd:DefaultName>E1</rd:DefaultName>
-        <Top>21.84611cm</Top>
-        <Left>3.33056cm</Left>
-        <Height>0.6cm</Height>
-        <Width>16.19567cm</Width>
-        <ZIndex>63</ZIndex>
-        <Style>
-          <Border>
-            <Style>None</Style>
-          </Border>
-          <VerticalAlign>Middle</VerticalAlign>
-          <PaddingLeft>2pt</PaddingLeft>
-          <PaddingRight>2pt</PaddingRight>
-          <PaddingTop>2pt</PaddingTop>
-          <PaddingBottom>2pt</PaddingBottom>
-        </Style>
-      </Textbox>
-      <Textbox Name="E35">
-        <CanGrow>true</CanGrow>
-        <KeepTogether>true</KeepTogether>
-        <Paragraphs>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>=Fields!E6_04.Value</Value>
-                <Style>
-                  <FontSize>8pt</FontSize>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <Style />
-          </Paragraph>
-        </Paragraphs>
-        <rd:DefaultName>E1</rd:DefaultName>
-        <Top>22.48139cm</Top>
-        <Left>3.33056cm</Left>
-        <Height>0.6cm</Height>
-        <Width>16.19567cm</Width>
-        <ZIndex>64</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -2249,11 +2176,11 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
-        <Top>23.89615cm</Top>
+        <Top>21.25032cm</Top>
         <Left>0.28785cm</Left>
         <Height>1.07625cm</Height>
         <Width>4.2721cm</Width>
-        <ZIndex>65</ZIndex>
+        <ZIndex>62</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -2296,11 +2223,11 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
-        <Top>23.89615cm</Top>
+        <Top>21.25032cm</Top>
         <Left>7.24694cm</Left>
         <Height>1.07625cm</Height>
         <Width>5.22405cm</Width>
-        <ZIndex>66</ZIndex>
+        <ZIndex>63</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -2343,11 +2270,11 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
-        <Top>23.89615cm</Top>
-        <Left>15.25413cm</Left>
+        <Top>21.25032cm</Top>
+        <Left>14.93663cm</Left>
         <Height>1.07625cm</Height>
         <Width>4.2721cm</Width>
-        <ZIndex>67</ZIndex>
+        <ZIndex>64</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -2365,7 +2292,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E4_11.Value</Value>
+                <Value>=Fields!E41v.Value</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -2375,11 +2302,11 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>E1</rd:DefaultName>
-        <Top>12.31695cm</Top>
-        <Left>12.36169cm</Left>
+        <Top>11.57612cm</Top>
+        <Left>13.31419cm</Left>
         <Height>0.6cm</Height>
         <Width>0.99661cm</Width>
-        <ZIndex>68</ZIndex>
+        <ZIndex>65</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -2398,7 +2325,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E4_12.Value</Value>
+                <Value>=Fields!E42v.Value</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -2408,11 +2335,11 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>E1</rd:DefaultName>
-        <Top>12.95222cm</Top>
-        <Left>12.36169cm</Left>
+        <Top>12.21139cm</Top>
+        <Left>13.31419cm</Left>
         <Height>0.6cm</Height>
         <Width>0.99661cm</Width>
-        <ZIndex>69</ZIndex>
+        <ZIndex>66</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -2431,7 +2358,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E4_13.Value</Value>
+                <Value>=Fields!E43v.Value</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -2441,11 +2368,11 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>E1</rd:DefaultName>
-        <Top>13.5875cm</Top>
-        <Left>12.36169cm</Left>
+        <Top>12.84667cm</Top>
+        <Left>13.31419cm</Left>
         <Height>0.6cm</Height>
         <Width>0.99661cm</Width>
-        <ZIndex>70</ZIndex>
+        <ZIndex>67</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -2464,7 +2391,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E4_14.Value</Value>
+                <Value>=Fields!E44v.Value</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -2474,11 +2401,11 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>E1</rd:DefaultName>
-        <Top>14.22278cm</Top>
-        <Left>12.36169cm</Left>
+        <Top>13.48195cm</Top>
+        <Left>13.31419cm</Left>
         <Height>0.6cm</Height>
         <Width>0.99661cm</Width>
-        <ZIndex>71</ZIndex>
+        <ZIndex>68</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -2497,7 +2424,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E4_15.Value</Value>
+                <Value>=Fields!E45v.Value</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -2507,11 +2434,11 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>E1</rd:DefaultName>
-        <Top>14.85806cm</Top>
-        <Left>12.36169cm</Left>
+        <Top>14.11723cm</Top>
+        <Left>13.31419cm</Left>
         <Height>0.6cm</Height>
         <Width>0.99661cm</Width>
-        <ZIndex>72</ZIndex>
+        <ZIndex>69</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -2530,7 +2457,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E4_16.Value</Value>
+                <Value>=Fields!E46v.Value</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -2540,11 +2467,11 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>E1</rd:DefaultName>
-        <Top>15.49333cm</Top>
-        <Left>12.36169cm</Left>
+        <Top>14.7525cm</Top>
+        <Left>13.31419cm</Left>
         <Height>0.6cm</Height>
         <Width>0.99661cm</Width>
-        <ZIndex>73</ZIndex>
+        <ZIndex>70</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -2563,7 +2490,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E4_17.Value</Value>
+                <Value>=Fields!E47v.Value</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -2573,11 +2500,11 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>E1</rd:DefaultName>
-        <Top>16.12861cm</Top>
-        <Left>12.36169cm</Left>
+        <Top>15.38778cm</Top>
+        <Left>13.31419cm</Left>
         <Height>0.6cm</Height>
         <Width>0.99661cm</Width>
-        <ZIndex>74</ZIndex>
+        <ZIndex>71</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -2596,7 +2523,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E4_18.Value</Value>
+                <Value>=Fields!E48v.Value</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -2606,11 +2533,11 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>E1</rd:DefaultName>
-        <Top>16.76389cm</Top>
-        <Left>12.36169cm</Left>
+        <Top>16.02306cm</Top>
+        <Left>13.31419cm</Left>
         <Height>0.6cm</Height>
         <Width>0.99661cm</Width>
-        <ZIndex>75</ZIndex>
+        <ZIndex>72</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -2629,7 +2556,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E4_19.Value</Value>
+                <Value>=Fields!E49v.Value</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -2639,11 +2566,11 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>E1</rd:DefaultName>
-        <Top>17.39917cm</Top>
-        <Left>12.36169cm</Left>
+        <Top>16.65834cm</Top>
+        <Left>13.31419cm</Left>
         <Height>0.6cm</Height>
         <Width>0.99661cm</Width>
-        <ZIndex>76</ZIndex>
+        <ZIndex>73</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -2662,7 +2589,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E4_110.Value</Value>
+                <Value>=Fields!E410v.Value</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -2672,11 +2599,11 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>E1</rd:DefaultName>
-        <Top>18.03445cm</Top>
-        <Left>12.36172cm</Left>
+        <Top>17.29362cm</Top>
+        <Left>13.31422cm</Left>
         <Height>0.6cm</Height>
         <Width>0.99661cm</Width>
-        <ZIndex>77</ZIndex>
+        <ZIndex>74</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -2695,7 +2622,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E4_21.Value</Value>
+                <Value>=Fields!E41g.Value</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -2705,11 +2632,11 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>E1</rd:DefaultName>
-        <Top>12.31695cm</Top>
-        <Left>14.97422cm</Left>
+        <Top>11.57611cm</Top>
+        <Left>15.52103cm</Left>
         <Height>0.6cm</Height>
         <Width>0.98244cm</Width>
-        <ZIndex>78</ZIndex>
+        <ZIndex>75</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -2728,7 +2655,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E4_22.Value</Value>
+                <Value>=Fields!E42g.Value</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -2738,11 +2665,11 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>E1</rd:DefaultName>
-        <Top>12.95222cm</Top>
-        <Left>14.97422cm</Left>
+        <Top>12.21138cm</Top>
+        <Left>15.52103cm</Left>
         <Height>0.6cm</Height>
         <Width>0.98244cm</Width>
-        <ZIndex>79</ZIndex>
+        <ZIndex>76</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -2761,7 +2688,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E4_23.Value</Value>
+                <Value>=Fields!E43g.Value</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -2771,11 +2698,11 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>E1</rd:DefaultName>
-        <Top>13.5875cm</Top>
-        <Left>14.97422cm</Left>
+        <Top>12.84666cm</Top>
+        <Left>15.52103cm</Left>
         <Height>0.6cm</Height>
         <Width>0.98244cm</Width>
-        <ZIndex>80</ZIndex>
+        <ZIndex>77</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -2794,7 +2721,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E4_24.Value</Value>
+                <Value>=Fields!E44g.Value</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -2804,11 +2731,11 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>E1</rd:DefaultName>
-        <Top>14.22278cm</Top>
-        <Left>14.97422cm</Left>
+        <Top>13.48194cm</Top>
+        <Left>15.52103cm</Left>
         <Height>0.6cm</Height>
         <Width>0.98244cm</Width>
-        <ZIndex>81</ZIndex>
+        <ZIndex>78</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -2827,7 +2754,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E4_25.Value</Value>
+                <Value>=Fields!E45g.Value</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -2837,11 +2764,11 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>E1</rd:DefaultName>
-        <Top>14.85806cm</Top>
-        <Left>14.97422cm</Left>
+        <Top>14.11722cm</Top>
+        <Left>15.52103cm</Left>
         <Height>0.6cm</Height>
         <Width>0.98244cm</Width>
-        <ZIndex>82</ZIndex>
+        <ZIndex>79</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -2860,7 +2787,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E4_26.Value</Value>
+                <Value>=Fields!E46g.Value</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -2870,11 +2797,11 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>E1</rd:DefaultName>
-        <Top>15.49333cm</Top>
-        <Left>14.97422cm</Left>
+        <Top>14.75249cm</Top>
+        <Left>15.52103cm</Left>
         <Height>0.6cm</Height>
         <Width>0.98244cm</Width>
-        <ZIndex>83</ZIndex>
+        <ZIndex>80</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -2893,7 +2820,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E4_27.Value</Value>
+                <Value>=Fields!E47g.Value</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -2903,11 +2830,11 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>E1</rd:DefaultName>
-        <Top>16.12861cm</Top>
-        <Left>14.97422cm</Left>
+        <Top>15.38777cm</Top>
+        <Left>15.52103cm</Left>
         <Height>0.6cm</Height>
         <Width>0.98244cm</Width>
-        <ZIndex>84</ZIndex>
+        <ZIndex>81</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -2926,7 +2853,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E4_28.Value</Value>
+                <Value>=Fields!E48g.Value</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -2936,11 +2863,11 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>E1</rd:DefaultName>
-        <Top>16.76389cm</Top>
-        <Left>14.97422cm</Left>
+        <Top>16.02305cm</Top>
+        <Left>15.52103cm</Left>
         <Height>0.6cm</Height>
         <Width>0.98244cm</Width>
-        <ZIndex>85</ZIndex>
+        <ZIndex>82</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -2959,7 +2886,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E4_29.Value</Value>
+                <Value>=Fields!E49g.Value</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -2969,11 +2896,11 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>E1</rd:DefaultName>
-        <Top>17.39917cm</Top>
-        <Left>14.97422cm</Left>
+        <Top>16.65833cm</Top>
+        <Left>15.52103cm</Left>
         <Height>0.6cm</Height>
         <Width>0.98244cm</Width>
-        <ZIndex>86</ZIndex>
+        <ZIndex>83</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -2992,7 +2919,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E4_210.Value</Value>
+                <Value>=Fields!E410g.Value</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -3002,11 +2929,11 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>E1</rd:DefaultName>
-        <Top>18.03445cm</Top>
-        <Left>14.97425cm</Left>
+        <Top>17.29361cm</Top>
+        <Left>15.52106cm</Left>
         <Height>0.6cm</Height>
         <Width>0.98244cm</Width>
-        <ZIndex>87</ZIndex>
+        <ZIndex>84</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -3027,7 +2954,7 @@
               <TextRun>
                 <Value>MORFOLOGÍA</Value>
                 <Style>
-                  <FontSize>9pt</FontSize>
+                  <FontSize>8pt</FontSize>
                   <FontWeight>Bold</FontWeight>
                 </Style>
               </TextRun>
@@ -3038,11 +2965,11 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
-        <Top>11.68167cm</Top>
-        <Left>6.92944cm</Left>
+        <Top>10.94084cm</Top>
+        <Left>7.56444cm</Left>
         <Height>0.6cm</Height>
-        <Width>5.22405cm</Width>
-        <ZIndex>88</ZIndex>
+        <Width>5.53462cm</Width>
+        <ZIndex>85</ZIndex>
         <Style>
           <Border>
             <Style>Solid</Style>
@@ -3083,7 +3010,7 @@
               <TextRun>
                 <Value>VEL./MAX.</Value>
                 <Style>
-                  <FontSize>9pt</FontSize>
+                  <FontSize>8pt</FontSize>
                   <FontWeight>Bold</FontWeight>
                 </Style>
               </TextRun>
@@ -3094,11 +3021,11 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
-        <Top>11.68168cm</Top>
-        <Left>12.42878cm</Left>
+        <Top>10.94085cm</Top>
+        <Left>13.27545cm</Left>
         <Height>0.6cm</Height>
-        <Width>2.36906cm</Width>
-        <ZIndex>89</ZIndex>
+        <Width>2.05156cm</Width>
+        <ZIndex>86</ZIndex>
         <Style>
           <Border>
             <Style>Solid</Style>
@@ -3139,7 +3066,7 @@
               <TextRun>
                 <Value>GRADIENTE</Value>
                 <Style>
-                  <FontSize>9pt</FontSize>
+                  <FontSize>8pt</FontSize>
                   <FontWeight>Bold</FontWeight>
                 </Style>
               </TextRun>
@@ -3150,11 +3077,11 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
-        <Top>11.68167cm</Top>
-        <Left>15.02714cm</Left>
+        <Top>10.94083cm</Top>
+        <Left>15.39756cm</Left>
         <Height>0.6cm</Height>
-        <Width>2.50023cm</Width>
-        <ZIndex>90</ZIndex>
+        <Width>2.1927cm</Width>
+        <ZIndex>87</ZIndex>
         <Style>
           <Border>
             <Style>Solid</Style>
@@ -3200,16 +3127,16 @@
               </TextRun>
             </TextRuns>
             <Style>
-              <TextAlign>Center</TextAlign>
+              <TextAlign>Left</TextAlign>
             </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
-        <Top>12.95222cm</Top>
-        <Left>13.39358cm</Left>
+        <Top>12.21139cm</Top>
+        <Left>14.34608cm</Left>
         <Height>0.6cm</Height>
-        <Width>1.40426cm</Width>
-        <ZIndex>91</ZIndex>
+        <Width>1.03388cm</Width>
+        <ZIndex>88</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -3235,16 +3162,16 @@
               </TextRun>
             </TextRuns>
             <Style>
-              <TextAlign>Center</TextAlign>
+              <TextAlign>Left</TextAlign>
             </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
-        <Top>12.31695cm</Top>
-        <Left>13.39357cm</Left>
+        <Top>11.57612cm</Top>
+        <Left>14.34607cm</Left>
         <Height>0.6cm</Height>
-        <Width>1.40426cm</Width>
-        <ZIndex>92</ZIndex>
+        <Width>1.03388cm</Width>
+        <ZIndex>89</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -3270,16 +3197,16 @@
               </TextRun>
             </TextRuns>
             <Style>
-              <TextAlign>Center</TextAlign>
+              <TextAlign>Left</TextAlign>
             </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
-        <Top>14.22278cm</Top>
-        <Left>13.39358cm</Left>
+        <Top>13.48195cm</Top>
+        <Left>14.34608cm</Left>
         <Height>0.6cm</Height>
-        <Width>1.40426cm</Width>
-        <ZIndex>93</ZIndex>
+        <Width>1.03388cm</Width>
+        <ZIndex>90</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -3305,16 +3232,16 @@
               </TextRun>
             </TextRuns>
             <Style>
-              <TextAlign>Center</TextAlign>
+              <TextAlign>Left</TextAlign>
             </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
-        <Top>13.58751cm</Top>
-        <Left>13.39358cm</Left>
+        <Top>12.84668cm</Top>
+        <Left>14.34608cm</Left>
         <Height>0.6cm</Height>
-        <Width>1.40426cm</Width>
-        <ZIndex>94</ZIndex>
+        <Width>1.03388cm</Width>
+        <ZIndex>91</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -3340,16 +3267,16 @@
               </TextRun>
             </TextRuns>
             <Style>
-              <TextAlign>Center</TextAlign>
+              <TextAlign>Left</TextAlign>
             </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
-        <Top>15.49333cm</Top>
-        <Left>13.39357cm</Left>
+        <Top>14.7525cm</Top>
+        <Left>14.34607cm</Left>
         <Height>0.6cm</Height>
-        <Width>1.40426cm</Width>
-        <ZIndex>95</ZIndex>
+        <Width>1.03388cm</Width>
+        <ZIndex>92</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -3375,16 +3302,16 @@
               </TextRun>
             </TextRuns>
             <Style>
-              <TextAlign>Center</TextAlign>
+              <TextAlign>Left</TextAlign>
             </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
-        <Top>14.85806cm</Top>
-        <Left>13.39357cm</Left>
+        <Top>14.11723cm</Top>
+        <Left>14.34607cm</Left>
         <Height>0.6cm</Height>
-        <Width>1.40426cm</Width>
-        <ZIndex>96</ZIndex>
+        <Width>1.03388cm</Width>
+        <ZIndex>93</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -3410,16 +3337,16 @@
               </TextRun>
             </TextRuns>
             <Style>
-              <TextAlign>Center</TextAlign>
+              <TextAlign>Left</TextAlign>
             </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
-        <Top>16.76389cm</Top>
-        <Left>13.39357cm</Left>
+        <Top>16.02306cm</Top>
+        <Left>14.34607cm</Left>
         <Height>0.6cm</Height>
-        <Width>1.40426cm</Width>
-        <ZIndex>97</ZIndex>
+        <Width>1.03388cm</Width>
+        <ZIndex>94</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -3445,16 +3372,16 @@
               </TextRun>
             </TextRuns>
             <Style>
-              <TextAlign>Center</TextAlign>
+              <TextAlign>Left</TextAlign>
             </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
-        <Top>16.12862cm</Top>
-        <Left>13.39357cm</Left>
+        <Top>15.38779cm</Top>
+        <Left>14.34607cm</Left>
         <Height>0.6cm</Height>
-        <Width>1.40426cm</Width>
-        <ZIndex>98</ZIndex>
+        <Width>1.03388cm</Width>
+        <ZIndex>95</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -3480,16 +3407,16 @@
               </TextRun>
             </TextRuns>
             <Style>
-              <TextAlign>Center</TextAlign>
+              <TextAlign>Left</TextAlign>
             </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
-        <Top>18.03445cm</Top>
-        <Left>13.39357cm</Left>
+        <Top>17.29362cm</Top>
+        <Left>14.34607cm</Left>
         <Height>0.6cm</Height>
-        <Width>1.40426cm</Width>
-        <ZIndex>99</ZIndex>
+        <Width>1.03388cm</Width>
+        <ZIndex>96</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -3515,16 +3442,16 @@
               </TextRun>
             </TextRuns>
             <Style>
-              <TextAlign>Center</TextAlign>
+              <TextAlign>Left</TextAlign>
             </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
-        <Top>17.39918cm</Top>
-        <Left>13.39357cm</Left>
+        <Top>16.65835cm</Top>
+        <Left>14.34607cm</Left>
         <Height>0.6cm</Height>
-        <Width>1.40426cm</Width>
-        <ZIndex>100</ZIndex>
+        <Width>1.03388cm</Width>
+        <ZIndex>97</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -3550,16 +3477,16 @@
               </TextRun>
             </TextRuns>
             <Style>
-              <TextAlign>Center</TextAlign>
+              <TextAlign>Left</TextAlign>
             </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
-        <Top>12.95222cm</Top>
-        <Left>15.95669cm</Left>
+        <Top>12.21138cm</Top>
+        <Left>16.5035cm</Left>
         <Height>0.6cm</Height>
-        <Width>1.40426cm</Width>
-        <ZIndex>101</ZIndex>
+        <Width>1.08676cm</Width>
+        <ZIndex>98</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -3585,16 +3512,16 @@
               </TextRun>
             </TextRuns>
             <Style>
-              <TextAlign>Center</TextAlign>
+              <TextAlign>Left</TextAlign>
             </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
-        <Top>12.31695cm</Top>
-        <Left>15.95669cm</Left>
+        <Top>11.57611cm</Top>
+        <Left>16.5035cm</Left>
         <Height>0.6cm</Height>
-        <Width>1.40426cm</Width>
-        <ZIndex>102</ZIndex>
+        <Width>1.08676cm</Width>
+        <ZIndex>99</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -3620,16 +3547,16 @@
               </TextRun>
             </TextRuns>
             <Style>
-              <TextAlign>Center</TextAlign>
+              <TextAlign>Left</TextAlign>
             </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
-        <Top>14.22278cm</Top>
-        <Left>15.95669cm</Left>
+        <Top>13.48194cm</Top>
+        <Left>16.5035cm</Left>
         <Height>0.6cm</Height>
-        <Width>1.40426cm</Width>
-        <ZIndex>103</ZIndex>
+        <Width>1.08676cm</Width>
+        <ZIndex>100</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -3655,16 +3582,16 @@
               </TextRun>
             </TextRuns>
             <Style>
-              <TextAlign>Center</TextAlign>
+              <TextAlign>Left</TextAlign>
             </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
-        <Top>13.58751cm</Top>
-        <Left>15.95669cm</Left>
+        <Top>12.84667cm</Top>
+        <Left>16.5035cm</Left>
         <Height>0.6cm</Height>
-        <Width>1.40426cm</Width>
-        <ZIndex>104</ZIndex>
+        <Width>1.08676cm</Width>
+        <ZIndex>101</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -3690,16 +3617,16 @@
               </TextRun>
             </TextRuns>
             <Style>
-              <TextAlign>Center</TextAlign>
+              <TextAlign>Left</TextAlign>
             </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
-        <Top>15.49333cm</Top>
-        <Left>15.95669cm</Left>
+        <Top>14.75249cm</Top>
+        <Left>16.5035cm</Left>
         <Height>0.6cm</Height>
-        <Width>1.40426cm</Width>
-        <ZIndex>105</ZIndex>
+        <Width>1.08676cm</Width>
+        <ZIndex>102</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -3725,16 +3652,16 @@
               </TextRun>
             </TextRuns>
             <Style>
-              <TextAlign>Center</TextAlign>
+              <TextAlign>Left</TextAlign>
             </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
-        <Top>14.85806cm</Top>
-        <Left>15.95669cm</Left>
+        <Top>14.11722cm</Top>
+        <Left>16.5035cm</Left>
         <Height>0.6cm</Height>
-        <Width>1.40426cm</Width>
-        <ZIndex>106</ZIndex>
+        <Width>1.08676cm</Width>
+        <ZIndex>103</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -3760,16 +3687,16 @@
               </TextRun>
             </TextRuns>
             <Style>
-              <TextAlign>Center</TextAlign>
+              <TextAlign>Left</TextAlign>
             </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
-        <Top>16.76389cm</Top>
-        <Left>15.95669cm</Left>
+        <Top>16.02305cm</Top>
+        <Left>16.5035cm</Left>
         <Height>0.6cm</Height>
-        <Width>1.40426cm</Width>
-        <ZIndex>107</ZIndex>
+        <Width>1.08676cm</Width>
+        <ZIndex>104</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -3795,16 +3722,16 @@
               </TextRun>
             </TextRuns>
             <Style>
-              <TextAlign>Center</TextAlign>
+              <TextAlign>Left</TextAlign>
             </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
-        <Top>16.12862cm</Top>
-        <Left>15.95669cm</Left>
+        <Top>15.38778cm</Top>
+        <Left>16.5035cm</Left>
         <Height>0.6cm</Height>
-        <Width>1.40426cm</Width>
-        <ZIndex>108</ZIndex>
+        <Width>1.08676cm</Width>
+        <ZIndex>105</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -3830,16 +3757,16 @@
               </TextRun>
             </TextRuns>
             <Style>
-              <TextAlign>Center</TextAlign>
+              <TextAlign>Left</TextAlign>
             </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
-        <Top>18.03445cm</Top>
-        <Left>15.95669cm</Left>
+        <Top>17.29361cm</Top>
+        <Left>16.5035cm</Left>
         <Height>0.6cm</Height>
-        <Width>1.40426cm</Width>
-        <ZIndex>109</ZIndex>
+        <Width>1.08676cm</Width>
+        <ZIndex>106</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -3865,16 +3792,16 @@
               </TextRun>
             </TextRuns>
             <Style>
-              <TextAlign>Center</TextAlign>
+              <TextAlign>Left</TextAlign>
             </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
-        <Top>17.39918cm</Top>
-        <Left>15.95669cm</Left>
+        <Top>16.65834cm</Top>
+        <Left>16.5035cm</Left>
         <Height>0.6cm</Height>
-        <Width>1.40426cm</Width>
-        <ZIndex>110</ZIndex>
+        <Width>1.08676cm</Width>
+        <ZIndex>107</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -3887,11 +3814,11 @@
         </Style>
       </Textbox>
       <Line Name="Line1">
-        <Top>0.10583cm</Top>
-        <Left>0.28788cm</Left>
+        <Top>0.03528cm</Top>
+        <Left>0.28785cm</Left>
         <Height>0cm</Height>
         <Width>19.23838cm</Width>
-        <ZIndex>111</ZIndex>
+        <ZIndex>108</ZIndex>
         <Style>
           <Border>
             <Style>Solid</Style>
@@ -3899,13 +3826,13 @@
         </Style>
       </Line>
     </ReportItems>
-    <Height>10.17708in</Height>
+    <Height>8.96874in</Height>
     <Style />
   </Body>
-  <Width>7.82292in</Width>
+  <Width>7.75614in</Width>
   <Page>
     <PageHeader>
-      <Height>3.36021cm</Height>
+      <Height>3.33376cm</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
@@ -3916,7 +3843,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>Ecografía Pediátrica</Value>
+                  <Value>Ecocardiografía Pediátrica</Value>
                   <Style>
                     <FontSize>14pt</FontSize>
                     <FontWeight>Bold</FontWeight>
@@ -3929,10 +3856,10 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox7</rd:DefaultName>
-          <Top>0.31432cm</Top>
-          <Left>6.92941cm</Left>
+          <Top>0.12705cm</Top>
+          <Left>5.89242cm</Left>
           <Height>0.78521cm</Height>
-          <Width>5.54158cm</Width>
+          <Width>7.52596cm</Width>
           <Style>
             <Border>
               <Style>Solid</Style>
@@ -3957,6 +3884,7 @@
               <Style>Solid</Style>
               <Width>1pt</Width>
             </RightBorder>
+            <BackgroundColor>LightGrey</BackgroundColor>
             <PaddingLeft>2pt</PaddingLeft>
             <PaddingRight>2pt</PaddingRight>
             <PaddingTop>2pt</PaddingTop>
@@ -3970,7 +3898,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>Apellido y Nombres:</Value>
+                  <Value>APELLIDO Y NOMBRES:</Value>
                   <Style>
                     <FontWeight>Bold</FontWeight>
                   </Style>
@@ -3983,14 +3911,35 @@
           </Paragraphs>
           <rd:DefaultName>Textbox7</rd:DefaultName>
           <Top>1.90927cm</Top>
-          <Left>0.28787cm</Left>
+          <Left>0.28785cm</Left>
           <Height>0.6cm</Height>
-          <Width>4.58958cm</Width>
+          <Width>4.41321cm</Width>
           <ZIndex>1</ZIndex>
           <Style>
             <Border>
-              <Style>None</Style>
+              <Style>Solid</Style>
             </Border>
+            <TopBorder>
+              <Color>Black</Color>
+              <Style>Solid</Style>
+              <Width>1pt</Width>
+            </TopBorder>
+            <BottomBorder>
+              <Color>Black</Color>
+              <Style>Solid</Style>
+              <Width>1pt</Width>
+            </BottomBorder>
+            <LeftBorder>
+              <Color>Black</Color>
+              <Style>Solid</Style>
+              <Width>1pt</Width>
+            </LeftBorder>
+            <RightBorder>
+              <Color>Black</Color>
+              <Style>Solid</Style>
+              <Width>1pt</Width>
+            </RightBorder>
+            <BackgroundColor>LightGrey</BackgroundColor>
             <VerticalAlign>Middle</VerticalAlign>
             <PaddingLeft>2pt</PaddingLeft>
             <PaddingRight>2pt</PaddingRight>
@@ -4005,8 +3954,9 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>Edad:</Value>
+                  <Value>AÑOS:</Value>
                   <Style>
+                    <FontSize>9pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
@@ -4017,15 +3967,36 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox7</rd:DefaultName>
-          <Top>1.87799cm</Top>
-          <Left>15.71592cm</Left>
+          <Top>1.90927cm</Top>
+          <Left>12.85842cm</Left>
           <Height>0.6cm</Height>
-          <Width>1.17645cm</Width>
+          <Width>1.26682cm</Width>
           <ZIndex>2</ZIndex>
           <Style>
             <Border>
-              <Style>None</Style>
+              <Style>Solid</Style>
             </Border>
+            <TopBorder>
+              <Color>Black</Color>
+              <Style>Solid</Style>
+              <Width>1pt</Width>
+            </TopBorder>
+            <BottomBorder>
+              <Color>Black</Color>
+              <Style>Solid</Style>
+              <Width>1pt</Width>
+            </BottomBorder>
+            <LeftBorder>
+              <Color>Black</Color>
+              <Style>Solid</Style>
+              <Width>1pt</Width>
+            </LeftBorder>
+            <RightBorder>
+              <Color>Black</Color>
+              <Style>Solid</Style>
+              <Width>1pt</Width>
+            </RightBorder>
+            <BackgroundColor>LightGrey</BackgroundColor>
             <VerticalAlign>Middle</VerticalAlign>
             <PaddingLeft>2pt</PaddingLeft>
             <PaddingRight>2pt</PaddingRight>
@@ -4040,7 +4011,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>Fecha:</Value>
+                  <Value>FECHA:</Value>
                   <Style>
                     <FontWeight>Bold</FontWeight>
                   </Style>
@@ -4052,11 +4023,445 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox7</rd:DefaultName>
-          <Top>1.20344cm</Top>
-          <Left>15.53071cm</Left>
+          <Top>0.90344cm</Top>
+          <Left>15.0714cm</Left>
+          <Height>0.6cm</Height>
+          <Width>1.64157cm</Width>
+          <ZIndex>3</ZIndex>
+          <Style>
+            <Border>
+              <Style>Solid</Style>
+            </Border>
+            <TopBorder>
+              <Color>Black</Color>
+              <Style>Solid</Style>
+              <Width>1pt</Width>
+            </TopBorder>
+            <BottomBorder>
+              <Color>Black</Color>
+              <Style>Solid</Style>
+              <Width>1pt</Width>
+            </BottomBorder>
+            <LeftBorder>
+              <Color>Black</Color>
+              <Style>Solid</Style>
+              <Width>1pt</Width>
+            </LeftBorder>
+            <RightBorder>
+              <Color>Black</Color>
+              <Style>Solid</Style>
+              <Width>1pt</Width>
+            </RightBorder>
+            <BackgroundColor>LightGrey</BackgroundColor>
+            <VerticalAlign>Middle</VerticalAlign>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Image Name="Image1">
+          <Source>Embedded</Source>
+          <Value>LogoCompleto</Value>
+          <Sizing>FitProportional</Sizing>
+          <Top>0.12705cm</Top>
+          <Left>0.28787cm</Left>
+          <Height>1.67639cm</Height>
+          <Width>4.98349cm</Width>
+          <ZIndex>4</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </Image>
+        <Textbox Name="Edad">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>=Fields!AA.Value</Value>
+                  <Style>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Edad</rd:DefaultName>
+          <Top>1.90927cm</Top>
+          <Left>14.23107cm</Left>
+          <Height>0.6cm</Height>
+          <Width>0.66728cm</Width>
+          <ZIndex>5</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <VerticalAlign>Middle</VerticalAlign>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="FechaEco">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>=Fields!FechaEco.Value</Value>
+                  <Style>
+                    <FontSize>11pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
+                    <Format>d</Format>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>FechaEco</rd:DefaultName>
+          <Top>0.90344cm</Top>
+          <Left>16.85408cm</Left>
+          <Height>0.6cm</Height>
+          <Width>2.45748cm</Width>
+          <ZIndex>6</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <VerticalAlign>Middle</VerticalAlign>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="Diagnostico2">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value />
+                  <Style>
+                    <FontSize>11pt</FontSize>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Diagnostico</rd:DefaultName>
+          <Top>1.90927cm</Top>
+          <Left>4.84217cm</Left>
+          <Height>0.6cm</Height>
+          <Width>7.87514cm</Width>
+          <ZIndex>7</ZIndex>
+          <Style>
+            <Border>
+              <Style>Solid</Style>
+            </Border>
+            <TopBorder>
+              <Color>Black</Color>
+              <Style>Solid</Style>
+              <Width>1pt</Width>
+            </TopBorder>
+            <BottomBorder>
+              <Color>Black</Color>
+              <Style>Solid</Style>
+              <Width>1pt</Width>
+            </BottomBorder>
+            <LeftBorder>
+              <Color>Black</Color>
+              <Style>Solid</Style>
+              <Width>1pt</Width>
+            </LeftBorder>
+            <RightBorder>
+              <Color>Black</Color>
+              <Style>Solid</Style>
+              <Width>1pt</Width>
+            </RightBorder>
+            <VerticalAlign>Middle</VerticalAlign>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="Textbox18">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>NRO.:</Value>
+                  <Style>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Right</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox7</rd:DefaultName>
+          <Top>0.12705cm</Top>
+          <Left>15.35131cm</Left>
           <Height>0.6cm</Height>
           <Width>1.36166cm</Width>
-          <ZIndex>3</ZIndex>
+          <ZIndex>8</ZIndex>
+          <Style>
+            <Border>
+              <Style>Solid</Style>
+            </Border>
+            <TopBorder>
+              <Color>Black</Color>
+              <Style>Solid</Style>
+              <Width>1pt</Width>
+            </TopBorder>
+            <BottomBorder>
+              <Color>Black</Color>
+              <Style>Solid</Style>
+              <Width>1pt</Width>
+            </BottomBorder>
+            <LeftBorder>
+              <Color>Black</Color>
+              <Style>Solid</Style>
+              <Width>1pt</Width>
+            </LeftBorder>
+            <RightBorder>
+              <Color>Black</Color>
+              <Style>Solid</Style>
+              <Width>1pt</Width>
+            </RightBorder>
+            <BackgroundColor>LightGrey</BackgroundColor>
+            <VerticalAlign>Middle</VerticalAlign>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="FechaEco2">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>=Fields!Numero.Value</Value>
+                  <Style>
+                    <FontSize>11pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
+                    <Format>d</Format>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>FechaEco</rd:DefaultName>
+          <Top>0.12705cm</Top>
+          <Left>16.85408cm</Left>
+          <Height>0.6cm</Height>
+          <Width>2.45748cm</Width>
+          <ZIndex>9</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <VerticalAlign>Middle</VerticalAlign>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="Textbox10">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>MESES:</Value>
+                  <Style>
+                    <FontSize>9pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Right</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox7</rd:DefaultName>
+          <Top>1.90927cm</Top>
+          <Left>15.00418cm</Left>
+          <Height>0.6cm</Height>
+          <Width>1.50013cm</Width>
+          <ZIndex>10</ZIndex>
+          <Style>
+            <Border>
+              <Style>Solid</Style>
+            </Border>
+            <TopBorder>
+              <Color>Black</Color>
+              <Style>Solid</Style>
+              <Width>1pt</Width>
+            </TopBorder>
+            <BottomBorder>
+              <Color>Black</Color>
+              <Style>Solid</Style>
+              <Width>1pt</Width>
+            </BottomBorder>
+            <LeftBorder>
+              <Color>Black</Color>
+              <Style>Solid</Style>
+              <Width>1pt</Width>
+            </LeftBorder>
+            <RightBorder>
+              <Color>Black</Color>
+              <Style>Solid</Style>
+              <Width>1pt</Width>
+            </RightBorder>
+            <BackgroundColor>LightGrey</BackgroundColor>
+            <VerticalAlign>Middle</VerticalAlign>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="Edad2">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>=Fields!MM.Value</Value>
+                  <Style>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Edad</rd:DefaultName>
+          <Top>1.90927cm</Top>
+          <Left>16.61014cm</Left>
+          <Height>0.6cm</Height>
+          <Width>0.632cm</Width>
+          <ZIndex>11</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <VerticalAlign>Middle</VerticalAlign>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="Textbox19">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>DÍAS:</Value>
+                  <Style>
+                    <FontSize>9pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Right</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox7</rd:DefaultName>
+          <Top>1.90927cm</Top>
+          <Left>17.34798cm</Left>
+          <Height>0.6cm</Height>
+          <Width>1.15519cm</Width>
+          <ZIndex>12</ZIndex>
+          <Style>
+            <Border>
+              <Style>Solid</Style>
+            </Border>
+            <TopBorder>
+              <Color>Black</Color>
+              <Style>Solid</Style>
+              <Width>1pt</Width>
+            </TopBorder>
+            <BottomBorder>
+              <Color>Black</Color>
+              <Style>Solid</Style>
+              <Width>1pt</Width>
+            </BottomBorder>
+            <LeftBorder>
+              <Color>Black</Color>
+              <Style>Solid</Style>
+              <Width>1pt</Width>
+            </LeftBorder>
+            <RightBorder>
+              <Color>Black</Color>
+              <Style>Solid</Style>
+              <Width>1pt</Width>
+            </RightBorder>
+            <BackgroundColor>LightGrey</BackgroundColor>
+            <VerticalAlign>Middle</VerticalAlign>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="Edad3">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>=Fields!DD.Value</Value>
+                  <Style>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Edad</rd:DefaultName>
+          <Top>1.90927cm</Top>
+          <Left>18.609cm</Left>
+          <Height>0.56899cm</Height>
+          <Width>0.632cm</Width>
+          <ZIndex>13</ZIndex>
           <Style>
             <Border>
               <Style>None</Style>
@@ -4088,11 +4493,11 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox7</rd:DefaultName>
-          <Top>2.6191cm</Top>
-          <Left>0.28785cm</Left>
+          <Top>2.58409cm</Top>
+          <Left>0.32313cm</Left>
           <Height>0.6cm</Height>
-          <Width>4.58958cm</Width>
-          <ZIndex>4</ZIndex>
+          <Width>4.41321cm</Width>
+          <ZIndex>14</ZIndex>
           <Style>
             <Border>
               <Style>None</Style>
@@ -4104,21 +4509,6 @@
             <PaddingBottom>2pt</PaddingBottom>
           </Style>
         </Textbox>
-        <Image Name="Image1">
-          <Source>Embedded</Source>
-          <Value>LogoCompleto</Value>
-          <Sizing>FitProportional</Sizing>
-          <Top>0.12705cm</Top>
-          <Left>0.28787cm</Left>
-          <Height>1.67639cm</Height>
-          <Width>4.98349cm</Width>
-          <ZIndex>5</ZIndex>
-          <Style>
-            <Border>
-              <Style>None</Style>
-            </Border>
-          </Style>
-        </Image>
         <Textbox Name="Diagnostico">
           <CanGrow>true</CanGrow>
           <KeepTogether>true</KeepTogether>
@@ -4126,7 +4516,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>=First(Fields!Diagnostico.Value, "DS_Ecografia")</Value>
+                  <Value>=Fields!Diagnostico.Value</Value>
                   <Style>
                     <FontSize>9pt</FontSize>
                   </Style>
@@ -4136,111 +4526,11 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Diagnostico</rd:DefaultName>
-          <Top>2.6191cm</Top>
-          <Left>4.98326cm</Left>
+          <Top>2.58409cm</Top>
+          <Left>4.84217cm</Left>
           <Height>0.6cm</Height>
-          <Width>14.54295cm</Width>
-          <ZIndex>6</ZIndex>
-          <Style>
-            <Border>
-              <Style>None</Style>
-            </Border>
-            <VerticalAlign>Middle</VerticalAlign>
-            <PaddingLeft>2pt</PaddingLeft>
-            <PaddingRight>2pt</PaddingRight>
-            <PaddingTop>2pt</PaddingTop>
-            <PaddingBottom>2pt</PaddingBottom>
-          </Style>
-        </Textbox>
-        <Textbox Name="Edad">
-          <CanGrow>true</CanGrow>
-          <KeepTogether>true</KeepTogether>
-          <Paragraphs>
-            <Paragraph>
-              <TextRuns>
-                <TextRun>
-                  <Value>=Sum(Fields!Edad.Value, "DS_Ecografia")</Value>
-                  <Style>
-                    <FontSize>11pt</FontSize>
-                  </Style>
-                </TextRun>
-              </TextRuns>
-              <Style />
-            </Paragraph>
-          </Paragraphs>
-          <rd:DefaultName>Edad</rd:DefaultName>
-          <Top>1.87799cm</Top>
-          <Left>17.06876cm</Left>
-          <Height>0.6cm</Height>
-          <Width>1.28292cm</Width>
-          <ZIndex>7</ZIndex>
-          <Style>
-            <Border>
-              <Style>None</Style>
-            </Border>
-            <VerticalAlign>Middle</VerticalAlign>
-            <PaddingLeft>2pt</PaddingLeft>
-            <PaddingRight>2pt</PaddingRight>
-            <PaddingTop>2pt</PaddingTop>
-            <PaddingBottom>2pt</PaddingBottom>
-          </Style>
-        </Textbox>
-        <Textbox Name="FechaEco">
-          <CanGrow>true</CanGrow>
-          <KeepTogether>true</KeepTogether>
-          <Paragraphs>
-            <Paragraph>
-              <TextRuns>
-                <TextRun>
-                  <Value>=First(Fields!FechaEco.Value, "DS_Ecografia")</Value>
-                  <Style>
-                    <FontSize>11pt</FontSize>
-                    <Format>d</Format>
-                  </Style>
-                </TextRun>
-              </TextRuns>
-              <Style />
-            </Paragraph>
-          </Paragraphs>
-          <rd:DefaultName>FechaEco</rd:DefaultName>
-          <Top>1.20344cm</Top>
-          <Left>17.06876cm</Left>
-          <Height>0.6cm</Height>
-          <Width>2.45748cm</Width>
-          <ZIndex>8</ZIndex>
-          <Style>
-            <Border>
-              <Style>None</Style>
-            </Border>
-            <VerticalAlign>Middle</VerticalAlign>
-            <PaddingLeft>2pt</PaddingLeft>
-            <PaddingRight>2pt</PaddingRight>
-            <PaddingTop>2pt</PaddingTop>
-            <PaddingBottom>2pt</PaddingBottom>
-          </Style>
-        </Textbox>
-        <Textbox Name="Diagnostico2">
-          <CanGrow>true</CanGrow>
-          <KeepTogether>true</KeepTogether>
-          <Paragraphs>
-            <Paragraph>
-              <TextRuns>
-                <TextRun>
-                  <Value />
-                  <Style>
-                    <FontSize>11pt</FontSize>
-                  </Style>
-                </TextRun>
-              </TextRuns>
-              <Style />
-            </Paragraph>
-          </Paragraphs>
-          <rd:DefaultName>Diagnostico</rd:DefaultName>
-          <Top>1.90927cm</Top>
-          <Left>4.98328cm</Left>
-          <Height>0.6cm</Height>
-          <Width>10.16878cm</Width>
-          <ZIndex>9</ZIndex>
+          <Width>14.46939cm</Width>
+          <ZIndex>15</ZIndex>
           <Style>
             <Border>
               <Style>None</Style>
@@ -4289,24 +4579,36 @@
           <DataField>id_Eco</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
-        <Field Name="fk_Pacte">
-          <DataField>fk_Pacte</DataField>
+        <Field Name="Pacte">
+          <DataField>Pacte</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
-        <Field Name="fk_OS">
-          <DataField>fk_OS</DataField>
+        <Field Name="Numero">
+          <DataField>Numero</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
-        <Field Name="fk_Plan">
-          <DataField>fk_Plan</DataField>
+        <Field Name="OS">
+          <DataField>OS</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="PlanOS">
+          <DataField>PlanOS</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
         <Field Name="FechaEco">
           <DataField>FechaEco</DataField>
           <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
-        <Field Name="Edad">
-          <DataField>Edad</DataField>
+        <Field Name="AA">
+          <DataField>AA</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="MM">
+          <DataField>MM</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="DD">
+          <DataField>DD</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
         <Field Name="Tipo">
@@ -4325,221 +4627,197 @@
           <DataField>E2</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="E3_01">
-          <DataField>E3_01</DataField>
+        <Field Name="E31">
+          <DataField>E31</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="E3_02">
-          <DataField>E3_02</DataField>
+        <Field Name="E32">
+          <DataField>E32</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="E3_03">
-          <DataField>E3_03</DataField>
+        <Field Name="E33">
+          <DataField>E33</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="E3_04">
-          <DataField>E3_04</DataField>
+        <Field Name="E34">
+          <DataField>E34</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="E3_05">
-          <DataField>E3_05</DataField>
+        <Field Name="E35">
+          <DataField>E35</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="E3_06">
-          <DataField>E3_06</DataField>
+        <Field Name="E36">
+          <DataField>E36</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="E3_07">
-          <DataField>E3_07</DataField>
+        <Field Name="E37">
+          <DataField>E37</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="E3_08">
-          <DataField>E3_08</DataField>
+        <Field Name="E38">
+          <DataField>E38</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="E3_09">
-          <DataField>E3_09</DataField>
+        <Field Name="E39">
+          <DataField>E39</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="E3_10">
-          <DataField>E3_10</DataField>
+        <Field Name="E310">
+          <DataField>E310</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="E3_11">
-          <DataField>E3_11</DataField>
+        <Field Name="E311">
+          <DataField>E311</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="E3_12">
-          <DataField>E3_12</DataField>
+        <Field Name="E312">
+          <DataField>E312</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="E3_13">
-          <DataField>E3_13</DataField>
+        <Field Name="E313">
+          <DataField>E313</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="E3_14">
-          <DataField>E3_14</DataField>
+        <Field Name="E314">
+          <DataField>E314</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="E3_15">
-          <DataField>E3_15</DataField>
+        <Field Name="E315">
+          <DataField>E315</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="E3_16">
-          <DataField>E3_16</DataField>
+        <Field Name="E316">
+          <DataField>E316</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="E4_01">
-          <DataField>E4_01</DataField>
+        <Field Name="E41">
+          <DataField>E41</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="E4_11">
-          <DataField>E4_11</DataField>
+        <Field Name="E41v">
+          <DataField>E41v</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
-        <Field Name="E4_21">
-          <DataField>E4_21</DataField>
+        <Field Name="E41g">
+          <DataField>E41g</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
-        <Field Name="E4_02">
-          <DataField>E4_02</DataField>
+        <Field Name="E42">
+          <DataField>E42</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="E4_12">
-          <DataField>E4_12</DataField>
+        <Field Name="E42v">
+          <DataField>E42v</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
-        <Field Name="E4_22">
-          <DataField>E4_22</DataField>
+        <Field Name="E42g">
+          <DataField>E42g</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
-        <Field Name="E4_03">
-          <DataField>E4_03</DataField>
+        <Field Name="E43">
+          <DataField>E43</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="E4_13">
-          <DataField>E4_13</DataField>
+        <Field Name="E43v">
+          <DataField>E43v</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
-        <Field Name="E4_23">
-          <DataField>E4_23</DataField>
+        <Field Name="E43g">
+          <DataField>E43g</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
-        <Field Name="E4_04">
-          <DataField>E4_04</DataField>
+        <Field Name="E44">
+          <DataField>E44</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="E4_14">
-          <DataField>E4_14</DataField>
+        <Field Name="E44v">
+          <DataField>E44v</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
-        <Field Name="E4_24">
-          <DataField>E4_24</DataField>
+        <Field Name="E44g">
+          <DataField>E44g</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
-        <Field Name="E4_05">
-          <DataField>E4_05</DataField>
+        <Field Name="E45">
+          <DataField>E45</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="E4_15">
-          <DataField>E4_15</DataField>
+        <Field Name="E45v">
+          <DataField>E45v</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
-        <Field Name="E4_25">
-          <DataField>E4_25</DataField>
+        <Field Name="E45g">
+          <DataField>E45g</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
-        <Field Name="E4_06">
-          <DataField>E4_06</DataField>
+        <Field Name="E46">
+          <DataField>E46</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="E4_16">
-          <DataField>E4_16</DataField>
+        <Field Name="E46v">
+          <DataField>E46v</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
-        <Field Name="E4_26">
-          <DataField>E4_26</DataField>
+        <Field Name="E46g">
+          <DataField>E46g</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
-        <Field Name="E4_07">
-          <DataField>E4_07</DataField>
+        <Field Name="E47">
+          <DataField>E47</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="E4_17">
-          <DataField>E4_17</DataField>
+        <Field Name="E47v">
+          <DataField>E47v</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
-        <Field Name="E4_27">
-          <DataField>E4_27</DataField>
+        <Field Name="E47g">
+          <DataField>E47g</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
-        <Field Name="E4_08">
-          <DataField>E4_08</DataField>
+        <Field Name="E48">
+          <DataField>E48</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="E4_18">
-          <DataField>E4_18</DataField>
+        <Field Name="E48v">
+          <DataField>E48v</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
-        <Field Name="E4_28">
-          <DataField>E4_28</DataField>
+        <Field Name="E48g">
+          <DataField>E48g</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
-        <Field Name="E4_09">
-          <DataField>E4_09</DataField>
+        <Field Name="E49">
+          <DataField>E49</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="E4_19">
-          <DataField>E4_19</DataField>
+        <Field Name="E49v">
+          <DataField>E49v</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
-        <Field Name="E4_29">
-          <DataField>E4_29</DataField>
+        <Field Name="E49g">
+          <DataField>E49g</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
-        <Field Name="E4_10">
-          <DataField>E4_10</DataField>
+        <Field Name="E410">
+          <DataField>E410</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="E4_110">
-          <DataField>E4_110</DataField>
+        <Field Name="E410v">
+          <DataField>E410v</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
-        <Field Name="E4_210">
-          <DataField>E4_210</DataField>
+        <Field Name="E410g">
+          <DataField>E410g</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
-        <Field Name="E5_01">
-          <DataField>E5_01</DataField>
+        <Field Name="E5">
+          <DataField>E5</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="E6_01">
-          <DataField>E6_01</DataField>
+        <Field Name="E6">
+          <DataField>E6</DataField>
           <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="E6_02">
-          <DataField>E6_02</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="E6_03">
-          <DataField>E6_03</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="E6_04">
-          <DataField>E6_04</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Obs">
-          <DataField>Obs</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Estado">
-          <DataField>Estado</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="FechaEstado">
-          <DataField>FechaEstado</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
         <Field Name="UserRegistro">
           <DataField>UserRegistro</DataField>

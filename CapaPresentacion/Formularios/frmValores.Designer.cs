@@ -53,15 +53,6 @@
             this.btnClear = new FontAwesome.Sharp.IconButton();
             this.label3 = new System.Windows.Forms.Label();
             this.dgvValores = new System.Windows.Forms.DataGridView();
-            this.Seleccionar = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.id_Valor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Estudio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Valor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FecEstado = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Obs = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.UserRegistro = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FechaRegistro = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnLimpiar = new FontAwesome.Sharp.IconButton();
             this.btnBuscar = new FontAwesome.Sharp.IconButton();
             this.txtFiltro = new System.Windows.Forms.TextBox();
@@ -73,6 +64,15 @@
             this.cboEstudio = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.Seleccionar = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.id_Valor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Estudio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Valor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FecEstado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Obs = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.UserRegistro = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FechaRegistro = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlTitulo.SuspendLayout();
             this.pnlDeck.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -91,7 +91,7 @@
             this.pnlTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTitulo.Location = new System.Drawing.Point(0, 0);
             this.pnlTitulo.Name = "pnlTitulo";
-            this.pnlTitulo.Size = new System.Drawing.Size(1035, 40);
+            this.pnlTitulo.Size = new System.Drawing.Size(1109, 40);
             this.pnlTitulo.TabIndex = 13;
             // 
             // txtIndice
@@ -178,7 +178,7 @@
             this.pnlDeck.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlDeck.Location = new System.Drawing.Point(0, 40);
             this.pnlDeck.Name = "pnlDeck";
-            this.pnlDeck.Size = new System.Drawing.Size(1035, 655);
+            this.pnlDeck.Size = new System.Drawing.Size(1109, 652);
             this.pnlDeck.TabIndex = 14;
             // 
             // label4
@@ -199,7 +199,7 @@
             this.txtObs.Location = new System.Drawing.Point(348, 86);
             this.txtObs.Multiline = true;
             this.txtObs.Name = "txtObs";
-            this.txtObs.Size = new System.Drawing.Size(570, 23);
+            this.txtObs.Size = new System.Drawing.Size(705, 23);
             this.txtObs.TabIndex = 3;
             // 
             // cboEstado
@@ -233,9 +233,9 @@
             this.groupBox1.Controls.Add(this.btnGuardar);
             this.groupBox1.Controls.Add(this.btnClear);
             this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(61, 516);
+            this.groupBox1.Location = new System.Drawing.Point(61, 440);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(857, 85);
+            this.groupBox1.Size = new System.Drawing.Size(992, 85);
             this.groupBox1.TabIndex = 305;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Controles";
@@ -252,7 +252,7 @@
             this.btnSalir.IconColor = System.Drawing.Color.Aqua;
             this.btnSalir.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnSalir.IconSize = 30;
-            this.btnSalir.Location = new System.Drawing.Point(764, 22);
+            this.btnSalir.Location = new System.Drawing.Point(868, 22);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(70, 53);
             this.btnSalir.TabIndex = 2;
@@ -273,7 +273,7 @@
             this.btnGuardar.IconColor = System.Drawing.Color.Aqua;
             this.btnGuardar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnGuardar.IconSize = 30;
-            this.btnGuardar.Location = new System.Drawing.Point(400, 22);
+            this.btnGuardar.Location = new System.Drawing.Point(453, 22);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(70, 53);
             this.btnGuardar.TabIndex = 1;
@@ -355,7 +355,7 @@
             this.dgvValores.DefaultCellStyle = dataGridViewCellStyle5;
             this.dgvValores.EnableHeadersVisualStyles = false;
             this.dgvValores.GridColor = System.Drawing.Color.White;
-            this.dgvValores.Location = new System.Drawing.Point(61, 162);
+            this.dgvValores.Location = new System.Drawing.Point(61, 160);
             this.dgvValores.MultiSelect = false;
             this.dgvValores.Name = "dgvValores";
             this.dgvValores.ReadOnly = true;
@@ -372,77 +372,10 @@
             dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.Gray;
             this.dgvValores.RowsDefaultCellStyle = dataGridViewCellStyle7;
-            this.dgvValores.Size = new System.Drawing.Size(857, 348);
+            this.dgvValores.Size = new System.Drawing.Size(992, 279);
             this.dgvValores.TabIndex = 157;
             this.dgvValores.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvValores_CellContentClick);
             this.dgvValores.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dgvValores_CellPainting);
-            // 
-            // Seleccionar
-            // 
-            this.Seleccionar.HeaderText = "";
-            this.Seleccionar.Name = "Seleccionar";
-            this.Seleccionar.ReadOnly = true;
-            this.Seleccionar.Width = 25;
-            // 
-            // id_Valor
-            // 
-            this.id_Valor.HeaderText = "id";
-            this.id_Valor.Name = "id_Valor";
-            this.id_Valor.ReadOnly = true;
-            this.id_Valor.Visible = false;
-            // 
-            // Estudio
-            // 
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Estudio.DefaultCellStyle = dataGridViewCellStyle3;
-            this.Estudio.HeaderText = "ESTUDIO";
-            this.Estudio.Name = "Estudio";
-            this.Estudio.ReadOnly = true;
-            this.Estudio.Width = 300;
-            // 
-            // Valor
-            // 
-            this.Valor.HeaderText = "RESULTADO";
-            this.Valor.Name = "Valor";
-            this.Valor.ReadOnly = true;
-            this.Valor.Width = 300;
-            // 
-            // Estado
-            // 
-            this.Estado.HeaderText = "ESTADO";
-            this.Estado.Name = "Estado";
-            this.Estado.ReadOnly = true;
-            // 
-            // FecEstado
-            // 
-            dataGridViewCellStyle4.Format = "d";
-            dataGridViewCellStyle4.NullValue = null;
-            this.FecEstado.DefaultCellStyle = dataGridViewCellStyle4;
-            this.FecEstado.HeaderText = "FecEstado";
-            this.FecEstado.Name = "FecEstado";
-            this.FecEstado.ReadOnly = true;
-            this.FecEstado.Visible = false;
-            // 
-            // Obs
-            // 
-            this.Obs.HeaderText = "Obs";
-            this.Obs.Name = "Obs";
-            this.Obs.ReadOnly = true;
-            this.Obs.Visible = false;
-            // 
-            // UserRegistro
-            // 
-            this.UserRegistro.HeaderText = "UserRegistro";
-            this.UserRegistro.Name = "UserRegistro";
-            this.UserRegistro.ReadOnly = true;
-            this.UserRegistro.Visible = false;
-            // 
-            // FechaRegistro
-            // 
-            this.FechaRegistro.HeaderText = "FechaRegistro";
-            this.FechaRegistro.Name = "FechaRegistro";
-            this.FechaRegistro.ReadOnly = true;
-            this.FechaRegistro.Visible = false;
             // 
             // btnLimpiar
             // 
@@ -456,7 +389,7 @@
             this.btnLimpiar.IconColor = System.Drawing.Color.Aqua;
             this.btnLimpiar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnLimpiar.IconSize = 25;
-            this.btnLimpiar.Location = new System.Drawing.Point(852, 126);
+            this.btnLimpiar.Location = new System.Drawing.Point(935, 126);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(28, 28);
             this.btnLimpiar.TabIndex = 7;
@@ -475,7 +408,7 @@
             this.btnBuscar.IconColor = System.Drawing.Color.Aqua;
             this.btnBuscar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnBuscar.IconSize = 25;
-            this.btnBuscar.Location = new System.Drawing.Point(786, 126);
+            this.btnBuscar.Location = new System.Drawing.Point(869, 126);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(28, 28);
             this.btnBuscar.TabIndex = 6;
@@ -488,7 +421,7 @@
             this.txtFiltro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtFiltro.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtFiltro.ForeColor = System.Drawing.Color.White;
-            this.txtFiltro.Location = new System.Drawing.Point(575, 129);
+            this.txtFiltro.Location = new System.Drawing.Point(658, 129);
             this.txtFiltro.Name = "txtFiltro";
             this.txtFiltro.Size = new System.Drawing.Size(193, 23);
             this.txtFiltro.TabIndex = 5;
@@ -500,7 +433,7 @@
             this.cboBusqueda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cboBusqueda.ForeColor = System.Drawing.Color.White;
             this.cboBusqueda.FormattingEnabled = true;
-            this.cboBusqueda.Location = new System.Drawing.Point(350, 128);
+            this.cboBusqueda.Location = new System.Drawing.Point(433, 128);
             this.cboBusqueda.Name = "cboBusqueda";
             this.cboBusqueda.Size = new System.Drawing.Size(219, 25);
             this.cboBusqueda.TabIndex = 4;
@@ -509,7 +442,7 @@
             // 
             this.label33.AutoSize = true;
             this.label33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.label33.Location = new System.Drawing.Point(265, 131);
+            this.label33.Location = new System.Drawing.Point(348, 131);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(79, 17);
             this.label33.TabIndex = 156;
@@ -533,7 +466,7 @@
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Location = new System.Drawing.Point(62, 119);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(856, 42);
+            this.panel1.Size = new System.Drawing.Size(991, 42);
             this.panel1.TabIndex = 158;
             // 
             // txtValor
@@ -544,7 +477,7 @@
             this.txtValor.Location = new System.Drawing.Point(554, 55);
             this.txtValor.Multiline = true;
             this.txtValor.Name = "txtValor";
-            this.txtValor.Size = new System.Drawing.Size(364, 23);
+            this.txtValor.Size = new System.Drawing.Size(499, 23);
             this.txtValor.TabIndex = 1;
             // 
             // cboEstudio
@@ -611,12 +544,79 @@
             this.label2.TabIndex = 140;
             this.label2.Text = "Detalle de los Valores";
             // 
+            // Seleccionar
+            // 
+            this.Seleccionar.HeaderText = "";
+            this.Seleccionar.Name = "Seleccionar";
+            this.Seleccionar.ReadOnly = true;
+            this.Seleccionar.Width = 25;
+            // 
+            // id_Valor
+            // 
+            this.id_Valor.HeaderText = "id";
+            this.id_Valor.Name = "id_Valor";
+            this.id_Valor.ReadOnly = true;
+            this.id_Valor.Visible = false;
+            // 
+            // Estudio
+            // 
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Estudio.DefaultCellStyle = dataGridViewCellStyle3;
+            this.Estudio.HeaderText = "ESTUDIO";
+            this.Estudio.Name = "Estudio";
+            this.Estudio.ReadOnly = true;
+            this.Estudio.Width = 300;
+            // 
+            // Valor
+            // 
+            this.Valor.HeaderText = "RESULTADO";
+            this.Valor.Name = "Valor";
+            this.Valor.ReadOnly = true;
+            this.Valor.Width = 300;
+            // 
+            // Estado
+            // 
+            this.Estado.HeaderText = "ESTADO";
+            this.Estado.Name = "Estado";
+            this.Estado.ReadOnly = true;
+            // 
+            // FecEstado
+            // 
+            dataGridViewCellStyle4.Format = "d";
+            dataGridViewCellStyle4.NullValue = null;
+            this.FecEstado.DefaultCellStyle = dataGridViewCellStyle4;
+            this.FecEstado.HeaderText = "FecEstado";
+            this.FecEstado.Name = "FecEstado";
+            this.FecEstado.ReadOnly = true;
+            this.FecEstado.Visible = false;
+            // 
+            // Obs
+            // 
+            this.Obs.HeaderText = "Obs";
+            this.Obs.Name = "Obs";
+            this.Obs.ReadOnly = true;
+            this.Obs.Width = 200;
+            // 
+            // UserRegistro
+            // 
+            this.UserRegistro.HeaderText = "UserRegistro";
+            this.UserRegistro.Name = "UserRegistro";
+            this.UserRegistro.ReadOnly = true;
+            this.UserRegistro.Visible = false;
+            // 
+            // FechaRegistro
+            // 
+            this.FechaRegistro.HeaderText = "FechaRegistro";
+            this.FechaRegistro.Name = "FechaRegistro";
+            this.FechaRegistro.ReadOnly = true;
+            this.FechaRegistro.Visible = false;
+            // 
             // frmValores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1035, 695);
+            this.ClientSize = new System.Drawing.Size(1109, 692);
             this.Controls.Add(this.pnlDeck);
             this.Controls.Add(this.pnlTitulo);
             this.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

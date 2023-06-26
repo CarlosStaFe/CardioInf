@@ -4,17 +4,17 @@ namespace CapaPresentacion
 {
     class Limpiar
     {
-        public void LimpiarCampos(Control control)
+        public void LimpiarCampos(Form xForm)
         {
-            foreach (var txt in control.Controls)
+            foreach (Control item in xForm.Controls)
             {
-                if (txt is TextBox)
+                if (item is TextBox)
                 {
-                    ((TextBox)txt).Clear();
+                    ((TextBox)item).Text = string.Empty;
                 }
-                else if (txt is ComboBox)
+                else if (item is ComboBox)
                 {
-                    ((ComboBox)txt).SelectedItem = 1;
+                    ((ComboBox)item).SelectedIndex = -1;
                 }
             }
             //foreach (var grupo in gb.Controls)

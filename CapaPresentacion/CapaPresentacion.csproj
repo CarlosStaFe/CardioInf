@@ -183,6 +183,7 @@
     <Compile Include="Utiles\EnviarCorreo.cs" />
     <Compile Include="Utiles\LeerConfig.cs" />
     <Compile Include="Utiles\Restaurar.cs" />
+    <Compile Include="Utiles\SoloNumeros.cs" />
     <Compile Include="VarGlobales.cs" />
     <EmbeddedResource Include="Formularios\frmBackupRestore.resx">
       <DependentUpon>frmBackupRestore.cs</DependentUpon>

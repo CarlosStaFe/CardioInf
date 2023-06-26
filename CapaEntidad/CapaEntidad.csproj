@@ -45,6 +45,7 @@
     <Compile Include="CE_CodigosNacionales.cs" />
     <Compile Include="CE_CodigosPostales.cs" />
     <Compile Include="CE_Departamentos.cs" />
+    <Compile Include="CE_Ecografias.cs" />
     <Compile Include="CE_Localidades.cs" />
     <Compile Include="CE_Pacientes.cs" />
     <Compile Include="CE_Permisos.cs" />
