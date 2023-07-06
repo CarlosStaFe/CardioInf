@@ -31,13 +31,23 @@
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mdlPrintEcografia));
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.dataSetPrincipal = new CapaPresentacion.DataSetPrincipal();
             this.ecografiasBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataSetPrincipal = new CapaPresentacion.DataSetPrincipal();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.ecografiasTableAdapter = new CapaPresentacion.DataSetPrincipalTableAdapters.EcografiasTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSetPrincipal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ecografiasBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSetPrincipal)).BeginInit();
             this.SuspendLayout();
+            // 
+            // ecografiasBindingSource
+            // 
+            this.ecografiasBindingSource.DataMember = "Ecografias";
+            this.ecografiasBindingSource.DataSource = this.dataSetPrincipal;
+            // 
+            // dataSetPrincipal
+            // 
+            this.dataSetPrincipal.DataSetName = "DataSetPrincipal";
+            this.dataSetPrincipal.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // reportViewer1
             // 
@@ -49,18 +59,8 @@
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(800, 576);
+            this.reportViewer1.Size = new System.Drawing.Size(849, 600);
             this.reportViewer1.TabIndex = 0;
-            // 
-            // dataSetPrincipal
-            // 
-            this.dataSetPrincipal.DataSetName = "DataSetPrincipal";
-            this.dataSetPrincipal.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // ecografiasBindingSource
-            // 
-            this.ecografiasBindingSource.DataMember = "Ecografias";
-            this.ecografiasBindingSource.DataSource = this.dataSetPrincipal;
             // 
             // ecografiasTableAdapter
             // 
@@ -70,15 +70,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 576);
+            this.ClientSize = new System.Drawing.Size(849, 600);
             this.Controls.Add(this.reportViewer1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "mdlPrintEcografia";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "IMPRESIÓN DE ECOGRAFÍAS";
             this.Load += new System.EventHandler(this.mdlPrintEcografia_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataSetPrincipal)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ecografiasBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSetPrincipal)).EndInit();
             this.ResumeLayout(false);
 
         }

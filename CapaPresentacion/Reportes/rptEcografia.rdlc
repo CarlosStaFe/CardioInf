@@ -196,9 +196,9 @@
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
         <Top>1.97639cm</Top>
-        <Left>0.28792cm</Left>
+        <Left>2.00771cm</Left>
         <Height>0.6cm</Height>
-        <Width>7.20594cm</Width>
+        <Width>5.48615cm</Width>
         <ZIndex>5</ZIndex>
         <Style>
           <Border>
@@ -265,9 +265,9 @@
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
         <Top>2.61167cm</Top>
-        <Left>0.28792cm</Left>
+        <Left>2.00771cm</Left>
         <Height>0.6cm</Height>
-        <Width>7.20595cm</Width>
+        <Width>5.48616cm</Width>
         <ZIndex>7</ZIndex>
         <Style>
           <Border>
@@ -334,9 +334,9 @@
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
         <Top>3.28223cm</Top>
-        <Left>0.2879cm</Left>
+        <Left>2.00769cm</Left>
         <Height>0.6cm</Height>
-        <Width>7.20595cm</Width>
+        <Width>5.48616cm</Width>
         <ZIndex>9</ZIndex>
         <Style>
           <Border>
@@ -403,9 +403,9 @@
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
         <Top>3.9175cm</Top>
-        <Left>0.28792cm</Left>
+        <Left>2.00771cm</Left>
         <Height>0.6cm</Height>
-        <Width>7.20595cm</Width>
+        <Width>5.48616cm</Width>
         <ZIndex>11</ZIndex>
         <Style>
           <Border>
@@ -472,9 +472,9 @@
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
         <Top>4.55278cm</Top>
-        <Left>0.2879cm</Left>
+        <Left>2.00769cm</Left>
         <Height>0.6cm</Height>
-        <Width>7.20595cm</Width>
+        <Width>5.48616cm</Width>
         <ZIndex>13</ZIndex>
         <Style>
           <Border>
@@ -541,9 +541,9 @@
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
         <Top>5.18806cm</Top>
-        <Left>0.2879cm</Left>
+        <Left>2.00769cm</Left>
         <Height>0.6cm</Height>
-        <Width>7.20595cm</Width>
+        <Width>5.48616cm</Width>
         <ZIndex>15</ZIndex>
         <Style>
           <Border>
@@ -610,9 +610,9 @@
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
         <Top>5.82334cm</Top>
-        <Left>0.2879cm</Left>
+        <Left>2.00769cm</Left>
         <Height>0.6cm</Height>
-        <Width>7.20595cm</Width>
+        <Width>5.48616cm</Width>
         <ZIndex>17</ZIndex>
         <Style>
           <Border>
@@ -679,9 +679,9 @@
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
         <Top>6.45862cm</Top>
-        <Left>5.42078cm</Left>
+        <Left>5.89242cm</Left>
         <Height>0.6cm</Height>
-        <Width>2.07307cm</Width>
+        <Width>1.60143cm</Width>
         <ZIndex>19</ZIndex>
         <Style>
           <Border>
@@ -701,7 +701,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E38.Value</Value>
+                <Value>=IIf(Fields!E38.Value = 0,"",Fields!E38.Value)</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -714,7 +714,7 @@
         <Top>6.45862cm</Top>
         <Left>7.56442cm</Left>
         <Height>0.6cm</Height>
-        <Width>1.74051cm</Width>
+        <Width>0.93362cm</Width>
         <ZIndex>20</ZIndex>
         <Style>
           <Border>
@@ -748,9 +748,9 @@
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
         <Top>6.45862cm</Top>
-        <Left>9.85173cm</Left>
+        <Left>9.68837cm</Left>
         <Height>0.6cm</Height>
-        <Width>2.07307cm</Width>
+        <Width>1.60143cm</Width>
         <ZIndex>21</ZIndex>
         <Style>
           <Border>
@@ -770,7 +770,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E39.Value</Value>
+                <Value>=IIf(Fields!E39.Value = "0","",Fields!E39.Value)</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -781,9 +781,9 @@
         </Paragraphs>
         <rd:DefaultName>E1</rd:DefaultName>
         <Top>6.45862cm</Top>
-        <Left>11.99537cm</Left>
+        <Left>11.36037cm</Left>
         <Height>0.6cm</Height>
-        <Width>1.7405cm</Width>
+        <Width>0.93361cm</Width>
         <ZIndex>22</ZIndex>
         <Style>
           <Border>
@@ -817,9 +817,9 @@
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
         <Top>6.45862cm</Top>
-        <Left>14.27823cm</Left>
+        <Left>13.58104cm</Left>
         <Height>0.6cm</Height>
-        <Width>2.07307cm</Width>
+        <Width>1.60143cm</Width>
         <ZIndex>23</ZIndex>
         <Style>
           <Border>
@@ -850,9 +850,9 @@
         </Paragraphs>
         <rd:DefaultName>E1</rd:DefaultName>
         <Top>6.45862cm</Top>
-        <Left>16.42187cm</Left>
+        <Left>15.25303cm</Left>
         <Height>0.6cm</Height>
-        <Width>2.6714cm</Width>
+        <Width>2.33722cm</Width>
         <ZIndex>24</ZIndex>
         <Style>
           <Border>
@@ -886,9 +886,9 @@
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
         <Top>7.09389cm</Top>
-        <Left>0.2879cm</Left>
+        <Left>2.00769cm</Left>
         <Height>0.6cm</Height>
-        <Width>7.20597cm</Width>
+        <Width>5.48618cm</Width>
         <ZIndex>25</ZIndex>
         <Style>
           <Border>
@@ -955,9 +955,9 @@
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
         <Top>7.72917cm</Top>
-        <Left>0.28792cm</Left>
+        <Left>2.00771cm</Left>
         <Height>0.6cm</Height>
-        <Width>7.20597cm</Width>
+        <Width>5.48618cm</Width>
         <ZIndex>27</ZIndex>
         <Style>
           <Border>
@@ -1024,9 +1024,9 @@
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
         <Top>8.36445cm</Top>
-        <Left>0.28788cm</Left>
+        <Left>2.00767cm</Left>
         <Height>0.6cm</Height>
-        <Width>7.20597cm</Width>
+        <Width>5.48618cm</Width>
         <ZIndex>29</ZIndex>
         <Style>
           <Border>
@@ -1093,9 +1093,9 @@
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
         <Top>8.99973cm</Top>
-        <Left>0.28788cm</Left>
+        <Left>2.00767cm</Left>
         <Height>0.6cm</Height>
-        <Width>7.20597cm</Width>
+        <Width>5.48618cm</Width>
         <ZIndex>31</ZIndex>
         <Style>
           <Border>
@@ -1162,9 +1162,9 @@
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
         <Top>9.635cm</Top>
-        <Left>0.28788cm</Left>
+        <Left>2.00767cm</Left>
         <Height>0.6cm</Height>
-        <Width>7.20597cm</Width>
+        <Width>5.48618cm</Width>
         <ZIndex>33</ZIndex>
         <Style>
           <Border>
@@ -1231,9 +1231,9 @@
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
         <Top>10.27028cm</Top>
-        <Left>0.28788cm</Left>
+        <Left>2.00767cm</Left>
         <Height>0.6cm</Height>
-        <Width>7.20597cm</Width>
+        <Width>5.48618cm</Width>
         <ZIndex>35</ZIndex>
         <Style>
           <Border>
@@ -2292,7 +2292,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E41v.Value</Value>
+                <Value>=IIf(Fields!E41v.Value = "0","",Fields!E41v.Value)</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -2325,7 +2325,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E42v.Value</Value>
+                <Value>=IIf(Fields!E42v.Value = "0","",Fields!E42v.Value)</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -2358,7 +2358,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E43v.Value</Value>
+                <Value>=IIf(Fields!E43v.Value = "0","",Fields!E43v.Value)</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -2391,7 +2391,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E44v.Value</Value>
+                <Value>=IIf(Fields!E44v.Value = "0","",Fields!E44v.Value)</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -2424,7 +2424,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E45v.Value</Value>
+                <Value>=IIf(Fields!E45v.Value = "0","",Fields!E45v.Value)</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -2457,7 +2457,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E46v.Value</Value>
+                <Value>=IIf(Fields!E46v.Value = "0","",Fields!E46v.Value)</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -2490,7 +2490,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E47v.Value</Value>
+                <Value>=IIf(Fields!E47v.Value = "0","",Fields!E47v.Value)</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -2523,7 +2523,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E48v.Value</Value>
+                <Value>=IIf(Fields!E48v.Value = "0","",Fields!E48v.Value)</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -2556,7 +2556,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E49v.Value</Value>
+                <Value>=IIf(Fields!E49v.Value = "0","",Fields!E49v.Value)</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -2589,7 +2589,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E410v.Value</Value>
+                <Value>=IIf(Fields!E410v.Value = "0","",Fields!E410v.Value)</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -2622,7 +2622,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E41g.Value</Value>
+                <Value>=IIf(Fields!E41g.Value = "0","",Fields!E41g.Value)</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -2655,7 +2655,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E42g.Value</Value>
+                <Value>=IIf(Fields!E42g.Value = "0","",Fields!E42g.Value)</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -2688,7 +2688,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E43g.Value</Value>
+                <Value>=IIf(Fields!E43g.Value = "0","",Fields!E43g.Value)</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -2721,7 +2721,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E44g.Value</Value>
+                <Value>=IIf(Fields!E44g.Value = "0","",Fields!E44g.Value)</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -2754,7 +2754,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E45g.Value</Value>
+                <Value>=IIf(Fields!E45g.Value = "0","",Fields!E45g.Value)</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -2787,7 +2787,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E46g.Value</Value>
+                <Value>=IIf(Fields!E46g.Value = "0","",Fields!E46g.Value)</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -2820,7 +2820,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E47g.Value</Value>
+                <Value>=IIf(Fields!E47g.Value = "0","",Fields!E47g.Value)</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -2853,7 +2853,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E48g.Value</Value>
+                <Value>=IIf(Fields!E48g.Value = "0","",Fields!E48g.Value)</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -2886,7 +2886,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E49g.Value</Value>
+                <Value>=IIf(Fields!E49g.Value = "0","",Fields!E49g.Value)</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -2919,7 +2919,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!E410g.Value</Value>
+                <Value>=IIf(Fields!E410g.Value = "0","",Fields!E410g.Value)</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -3120,7 +3120,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>m/seg.</Value>
+                <Value>=IIf(Fields!E42v.Value = "0","","m/seg.")</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -3155,7 +3155,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>m/seg.</Value>
+                <Value>=IIf(Fields!E41v.Value = "0","","m/seg.")</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -3190,7 +3190,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>m/seg.</Value>
+                <Value>=IIf(Fields!E44v.Value = "0","","m/seg.")</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -3225,7 +3225,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>m/seg.</Value>
+                <Value>=IIf(Fields!E43v.Value = "0","","m/seg.")</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -3260,7 +3260,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>m/seg.</Value>
+                <Value>=IIf(Fields!E46v.Value = "0","","m/seg.")</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -3295,7 +3295,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>m/seg.</Value>
+                <Value>=IIf(Fields!E45v.Value = "0","","m/seg.")</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -3330,7 +3330,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>m/seg.</Value>
+                <Value>=IIf(Fields!E48v.Value = "0","","m/seg.")</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -3365,7 +3365,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>m/seg.</Value>
+                <Value>=IIf(Fields!E47v.Value = "0","","m/seg.")</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -3400,7 +3400,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>m/seg.</Value>
+                <Value>=IIf(Fields!E410v.Value = "0","","m/seg.")</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -3435,7 +3435,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>m/seg.</Value>
+                <Value>=IIf(Fields!E49v.Value = "0","","m/seg.")</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -3470,7 +3470,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>mmHg.</Value>
+                <Value>=IIf(Fields!E42g.Value = "0","","mmHg.")</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -3505,7 +3505,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>mmHg.</Value>
+                <Value>=IIf(Fields!E41g.Value = "0","","mmHg.")</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -3540,7 +3540,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>mmHg.</Value>
+                <Value>=IIf(Fields!E44g.Value = "0","","mmHg.")</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -3575,7 +3575,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>mmHg.</Value>
+                <Value>=IIf(Fields!E43g.Value = "0","","mmHg.")</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -3610,7 +3610,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>mmHg.</Value>
+                <Value>=IIf(Fields!E46g.Value = "0","","mmHg.")</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -3645,7 +3645,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>mmHg.</Value>
+                <Value>=IIf(Fields!E45g.Value = "0","","mmHg.")</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -3680,7 +3680,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>mmHg.</Value>
+                <Value>=IIf(Fields!E48g.Value = "0","","mmHg.")</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -3715,7 +3715,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>mmHg.</Value>
+                <Value>=IIf(Fields!E47g.Value = "0","","mmHg.")</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -3750,7 +3750,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>mmHg.</Value>
+                <Value>=IIf(Fields!E410g.Value = "0","","mmHg.")</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -3785,7 +3785,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>mmHg.</Value>
+                <Value>=IIf(Fields!E49g.Value = "0","","mmHg.")</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
                 </Style>
@@ -3825,6 +3825,144 @@
           </Border>
         </Style>
       </Line>
+      <Textbox Name="E33">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=IIf(Fields!E310p.Value = "0","",Fields!E310p.Value)</Value>
+                <Style>
+                  <FontSize>8pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>E1</rd:DefaultName>
+        <Top>6.45862cm</Top>
+        <Left>17.73137cm</Left>
+        <Height>0.6cm</Height>
+        <Width>0.85503cm</Width>
+        <ZIndex>109</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox77">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=IIf(Fields!E310p.Value = "0","","%")</Value>
+                <Style>
+                  <FontSize>8pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox13</rd:DefaultName>
+        <Top>6.45862cm</Top>
+        <Left>18.72751cm</Left>
+        <Height>0.6cm</Height>
+        <Width>0.58405cm</Width>
+        <ZIndex>110</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox78">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=IIf(Fields!E39.Value = "0", "", "cm.")</Value>
+                <Style>
+                  <FontSize>8pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox13</rd:DefaultName>
+        <Top>6.45862cm</Top>
+        <Left>12.39703cm</Left>
+        <Height>0.6cm</Height>
+        <Width>0.94616cm</Width>
+        <ZIndex>111</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox79">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=IIf(Fields!E38.Value = "0", "", "cm.")</Value>
+                <Style>
+                  <FontSize>8pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox13</rd:DefaultName>
+        <Top>6.45862cm</Top>
+        <Left>8.56582cm</Left>
+        <Height>0.6cm</Height>
+        <Width>0.94616cm</Width>
+        <ZIndex>112</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
     </ReportItems>
     <Height>8.96874in</Height>
     <Style />
@@ -3843,7 +3981,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>Ecocardiografía Pediátrica</Value>
+                  <Value>Ecocardiograma Doppler Color Pediátrico</Value>
                   <Style>
                     <FontSize>14pt</FontSize>
                     <FontWeight>Bold</FontWeight>
@@ -3859,7 +3997,7 @@
           <Top>0.12705cm</Top>
           <Left>5.89242cm</Left>
           <Height>0.78521cm</Height>
-          <Width>7.52596cm</Width>
+          <Width>10.82055cm</Width>
           <Style>
             <Border>
               <Style>Solid</Style>
@@ -4023,8 +4161,8 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox7</rd:DefaultName>
-          <Top>0.90344cm</Top>
-          <Left>15.0714cm</Left>
+          <Top>1.20344cm</Top>
+          <Left>14.8619cm</Left>
           <Height>0.6cm</Height>
           <Width>1.64157cm</Width>
           <ZIndex>3</ZIndex>
@@ -4129,8 +4267,8 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>FechaEco</rd:DefaultName>
-          <Top>0.90344cm</Top>
-          <Left>16.85408cm</Left>
+          <Top>1.20344cm</Top>
+          <Left>16.61014cm</Left>
           <Height>0.6cm</Height>
           <Width>2.45748cm</Width>
           <ZIndex>6</ZIndex>
@@ -4158,7 +4296,9 @@
                   </Style>
                 </TextRun>
               </TextRuns>
-              <Style />
+              <Style>
+                <TextAlign>Left</TextAlign>
+              </Style>
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Diagnostico</rd:DefaultName>
@@ -4217,10 +4357,10 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox7</rd:DefaultName>
-          <Top>0.12705cm</Top>
-          <Left>15.35131cm</Left>
+          <Top>1.20344cm</Top>
+          <Left>10.89514cm</Left>
           <Height>0.6cm</Height>
-          <Width>1.36166cm</Width>
+          <Width>1.19178cm</Width>
           <ZIndex>8</ZIndex>
           <Style>
             <Border>
@@ -4269,12 +4409,14 @@
                   </Style>
                 </TextRun>
               </TextRuns>
-              <Style />
+              <Style>
+                <TextAlign>Left</TextAlign>
+              </Style>
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>FechaEco</rd:DefaultName>
-          <Top>0.12705cm</Top>
-          <Left>16.85408cm</Left>
+          <Top>1.20344cm</Top>
+          <Left>12.22803cm</Left>
           <Height>0.6cm</Height>
           <Width>2.45748cm</Width>
           <ZIndex>9</ZIndex>
@@ -4657,15 +4799,19 @@
         </Field>
         <Field Name="E38">
           <DataField>E38</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
+          <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
         <Field Name="E39">
           <DataField>E39</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
+          <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
         <Field Name="E310">
           <DataField>E310</DataField>
           <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="E310p">
+          <DataField>E310p</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
         <Field Name="E311">
           <DataField>E311</DataField>

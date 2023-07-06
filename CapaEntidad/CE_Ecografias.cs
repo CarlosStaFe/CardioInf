@@ -5,8 +5,8 @@ namespace CapaEntidad
     public class CE_Ecografias
     {
         public int id_Eco { get; set; }
-        public int Numero { get; set; }
         public int Pacte { get; set; }
+        public int Numero { get; set; }
         public int OS { get; set; }
         public int PlanOS { get; set; }
         public DateTime FechaEco { get; set; }
@@ -24,9 +24,10 @@ namespace CapaEntidad
         public string E35 { get; set; }
         public string E36 { get; set; }
         public string E37 { get; set; }
-        public string E38 { get; set; }
-        public string E39 { get; set; }
+        public decimal E38 { get; set; }
+        public decimal E39 { get; set; }
         public string E310 { get; set; }
+        public decimal E310p { get; set; }
         public string E311 { get; set; }
         public string E312 { get; set; }
         public string E313 { get; set; }

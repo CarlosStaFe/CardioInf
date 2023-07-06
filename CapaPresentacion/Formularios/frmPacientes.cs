@@ -175,7 +175,10 @@ namespace CapaPresentacion.Formularios
             CodigoPostal.ShowDialog();
         }
 
+        //***** PROCEDIMIENTO DEL BOTON GUARDAR *****
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
 
-
+        }
     }
 }

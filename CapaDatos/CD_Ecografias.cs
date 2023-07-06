@@ -31,10 +31,10 @@ namespace CapaDatos
                             {
                                 lista.Add(new CE_Ecografias()
                                 {
-                                    //id_Usuario = Convert.ToInt32(dr["id_Usuario"]),
-                                    //Apellido = dr["Apellido"].ToString(),
-                                    //Nombres = dr["Nombres"].ToString(),
-                                    //Nivel = Convert.ToInt32(dr["Nivel"]),
+                                    id_Eco = Convert.ToInt32(dr["id_OS"]),
+                                    Pacte = Convert.ToInt32(dr["Pacte"].ToString()),
+                                    Numero = Convert.ToInt32(dr["Numero"].ToString()),
+                                    OS = Convert.ToInt32(dr["OS"]),
                                     //Funcion = dr["Funcion"].ToString(),
                                     //Usuario = dr["Usuario"].ToString(),
                                     //Clave = dr["Clave"].ToString(),
@@ -89,6 +89,7 @@ namespace CapaDatos
                         command.Parameters.AddWithValue("E38", obj.E38);
                         command.Parameters.AddWithValue("E39", obj.E39);
                         command.Parameters.AddWithValue("E310", obj.E310);
+                        command.Parameters.AddWithValue("E310p", obj.E310p);
                         command.Parameters.AddWithValue("E311", obj.E311);
                         command.Parameters.AddWithValue("E312", obj.E312);
                         command.Parameters.AddWithValue("E313", obj.E313);
@@ -183,6 +184,7 @@ namespace CapaDatos
                         command.Parameters.AddWithValue("E38", obj.E38);
                         command.Parameters.AddWithValue("E39", obj.E39);
                         command.Parameters.AddWithValue("E310", obj.E310);
+                        command.Parameters.AddWithValue("E310p", obj.E310p);
                         command.Parameters.AddWithValue("E311", obj.E311);
                         command.Parameters.AddWithValue("E312", obj.E312);
                         command.Parameters.AddWithValue("E313", obj.E313);

@@ -162,14 +162,18 @@
             this.label56 = new System.Windows.Forms.Label();
             this.txtDiagnostico = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.btnSalir = new FontAwesome.Sharp.IconButton();
             this.btnClear = new FontAwesome.Sharp.IconButton();
             this.btnGuardar = new FontAwesome.Sharp.IconButton();
             this.pnlDeck = new System.Windows.Forms.Panel();
+            this.label59 = new System.Windows.Forms.Label();
+            this.txt310p = new System.Windows.Forms.TextBox();
+            this.label58 = new System.Windows.Forms.Label();
+            this.label57 = new System.Windows.Forms.Label();
             this.lblEdad = new System.Windows.Forms.Label();
             this.lblFecNacim = new System.Windows.Forms.Label();
             this.lblApelNombres = new System.Windows.Forms.Label();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.pnlTitulo.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.pnlDeck.SuspendLayout();
@@ -295,7 +299,7 @@
             this.txt1.ForeColor = System.Drawing.Color.White;
             this.txt1.Location = new System.Drawing.Point(182, 110);
             this.txt1.Name = "txt1";
-            this.txt1.Size = new System.Drawing.Size(292, 23);
+            this.txt1.Size = new System.Drawing.Size(326, 23);
             this.txt1.TabIndex = 2;
             // 
             // label3
@@ -356,7 +360,7 @@
             this.cbo31.Name = "cbo31";
             this.cbo31.Size = new System.Drawing.Size(93, 25);
             this.cbo31.Sorted = true;
-            this.cbo31.TabIndex = 5;
+            this.cbo31.TabIndex = 0;
             this.cbo31.ValueMember = "Normal";
             this.cbo31.SelectedIndexChanged += new System.EventHandler(this.cbo31_SelectedIndexChanged);
             // 
@@ -569,7 +573,7 @@
             this.txt2.ForeColor = System.Drawing.Color.White;
             this.txt2.Location = new System.Drawing.Point(793, 110);
             this.txt2.Name = "txt2";
-            this.txt2.Size = new System.Drawing.Size(294, 23);
+            this.txt2.Size = new System.Drawing.Size(328, 23);
             this.txt2.TabIndex = 4;
             // 
             // txt31
@@ -580,7 +584,7 @@
             this.txt31.Location = new System.Drawing.Point(179, 166);
             this.txt31.Name = "txt31";
             this.txt31.Size = new System.Drawing.Size(205, 23);
-            this.txt31.TabIndex = 6;
+            this.txt31.TabIndex = 1;
             // 
             // txt32
             // 
@@ -591,7 +595,7 @@
             this.txt32.Multiline = true;
             this.txt32.Name = "txt32";
             this.txt32.Size = new System.Drawing.Size(205, 23);
-            this.txt32.TabIndex = 8;
+            this.txt32.TabIndex = 3;
             // 
             // cbo32
             // 
@@ -603,7 +607,7 @@
             this.cbo32.Name = "cbo32";
             this.cbo32.Size = new System.Drawing.Size(93, 25);
             this.cbo32.Sorted = true;
-            this.cbo32.TabIndex = 7;
+            this.cbo32.TabIndex = 2;
             this.cbo32.SelectedIndexChanged += new System.EventHandler(this.cbo32_SelectedIndexChanged);
             // 
             // txt33
@@ -614,7 +618,7 @@
             this.txt33.Location = new System.Drawing.Point(920, 166);
             this.txt33.Name = "txt33";
             this.txt33.Size = new System.Drawing.Size(205, 23);
-            this.txt33.TabIndex = 10;
+            this.txt33.TabIndex = 5;
             // 
             // cbo33
             // 
@@ -626,7 +630,7 @@
             this.cbo33.Name = "cbo33";
             this.cbo33.Size = new System.Drawing.Size(93, 25);
             this.cbo33.Sorted = true;
-            this.cbo33.TabIndex = 9;
+            this.cbo33.TabIndex = 4;
             this.cbo33.SelectedIndexChanged += new System.EventHandler(this.cbo33_SelectedIndexChanged);
             // 
             // txt34
@@ -637,7 +641,7 @@
             this.txt34.Location = new System.Drawing.Point(179, 195);
             this.txt34.Name = "txt34";
             this.txt34.Size = new System.Drawing.Size(205, 23);
-            this.txt34.TabIndex = 12;
+            this.txt34.TabIndex = 7;
             // 
             // cbo34
             // 
@@ -649,7 +653,7 @@
             this.cbo34.Name = "cbo34";
             this.cbo34.Size = new System.Drawing.Size(93, 25);
             this.cbo34.Sorted = true;
-            this.cbo34.TabIndex = 11;
+            this.cbo34.TabIndex = 6;
             this.cbo34.SelectedIndexChanged += new System.EventHandler(this.cbo34_SelectedIndexChanged);
             // 
             // txt35
@@ -660,7 +664,7 @@
             this.txt35.Location = new System.Drawing.Point(548, 195);
             this.txt35.Name = "txt35";
             this.txt35.Size = new System.Drawing.Size(205, 23);
-            this.txt35.TabIndex = 14;
+            this.txt35.TabIndex = 9;
             // 
             // cbo35
             // 
@@ -672,7 +676,7 @@
             this.cbo35.Name = "cbo35";
             this.cbo35.Size = new System.Drawing.Size(93, 25);
             this.cbo35.Sorted = true;
-            this.cbo35.TabIndex = 13;
+            this.cbo35.TabIndex = 8;
             this.cbo35.SelectedIndexChanged += new System.EventHandler(this.cbo35_SelectedIndexChanged);
             // 
             // txt36
@@ -683,7 +687,7 @@
             this.txt36.Location = new System.Drawing.Point(920, 195);
             this.txt36.Name = "txt36";
             this.txt36.Size = new System.Drawing.Size(205, 23);
-            this.txt36.TabIndex = 16;
+            this.txt36.TabIndex = 11;
             // 
             // cbo36
             // 
@@ -695,7 +699,7 @@
             this.cbo36.Name = "cbo36";
             this.cbo36.Size = new System.Drawing.Size(93, 25);
             this.cbo36.Sorted = true;
-            this.cbo36.TabIndex = 15;
+            this.cbo36.TabIndex = 10;
             this.cbo36.SelectedIndexChanged += new System.EventHandler(this.cbo36_SelectedIndexChanged);
             // 
             // txt37
@@ -706,7 +710,7 @@
             this.txt37.Location = new System.Drawing.Point(179, 224);
             this.txt37.Name = "txt37";
             this.txt37.Size = new System.Drawing.Size(205, 23);
-            this.txt37.TabIndex = 18;
+            this.txt37.TabIndex = 13;
             // 
             // cbo37
             // 
@@ -718,7 +722,7 @@
             this.cbo37.Name = "cbo37";
             this.cbo37.Size = new System.Drawing.Size(93, 25);
             this.cbo37.Sorted = true;
-            this.cbo37.TabIndex = 17;
+            this.cbo37.TabIndex = 12;
             this.cbo37.SelectedIndexChanged += new System.EventHandler(this.cbo37_SelectedIndexChanged);
             // 
             // txt38
@@ -728,8 +732,9 @@
             this.txt38.ForeColor = System.Drawing.Color.White;
             this.txt38.Location = new System.Drawing.Point(449, 224);
             this.txt38.Name = "txt38";
-            this.txt38.Size = new System.Drawing.Size(80, 23);
-            this.txt38.TabIndex = 19;
+            this.txt38.Size = new System.Drawing.Size(49, 23);
+            this.txt38.TabIndex = 14;
+            this.txt38.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt38_KeyPress);
             // 
             // txt39
             // 
@@ -738,8 +743,9 @@
             this.txt39.ForeColor = System.Drawing.Color.White;
             this.txt39.Location = new System.Drawing.Point(646, 223);
             this.txt39.Name = "txt39";
-            this.txt39.Size = new System.Drawing.Size(78, 23);
-            this.txt39.TabIndex = 20;
+            this.txt39.Size = new System.Drawing.Size(47, 23);
+            this.txt39.TabIndex = 15;
+            this.txt39.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt39_KeyPress);
             // 
             // txt312
             // 
@@ -749,7 +755,7 @@
             this.txt312.Location = new System.Drawing.Point(548, 253);
             this.txt312.Name = "txt312";
             this.txt312.Size = new System.Drawing.Size(205, 23);
-            this.txt312.TabIndex = 25;
+            this.txt312.TabIndex = 21;
             // 
             // cbo312
             // 
@@ -761,7 +767,7 @@
             this.cbo312.Name = "cbo312";
             this.cbo312.Size = new System.Drawing.Size(93, 25);
             this.cbo312.Sorted = true;
-            this.cbo312.TabIndex = 24;
+            this.cbo312.TabIndex = 20;
             this.cbo312.SelectedIndexChanged += new System.EventHandler(this.cbo312_SelectedIndexChanged);
             // 
             // txt311
@@ -772,7 +778,7 @@
             this.txt311.Location = new System.Drawing.Point(179, 253);
             this.txt311.Name = "txt311";
             this.txt311.Size = new System.Drawing.Size(205, 23);
-            this.txt311.TabIndex = 23;
+            this.txt311.TabIndex = 19;
             // 
             // cbo311
             // 
@@ -784,7 +790,7 @@
             this.cbo311.Name = "cbo311";
             this.cbo311.Size = new System.Drawing.Size(93, 25);
             this.cbo311.Sorted = true;
-            this.cbo311.TabIndex = 22;
+            this.cbo311.TabIndex = 18;
             this.cbo311.SelectedIndexChanged += new System.EventHandler(this.cbo311_SelectedIndexChanged);
             // 
             // txt314
@@ -795,7 +801,7 @@
             this.txt314.Location = new System.Drawing.Point(179, 282);
             this.txt314.Name = "txt314";
             this.txt314.Size = new System.Drawing.Size(205, 23);
-            this.txt314.TabIndex = 29;
+            this.txt314.TabIndex = 25;
             // 
             // cbo314
             // 
@@ -807,7 +813,7 @@
             this.cbo314.Name = "cbo314";
             this.cbo314.Size = new System.Drawing.Size(93, 25);
             this.cbo314.Sorted = true;
-            this.cbo314.TabIndex = 28;
+            this.cbo314.TabIndex = 24;
             this.cbo314.SelectedIndexChanged += new System.EventHandler(this.cbo314_SelectedIndexChanged);
             // 
             // txt313
@@ -818,7 +824,7 @@
             this.txt313.Location = new System.Drawing.Point(920, 253);
             this.txt313.Name = "txt313";
             this.txt313.Size = new System.Drawing.Size(205, 23);
-            this.txt313.TabIndex = 27;
+            this.txt313.TabIndex = 23;
             // 
             // cbo313
             // 
@@ -830,7 +836,7 @@
             this.cbo313.Name = "cbo313";
             this.cbo313.Size = new System.Drawing.Size(93, 25);
             this.cbo313.Sorted = true;
-            this.cbo313.TabIndex = 26;
+            this.cbo313.TabIndex = 22;
             this.cbo313.SelectedIndexChanged += new System.EventHandler(this.cbo313_SelectedIndexChanged);
             // 
             // txt316
@@ -841,7 +847,7 @@
             this.txt316.Location = new System.Drawing.Point(920, 282);
             this.txt316.Name = "txt316";
             this.txt316.Size = new System.Drawing.Size(205, 23);
-            this.txt316.TabIndex = 33;
+            this.txt316.TabIndex = 29;
             // 
             // cbo316
             // 
@@ -853,7 +859,7 @@
             this.cbo316.Name = "cbo316";
             this.cbo316.Size = new System.Drawing.Size(93, 25);
             this.cbo316.Sorted = true;
-            this.cbo316.TabIndex = 32;
+            this.cbo316.TabIndex = 28;
             this.cbo316.SelectedIndexChanged += new System.EventHandler(this.cbo316_SelectedIndexChanged);
             // 
             // txt315
@@ -864,7 +870,7 @@
             this.txt315.Location = new System.Drawing.Point(548, 282);
             this.txt315.Name = "txt315";
             this.txt315.Size = new System.Drawing.Size(205, 23);
-            this.txt315.TabIndex = 31;
+            this.txt315.TabIndex = 27;
             // 
             // cbo315
             // 
@@ -876,7 +882,7 @@
             this.cbo315.Name = "cbo315";
             this.cbo315.Size = new System.Drawing.Size(93, 25);
             this.cbo315.Sorted = true;
-            this.cbo315.TabIndex = 30;
+            this.cbo315.TabIndex = 26;
             this.cbo315.SelectedIndexChanged += new System.EventHandler(this.cbo315_SelectedIndexChanged);
             // 
             // cbo2
@@ -1014,7 +1020,7 @@
             this.cbo48.Name = "cbo48";
             this.cbo48.Size = new System.Drawing.Size(137, 25);
             this.cbo48.Sorted = true;
-            this.cbo48.TabIndex = 55;
+            this.cbo48.TabIndex = 51;
             // 
             // cbo47
             // 
@@ -1026,7 +1032,7 @@
             this.cbo47.Name = "cbo47";
             this.cbo47.Size = new System.Drawing.Size(137, 25);
             this.cbo47.Sorted = true;
-            this.cbo47.TabIndex = 52;
+            this.cbo47.TabIndex = 48;
             // 
             // cbo46
             // 
@@ -1038,7 +1044,7 @@
             this.cbo46.Name = "cbo46";
             this.cbo46.Size = new System.Drawing.Size(137, 25);
             this.cbo46.Sorted = true;
-            this.cbo46.TabIndex = 49;
+            this.cbo46.TabIndex = 45;
             // 
             // cbo45
             // 
@@ -1050,7 +1056,7 @@
             this.cbo45.Name = "cbo45";
             this.cbo45.Size = new System.Drawing.Size(137, 25);
             this.cbo45.Sorted = true;
-            this.cbo45.TabIndex = 46;
+            this.cbo45.TabIndex = 42;
             // 
             // cbo44
             // 
@@ -1062,7 +1068,7 @@
             this.cbo44.Name = "cbo44";
             this.cbo44.Size = new System.Drawing.Size(137, 25);
             this.cbo44.Sorted = true;
-            this.cbo44.TabIndex = 43;
+            this.cbo44.TabIndex = 39;
             // 
             // cbo43
             // 
@@ -1074,7 +1080,7 @@
             this.cbo43.Name = "cbo43";
             this.cbo43.Size = new System.Drawing.Size(137, 25);
             this.cbo43.Sorted = true;
-            this.cbo43.TabIndex = 40;
+            this.cbo43.TabIndex = 36;
             // 
             // cbo42
             // 
@@ -1086,7 +1092,7 @@
             this.cbo42.Name = "cbo42";
             this.cbo42.Size = new System.Drawing.Size(137, 25);
             this.cbo42.Sorted = true;
-            this.cbo42.TabIndex = 37;
+            this.cbo42.TabIndex = 33;
             // 
             // cbo41
             // 
@@ -1098,7 +1104,7 @@
             this.cbo41.Name = "cbo41";
             this.cbo41.Size = new System.Drawing.Size(137, 25);
             this.cbo41.Sorted = true;
-            this.cbo41.TabIndex = 34;
+            this.cbo41.TabIndex = 30;
             // 
             // cbo410
             // 
@@ -1110,7 +1116,7 @@
             this.cbo410.Name = "cbo410";
             this.cbo410.Size = new System.Drawing.Size(137, 25);
             this.cbo410.Sorted = true;
-            this.cbo410.TabIndex = 61;
+            this.cbo410.TabIndex = 57;
             // 
             // cbo49
             // 
@@ -1122,7 +1128,7 @@
             this.cbo49.Name = "cbo49";
             this.cbo49.Size = new System.Drawing.Size(137, 25);
             this.cbo49.Sorted = true;
-            this.cbo49.TabIndex = 58;
+            this.cbo49.TabIndex = 54;
             // 
             // label33
             // 
@@ -1165,8 +1171,7 @@
             this.txt41v.Location = new System.Drawing.Point(204, 344);
             this.txt41v.Name = "txt41v";
             this.txt41v.Size = new System.Drawing.Size(40, 23);
-            this.txt41v.TabIndex = 35;
-            this.txt41v.Text = "0";
+            this.txt41v.TabIndex = 31;
             this.txt41v.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt41v_KeyPress);
             // 
             // label36
@@ -1188,7 +1193,7 @@
             this.txt42v.Location = new System.Drawing.Point(575, 344);
             this.txt42v.Name = "txt42v";
             this.txt42v.Size = new System.Drawing.Size(40, 23);
-            this.txt42v.TabIndex = 38;
+            this.txt42v.TabIndex = 34;
             this.txt42v.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt42v_KeyPress);
             // 
             // label38
@@ -1210,7 +1215,7 @@
             this.txt43v.Location = new System.Drawing.Point(948, 344);
             this.txt43v.Name = "txt43v";
             this.txt43v.Size = new System.Drawing.Size(40, 23);
-            this.txt43v.TabIndex = 41;
+            this.txt43v.TabIndex = 37;
             this.txt43v.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt43v_KeyPress);
             // 
             // label37
@@ -1232,7 +1237,7 @@
             this.txt44v.Location = new System.Drawing.Point(204, 373);
             this.txt44v.Name = "txt44v";
             this.txt44v.Size = new System.Drawing.Size(40, 23);
-            this.txt44v.TabIndex = 44;
+            this.txt44v.TabIndex = 40;
             this.txt44v.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt44v_KeyPress);
             // 
             // label42
@@ -1254,7 +1259,7 @@
             this.txt45v.Location = new System.Drawing.Point(575, 373);
             this.txt45v.Name = "txt45v";
             this.txt45v.Size = new System.Drawing.Size(40, 23);
-            this.txt45v.TabIndex = 47;
+            this.txt45v.TabIndex = 43;
             this.txt45v.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt45v_KeyPress);
             // 
             // label41
@@ -1276,7 +1281,7 @@
             this.txt46v.Location = new System.Drawing.Point(948, 373);
             this.txt46v.Name = "txt46v";
             this.txt46v.Size = new System.Drawing.Size(40, 23);
-            this.txt46v.TabIndex = 50;
+            this.txt46v.TabIndex = 46;
             this.txt46v.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt46v_KeyPress);
             // 
             // label40
@@ -1298,7 +1303,7 @@
             this.txt47v.Location = new System.Drawing.Point(204, 402);
             this.txt47v.Name = "txt47v";
             this.txt47v.Size = new System.Drawing.Size(40, 23);
-            this.txt47v.TabIndex = 53;
+            this.txt47v.TabIndex = 49;
             this.txt47v.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt47v_KeyPress);
             // 
             // label39
@@ -1320,7 +1325,7 @@
             this.txt48v.Location = new System.Drawing.Point(575, 402);
             this.txt48v.Name = "txt48v";
             this.txt48v.Size = new System.Drawing.Size(40, 23);
-            this.txt48v.TabIndex = 56;
+            this.txt48v.TabIndex = 52;
             this.txt48v.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt48v_KeyPress);
             // 
             // label44
@@ -1342,7 +1347,7 @@
             this.txt49v.Location = new System.Drawing.Point(948, 402);
             this.txt49v.Name = "txt49v";
             this.txt49v.Size = new System.Drawing.Size(40, 23);
-            this.txt49v.TabIndex = 59;
+            this.txt49v.TabIndex = 55;
             this.txt49v.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt49v_KeyPress);
             // 
             // label43
@@ -1364,7 +1369,7 @@
             this.txt410v.Location = new System.Drawing.Point(204, 431);
             this.txt410v.Name = "txt410v";
             this.txt410v.Size = new System.Drawing.Size(40, 23);
-            this.txt410v.TabIndex = 62;
+            this.txt410v.TabIndex = 58;
             this.txt410v.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt410v_KeyPress);
             // 
             // txt410g
@@ -1375,7 +1380,7 @@
             this.txt410g.Location = new System.Drawing.Point(296, 431);
             this.txt410g.Name = "txt410g";
             this.txt410g.Size = new System.Drawing.Size(40, 23);
-            this.txt410g.TabIndex = 63;
+            this.txt410g.TabIndex = 59;
             this.txt410g.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt410g_KeyPress);
             // 
             // label45
@@ -1397,7 +1402,7 @@
             this.txt49g.Location = new System.Drawing.Point(1040, 402);
             this.txt49g.Name = "txt49g";
             this.txt49g.Size = new System.Drawing.Size(40, 23);
-            this.txt49g.TabIndex = 60;
+            this.txt49g.TabIndex = 56;
             this.txt49g.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt49g_KeyPress);
             // 
             // label46
@@ -1419,7 +1424,7 @@
             this.txt48g.Location = new System.Drawing.Point(667, 402);
             this.txt48g.Name = "txt48g";
             this.txt48g.Size = new System.Drawing.Size(40, 23);
-            this.txt48g.TabIndex = 57;
+            this.txt48g.TabIndex = 53;
             this.txt48g.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt48g_KeyPress);
             // 
             // label47
@@ -1441,7 +1446,7 @@
             this.txt47g.Location = new System.Drawing.Point(296, 402);
             this.txt47g.Name = "txt47g";
             this.txt47g.Size = new System.Drawing.Size(40, 23);
-            this.txt47g.TabIndex = 54;
+            this.txt47g.TabIndex = 50;
             this.txt47g.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt47g_KeyPress);
             // 
             // label48
@@ -1463,7 +1468,7 @@
             this.txt46g.Location = new System.Drawing.Point(1040, 373);
             this.txt46g.Name = "txt46g";
             this.txt46g.Size = new System.Drawing.Size(40, 23);
-            this.txt46g.TabIndex = 51;
+            this.txt46g.TabIndex = 47;
             this.txt46g.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt46g_KeyPress);
             // 
             // label49
@@ -1485,7 +1490,7 @@
             this.txt45g.Location = new System.Drawing.Point(667, 373);
             this.txt45g.Name = "txt45g";
             this.txt45g.Size = new System.Drawing.Size(40, 23);
-            this.txt45g.TabIndex = 48;
+            this.txt45g.TabIndex = 44;
             this.txt45g.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt45g_KeyPress);
             // 
             // label50
@@ -1507,7 +1512,7 @@
             this.txt44g.Location = new System.Drawing.Point(296, 373);
             this.txt44g.Name = "txt44g";
             this.txt44g.Size = new System.Drawing.Size(40, 23);
-            this.txt44g.TabIndex = 45;
+            this.txt44g.TabIndex = 41;
             this.txt44g.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt44g_KeyPress);
             // 
             // label51
@@ -1529,7 +1534,7 @@
             this.txt43g.Location = new System.Drawing.Point(1040, 344);
             this.txt43g.Name = "txt43g";
             this.txt43g.Size = new System.Drawing.Size(40, 23);
-            this.txt43g.TabIndex = 42;
+            this.txt43g.TabIndex = 38;
             this.txt43g.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt43g_KeyPress);
             // 
             // label52
@@ -1551,7 +1556,7 @@
             this.txt42g.Location = new System.Drawing.Point(667, 344);
             this.txt42g.Name = "txt42g";
             this.txt42g.Size = new System.Drawing.Size(40, 23);
-            this.txt42g.TabIndex = 39;
+            this.txt42g.TabIndex = 35;
             this.txt42g.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt42g_KeyPress);
             // 
             // label53
@@ -1573,7 +1578,7 @@
             this.txt41g.Location = new System.Drawing.Point(296, 344);
             this.txt41g.Name = "txt41g";
             this.txt41g.Size = new System.Drawing.Size(40, 23);
-            this.txt41g.TabIndex = 36;
+            this.txt41g.TabIndex = 32;
             this.txt41g.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt41g_KeyPress);
             // 
             // label54
@@ -1597,7 +1602,7 @@
             this.cbo310.Name = "cbo310";
             this.cbo310.Size = new System.Drawing.Size(101, 25);
             this.cbo310.Sorted = true;
-            this.cbo310.TabIndex = 21;
+            this.cbo310.TabIndex = 16;
             // 
             // label55
             // 
@@ -1621,7 +1626,7 @@
             this.txt5.Name = "txt5";
             this.txt5.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txt5.Size = new System.Drawing.Size(523, 89);
-            this.txt5.TabIndex = 65;
+            this.txt5.TabIndex = 61;
             // 
             // cbo5
             // 
@@ -1633,7 +1638,7 @@
             this.cbo5.Name = "cbo5";
             this.cbo5.Size = new System.Drawing.Size(361, 25);
             this.cbo5.Sorted = true;
-            this.cbo5.TabIndex = 64;
+            this.cbo5.TabIndex = 60;
             this.cbo5.SelectedIndexChanged += new System.EventHandler(this.cbo5_SelectedIndexChanged);
             // 
             // txt6
@@ -1647,7 +1652,7 @@
             this.txt6.Name = "txt6";
             this.txt6.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txt6.Size = new System.Drawing.Size(553, 89);
-            this.txt6.TabIndex = 67;
+            this.txt6.TabIndex = 63;
             // 
             // cbo6
             // 
@@ -1659,7 +1664,7 @@
             this.cbo6.Name = "cbo6";
             this.cbo6.Size = new System.Drawing.Size(458, 25);
             this.cbo6.Sorted = true;
-            this.cbo6.TabIndex = 66;
+            this.cbo6.TabIndex = 62;
             this.cbo6.SelectedIndexChanged += new System.EventHandler(this.cbo6_SelectedIndexChanged);
             // 
             // label56
@@ -1682,7 +1687,7 @@
             this.txtDiagnostico.Location = new System.Drawing.Point(153, 79);
             this.txtDiagnostico.Multiline = true;
             this.txtDiagnostico.Name = "txtDiagnostico";
-            this.txtDiagnostico.Size = new System.Drawing.Size(934, 23);
+            this.txtDiagnostico.Size = new System.Drawing.Size(968, 23);
             this.txtDiagnostico.TabIndex = 0;
             // 
             // groupBox1
@@ -1700,6 +1705,27 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Controles";
             // 
+            // iconButton1
+            // 
+            this.iconButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.iconButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconButton1.FlatAppearance.BorderSize = 0;
+            this.iconButton1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.iconButton1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Print;
+            this.iconButton1.IconColor = System.Drawing.Color.Aqua;
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.IconSize = 30;
+            this.iconButton1.Location = new System.Drawing.Point(7, 158);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Size = new System.Drawing.Size(70, 53);
+            this.iconButton1.TabIndex = 2;
+            this.iconButton1.Text = "Imprimir";
+            this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.iconButton1.UseVisualStyleBackColor = false;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
+            // 
             // btnSalir
             // 
             this.btnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
@@ -1715,7 +1741,7 @@
             this.btnSalir.Location = new System.Drawing.Point(7, 278);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(70, 53);
-            this.btnSalir.TabIndex = 90;
+            this.btnSalir.TabIndex = 1;
             this.btnSalir.Text = "Salir";
             this.btnSalir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnSalir.UseVisualStyleBackColor = false;
@@ -1736,7 +1762,7 @@
             this.btnClear.Location = new System.Drawing.Point(7, 33);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(70, 53);
-            this.btnClear.TabIndex = 69;
+            this.btnClear.TabIndex = 3;
             this.btnClear.Text = "Limpiar";
             this.btnClear.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnClear.UseVisualStyleBackColor = false;
@@ -1757,7 +1783,7 @@
             this.btnGuardar.Location = new System.Drawing.Point(7, 426);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(70, 53);
-            this.btnGuardar.TabIndex = 68;
+            this.btnGuardar.TabIndex = 0;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnGuardar.UseVisualStyleBackColor = false;
@@ -1766,6 +1792,10 @@
             // pnlDeck
             // 
             this.pnlDeck.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.pnlDeck.Controls.Add(this.label59);
+            this.pnlDeck.Controls.Add(this.txt310p);
+            this.pnlDeck.Controls.Add(this.label58);
+            this.pnlDeck.Controls.Add(this.label57);
             this.pnlDeck.Controls.Add(this.lblEdad);
             this.pnlDeck.Controls.Add(this.lblFecNacim);
             this.pnlDeck.Controls.Add(this.lblApelNombres);
@@ -1889,6 +1919,50 @@
             this.pnlDeck.Size = new System.Drawing.Size(1239, 616);
             this.pnlDeck.TabIndex = 305;
             // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.label59.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label59.Location = new System.Drawing.Point(981, 227);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(16, 16);
+            this.label59.TabIndex = 308;
+            this.label59.Text = "%";
+            // 
+            // txt310p
+            // 
+            this.txt310p.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.txt310p.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt310p.ForeColor = System.Drawing.Color.White;
+            this.txt310p.Location = new System.Drawing.Point(928, 224);
+            this.txt310p.Name = "txt310p";
+            this.txt310p.Size = new System.Drawing.Size(47, 23);
+            this.txt310p.TabIndex = 17;
+            this.txt310p.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt310p_KeyPress);
+            // 
+            // label58
+            // 
+            this.label58.AutoSize = true;
+            this.label58.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.label58.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label58.Location = new System.Drawing.Point(699, 227);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(27, 16);
+            this.label58.TabIndex = 306;
+            this.label58.Text = "cm.";
+            // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.label57.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label57.Location = new System.Drawing.Point(504, 227);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(27, 16);
+            this.label57.TabIndex = 305;
+            this.label57.Text = "cm.";
+            // 
             // lblEdad
             // 
             this.lblEdad.AutoSize = true;
@@ -1924,27 +1998,6 @@
             this.lblApelNombres.Size = new System.Drawing.Size(13, 20);
             this.lblApelNombres.TabIndex = 0;
             this.lblApelNombres.Text = "-";
-            // 
-            // iconButton1
-            // 
-            this.iconButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.iconButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconButton1.FlatAppearance.BorderSize = 0;
-            this.iconButton1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.iconButton1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Print;
-            this.iconButton1.IconColor = System.Drawing.Color.Aqua;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.IconSize = 30;
-            this.iconButton1.Location = new System.Drawing.Point(7, 158);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(70, 53);
-            this.iconButton1.TabIndex = 91;
-            this.iconButton1.Text = "Imprimir";
-            this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.iconButton1.UseVisualStyleBackColor = false;
-            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
             // 
             // frmEcografia
             // 
@@ -2126,5 +2179,9 @@
         private System.Windows.Forms.TextBox txtPlan;
         private System.Windows.Forms.TextBox txtOS;
         private FontAwesome.Sharp.IconButton iconButton1;
+        private System.Windows.Forms.Label label59;
+        private System.Windows.Forms.TextBox txt310p;
+        private System.Windows.Forms.Label label58;
+        private System.Windows.Forms.Label label57;
     }
 }

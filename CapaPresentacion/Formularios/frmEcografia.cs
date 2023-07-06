@@ -4,13 +4,13 @@ using CapaPresentacion.Utiles;
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace CapaPresentacion.Formularios
 {
     public partial class frmEcografia : Form
     {
         private string respuesta;
+        SoloNumeros validar = new SoloNumeros();
 
         public frmEcografia()
         {
@@ -132,8 +132,9 @@ namespace CapaPresentacion.Formularios
             string mensaje = string.Empty;
 
             txtPacte.Text = "1";
-            txtOS.Text = "2";
-            txtPlan.Text = "3";
+            txtOS.Text = "123";
+            txtPlan.Text = "321";
+            int numero = 1253;
 
             mensaje += "DESEA REGISTRAR ESTA ECOCARDIOGRAFÍA...???";
             frmMsgBox msg = new frmMsgBox(mensaje, "question", 2);
@@ -146,9 +147,9 @@ namespace CapaPresentacion.Formularios
 
                 CE_Ecografias cE_Ecografias = new CE_Ecografias()
                 {
-                    //id_Eco = Convert.ToInt32(txtId.Text),
+                    id_Eco = Convert.ToInt32(txtId.Text),
                     Pacte = Convert.ToInt32(txtPacte.Text),
-                    Numero = 1,
+                    Numero = numero,
                     OS = Convert.ToInt32(txtOS.Text),
                     PlanOS = Convert.ToInt32(txtPlan.Text),
                     FechaEco = DateTime.Now,
@@ -166,9 +167,10 @@ namespace CapaPresentacion.Formularios
                     E35 = txt35.Text,
                     E36 = txt36.Text,
                     E37 = txt37.Text,
-                    E38 = txt38.Text,
-                    E39 = txt39.Text,
+                    E38 = Convert.ToDecimal(txt38.Text),
+                    E39 = Convert.ToDecimal(txt39.Text),
                     E310 = cbo310.Text,
+                    E310p = Convert.ToDecimal(txt310p.Text),
                     E311 = txt311.Text,
                     E312 = txt312.Text,
                     E313 = txt313.Text,
@@ -207,8 +209,8 @@ namespace CapaPresentacion.Formularios
                     E410g = Convert.ToDecimal(txt410g.Text),
                     E5 = txt5.Text,
                     E6 = txt6.Text,
-                    UserRegistro = CE_UserLogin.Usuario
-                    //FechaRegistro = DateTime.Now
+                    UserRegistro = CE_UserLogin.Usuario,
+                    FechaRegistro = DateTime.Now
                 };
 
                 //*****SI EL ID DE LA ECOGRAFÍA = 0 REGISTRA, SINO EDITA *****
@@ -260,6 +262,7 @@ namespace CapaPresentacion.Formularios
             txt2.Text = string.Empty;
             txt38.Text = string.Empty;
             txt39.Text = string.Empty;
+            txt310p.Text = string.Empty;
             txt41g.Text = string.Empty;
             txt41v.Text = string.Empty;
             txt42g.Text = string.Empty;
@@ -568,152 +571,135 @@ namespace CapaPresentacion.Formularios
         }
 
         //***** VALIDO EL INGRESO DE NÚMERO SOLAMENTE *****
+        private void txt38_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.KeyChar = Convert.ToChar(validar.Validar(e.KeyChar));
+        }
+
+        private void txt39_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.KeyChar = Convert.ToChar(validar.Validar(e.KeyChar));
+        }
+
+        private void txt310p_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.KeyChar = Convert.ToChar(validar.Validar(e.KeyChar));
+        }
+
         private void txt41v_KeyPress(object sender, KeyPressEventArgs e)
         {
-            SoloNumeros validar = new SoloNumeros();
-
             e.KeyChar = Convert.ToChar(validar.Validar(e.KeyChar));
         }
 
         private void txt41g_KeyPress(object sender, KeyPressEventArgs e)
         {
-            SoloNumeros validar = new SoloNumeros();
-
             e.KeyChar = Convert.ToChar(validar.Validar(e.KeyChar));
         }
 
         private void txt42v_KeyPress(object sender, KeyPressEventArgs e)
         {
-            SoloNumeros validar = new SoloNumeros();
-
             e.KeyChar = Convert.ToChar(validar.Validar(e.KeyChar));
         }
 
         private void txt42g_KeyPress(object sender, KeyPressEventArgs e)
         {
-            SoloNumeros validar = new SoloNumeros();
-
             e.KeyChar = Convert.ToChar(validar.Validar(e.KeyChar));
         }
 
         private void txt43v_KeyPress(object sender, KeyPressEventArgs e)
         {
-            SoloNumeros validar = new SoloNumeros();
-
             e.KeyChar = Convert.ToChar(validar.Validar(e.KeyChar));
         }
 
         private void txt43g_KeyPress(object sender, KeyPressEventArgs e)
         {
-            SoloNumeros validar = new SoloNumeros();
-
             e.KeyChar = Convert.ToChar(validar.Validar(e.KeyChar));
         }
 
         private void txt44v_KeyPress(object sender, KeyPressEventArgs e)
         {
-            SoloNumeros validar = new SoloNumeros();
-
             e.KeyChar = Convert.ToChar(validar.Validar(e.KeyChar));
         }
 
         private void txt44g_KeyPress(object sender, KeyPressEventArgs e)
         {
-            SoloNumeros validar = new SoloNumeros();
-
             e.KeyChar = Convert.ToChar(validar.Validar(e.KeyChar));
         }
 
         private void txt45v_KeyPress(object sender, KeyPressEventArgs e)
         {
-            SoloNumeros validar = new SoloNumeros();
-
             e.KeyChar = Convert.ToChar(validar.Validar(e.KeyChar));
         }
 
         private void txt45g_KeyPress(object sender, KeyPressEventArgs e)
         {
-            SoloNumeros validar = new SoloNumeros();
-
             e.KeyChar = Convert.ToChar(validar.Validar(e.KeyChar));
         }
 
         private void txt46v_KeyPress(object sender, KeyPressEventArgs e)
         {
-            SoloNumeros validar = new SoloNumeros();
-
             e.KeyChar = Convert.ToChar(validar.Validar(e.KeyChar));
         }
 
         private void txt46g_KeyPress(object sender, KeyPressEventArgs e)
         {
-            SoloNumeros validar = new SoloNumeros();
-
             e.KeyChar = Convert.ToChar(validar.Validar(e.KeyChar));
         }
 
         private void txt47v_KeyPress(object sender, KeyPressEventArgs e)
         {
-            SoloNumeros validar = new SoloNumeros();
-
             e.KeyChar = Convert.ToChar(validar.Validar(e.KeyChar));
         }
 
         private void txt47g_KeyPress(object sender, KeyPressEventArgs e)
         {
-            SoloNumeros validar = new SoloNumeros();
-
             e.KeyChar = Convert.ToChar(validar.Validar(e.KeyChar));
         }
 
         private void txt48v_KeyPress(object sender, KeyPressEventArgs e)
         {
-            SoloNumeros validar = new SoloNumeros();
-
             e.KeyChar = Convert.ToChar(validar.Validar(e.KeyChar));
         }
 
         private void txt48g_KeyPress(object sender, KeyPressEventArgs e)
         {
-            SoloNumeros validar = new SoloNumeros();
-
             e.KeyChar = Convert.ToChar(validar.Validar(e.KeyChar));
         }
 
         private void txt49v_KeyPress(object sender, KeyPressEventArgs e)
         {
-            SoloNumeros validar = new SoloNumeros();
-
             e.KeyChar = Convert.ToChar(validar.Validar(e.KeyChar));
         }
 
         private void txt49g_KeyPress(object sender, KeyPressEventArgs e)
         {
-            SoloNumeros validar = new SoloNumeros();
-
             e.KeyChar = Convert.ToChar(validar.Validar(e.KeyChar));
         }
 
         private void txt410v_KeyPress(object sender, KeyPressEventArgs e)
         {
-            SoloNumeros validar = new SoloNumeros();
-
             e.KeyChar = Convert.ToChar(validar.Validar(e.KeyChar));
         }
 
         private void txt410g_KeyPress(object sender, KeyPressEventArgs e)
         {
-            SoloNumeros validar = new SoloNumeros();
-
             e.KeyChar = Convert.ToChar(validar.Validar(e.KeyChar));
         }
 
         //***** MUEVO 0 DONDE HAY ESPACIOS EN BLANCO *****
         private void MoverCeros()
         {
-            if (txt41v.Text == "")
+            if (txt38.Text == "")
             {
-                txt41v.Text = "0";
+                txt38.Text = "0";
+            }
+            if (txt39.Text == "")
+            {
+                txt39.Text = "0";
+            }
+            if (txt310p.Text == "")
+            {
+                txt310p.Text = "0";
             }
             if (txt41g.Text == "")
             {
@@ -791,7 +777,6 @@ namespace CapaPresentacion.Formularios
             {
                 txt410g.Text = "0";
             }
-
         }
 
         private void iconButton1_Click(object sender, EventArgs e)
@@ -801,6 +786,7 @@ namespace CapaPresentacion.Formularios
             //Comun.user = txtUserRegistro.Text;
             Comun.ShowDialog();
         }
+
     }
 
 

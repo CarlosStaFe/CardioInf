@@ -47,6 +47,7 @@
     <Compile Include="CN_Departamentos.cs" />
     <Compile Include="CN_Ecografias.cs" />
     <Compile Include="CN_Localidades.cs" />
+    <Compile Include="CN_ObrasSociales.cs" />
     <Compile Include="CN_Pacientes.cs" />
     <Compile Include="CN_Permisos.cs" />
     <Compile Include="CN_Profesionales.cs" />
