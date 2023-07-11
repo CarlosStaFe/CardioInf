@@ -267,6 +267,11 @@ namespace ColegMart
             AbrirFormHijo(new frmObrasSociales());
             OcultarSubmenu();
         }
+        private void btnPlanesOS_Click(object sender, System.EventArgs e)
+        {
+            AbrirFormHijo(new frmPlanesOS());
+            OcultarSubmenu();
+        }
 
         #endregion
 

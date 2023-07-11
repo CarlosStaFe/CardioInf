@@ -44,7 +44,7 @@
             this.txtCodPos = new System.Windows.Forms.TextBox();
             this.cboPlanOS = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.btnLocalidad = new FontAwesome.Sharp.IconButton();
+            this.btnLocalPacte = new FontAwesome.Sharp.IconButton();
             this.lblLocalidad = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -60,22 +60,6 @@
             this.btnGuardar = new FontAwesome.Sharp.IconButton();
             this.btnClear = new FontAwesome.Sharp.IconButton();
             this.dgvPacientes = new System.Windows.Forms.DataGridView();
-            this.Seleccionar = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.id_Coleg = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ApellidoyNombres = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FechaNacim = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Numero = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Domicilio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CodigoPostal = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Sexo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ObraSocial = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Plan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Obs = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.UserRegistro = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FechaRegistro = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnLimpiar = new FontAwesome.Sharp.IconButton();
             this.btnBuscar = new FontAwesome.Sharp.IconButton();
             this.txtFiltro = new System.Windows.Forms.TextBox();
@@ -88,7 +72,6 @@
             this.txtTelefono = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
-            this.dtpFechaNacim = new CapaPresentacion.DatePicker();
             this.label17 = new System.Windows.Forms.Label();
             this.cboObraSocial = new System.Windows.Forms.ComboBox();
             this.label16 = new System.Windows.Forms.Label();
@@ -96,6 +79,23 @@
             this.txtApelNombres = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dtpFechaNacim = new CapaPresentacion.DatePicker();
+            this.Seleccionar = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.id_Pacte = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ApellidoyNombres = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FechaNacim = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Sexo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Numero = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Domicilio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CodPostal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ObraSocial = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PlanOS = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Obs = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.UserRegistro = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FechaRegistro = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlTitulo.SuspendLayout();
             this.pnlDeck.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -183,7 +183,7 @@
             this.pnlDeck.Controls.Add(this.txtCodPos);
             this.pnlDeck.Controls.Add(this.cboPlanOS);
             this.pnlDeck.Controls.Add(this.label4);
-            this.pnlDeck.Controls.Add(this.btnLocalidad);
+            this.pnlDeck.Controls.Add(this.btnLocalPacte);
             this.pnlDeck.Controls.Add(this.lblLocalidad);
             this.pnlDeck.Controls.Add(this.label23);
             this.pnlDeck.Controls.Add(this.label3);
@@ -241,12 +241,6 @@
             this.cboPlanOS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cboPlanOS.ForeColor = System.Drawing.Color.White;
             this.cboPlanOS.FormattingEnabled = true;
-            this.cboPlanOS.Items.AddRange(new object[] {
-            "ACTIVO",
-            "BAJA",
-            "CANCELADO",
-            "SUSPENDIDO",
-            "SUSP. MOROSO"});
             this.cboPlanOS.Location = new System.Drawing.Point(590, 166);
             this.cboPlanOS.Name = "cboPlanOS";
             this.cboPlanOS.Size = new System.Drawing.Size(415, 25);
@@ -261,21 +255,21 @@
             this.label4.TabIndex = 164;
             this.label4.Text = "Plan:";
             // 
-            // btnLocalidad
+            // btnLocalPacte
             // 
-            this.btnLocalidad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.btnLocalidad.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLocalidad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLocalidad.IconChar = FontAwesome.Sharp.IconChar.LocationCrosshairs;
-            this.btnLocalidad.IconColor = System.Drawing.Color.Aqua;
-            this.btnLocalidad.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnLocalidad.IconSize = 20;
-            this.btnLocalidad.Location = new System.Drawing.Point(163, 108);
-            this.btnLocalidad.Name = "btnLocalidad";
-            this.btnLocalidad.Size = new System.Drawing.Size(27, 24);
-            this.btnLocalidad.TabIndex = 6;
-            this.btnLocalidad.UseVisualStyleBackColor = false;
-            this.btnLocalidad.Click += new System.EventHandler(this.btnLocalidad_Click);
+            this.btnLocalPacte.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.btnLocalPacte.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLocalPacte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLocalPacte.IconChar = FontAwesome.Sharp.IconChar.LocationCrosshairs;
+            this.btnLocalPacte.IconColor = System.Drawing.Color.Aqua;
+            this.btnLocalPacte.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnLocalPacte.IconSize = 20;
+            this.btnLocalPacte.Location = new System.Drawing.Point(163, 108);
+            this.btnLocalPacte.Name = "btnLocalPacte";
+            this.btnLocalPacte.Size = new System.Drawing.Size(27, 24);
+            this.btnLocalPacte.TabIndex = 6;
+            this.btnLocalPacte.UseVisualStyleBackColor = false;
+            this.btnLocalPacte.Click += new System.EventHandler(this.btnLocalidad_Click);
             // 
             // lblLocalidad
             // 
@@ -284,9 +278,9 @@
             this.lblLocalidad.ForeColor = System.Drawing.Color.Aqua;
             this.lblLocalidad.Location = new System.Drawing.Point(196, 111);
             this.lblLocalidad.Name = "lblLocalidad";
-            this.lblLocalidad.Size = new System.Drawing.Size(76, 19);
+            this.lblLocalidad.Size = new System.Drawing.Size(14, 19);
             this.lblLocalidad.TabIndex = 161;
-            this.lblLocalidad.Text = "localidad";
+            this.lblLocalidad.Text = "-";
             // 
             // label23
             // 
@@ -376,6 +370,7 @@
             this.txtNumeroDoc.Name = "txtNumeroDoc";
             this.txtNumeroDoc.Size = new System.Drawing.Size(101, 23);
             this.txtNumeroDoc.TabIndex = 1;
+            this.txtNumeroDoc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNumeroDoc_KeyPress);
             // 
             // label18
             // 
@@ -486,18 +481,18 @@
             this.dgvPacientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvPacientes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Seleccionar,
-            this.id_Coleg,
+            this.id_Pacte,
             this.ApellidoyNombres,
             this.FechaNacim,
+            this.Sexo,
             this.Tipo,
             this.Numero,
             this.Domicilio,
-            this.CodigoPostal,
-            this.Sexo,
+            this.CodPostal,
             this.Telefono,
             this.Email,
             this.ObraSocial,
-            this.Plan,
+            this.PlanOS,
             this.Obs,
             this.UserRegistro,
             this.FechaRegistro});
@@ -532,116 +527,6 @@
             this.dgvPacientes.TabIndex = 129;
             this.dgvPacientes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPacientes_CellContentClick);
             this.dgvPacientes.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dgvPacientes_CellPainting);
-            // 
-            // Seleccionar
-            // 
-            this.Seleccionar.HeaderText = "";
-            this.Seleccionar.Name = "Seleccionar";
-            this.Seleccionar.ReadOnly = true;
-            this.Seleccionar.Width = 25;
-            // 
-            // id_Coleg
-            // 
-            this.id_Coleg.HeaderText = "id";
-            this.id_Coleg.Name = "id_Coleg";
-            this.id_Coleg.ReadOnly = true;
-            this.id_Coleg.Visible = false;
-            // 
-            // ApellidoyNombres
-            // 
-            this.ApellidoyNombres.HeaderText = "APELLIDO Y NOMBRES";
-            this.ApellidoyNombres.Name = "ApellidoyNombres";
-            this.ApellidoyNombres.ReadOnly = true;
-            this.ApellidoyNombres.Width = 230;
-            // 
-            // FechaNacim
-            // 
-            this.FechaNacim.HeaderText = "FechaNacim";
-            this.FechaNacim.Name = "FechaNacim";
-            this.FechaNacim.ReadOnly = true;
-            this.FechaNacim.Visible = false;
-            // 
-            // Tipo
-            // 
-            this.Tipo.HeaderText = "TIPO";
-            this.Tipo.Name = "Tipo";
-            this.Tipo.ReadOnly = true;
-            this.Tipo.Width = 50;
-            // 
-            // Numero
-            // 
-            this.Numero.HeaderText = "NUMERO";
-            this.Numero.Name = "Numero";
-            this.Numero.ReadOnly = true;
-            // 
-            // Domicilio
-            // 
-            this.Domicilio.HeaderText = "Domicilio";
-            this.Domicilio.Name = "Domicilio";
-            this.Domicilio.ReadOnly = true;
-            this.Domicilio.Visible = false;
-            // 
-            // CodigoPostal
-            // 
-            this.CodigoPostal.HeaderText = "CodigoPostal";
-            this.CodigoPostal.Name = "CodigoPostal";
-            this.CodigoPostal.ReadOnly = true;
-            this.CodigoPostal.Visible = false;
-            // 
-            // Sexo
-            // 
-            this.Sexo.HeaderText = "SEXO";
-            this.Sexo.Name = "Sexo";
-            this.Sexo.ReadOnly = true;
-            this.Sexo.Width = 50;
-            // 
-            // Telefono
-            // 
-            this.Telefono.HeaderText = "TELEFONO";
-            this.Telefono.Name = "Telefono";
-            this.Telefono.ReadOnly = true;
-            // 
-            // Email
-            // 
-            this.Email.HeaderText = "E-Mail";
-            this.Email.Name = "Email";
-            this.Email.ReadOnly = true;
-            this.Email.Width = 250;
-            // 
-            // ObraSocial
-            // 
-            this.ObraSocial.HeaderText = "ObraSocial";
-            this.ObraSocial.Name = "ObraSocial";
-            this.ObraSocial.ReadOnly = true;
-            this.ObraSocial.Visible = false;
-            // 
-            // Plan
-            // 
-            this.Plan.HeaderText = "Plan";
-            this.Plan.Name = "Plan";
-            this.Plan.ReadOnly = true;
-            this.Plan.Visible = false;
-            // 
-            // Obs
-            // 
-            this.Obs.HeaderText = "Obs";
-            this.Obs.Name = "Obs";
-            this.Obs.ReadOnly = true;
-            this.Obs.Visible = false;
-            // 
-            // UserRegistro
-            // 
-            this.UserRegistro.HeaderText = "UserRegistro";
-            this.UserRegistro.Name = "UserRegistro";
-            this.UserRegistro.ReadOnly = true;
-            this.UserRegistro.Visible = false;
-            // 
-            // FechaRegistro
-            // 
-            this.FechaRegistro.HeaderText = "FechaRegistro";
-            this.FechaRegistro.Name = "FechaRegistro";
-            this.FechaRegistro.ReadOnly = true;
-            this.FechaRegistro.Visible = false;
             // 
             // btnLimpiar
             // 
@@ -785,24 +670,6 @@
             this.txtEmail.Size = new System.Drawing.Size(421, 23);
             this.txtEmail.TabIndex = 8;
             // 
-            // dtpFechaNacim
-            // 
-            this.dtpFechaNacim.BorderColor = System.Drawing.Color.Gray;
-            this.dtpFechaNacim.BorderSize = 1;
-            this.dtpFechaNacim.CalendarFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpFechaNacim.CalendarMonthBackground = System.Drawing.Color.Silver;
-            this.dtpFechaNacim.CalendarTitleBackColor = System.Drawing.Color.Silver;
-            this.dtpFechaNacim.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpFechaNacim.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFechaNacim.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.dtpFechaNacim.Location = new System.Drawing.Point(335, 78);
-            this.dtpFechaNacim.MinimumSize = new System.Drawing.Size(4, 23);
-            this.dtpFechaNacim.Name = "dtpFechaNacim";
-            this.dtpFechaNacim.Size = new System.Drawing.Size(108, 23);
-            this.dtpFechaNacim.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.dtpFechaNacim.TabIndex = 4;
-            this.dtpFechaNacim.TextColor = System.Drawing.Color.White;
-            // 
             // label17
             // 
             this.label17.AutoSize = true;
@@ -818,16 +685,11 @@
             this.cboObraSocial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cboObraSocial.ForeColor = System.Drawing.Color.White;
             this.cboObraSocial.FormattingEnabled = true;
-            this.cboObraSocial.Items.AddRange(new object[] {
-            "ACTIVO",
-            "BAJA",
-            "CANCELADO",
-            "SUSPENDIDO",
-            "SUSP. MOROSO"});
             this.cboObraSocial.Location = new System.Drawing.Point(163, 166);
             this.cboObraSocial.Name = "cboObraSocial";
             this.cboObraSocial.Size = new System.Drawing.Size(322, 25);
             this.cboObraSocial.TabIndex = 9;
+            this.cboObraSocial.SelectedIndexChanged += new System.EventHandler(this.cboObraSocial_SelectedIndexChanged);
             // 
             // label16
             // 
@@ -878,6 +740,134 @@
             this.panel1.Size = new System.Drawing.Size(949, 42);
             this.panel1.TabIndex = 137;
             // 
+            // dtpFechaNacim
+            // 
+            this.dtpFechaNacim.BorderColor = System.Drawing.Color.Gray;
+            this.dtpFechaNacim.BorderSize = 1;
+            this.dtpFechaNacim.CalendarFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpFechaNacim.CalendarMonthBackground = System.Drawing.Color.Silver;
+            this.dtpFechaNacim.CalendarTitleBackColor = System.Drawing.Color.Silver;
+            this.dtpFechaNacim.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpFechaNacim.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFechaNacim.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.dtpFechaNacim.Location = new System.Drawing.Point(335, 78);
+            this.dtpFechaNacim.MinimumSize = new System.Drawing.Size(4, 23);
+            this.dtpFechaNacim.Name = "dtpFechaNacim";
+            this.dtpFechaNacim.Size = new System.Drawing.Size(108, 23);
+            this.dtpFechaNacim.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.dtpFechaNacim.TabIndex = 4;
+            this.dtpFechaNacim.TextColor = System.Drawing.Color.White;
+            // 
+            // Seleccionar
+            // 
+            this.Seleccionar.HeaderText = "";
+            this.Seleccionar.Name = "Seleccionar";
+            this.Seleccionar.ReadOnly = true;
+            this.Seleccionar.Width = 25;
+            // 
+            // id_Pacte
+            // 
+            this.id_Pacte.HeaderText = "id";
+            this.id_Pacte.Name = "id_Pacte";
+            this.id_Pacte.ReadOnly = true;
+            this.id_Pacte.Visible = false;
+            // 
+            // ApellidoyNombres
+            // 
+            this.ApellidoyNombres.HeaderText = "APELLIDO Y NOMBRES";
+            this.ApellidoyNombres.Name = "ApellidoyNombres";
+            this.ApellidoyNombres.ReadOnly = true;
+            this.ApellidoyNombres.Width = 250;
+            // 
+            // FechaNacim
+            // 
+            this.FechaNacim.HeaderText = "FechaNacim";
+            this.FechaNacim.Name = "FechaNacim";
+            this.FechaNacim.ReadOnly = true;
+            this.FechaNacim.Visible = false;
+            // 
+            // Sexo
+            // 
+            this.Sexo.HeaderText = "SEXO";
+            this.Sexo.Name = "Sexo";
+            this.Sexo.ReadOnly = true;
+            this.Sexo.Width = 50;
+            // 
+            // Tipo
+            // 
+            this.Tipo.HeaderText = "TIPO";
+            this.Tipo.Name = "Tipo";
+            this.Tipo.ReadOnly = true;
+            this.Tipo.Width = 50;
+            // 
+            // Numero
+            // 
+            this.Numero.HeaderText = "NUMERO";
+            this.Numero.Name = "Numero";
+            this.Numero.ReadOnly = true;
+            // 
+            // Domicilio
+            // 
+            this.Domicilio.HeaderText = "Domicilio";
+            this.Domicilio.Name = "Domicilio";
+            this.Domicilio.ReadOnly = true;
+            this.Domicilio.Visible = false;
+            // 
+            // CodPostal
+            // 
+            this.CodPostal.HeaderText = "CodigoPostal";
+            this.CodPostal.Name = "CodPostal";
+            this.CodPostal.ReadOnly = true;
+            this.CodPostal.Visible = false;
+            // 
+            // Telefono
+            // 
+            this.Telefono.HeaderText = "TELEFONO";
+            this.Telefono.Name = "Telefono";
+            this.Telefono.ReadOnly = true;
+            // 
+            // Email
+            // 
+            this.Email.HeaderText = "E Mail";
+            this.Email.Name = "Email";
+            this.Email.ReadOnly = true;
+            this.Email.Width = 300;
+            // 
+            // ObraSocial
+            // 
+            this.ObraSocial.HeaderText = "ObraSocial";
+            this.ObraSocial.Name = "ObraSocial";
+            this.ObraSocial.ReadOnly = true;
+            this.ObraSocial.Visible = false;
+            // 
+            // PlanOS
+            // 
+            this.PlanOS.HeaderText = "Plan";
+            this.PlanOS.Name = "PlanOS";
+            this.PlanOS.ReadOnly = true;
+            this.PlanOS.Visible = false;
+            // 
+            // Obs
+            // 
+            this.Obs.HeaderText = "Obs";
+            this.Obs.Name = "Obs";
+            this.Obs.ReadOnly = true;
+            this.Obs.Visible = false;
+            // 
+            // UserRegistro
+            // 
+            this.UserRegistro.HeaderText = "UserRegistro";
+            this.UserRegistro.Name = "UserRegistro";
+            this.UserRegistro.ReadOnly = true;
+            this.UserRegistro.Visible = false;
+            // 
+            // FechaRegistro
+            // 
+            this.FechaRegistro.HeaderText = "FechaRegistro";
+            this.FechaRegistro.Name = "FechaRegistro";
+            this.FechaRegistro.ReadOnly = true;
+            this.FechaRegistro.Visible = false;
+            // 
             // frmPacientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
@@ -915,7 +905,7 @@
         private System.Windows.Forms.Panel pnlDeck;
         private System.Windows.Forms.ComboBox cboPlanOS;
         private System.Windows.Forms.Label label4;
-        private FontAwesome.Sharp.IconButton btnLocalidad;
+        private FontAwesome.Sharp.IconButton btnLocalPacte;
         public System.Windows.Forms.Label lblLocalidad;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label3;
@@ -951,22 +941,22 @@
         private System.Windows.Forms.TextBox txtApelNombres;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel1;
+        public System.Windows.Forms.TextBox txtCodPos;
         private System.Windows.Forms.DataGridViewButtonColumn Seleccionar;
-        private System.Windows.Forms.DataGridViewTextBoxColumn id_Coleg;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id_Pacte;
         private System.Windows.Forms.DataGridViewTextBoxColumn ApellidoyNombres;
         private System.Windows.Forms.DataGridViewTextBoxColumn FechaNacim;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Sexo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Tipo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Numero;
         private System.Windows.Forms.DataGridViewTextBoxColumn Domicilio;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CodigoPostal;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Sexo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CodPostal;
         private System.Windows.Forms.DataGridViewTextBoxColumn Telefono;
         private System.Windows.Forms.DataGridViewTextBoxColumn Email;
         private System.Windows.Forms.DataGridViewTextBoxColumn ObraSocial;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Plan;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PlanOS;
         private System.Windows.Forms.DataGridViewTextBoxColumn Obs;
         private System.Windows.Forms.DataGridViewTextBoxColumn UserRegistro;
         private System.Windows.Forms.DataGridViewTextBoxColumn FechaRegistro;
-        public System.Windows.Forms.TextBox txtCodPos;
     }
 }

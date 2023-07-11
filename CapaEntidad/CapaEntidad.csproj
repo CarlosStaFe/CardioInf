@@ -50,6 +50,7 @@
     <Compile Include="CE_ObrasSociales.cs" />
     <Compile Include="CE_Pacientes.cs" />
     <Compile Include="CE_Permisos.cs" />
+    <Compile Include="CE_PlanesOS.cs" />
     <Compile Include="CE_Profesionales.cs" />
     <Compile Include="CE_Provincias.cs" />
     <Compile Include="CE_UserLogin.cs" />

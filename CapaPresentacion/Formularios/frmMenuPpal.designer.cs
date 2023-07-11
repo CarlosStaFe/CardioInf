@@ -58,6 +58,7 @@
             this.btnProfesionales = new FontAwesome.Sharp.IconButton();
             this.btnCodPostales = new FontAwesome.Sharp.IconButton();
             this.pnlSubmenuObrasSociales = new System.Windows.Forms.Panel();
+            this.btnPlanesOS = new FontAwesome.Sharp.IconButton();
             this.btnActualizarOS = new FontAwesome.Sharp.IconButton();
             this.pnlSubmenuConsultorio = new System.Windows.Forms.Panel();
             this.btnEcografia = new FontAwesome.Sharp.IconButton();
@@ -591,12 +592,37 @@
             // pnlSubmenuObrasSociales
             // 
             this.pnlSubmenuObrasSociales.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.pnlSubmenuObrasSociales.Controls.Add(this.btnPlanesOS);
             this.pnlSubmenuObrasSociales.Controls.Add(this.btnActualizarOS);
             this.pnlSubmenuObrasSociales.Font = new System.Drawing.Font("Cascadia Code", 11.25F);
             this.pnlSubmenuObrasSociales.Location = new System.Drawing.Point(231, 0);
             this.pnlSubmenuObrasSociales.Name = "pnlSubmenuObrasSociales";
             this.pnlSubmenuObrasSociales.Size = new System.Drawing.Size(160, 225);
             this.pnlSubmenuObrasSociales.TabIndex = 16;
+            // 
+            // btnPlanesOS
+            // 
+            this.btnPlanesOS.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPlanesOS.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnPlanesOS.FlatAppearance.BorderSize = 0;
+            this.btnPlanesOS.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.btnPlanesOS.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnPlanesOS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPlanesOS.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.btnPlanesOS.ForeColor = System.Drawing.Color.Aqua;
+            this.btnPlanesOS.IconChar = FontAwesome.Sharp.IconChar.Check;
+            this.btnPlanesOS.IconColor = System.Drawing.Color.White;
+            this.btnPlanesOS.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnPlanesOS.IconSize = 15;
+            this.btnPlanesOS.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPlanesOS.Location = new System.Drawing.Point(0, 33);
+            this.btnPlanesOS.Name = "btnPlanesOS";
+            this.btnPlanesOS.Size = new System.Drawing.Size(160, 33);
+            this.btnPlanesOS.TabIndex = 5;
+            this.btnPlanesOS.Text = "Actualizar Planes OS";
+            this.btnPlanesOS.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnPlanesOS.UseVisualStyleBackColor = true;
+            this.btnPlanesOS.Click += new System.EventHandler(this.btnPlanesOS_Click);
             // 
             // btnActualizarOS
             // 
@@ -861,6 +887,7 @@
         private FontAwesome.Sharp.IconButton btnUsuarios;
         private FontAwesome.Sharp.IconButton btnPermisos;
         private FontAwesome.Sharp.IconButton btnBotones;
+        private FontAwesome.Sharp.IconButton btnPlanesOS;
     }
 }
 

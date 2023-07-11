@@ -8,31 +8,33 @@ using CapaNegocio;
 
 namespace CapaPresentacion.Formularios
 {
-    public partial class frmValores : Form
+    public partial class frmPlanesOS : Form
     {
         private string respuesta;
 
-        public frmValores()
+        public frmPlanesOS()
         {
             InitializeComponent();
         }
 
-        private void frmValores_Load(object sender, EventArgs e)
+        private void frmPlanesOS_Load(object sender, EventArgs e)
         {
             txtUserRegistro.Text = CE_UserLogin.Usuario;
 
-            List<CE_Valores> ListaValores = new CN_Valores().ListaValores();
+            CargarCombos();
+
+            List<CE_PlanesOS> ListaPlanes = new CN_PlanesOS().ListaPlanes();
 
             //***** CARGO EL DGV *****
-            foreach (CE_Valores item in ListaValores)
+            foreach (CE_PlanesOS item in ListaPlanes)
             {
-                dgvValores.Rows.Add(new object[] { "", item.id_Valor, item.Estudio, item.Valor, item.Estado, item.FecEstado, item.Obs, item.UserRegistro, item.FechaRegistro });
+                dgvPlanes.Rows.Add(new object[] { "", item.id_Plan, item.OSPlan, item.NombrePlan, item.Estado, item.FecEstado, item.Obs, item.UserRegistro, item.FechaRegistro });
             }
 
             Colorear();
 
             //***** CARGO EL COMBO DE BUSQUEDA *****
-            foreach (DataGridViewColumn columna in dgvValores.Columns)
+            foreach (DataGridViewColumn columna in dgvPlanes.Columns)
             {
                 if (columna.Visible == true && columna.Name != "Seleccionar")
                 {
@@ -44,9 +46,9 @@ namespace CapaPresentacion.Formularios
         //***** COLOREO LA CELDA SI LA FIANZA ESTÁ VENCIDA *****
         private void Colorear()
         {
-            for (int i = 0; i < dgvValores.Rows.Count; i++)
+            for (int i = 0; i < dgvPlanes.Rows.Count; i++)
             {
-                DateTime dateFecha = Convert.ToDateTime(dgvValores.Rows[i].Cells["FecEstado"].Value);
+                DateTime dateFecha = Convert.ToDateTime(dgvPlanes.Rows[i].Cells["FecEstado"].Value);
             }
         }
 
@@ -55,18 +57,18 @@ namespace CapaPresentacion.Formularios
         {
             string mensaje = string.Empty;
 
-            mensaje += "DESEA REGISTRAR ESTE VALOR...???";
+            mensaje += "DESEA REGISTRAR ESTE PLAN...???";
             frmMsgBox msg = new frmMsgBox(mensaje, "question", 2);
             DialogResult dr = msg.ShowDialog();
             respuesta = dr.ToString();
 
             if (respuesta == "OK")
             {
-                CE_Valores cE_Valores = new CE_Valores()
+                CE_PlanesOS cE_PlanesOS = new CE_PlanesOS()
                 {
-                    id_Valor = Convert.ToInt32(txtId.Text),
-                    Estudio = cboEstudio.Text,
-                    Valor = txtValor.Text,
+                    id_Plan = Convert.ToInt32(txtId.Text),
+                    OSPlan = cboObraSocial.Text,
+                    NombrePlan = txtPlan.Text,
                     Estado = cboEstado.Text,
                     FecEstado = DateTime.Now,
                     Obs = txtObs.Text,
@@ -75,13 +77,13 @@ namespace CapaPresentacion.Formularios
                 };
 
                 //***** SI EL ID DEL VALOR = 0 REGISTRA, SINO EDITA *****
-                if (cE_Valores.id_Valor == 0)
+                if (cE_PlanesOS.id_Plan == 0)
                 {
-                    int idValor = new CN_Valores().Registrar(cE_Valores, out mensaje);
+                    int idPlan = new CN_PlanesOS().Registrar(cE_PlanesOS, out mensaje);
 
-                    if (idValor != 0)
+                    if (idPlan != 0)
                     {
-                        dgvValores.Rows.Add(new object[] {"",idValor,cboEstudio.Text,txtValor.Text,cboEstado.Text,txtFechaRegistro.Text,txtObs.Text,txtUserRegistro.Text,txtFechaRegistro.Text});
+                        dgvPlanes.Rows.Add(new object[] { "", idPlan, cboObraSocial.Text, txtPlan.Text, cboEstado.Text, txtFechaRegistro.Text, txtObs.Text, txtUserRegistro.Text, txtFechaRegistro.Text });
                         Limpiar();
                     }
                     else
@@ -93,14 +95,14 @@ namespace CapaPresentacion.Formularios
                 }
                 else
                 {
-                    bool resultado = new CN_Valores().Editar(cE_Valores, out mensaje);
+                    bool resultado = new CN_PlanesOS().Editar(cE_PlanesOS, out mensaje);
 
                     if (resultado)
                     {
-                        DataGridViewRow row = dgvValores.Rows[Convert.ToInt32(txtIndice.Text)];
-                        row.Cells["id_Valor"].Value = txtId.Text;
-                        row.Cells["Estudio"].Value = cboEstudio.Text;
-                        row.Cells["Valor"].Value = txtValor.Text;
+                        DataGridViewRow row = dgvPlanes.Rows[Convert.ToInt32(txtIndice.Text)];
+                        row.Cells["id_Plan"].Value = txtId.Text;
+                        row.Cells["OSPLan"].Value = cboObraSocial.Text;
+                        row.Cells["NombrePlan"].Value = txtPlan.Text;
                         row.Cells["Estado"].Value = cboEstado.Text;
                         row.Cells["FecEstado"].Value = DateTime.Now;
                         row.Cells["Obs"].Value = txtObs.Text;
@@ -136,16 +138,16 @@ namespace CapaPresentacion.Formularios
         {
             txtId.Text = "0";
             txtIndice.Text = "0";
-            cboEstudio.Text = String.Empty;
-            txtValor.Text = String.Empty;
+            cboObraSocial.Text = String.Empty;
+            txtPlan.Text = String.Empty;
             cboEstado.Text = String.Empty;
             txtObs.Text = String.Empty;
 
-            cboEstudio.Select();
+            cboObraSocial.Select();
         }
 
         //***** COLOCO EL ÍCONO EN CADA RENGLÓN DEL DGV *****
-        private void dgvValores_CellPainting(object sender, DataGridViewCellPaintingEventArgs e)
+        private void dgvPlanes_CellPainting(object sender, DataGridViewCellPaintingEventArgs e)
         {
             if (e.RowIndex < 0)
                 return;
@@ -163,22 +165,22 @@ namespace CapaPresentacion.Formularios
         }
 
         //***** MUEVO LO SELECCIONADO DEL DGV A LOS CAMPOS PARA MODIFICAR *****
-        private void dgvValores_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dgvPlanes_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (dgvValores.Columns[e.ColumnIndex].Name == "Seleccionar")
+            if (dgvPlanes.Columns[e.ColumnIndex].Name == "Seleccionar")
             {
                 int indice = e.RowIndex;
 
                 if (indice >= 0)
                 {
                     txtIndice.Text = indice.ToString();
-                    txtId.Text = dgvValores.Rows[indice].Cells["id_Valor"].Value.ToString();
-                    cboEstudio.Text = dgvValores.Rows[indice].Cells["Estudio"].Value.ToString();
-                    txtValor.Text = dgvValores.Rows[indice].Cells["Valor"].Value.ToString();
-                    cboEstado.Text = dgvValores.Rows[indice].Cells["Estado"].Value.ToString();
-                    txtObs.Text = dgvValores.Rows[indice].Cells["Obs"].Value.ToString();
-                    txtUserRegistro.Text = dgvValores.Rows[indice].Cells["UserRegistro"].Value.ToString();
-                    txtFechaRegistro.Text = dgvValores.Rows[indice].Cells["FechaRegistro"].Value.ToString();
+                    txtId.Text = dgvPlanes.Rows[indice].Cells["id_Plan"].Value.ToString();
+                    cboObraSocial.Text = dgvPlanes.Rows[indice].Cells["OSPlan"].Value.ToString();
+                    txtPlan.Text = dgvPlanes.Rows[indice].Cells["NombrePlan"].Value.ToString();
+                    cboEstado.Text = dgvPlanes.Rows[indice].Cells["Estado"].Value.ToString();
+                    txtObs.Text = dgvPlanes.Rows[indice].Cells["Obs"].Value.ToString();
+                    txtUserRegistro.Text = dgvPlanes.Rows[indice].Cells["UserRegistro"].Value.ToString();
+                    txtFechaRegistro.Text = dgvPlanes.Rows[indice].Cells["FechaRegistro"].Value.ToString();
                 }
             }
         }
@@ -188,9 +190,9 @@ namespace CapaPresentacion.Formularios
         {
             string columnaFiltro = Regex.Replace(cboBusqueda.SelectedItem.ToString().Trim(), " ", String.Empty);
 
-            if (dgvValores.Rows.Count > 0)
+            if (dgvPlanes.Rows.Count > 0)
             {
-                foreach (DataGridViewRow row in dgvValores.Rows)
+                foreach (DataGridViewRow row in dgvPlanes.Rows)
                 {
                     if (row.Cells[columnaFiltro].Value.ToString().Trim().ToUpper().Contains(txtFiltro.Text.Trim().ToUpper()))
                         row.Visible = true;
@@ -205,12 +207,25 @@ namespace CapaPresentacion.Formularios
         {
             txtFiltro.Text = string.Empty;
             cboBusqueda.Text = string.Empty;
-            foreach (DataGridViewRow row in dgvValores.Rows)
+            foreach (DataGridViewRow row in dgvPlanes.Rows)
             {
                 row.Visible = true;
             }
         }
 
+        //***** CARGO EL COMBO DE LAS OBRAS SOCIALES *****
+        private void CargarCombos()
+        {
+            cboObraSocial.Items.Clear();
+            cboObraSocial.Text = string.Empty;
 
+            List<CE_ObrasSociales> ListaOS = new CN_ObrasSociales().ListaOS();
+
+            foreach (CE_ObrasSociales item in ListaOS)
+            {
+                cboObraSocial.Items.Add(item.Nombre);
+                cboObraSocial.SelectedIndex = -1;             
+            }
+        }
     }
 }

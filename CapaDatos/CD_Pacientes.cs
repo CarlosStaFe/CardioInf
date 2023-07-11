@@ -41,8 +41,8 @@ namespace CapaDatos
                                     CodPostal = Convert.ToInt32(dr["CodPostal"].ToString()),
                                     Telefono = dr["Telefono"].ToString(),
                                     Email = dr["Email"].ToString(),
-                                    ObraSocial = Convert.ToInt32(dr["ObraSocial"].ToString()),
-                                    PlanOS = Convert.ToInt32(dr["PlanOS"].ToString()),
+                                    ObraSocial = dr["ObraSocial"].ToString(),
+                                    PlanOS = dr["PlanOS"].ToString(),
                                     Obs = dr["Obs"].ToString(),
                                     UserRegistro = dr["UserRegistro"].ToString(),
                                     FechaRegistro = Convert.ToDateTime(dr["FechaRegistro"])
@@ -72,7 +72,6 @@ namespace CapaDatos
                 {
                     try
                     {
-                        command.Parameters.AddWithValue("id_Pacte", obj.id_Pacte);
                         command.Parameters.AddWithValue("ApelNombres", obj.ApelNombres);
                         command.Parameters.AddWithValue("FechaNacim", obj.FechaNacim);
                         command.Parameters.AddWithValue("Sexo", obj.Sexo);
@@ -118,6 +117,7 @@ namespace CapaDatos
                 {
                     try
                     {
+                        command.Parameters.AddWithValue("id_Pacte", obj.id_Pacte);
                         command.Parameters.AddWithValue("ApelNombres", obj.ApelNombres);
                         command.Parameters.AddWithValue("FechaNacim", obj.FechaNacim);
                         command.Parameters.AddWithValue("Sexo", obj.Sexo);

@@ -6,12 +6,12 @@ using System.Collections.Generic;
 
 namespace CapaDatos
 {
-    public class CD_ObrasSociales:Conexion
+    public class CD_PlanesOS:Conexion
     {
-        //***** METODO PARA LISTAR LAS OBRAS SOCIALES *****
-        public List<CE_ObrasSociales> ListaOS()
+        //***** METODO PARA LISTAR LOS PANES DE OBRAS SOCIALES *****
+        public List<CE_PlanesOS> ListaPlanes()
         {
-            List<CE_ObrasSociales> lista = new List<CE_ObrasSociales>();
+            List<CE_PlanesOS> lista = new List<CE_PlanesOS>();
 
             using (var connection = GetConnection())
             {
@@ -21,7 +21,7 @@ namespace CapaDatos
                     try
                     {
                         command.Connection = connection;
-                        command.CommandText = "SELECT * FROM ObrasSociales ORDER BY Nombre";
+                        command.CommandText = "SELECT * FROM PlanesOS ORDER BY OSPlan";
                         command.CommandType = CommandType.Text;
                         SqlDataReader dr = command.ExecuteReader();
 
@@ -29,15 +29,13 @@ namespace CapaDatos
                         {
                             while (dr.Read())
                             {
-                                lista.Add(new CE_ObrasSociales()
+                                lista.Add(new CE_PlanesOS()
                                 {
-                                    id_OS = Convert.ToInt32(dr["id_OS"]),
-                                    Nombre = dr["Nombre"].ToString(),
-                                    Cuit = dr["Cuit"].ToString(),
-                                    Domicilio = dr["Domicilio"].ToString(),
-                                    CodPostal = Convert.ToInt32(dr["CodPostal"]),
-                                    Telefono = dr["Telefono"].ToString(),
-                                    Email = dr["Email"].ToString(),
+                                    id_Plan = Convert.ToInt32(dr["id_Plan"]),
+                                    OSPlan = dr["OSPlan"].ToString(),
+                                    NombrePlan = dr["NombrePlan"].ToString(),
+                                    Estado = dr["Estado"].ToString(),
+                                    FecEstado = Convert.ToDateTime(dr["FecEstado"]),
                                     Obs = dr["Obs"].ToString(),
                                     UserRegistro = dr["UserRegistro"].ToString(),
                                     FechaRegistro = Convert.ToDateTime(dr["FechaRegistro"])
@@ -47,32 +45,30 @@ namespace CapaDatos
                     }
                     catch (Exception)
                     {
-                        lista = new List<CE_ObrasSociales>();
+                        lista = new List<CE_PlanesOS>();
                     }
                 }
             }
             return lista;
         }
 
-        //***** METODO PARA REGISTRAR UNA OBRA SOCIAL *****
-        public int Registrar(CE_ObrasSociales obj, out string Mensaje)
+        //***** METODO PARA REGISTRAR UN PLAN DE OS *****
+        public int Registrar(CE_PlanesOS obj, out string Mensaje)
         {
-            int idOS = 0;
+            int idValor = 0;
             Mensaje = string.Empty;
 
             using (var connection = GetConnection())
             {
                 connection.Open();
-                using (var command = new SqlCommand("SP_RegistrarOS", connection))
+                using (var command = new SqlCommand("SP_RegistrarPlanOS", connection))
                 {
                     try
                     {
-                        command.Parameters.AddWithValue("Nombre", obj.Nombre);
-                        command.Parameters.AddWithValue("Cuit", obj.Cuit);
-                        command.Parameters.AddWithValue("Domicilio", obj.Domicilio);
-                        command.Parameters.AddWithValue("CodPostal", obj.CodPostal);
-                        command.Parameters.AddWithValue("Telefono", obj.Telefono);
-                        command.Parameters.AddWithValue("Email", obj.Email);
+                        command.Parameters.AddWithValue("OSPlan", obj.OSPlan);
+                        command.Parameters.AddWithValue("NombrePlan", obj.NombrePlan);
+                        command.Parameters.AddWithValue("Estado", obj.Estado);
+                        command.Parameters.AddWithValue("FecEstado", obj.FecEstado);
                         command.Parameters.AddWithValue("Obs", obj.Obs);
                         command.Parameters.AddWithValue("UserRegistro", obj.UserRegistro);
                         command.Parameters.AddWithValue("FechaRegistro", DateTime.Now);
@@ -81,21 +77,21 @@ namespace CapaDatos
                         command.CommandType = CommandType.StoredProcedure;
                         command.ExecuteNonQuery();
 
-                        idOS = Convert.ToInt32(command.Parameters["idResultado"].Value);
+                        idValor = Convert.ToInt32(command.Parameters["idResultado"].Value);
                         Mensaje = command.Parameters["Mensaje"].Value.ToString();
                     }
                     catch (Exception ex)
                     {
-                        idOS = 0;
+                        idValor = 0;
                         Mensaje = ex.Message;
                     }
                 }
             }
-            return idOS;
+            return idValor;
         }
 
-        //***** METODO PARA EDITAR UNA OBRA SOCIAL *****
-        public bool Editar(CE_ObrasSociales obj, out string Mensaje)
+        //***** METODO PARA EDITAR UN PLAN DE OS *****
+        public bool Editar(CE_PlanesOS obj, out string Mensaje)
         {
             bool Resultado = false;
             Mensaje = string.Empty;
@@ -103,17 +99,15 @@ namespace CapaDatos
             using (var connection = GetConnection())
             {
                 connection.Open();
-                using (var command = new SqlCommand("SP_EditarOS", connection))
+                using (var command = new SqlCommand("SP_EditarPlanOS", connection))
                 {
                     try
                     {
-                        command.Parameters.AddWithValue("id_OS", obj.id_OS);
-                        command.Parameters.AddWithValue("Nombre", obj.Nombre);
-                        command.Parameters.AddWithValue("Cuit", obj.Cuit);
-                        command.Parameters.AddWithValue("Domicilio", obj.Domicilio);
-                        command.Parameters.AddWithValue("CodPostal", obj.CodPostal);
-                        command.Parameters.AddWithValue("Telefono", obj.Telefono);
-                        command.Parameters.AddWithValue("Email", obj.Email);
+                        command.Parameters.AddWithValue("id_Plan", obj.id_Plan);
+                        command.Parameters.AddWithValue("OSPlan", obj.OSPlan);
+                        command.Parameters.AddWithValue("NombrePlan", obj.NombrePlan);
+                        command.Parameters.AddWithValue("Estado", obj.Estado);
+                        command.Parameters.AddWithValue("FecEstado", obj.FecEstado);
                         command.Parameters.AddWithValue("Obs", obj.Obs);
                         command.Parameters.AddWithValue("UserRegistro", obj.UserRegistro);
                         command.Parameters.AddWithValue("FechaRegistro", DateTime.Now);
@@ -134,6 +128,47 @@ namespace CapaDatos
             }
             return Resultado;
         }
+
+        //***** METODO PARA BUSCAR PLANES DE UNA OBRA SOCIAL *****
+        public List<CE_PlanesOS> ListaPlan(string nombreOS, out string mensaje)
+        {
+            List<CE_PlanesOS> lista = new List<CE_PlanesOS>();
+
+            mensaje = string.Empty;
+
+            using (var connection = GetConnection())
+            {
+                connection.Open();
+                using (var command = new SqlCommand())
+                {
+                    try
+                    {
+                        command.Connection = connection;
+                        command.Parameters.AddWithValue("@nombreOS", nombreOS);
+                        command.CommandText = "SELECT * FROM PlanesOS WHERE OSPlan = @nombreOS AND Estado = 'ACTIVO' ";
+                        command.CommandType = CommandType.Text;
+                        SqlDataReader dr = command.ExecuteReader();
+
+                        if (dr.HasRows)
+                        {
+                            while (dr.Read())
+                            {
+                                lista.Add(new CE_PlanesOS()
+                                {
+                                    NombrePlan = dr["NombrePlan"].ToString(),
+                                });
+                            }
+                        }
+                    }
+                    catch (Exception)
+                    {
+                        lista = new List<CE_PlanesOS>();
+                    }
+                    return lista;
+                }
+            }
+        }
+
 
     }
 }

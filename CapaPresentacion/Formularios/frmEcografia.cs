@@ -19,7 +19,6 @@ namespace CapaPresentacion.Formularios
 
         private void frmEcografia_Load(object sender, EventArgs e)
         {
-            LimpiarCombos();
             CargarCombos();
 
             txtDiagnostico.Focus();
@@ -28,7 +27,7 @@ namespace CapaPresentacion.Formularios
         //***** PROCEDIMIENTO DEL BOTON CLEAR DE DATOS *****
         private void btnClear_Click(object sender, EventArgs e)
         {
-            LimpiarCombos();
+            //LimpiarCombos();
             CargarCombos();
 
             txtDiagnostico.Focus();

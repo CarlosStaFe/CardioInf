@@ -42,7 +42,7 @@
             this.txtFechaRegistro = new System.Windows.Forms.TextBox();
             this.pnlDeck = new System.Windows.Forms.Panel();
             this.txtCodPos = new System.Windows.Forms.TextBox();
-            this.btnLocalidad = new FontAwesome.Sharp.IconButton();
+            this.btnLocalOS = new FontAwesome.Sharp.IconButton();
             this.lblLocalidad = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -71,7 +71,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.Seleccionar = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.id_Coleg = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.id_OS = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cuit = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Domicilio = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -166,7 +166,7 @@
             // 
             this.pnlDeck.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.pnlDeck.Controls.Add(this.txtCodPos);
-            this.pnlDeck.Controls.Add(this.btnLocalidad);
+            this.pnlDeck.Controls.Add(this.btnLocalOS);
             this.pnlDeck.Controls.Add(this.lblLocalidad);
             this.pnlDeck.Controls.Add(this.label23);
             this.pnlDeck.Controls.Add(this.label3);
@@ -210,21 +210,21 @@
             this.txtCodPos.Text = "164";
             this.txtCodPos.Visible = false;
             // 
-            // btnLocalidad
+            // btnLocalOS
             // 
-            this.btnLocalidad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.btnLocalidad.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLocalidad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLocalidad.IconChar = FontAwesome.Sharp.IconChar.LocationCrosshairs;
-            this.btnLocalidad.IconColor = System.Drawing.Color.Aqua;
-            this.btnLocalidad.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnLocalidad.IconSize = 20;
-            this.btnLocalidad.Location = new System.Drawing.Point(163, 108);
-            this.btnLocalidad.Name = "btnLocalidad";
-            this.btnLocalidad.Size = new System.Drawing.Size(27, 24);
-            this.btnLocalidad.TabIndex = 6;
-            this.btnLocalidad.UseVisualStyleBackColor = false;
-            this.btnLocalidad.Click += new System.EventHandler(this.btnLocalidad_Click);
+            this.btnLocalOS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.btnLocalOS.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLocalOS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLocalOS.IconChar = FontAwesome.Sharp.IconChar.LocationCrosshairs;
+            this.btnLocalOS.IconColor = System.Drawing.Color.Aqua;
+            this.btnLocalOS.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnLocalOS.IconSize = 20;
+            this.btnLocalOS.Location = new System.Drawing.Point(163, 108);
+            this.btnLocalOS.Name = "btnLocalOS";
+            this.btnLocalOS.Size = new System.Drawing.Size(27, 24);
+            this.btnLocalOS.TabIndex = 3;
+            this.btnLocalOS.UseVisualStyleBackColor = false;
+            this.btnLocalOS.Click += new System.EventHandler(this.btnLocalidad_Click);
             // 
             // lblLocalidad
             // 
@@ -233,9 +233,9 @@
             this.lblLocalidad.ForeColor = System.Drawing.Color.Aqua;
             this.lblLocalidad.Location = new System.Drawing.Point(196, 111);
             this.lblLocalidad.Name = "lblLocalidad";
-            this.lblLocalidad.Size = new System.Drawing.Size(76, 19);
-            this.lblLocalidad.TabIndex = 161;
-            this.lblLocalidad.Text = "localidad";
+            this.lblLocalidad.Size = new System.Drawing.Size(14, 19);
+            this.lblLocalidad.TabIndex = 4;
+            this.lblLocalidad.Text = "-";
             // 
             // label23
             // 
@@ -264,7 +264,7 @@
             this.txtDomicilio.Location = new System.Drawing.Point(163, 78);
             this.txtDomicilio.Name = "txtDomicilio";
             this.txtDomicilio.Size = new System.Drawing.Size(467, 23);
-            this.txtDomicilio.TabIndex = 5;
+            this.txtDomicilio.TabIndex = 2;
             // 
             // label15
             // 
@@ -285,6 +285,7 @@
             this.txtCuit.Name = "txtCuit";
             this.txtCuit.Size = new System.Drawing.Size(101, 23);
             this.txtCuit.TabIndex = 1;
+            this.txtCuit.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCuit_KeyPress);
             // 
             // groupBox1
             // 
@@ -386,7 +387,7 @@
             this.dgvObrasSociales.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvObrasSociales.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Seleccionar,
-            this.id_Coleg,
+            this.id_OS,
             this.Nombre,
             this.Cuit,
             this.Domicilio,
@@ -443,7 +444,7 @@
             this.btnLimpiar.Location = new System.Drawing.Point(910, 203);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(28, 28);
-            this.btnLimpiar.TabIndex = 15;
+            this.btnLimpiar.TabIndex = 11;
             this.btnLimpiar.UseVisualStyleBackColor = false;
             this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
@@ -462,7 +463,7 @@
             this.btnBuscar.Location = new System.Drawing.Point(844, 203);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(28, 28);
-            this.btnBuscar.TabIndex = 14;
+            this.btnBuscar.TabIndex = 10;
             this.btnBuscar.UseVisualStyleBackColor = false;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
@@ -475,7 +476,7 @@
             this.txtFiltro.Location = new System.Drawing.Point(633, 206);
             this.txtFiltro.Name = "txtFiltro";
             this.txtFiltro.Size = new System.Drawing.Size(193, 23);
-            this.txtFiltro.TabIndex = 13;
+            this.txtFiltro.TabIndex = 9;
             // 
             // cboBusqueda
             // 
@@ -487,7 +488,7 @@
             this.cboBusqueda.Location = new System.Drawing.Point(408, 205);
             this.cboBusqueda.Name = "cboBusqueda";
             this.cboBusqueda.Size = new System.Drawing.Size(219, 25);
-            this.cboBusqueda.TabIndex = 12;
+            this.cboBusqueda.TabIndex = 8;
             // 
             // label33
             // 
@@ -528,7 +529,7 @@
             this.txtObs.Location = new System.Drawing.Point(163, 167);
             this.txtObs.Name = "txtObs";
             this.txtObs.Size = new System.Drawing.Size(842, 23);
-            this.txtObs.TabIndex = 11;
+            this.txtObs.TabIndex = 7;
             // 
             // label22
             // 
@@ -548,12 +549,12 @@
             this.txtTelefono.Location = new System.Drawing.Point(725, 109);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(280, 23);
-            this.txtTelefono.TabIndex = 7;
+            this.txtTelefono.TabIndex = 5;
             // 
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(109, 140);
+            this.label20.Location = new System.Drawing.Point(108, 140);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(49, 17);
             this.label20.TabIndex = 88;
@@ -568,16 +569,16 @@
             this.txtEmail.Location = new System.Drawing.Point(163, 138);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(421, 23);
-            this.txtEmail.TabIndex = 8;
+            this.txtEmail.TabIndex = 6;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(63, 51);
+            this.label2.Location = new System.Drawing.Point(92, 51);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(94, 17);
+            this.label2.Size = new System.Drawing.Size(65, 17);
             this.label2.TabIndex = 50;
-            this.label2.Text = "Razón Social:";
+            this.label2.Text = "Nombre:";
             // 
             // txtNombre
             // 
@@ -588,7 +589,7 @@
             this.txtNombre.Location = new System.Drawing.Point(163, 49);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(467, 23);
-            this.txtNombre.TabIndex = 2;
+            this.txtNombre.TabIndex = 0;
             // 
             // label9
             // 
@@ -617,16 +618,16 @@
             this.Seleccionar.ReadOnly = true;
             this.Seleccionar.Width = 25;
             // 
-            // id_Coleg
+            // id_OS
             // 
-            this.id_Coleg.HeaderText = "id";
-            this.id_Coleg.Name = "id_Coleg";
-            this.id_Coleg.ReadOnly = true;
-            this.id_Coleg.Visible = false;
+            this.id_OS.HeaderText = "id";
+            this.id_OS.Name = "id_OS";
+            this.id_OS.ReadOnly = true;
+            this.id_OS.Visible = false;
             // 
             // Nombre
             // 
-            this.Nombre.HeaderText = "RAZON SOCIAL";
+            this.Nombre.HeaderText = "NOMBRE";
             this.Nombre.Name = "Nombre";
             this.Nombre.ReadOnly = true;
             this.Nombre.Width = 230;
@@ -659,7 +660,7 @@
             // 
             // Email
             // 
-            this.Email.HeaderText = "E-Mail";
+            this.Email.HeaderText = "E Mail";
             this.Email.Name = "Email";
             this.Email.ReadOnly = true;
             this.Email.Width = 250;
@@ -720,7 +721,7 @@
         private System.Windows.Forms.TextBox txtFechaRegistro;
         private System.Windows.Forms.Panel pnlDeck;
         public System.Windows.Forms.TextBox txtCodPos;
-        private FontAwesome.Sharp.IconButton btnLocalidad;
+        private FontAwesome.Sharp.IconButton btnLocalOS;
         public System.Windows.Forms.Label lblLocalidad;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label3;
@@ -749,7 +750,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridViewButtonColumn Seleccionar;
-        private System.Windows.Forms.DataGridViewTextBoxColumn id_Coleg;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id_OS;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cuit;
         private System.Windows.Forms.DataGridViewTextBoxColumn Domicilio;

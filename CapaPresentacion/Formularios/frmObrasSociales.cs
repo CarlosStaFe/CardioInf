@@ -1,5 +1,6 @@
 ﻿using CapaEntidad;
 using CapaNegocio;
+using CapaPresentacion.Utiles;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -13,6 +14,7 @@ namespace CapaPresentacion.Formularios
         private string respuesta;
         int codpos = 0;
         public string localidad;
+        SoloNumeros validar = new SoloNumeros();
 
         public frmObrasSociales()
         {
@@ -115,7 +117,7 @@ namespace CapaPresentacion.Formularios
                     txtCuit.Text = dgvObrasSociales.Rows[indice].Cells["Cuit"].Value.ToString();
                     txtDomicilio.Text = dgvObrasSociales.Rows[indice].Cells["Domicilio"].Value.ToString();
                     txtTelefono.Text = dgvObrasSociales.Rows[indice].Cells["Telefono"].Value.ToString();
-                    txtCodPos.Text = dgvObrasSociales.Rows[indice].Cells["CodigoPostal"].Value.ToString();
+                    txtCodPos.Text = dgvObrasSociales.Rows[indice].Cells["CodPostal"].Value.ToString();
 
                     //***** BUSCO LA LOCALIDAD DEL PACIENTE *****
                     codpos = Convert.ToInt32(txtCodPos.Text);
@@ -161,7 +163,7 @@ namespace CapaPresentacion.Formularios
         //***** PROCEDIMIENTO DEL BOTON PARA BUSCAR LA LOCALIDAD *****
         private void btnLocalidad_Click(object sender, EventArgs e)
         {
-            mdlCodPostal CodigoPostal = new mdlCodPostal("btnLocalidad");
+            mdlCodPostal CodigoPostal = new mdlCodPostal("btnLocalOS");
             AddOwnedForm(CodigoPostal);
             CodigoPostal.ShowDialog();
         }
@@ -217,7 +219,7 @@ namespace CapaPresentacion.Formularios
                     if (resultado)
                     {
                         DataGridViewRow row = dgvObrasSociales.Rows[Convert.ToInt32(txtIndice.Text)];
-                        row.Cells["id_OS"].Value = txtIndice.Text;
+                        row.Cells["id_OS"].Value = txtId.Text;
                         row.Cells["Nombre"].Value = txtNombre.Text;
                         row.Cells["Cuit"].Value = txtCuit.Text;
                         row.Cells["Domicilio"].Value = txtDomicilio.Text;
@@ -238,6 +240,12 @@ namespace CapaPresentacion.Formularios
                     }
                 }
             }
+        }
+
+        //***** VALIDO SI ES SOLO NÚMEROS *****
+        private void txtCuit_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.KeyChar = Convert.ToChar(validar.Validar(e.KeyChar));
         }
     }
 }

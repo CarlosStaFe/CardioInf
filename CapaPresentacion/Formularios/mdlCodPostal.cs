@@ -87,10 +87,19 @@ namespace CapaPresentacion
                     txtDepartamento.Text = dgvCodPostales.Rows[indice].Cells["Departamento"].Value.ToString();
                     txtProvincia.Text = dgvCodPostales.Rows[indice].Cells["Provincia"].Value.ToString();
 
-                    if (NombreBoton == "btnLocalidad")
+                    if (NombreBoton == "btnLocalPacte")
                     {
                         frmPacientes DomPaciente = Owner as frmPacientes;
                         DomPaciente.lblLocalidad.Text = txtCodigo.Text + " - " + txtLocalidad.Text + " - " + txtDepartamento.Text + " - " + txtProvincia.Text;
+                        DomPaciente.txtCodPos.Text = txtIdCodPos.Text;
+                        Close();
+                        Dispose();
+                    }
+                    if (NombreBoton == "btnLocalOS")
+                    {
+                        frmObrasSociales DomOS = Owner as frmObrasSociales;
+                        DomOS.lblLocalidad.Text = txtCodigo.Text + " - " + txtLocalidad.Text + " - " + txtDepartamento.Text + " - " + txtProvincia.Text;
+                        DomOS.txtCodPos.Text = txtIdCodPos.Text;
                         Close();
                         Dispose();
                     }

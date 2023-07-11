@@ -14,8 +14,8 @@ namespace CapaEntidad
         public int CodPostal { get; set; }
         public string Telefono { get; set; }
         public string Email { get; set; }
-        public int ObraSocial { get; set; }
-        public int PlanOS { get; set; }
+        public string ObraSocial { get; set; }
+        public string PlanOS { get; set; }
         public string Obs { get; set; }
         public string UserRegistro { get; set; }
         public DateTime FechaRegistro { get; set; }
