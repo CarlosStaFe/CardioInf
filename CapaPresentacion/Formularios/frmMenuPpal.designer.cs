@@ -643,7 +643,7 @@
             this.btnActualizarOS.Name = "btnActualizarOS";
             this.btnActualizarOS.Size = new System.Drawing.Size(160, 33);
             this.btnActualizarOS.TabIndex = 4;
-            this.btnActualizarOS.Text = "Actualizar";
+            this.btnActualizarOS.Text = "Actualizar OS";
             this.btnActualizarOS.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnActualizarOS.UseVisualStyleBackColor = true;
             this.btnActualizarOS.Click += new System.EventHandler(this.btnActualizarOS_Click);

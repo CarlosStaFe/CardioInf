@@ -91,6 +91,12 @@
     <Compile Include="Formularios\frmBotones.designer.cs">
       <DependentUpon>frmBotones.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\frmCargarAgenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmCargarAgenda.Designer.cs">
+      <DependentUpon>frmCargarAgenda.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\frmCodPostales.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -196,6 +202,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmBotones.resx">
       <DependentUpon>frmBotones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmCargarAgenda.resx">
+      <DependentUpon>frmCargarAgenda.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmCodPostales.resx">
       <DependentUpon>frmCodPostales.cs</DependentUpon>

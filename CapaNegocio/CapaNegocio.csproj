@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CN_Agendas.cs" />
     <Compile Include="CN_Botones.cs" />
     <Compile Include="CN_CodigosNacionales.cs" />
     <Compile Include="CN_CodigosPostales.cs" />

@@ -1738,7 +1738,7 @@
             this.btnSalir.IconColor = System.Drawing.Color.Aqua;
             this.btnSalir.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnSalir.IconSize = 30;
-            this.btnSalir.Location = new System.Drawing.Point(7, 278);
+            this.btnSalir.Location = new System.Drawing.Point(7, 438);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(70, 53);
             this.btnSalir.TabIndex = 1;
@@ -1780,7 +1780,7 @@
             this.btnGuardar.IconColor = System.Drawing.Color.Aqua;
             this.btnGuardar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnGuardar.IconSize = 30;
-            this.btnGuardar.Location = new System.Drawing.Point(7, 426);
+            this.btnGuardar.Location = new System.Drawing.Point(7, 289);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(70, 53);
             this.btnGuardar.TabIndex = 0;
