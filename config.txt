@@ -1,0 +1,10 @@
+*****=Conexión al Servidor SQL Server
+Conexion=server=SERVIDOR;user id=user_gral;password=usuariogeneral;persistsecurityinfo=True;database=dbcardioinf
+*****=Datos para enviar mail
+MailOrigen=informecardioinfantil@gmail.com
+PasswordMail=informe3373
+SMTP=smtp.gmail.com
+Puerto=587
+*****=Directorios de uso del sistema
+PathEcografias=E:\DBCardioInf\Ecografias\
+PathBackup=E:\DBCardioInf\Backup\
