@@ -289,56 +289,63 @@ namespace CapaPresentacion.Formularios
                 if (Convert.ToInt32(numeroeco) != 0)
                 {
                     GrabarDetalle();
-                    MostrarEcografia();
+                    //MostrarEcografia();
                 }
                 else
                 {
                     tipoCpbte = "ECO";
                     BuscoComprobante();
+                } //***** SEA GREGÓ PARA CAMBIAR FECHA
 
-                    //***** REGISTRO LA CEBACERA DE LA ECOGRAFÍA **********************************************
+                //***** REGISTRO LA CEBACERA DE LA ECOGRAFÍA **********************************************
 
-                    CE_CabeceraEco cE_CabeceraEco = new CE_CabeceraEco()
+                CE_CabeceraEco cE_CabeceraEco = new CE_CabeceraEco()
+                {
+                    id_CabEco = Convert.ToInt32(txtId.Text),
+                    Pacte = Convert.ToInt32(idPaciente),
+                    FechaEco = Convert.ToDateTime(fechaeco),
+                    NumeroCab = Convert.ToInt32(comprobante),
+                    ApelNombres = lblApelNombres.Text,
+                    FechaNacim = Convert.ToDateTime(lblFecNacim.Text),
+                    ObraSocial = obraSocial,
+                    PlanOS = planOS,
+                    Afiliado = afiliado,
+                    AA = aa,
+                    MM = mm,
+                    DD = dd,
+                    Tipo = tipoEco,
+                    Obs = email,
+                    Estado = "COMPLETA",
+                    FechaEstado = DateTime.Now,
+                    UserRegistro = CE_UserLogin.Usuario,
+                    FechaRegistro = DateTime.Now
+                };
+
+                //*****SI EL ID DE LA ECOGRAFÍA = 0 REGISTRA, SINO EDITA *****
+                if (cE_CabeceraEco.id_CabEco == 0)
+                {
+                    int idCabEco = new CN_CabeceraEco().Registrar(cE_CabeceraEco, out mensaje);
+
+                    if (idCabEco != 0)
                     {
-                        id_CabEco = Convert.ToInt32(txtId.Text),
-                        Pacte = Convert.ToInt32(idPaciente),
-                        FechaEco = Convert.ToDateTime(fechaeco),
-                        NumeroCab = Convert.ToInt32(comprobante),
-                        ApelNombres = lblApelNombres.Text,
-                        FechaNacim = Convert.ToDateTime(lblFecNacim.Text),
-                        ObraSocial = obraSocial,
-                        PlanOS = planOS,
-                        Afiliado = afiliado,
-                        AA = aa,
-                        MM = mm,
-                        DD = dd,
-                        Tipo = tipoEco,
-                        Obs = email,
-                        Estado = "COMPLETA",
-                        FechaEstado = DateTime.Now,
-                        UserRegistro = CE_UserLogin.Usuario,
-                        FechaRegistro = DateTime.Now
-                    };
-
-                    //*****SI EL ID DE LA ECOGRAFÍA = 0 REGISTRA, SINO EDITA *****
-                    if (cE_CabeceraEco.id_CabEco == 0)
+                        GrabarDetalle();
+                        MostrarEcografia();
+                        comprobante = "";
+                    }
+                    else
                     {
-                        int idCabEco = new CN_CabeceraEco().Registrar(cE_CabeceraEco, out mensaje);
-
-                        if (idCabEco != 0)
-                        {
-                            GrabarDetalle();
-                            MostrarEcografia();
-                            comprobante = "";
-                        }
-                        else
-                        {
-                            mensaje += ". VERIFIQUE CABECERA...!!!";
-                            frmMsgBox msg1 = new frmMsgBox(mensaje, "info", 1);
-                            msg1.ShowDialog();
-                        }
+                        mensaje += ". VERIFIQUE CABECERA...!!!";
+                        frmMsgBox msg1 = new frmMsgBox(mensaje, "info", 1);
+                        msg1.ShowDialog();
                     }
                 }
+                else
+                {
+                    bool Resultado = new CN_CabeceraEco().Editar(cE_CabeceraEco, out mensaje);
+                    MostrarEcografia();
+                    comprobante = "";
+                }
+                //  } SE SACÓ PARA CAMBIAR FECHA
                 mensaje += "ECOGRAFÍA GRABADA CORRECTAMENTE...!!!";
                 frmMsgBox msg2 = new frmMsgBox(mensaje, "ok", 1);
                 msg2.ShowDialog();

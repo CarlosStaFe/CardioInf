@@ -124,7 +124,7 @@ namespace CapaDatos
                 {
                     try
                     {
-                        command.Parameters.AddWithValue("_id_Eco", obj.id_CabEco);
+                        command.Parameters.AddWithValue("_id_CabEco", obj.id_CabEco);
                         command.Parameters.AddWithValue("_Pacte", obj.Pacte);
                         command.Parameters.AddWithValue("_FechaEco", obj.FechaEco);
                         command.Parameters.AddWithValue("_NumeroCab", obj.NumeroCab);
