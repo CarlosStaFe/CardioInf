@@ -102,6 +102,7 @@ namespace CapaPresentacion.Formularios
 
             foreach (CE_CabeceraEco item in LeerCab)
             {
+                txtIdCab.Text = item.id_CabEco.ToString();
                 lblApelNombres.Text = item.ApelNombres.ToString();
                 lblFecNacim.Text = item.FechaNacim.ToString();
 
@@ -126,6 +127,7 @@ namespace CapaPresentacion.Formularios
             foreach (CE_DetalleEco item in LeerDet)
             {
                 txtId.Text = item.id_DetEco.ToString();
+                txtIdDet.Text = item.id_DetEco.ToString();
                 txtDiagnostico.Text = item.Diagnostico.ToString();
                 txt1.Text = item.E1.ToString();
                 txt2.Text = item.E2.ToString();
@@ -301,7 +303,7 @@ namespace CapaPresentacion.Formularios
 
                 CE_CabeceraEco cE_CabeceraEco = new CE_CabeceraEco()
                 {
-                    id_CabEco = Convert.ToInt32(txtId.Text),
+                    id_CabEco = Convert.ToInt32(txtIdCab.Text),
                     Pacte = Convert.ToInt32(idPaciente),
                     FechaEco = Convert.ToDateTime(fechaeco),
                     NumeroCab = Convert.ToInt32(comprobante),
@@ -363,7 +365,7 @@ namespace CapaPresentacion.Formularios
             //***** REGISTRO EL DETALLE DE LA ECOGRAFÍA **********************************************
             CE_DetalleEco cE_DetalleEco = new CE_DetalleEco()
             {
-                id_DetEco = Convert.ToInt32(txtId.Text),
+                id_DetEco = Convert.ToInt32(txtIdDet.Text),
                 NumeroDet = Convert.ToInt32(comprobante),
                 Diagnostico = txtDiagnostico.Text,
                 E1 = txt1.Text,

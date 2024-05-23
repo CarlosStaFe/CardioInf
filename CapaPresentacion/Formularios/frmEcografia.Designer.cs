@@ -176,6 +176,8 @@
             this.lblAA = new System.Windows.Forms.Label();
             this.lblFecNacim = new System.Windows.Forms.Label();
             this.lblApelNombres = new System.Windows.Forms.Label();
+            this.txtIdCab = new System.Windows.Forms.TextBox();
+            this.txtIdDet = new System.Windows.Forms.TextBox();
             this.pnlTitulo.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.pnlDeck.SuspendLayout();
@@ -185,6 +187,8 @@
             // 
             this.pnlTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.pnlTitulo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlTitulo.Controls.Add(this.txtIdDet);
+            this.pnlTitulo.Controls.Add(this.txtIdCab);
             this.pnlTitulo.Controls.Add(this.dtpFecha);
             this.pnlTitulo.Controls.Add(this.lblTipoEco);
             this.pnlTitulo.Controls.Add(this.txtId);
@@ -2023,6 +2027,32 @@
             this.lblApelNombres.TabIndex = 0;
             this.lblApelNombres.Text = "-";
             // 
+            // txtIdCab
+            // 
+            this.txtIdCab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.txtIdCab.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtIdCab.Enabled = false;
+            this.txtIdCab.ForeColor = System.Drawing.Color.White;
+            this.txtIdCab.Location = new System.Drawing.Point(1067, 19);
+            this.txtIdCab.Name = "txtIdCab";
+            this.txtIdCab.Size = new System.Drawing.Size(34, 16);
+            this.txtIdCab.TabIndex = 323;
+            this.txtIdCab.Text = "0";
+            this.txtIdCab.Visible = false;
+            // 
+            // txtIdDet
+            // 
+            this.txtIdDet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.txtIdDet.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtIdDet.Enabled = false;
+            this.txtIdDet.ForeColor = System.Drawing.Color.White;
+            this.txtIdDet.Location = new System.Drawing.Point(1107, 19);
+            this.txtIdDet.Name = "txtIdDet";
+            this.txtIdDet.Size = new System.Drawing.Size(34, 16);
+            this.txtIdDet.TabIndex = 324;
+            this.txtIdDet.Text = "0";
+            this.txtIdDet.Visible = false;
+            // 
             // frmEcografia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
@@ -2212,5 +2242,7 @@
         public System.Windows.Forms.Label lblTipoEco;
         private DataSetPrincipal dataSetPrincipal;
         private DatePicker dtpFecha;
+        private System.Windows.Forms.TextBox txtIdDet;
+        private System.Windows.Forms.TextBox txtIdCab;
     }
 }
