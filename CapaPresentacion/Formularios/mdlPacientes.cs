@@ -14,10 +14,10 @@ namespace CapaPresentacion.Formularios
         string NombreBoton;
         string texto = "";
 
-        public mdlPacientes(string NombreBoton)
+        public mdlPacientes(string nombreboton)
         {
             InitializeComponent();
-            this.NombreBoton = NombreBoton;
+            NombreBoton = nombreboton;
         }
 
         private void mdlPacientes_Load(object sender, EventArgs e)
@@ -39,7 +39,6 @@ namespace CapaPresentacion.Formularios
                 dgvPacientes.Rows.Add(new object[] { "", item.id_Pacte, item.ApelNombres, item.FechaNacim, item.Sexo, item.TipoDoc, item.NumeroDoc, item.Domicilio, item.CodPostal,
                                                 item.Telefono, item.Email, item.ObraSocial, item.PlanOS, item.Obs, item.UserRegistro, item.FechaRegistro, item.Afiliado });
             }
-
         }
 
         //***** PROCEDIMIENTO DEL BOTON SALIR *****
@@ -99,6 +98,17 @@ namespace CapaPresentacion.Formularios
                         Close();
                         Dispose();
                     }
+                    if (NombreBoton == "btnHistoria")
+                    {
+                        frmHistorias HisPaciente = Owner as frmHistorias;
+                        HisPaciente.lblPaciente.Text = txtApelNombres.Text + " - " + txtFecNacim.Text + " - " + txtSexo.Text + " - " + txtTipoDoc.Text + ": " + txtNumeroDoc.Text;
+                        HisPaciente.txtidPcte.Text = txtId.Text;
+                        HisPaciente.txtNumeroDoc.Text = txtNumeroDoc.Text;
+                        HisPaciente.txtApelNombres.Text = txtApelNombres.Text;
+                        Close();
+                        Dispose();
+                    }
+
                 }
             }
         }

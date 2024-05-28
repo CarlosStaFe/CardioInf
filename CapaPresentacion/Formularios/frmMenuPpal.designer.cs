@@ -67,6 +67,7 @@
             this.btnEnviarMail = new FontAwesome.Sharp.IconButton();
             this.btnCargarAgenda = new FontAwesome.Sharp.IconButton();
             this.btnActualizarPac = new FontAwesome.Sharp.IconButton();
+            this.btnHistorias = new FontAwesome.Sharp.IconButton();
             this.pnlMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlTitulo.SuspendLayout();
@@ -675,11 +676,12 @@
             // pnlSubmenuConsultorio
             // 
             this.pnlSubmenuConsultorio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.pnlSubmenuConsultorio.Controls.Add(this.btnHistorias);
             this.pnlSubmenuConsultorio.Controls.Add(this.btnAgenda);
             this.pnlSubmenuConsultorio.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.pnlSubmenuConsultorio.Location = new System.Drawing.Point(117, 0);
             this.pnlSubmenuConsultorio.Name = "pnlSubmenuConsultorio";
-            this.pnlSubmenuConsultorio.Size = new System.Drawing.Size(160, 66);
+            this.pnlSubmenuConsultorio.Size = new System.Drawing.Size(160, 99);
             this.pnlSubmenuConsultorio.TabIndex = 15;
             // 
             // btnAgenda
@@ -790,6 +792,30 @@
             this.btnActualizarPac.UseVisualStyleBackColor = true;
             this.btnActualizarPac.Click += new System.EventHandler(this.btnActualizarPac_Click);
             // 
+            // btnHistorias
+            // 
+            this.btnHistorias.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnHistorias.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnHistorias.FlatAppearance.BorderSize = 0;
+            this.btnHistorias.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.btnHistorias.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnHistorias.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHistorias.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.btnHistorias.ForeColor = System.Drawing.Color.Aqua;
+            this.btnHistorias.IconChar = FontAwesome.Sharp.IconChar.Check;
+            this.btnHistorias.IconColor = System.Drawing.Color.White;
+            this.btnHistorias.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnHistorias.IconSize = 15;
+            this.btnHistorias.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHistorias.Location = new System.Drawing.Point(0, 33);
+            this.btnHistorias.Name = "btnHistorias";
+            this.btnHistorias.Size = new System.Drawing.Size(160, 33);
+            this.btnHistorias.TabIndex = 1;
+            this.btnHistorias.Text = "Historias Clínicas";
+            this.btnHistorias.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnHistorias.UseVisualStyleBackColor = true;
+            this.btnHistorias.Click += new System.EventHandler(this.btnHistorias_Click);
+            // 
             // frmMenuPpal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -866,6 +892,7 @@
         private FontAwesome.Sharp.IconButton btnBackupRestore;
         private FontAwesome.Sharp.IconButton btnEnviarMail;
         private FontAwesome.Sharp.IconButton btnArrobas;
+        private FontAwesome.Sharp.IconButton btnHistorias;
     }
 }
 

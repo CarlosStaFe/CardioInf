@@ -266,10 +266,10 @@ namespace ColegMart
             AbrirFormHijo(new frmVerAgenda());
             OcultarSubmenu();
         }
-        private void btnEcografia_Click(object sender, System.EventArgs e)
+        private void btnHistorias_Click(object sender, System.EventArgs e)
         {
-            //AbrirFormHijo(new frmEcografia("frmEcografia"));
-            //OcultarSubmenu();
+            AbrirFormHijo(new frmHistorias());
+            OcultarSubmenu();
         }
 
         #endregion

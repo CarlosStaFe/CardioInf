@@ -121,6 +121,8 @@
     <Compile Include="CD_Departamentos.cs" />
     <Compile Include="CD_DetalleEco.cs" />
     <Compile Include="CD_Ecografias.cs" />
+    <Compile Include="CD_Historias.cs" />
+    <Compile Include="CD_HistoriasOld.cs" />
     <Compile Include="CD_Localidades.cs" />
     <Compile Include="CD_ObrasSociales.cs" />
     <Compile Include="CD_Pacientes.cs" />

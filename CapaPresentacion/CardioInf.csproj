@@ -211,6 +211,12 @@
     <Compile Include="Formularios\frmEnviarMail.Designer.cs">
       <DependentUpon>frmEnviarMail.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\frmHistorias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmHistorias.Designer.cs">
+      <DependentUpon>frmHistorias.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -289,6 +295,12 @@
     <Compile Include="Formularios\mdlCodPostal.designer.cs">
       <DependentUpon>mdlCodPostal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\mdlHistoriasOld.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\mdlHistoriasOld.Designer.cs">
+      <DependentUpon>mdlHistoriasOld.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\mdlInformeEco.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -333,6 +345,9 @@
     <EmbeddedResource Include="Formularios\frmEnviarMail.resx">
       <DependentUpon>frmEnviarMail.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmHistorias.resx">
+      <DependentUpon>frmHistorias.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -371,6 +386,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\mdlCodPostal.resx">
       <DependentUpon>mdlCodPostal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\mdlHistoriasOld.resx">
+      <DependentUpon>mdlHistoriasOld.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\mdlInformeEco.resx">
       <DependentUpon>mdlInformeEco.cs</DependentUpon>
