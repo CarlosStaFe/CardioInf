@@ -1054,5 +1054,14 @@ namespace CapaPresentacion.Formularios
             AddOwnedForm(PrintEco);
             PrintEco.ShowDialog();
         }
+
+        //***** MUESTRO LAS HISTORIAS CLÍNICAS *****
+        private void btnHC_Click(object sender, EventArgs e)
+        {
+            frmHistorias Hist = new frmHistorias(Convert.ToInt32(idPaciente));
+            AddOwnedForm(Hist);
+            Hist.ShowDialog();
+        }
+
     }
 }

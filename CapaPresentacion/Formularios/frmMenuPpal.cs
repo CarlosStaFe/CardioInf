@@ -268,7 +268,7 @@ namespace ColegMart
         }
         private void btnHistorias_Click(object sender, System.EventArgs e)
         {
-            AbrirFormHijo(new frmHistorias());
+            AbrirFormHijo(new frmHistorias(0));
             OcultarSubmenu();
         }
 

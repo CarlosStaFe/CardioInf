@@ -42,6 +42,20 @@
             this.txtSexo = new System.Windows.Forms.TextBox();
             this.txtFecNacim = new System.Windows.Forms.TextBox();
             this.dgvPacientes = new System.Windows.Forms.DataGridView();
+            this.btnLimpiar = new FontAwesome.Sharp.IconButton();
+            this.btnBuscar = new FontAwesome.Sharp.IconButton();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.txtFiltro = new System.Windows.Forms.TextBox();
+            this.btnSalir = new FontAwesome.Sharp.IconButton();
+            this.txtApelNombres = new System.Windows.Forms.TextBox();
+            this.txtIndice = new System.Windows.Forms.TextBox();
+            this.txtUserRegistro = new System.Windows.Forms.TextBox();
+            this.txtId = new System.Windows.Forms.TextBox();
+            this.txtObraSocial = new System.Windows.Forms.TextBox();
+            this.txtPlan = new System.Windows.Forms.TextBox();
+            this.txtAfiliado = new System.Windows.Forms.TextBox();
             this.Seleccionar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.id_Pacte = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ApellidoyNombres = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -55,20 +69,10 @@
             this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ObraSocial = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PlanOS = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Afiliado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Obs = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.UserRegistro = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FechaRegistro = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnLimpiar = new FontAwesome.Sharp.IconButton();
-            this.btnBuscar = new FontAwesome.Sharp.IconButton();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.txtFiltro = new System.Windows.Forms.TextBox();
-            this.btnSalir = new FontAwesome.Sharp.IconButton();
-            this.txtApelNombres = new System.Windows.Forms.TextBox();
-            this.txtIndice = new System.Windows.Forms.TextBox();
-            this.txtUserRegistro = new System.Windows.Forms.TextBox();
-            this.txtId = new System.Windows.Forms.TextBox();
             this.pnlTitulo.SuspendLayout();
             this.pnlDeck.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPacientes)).BeginInit();
@@ -100,6 +104,9 @@
             // pnlDeck
             // 
             this.pnlDeck.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.pnlDeck.Controls.Add(this.txtAfiliado);
+            this.pnlDeck.Controls.Add(this.txtPlan);
+            this.pnlDeck.Controls.Add(this.txtObraSocial);
             this.pnlDeck.Controls.Add(this.txtNumeroDoc);
             this.pnlDeck.Controls.Add(this.txtTipoDoc);
             this.pnlDeck.Controls.Add(this.txtSexo);
@@ -205,6 +212,7 @@
             this.Email,
             this.ObraSocial,
             this.PlanOS,
+            this.Afiliado,
             this.Obs,
             this.UserRegistro,
             this.FechaRegistro});
@@ -239,116 +247,6 @@
             this.dgvPacientes.TabIndex = 144;
             this.dgvPacientes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPacientes_CellContentClick_1);
             this.dgvPacientes.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dgvPacientes_CellPainting_1);
-            // 
-            // Seleccionar
-            // 
-            this.Seleccionar.HeaderText = "";
-            this.Seleccionar.Name = "Seleccionar";
-            this.Seleccionar.ReadOnly = true;
-            this.Seleccionar.Width = 25;
-            // 
-            // id_Pacte
-            // 
-            this.id_Pacte.HeaderText = "id";
-            this.id_Pacte.Name = "id_Pacte";
-            this.id_Pacte.ReadOnly = true;
-            this.id_Pacte.Visible = false;
-            // 
-            // ApellidoyNombres
-            // 
-            this.ApellidoyNombres.HeaderText = "APELLIDO Y NOMBRES";
-            this.ApellidoyNombres.Name = "ApellidoyNombres";
-            this.ApellidoyNombres.ReadOnly = true;
-            this.ApellidoyNombres.Width = 250;
-            // 
-            // FechaNacim
-            // 
-            this.FechaNacim.HeaderText = "FechaNacim";
-            this.FechaNacim.Name = "FechaNacim";
-            this.FechaNacim.ReadOnly = true;
-            this.FechaNacim.Visible = false;
-            // 
-            // Sexo
-            // 
-            this.Sexo.HeaderText = "SEXO";
-            this.Sexo.Name = "Sexo";
-            this.Sexo.ReadOnly = true;
-            this.Sexo.Width = 50;
-            // 
-            // Tipo
-            // 
-            this.Tipo.HeaderText = "TIPO";
-            this.Tipo.Name = "Tipo";
-            this.Tipo.ReadOnly = true;
-            this.Tipo.Width = 50;
-            // 
-            // Numero
-            // 
-            this.Numero.HeaderText = "NUMERO";
-            this.Numero.Name = "Numero";
-            this.Numero.ReadOnly = true;
-            // 
-            // Domicilio
-            // 
-            this.Domicilio.HeaderText = "Domicilio";
-            this.Domicilio.Name = "Domicilio";
-            this.Domicilio.ReadOnly = true;
-            this.Domicilio.Visible = false;
-            // 
-            // CodPostal
-            // 
-            this.CodPostal.HeaderText = "CodigoPostal";
-            this.CodPostal.Name = "CodPostal";
-            this.CodPostal.ReadOnly = true;
-            this.CodPostal.Visible = false;
-            // 
-            // Telefono
-            // 
-            this.Telefono.HeaderText = "TELEFONO";
-            this.Telefono.Name = "Telefono";
-            this.Telefono.ReadOnly = true;
-            // 
-            // Email
-            // 
-            this.Email.HeaderText = "E Mail";
-            this.Email.Name = "Email";
-            this.Email.ReadOnly = true;
-            this.Email.Width = 300;
-            // 
-            // ObraSocial
-            // 
-            this.ObraSocial.HeaderText = "ObraSocial";
-            this.ObraSocial.Name = "ObraSocial";
-            this.ObraSocial.ReadOnly = true;
-            this.ObraSocial.Visible = false;
-            // 
-            // PlanOS
-            // 
-            this.PlanOS.HeaderText = "Plan";
-            this.PlanOS.Name = "PlanOS";
-            this.PlanOS.ReadOnly = true;
-            this.PlanOS.Visible = false;
-            // 
-            // Obs
-            // 
-            this.Obs.HeaderText = "Obs";
-            this.Obs.Name = "Obs";
-            this.Obs.ReadOnly = true;
-            this.Obs.Visible = false;
-            // 
-            // UserRegistro
-            // 
-            this.UserRegistro.HeaderText = "UserRegistro";
-            this.UserRegistro.Name = "UserRegistro";
-            this.UserRegistro.ReadOnly = true;
-            this.UserRegistro.Visible = false;
-            // 
-            // FechaRegistro
-            // 
-            this.FechaRegistro.HeaderText = "FechaRegistro";
-            this.FechaRegistro.Name = "FechaRegistro";
-            this.FechaRegistro.ReadOnly = true;
-            this.FechaRegistro.Visible = false;
             // 
             // btnLimpiar
             // 
@@ -501,6 +399,159 @@
             this.txtId.Text = "0";
             this.txtId.Visible = false;
             // 
+            // txtObraSocial
+            // 
+            this.txtObraSocial.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.txtObraSocial.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtObraSocial.Enabled = false;
+            this.txtObraSocial.ForeColor = System.Drawing.Color.White;
+            this.txtObraSocial.Location = new System.Drawing.Point(985, 293);
+            this.txtObraSocial.Name = "txtObraSocial";
+            this.txtObraSocial.Size = new System.Drawing.Size(35, 16);
+            this.txtObraSocial.TabIndex = 150;
+            this.txtObraSocial.Visible = false;
+            // 
+            // txtPlan
+            // 
+            this.txtPlan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.txtPlan.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPlan.Enabled = false;
+            this.txtPlan.ForeColor = System.Drawing.Color.White;
+            this.txtPlan.Location = new System.Drawing.Point(985, 315);
+            this.txtPlan.Name = "txtPlan";
+            this.txtPlan.Size = new System.Drawing.Size(35, 16);
+            this.txtPlan.TabIndex = 151;
+            this.txtPlan.Visible = false;
+            // 
+            // txtAfiliado
+            // 
+            this.txtAfiliado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.txtAfiliado.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtAfiliado.Enabled = false;
+            this.txtAfiliado.ForeColor = System.Drawing.Color.White;
+            this.txtAfiliado.Location = new System.Drawing.Point(985, 337);
+            this.txtAfiliado.Name = "txtAfiliado";
+            this.txtAfiliado.Size = new System.Drawing.Size(35, 16);
+            this.txtAfiliado.TabIndex = 152;
+            this.txtAfiliado.Visible = false;
+            // 
+            // Seleccionar
+            // 
+            this.Seleccionar.HeaderText = "";
+            this.Seleccionar.Name = "Seleccionar";
+            this.Seleccionar.ReadOnly = true;
+            this.Seleccionar.Width = 25;
+            // 
+            // id_Pacte
+            // 
+            this.id_Pacte.HeaderText = "id";
+            this.id_Pacte.Name = "id_Pacte";
+            this.id_Pacte.ReadOnly = true;
+            this.id_Pacte.Visible = false;
+            // 
+            // ApellidoyNombres
+            // 
+            this.ApellidoyNombres.HeaderText = "APELLIDO Y NOMBRES";
+            this.ApellidoyNombres.Name = "ApellidoyNombres";
+            this.ApellidoyNombres.ReadOnly = true;
+            this.ApellidoyNombres.Width = 250;
+            // 
+            // FechaNacim
+            // 
+            this.FechaNacim.HeaderText = "FechaNacim";
+            this.FechaNacim.Name = "FechaNacim";
+            this.FechaNacim.ReadOnly = true;
+            this.FechaNacim.Visible = false;
+            // 
+            // Sexo
+            // 
+            this.Sexo.HeaderText = "SEXO";
+            this.Sexo.Name = "Sexo";
+            this.Sexo.ReadOnly = true;
+            this.Sexo.Width = 50;
+            // 
+            // Tipo
+            // 
+            this.Tipo.HeaderText = "TIPO";
+            this.Tipo.Name = "Tipo";
+            this.Tipo.ReadOnly = true;
+            this.Tipo.Width = 50;
+            // 
+            // Numero
+            // 
+            this.Numero.HeaderText = "NUMERO";
+            this.Numero.Name = "Numero";
+            this.Numero.ReadOnly = true;
+            // 
+            // Domicilio
+            // 
+            this.Domicilio.HeaderText = "Domicilio";
+            this.Domicilio.Name = "Domicilio";
+            this.Domicilio.ReadOnly = true;
+            this.Domicilio.Visible = false;
+            // 
+            // CodPostal
+            // 
+            this.CodPostal.HeaderText = "CodigoPostal";
+            this.CodPostal.Name = "CodPostal";
+            this.CodPostal.ReadOnly = true;
+            this.CodPostal.Visible = false;
+            // 
+            // Telefono
+            // 
+            this.Telefono.HeaderText = "TELEFONO";
+            this.Telefono.Name = "Telefono";
+            this.Telefono.ReadOnly = true;
+            // 
+            // Email
+            // 
+            this.Email.HeaderText = "E Mail";
+            this.Email.Name = "Email";
+            this.Email.ReadOnly = true;
+            this.Email.Width = 300;
+            // 
+            // ObraSocial
+            // 
+            this.ObraSocial.HeaderText = "ObraSocial";
+            this.ObraSocial.Name = "ObraSocial";
+            this.ObraSocial.ReadOnly = true;
+            this.ObraSocial.Visible = false;
+            // 
+            // PlanOS
+            // 
+            this.PlanOS.HeaderText = "Plan";
+            this.PlanOS.Name = "PlanOS";
+            this.PlanOS.ReadOnly = true;
+            this.PlanOS.Visible = false;
+            // 
+            // Afiliado
+            // 
+            this.Afiliado.HeaderText = "Afiliado";
+            this.Afiliado.Name = "Afiliado";
+            this.Afiliado.ReadOnly = true;
+            this.Afiliado.Visible = false;
+            // 
+            // Obs
+            // 
+            this.Obs.HeaderText = "Obs";
+            this.Obs.Name = "Obs";
+            this.Obs.ReadOnly = true;
+            this.Obs.Visible = false;
+            // 
+            // UserRegistro
+            // 
+            this.UserRegistro.HeaderText = "UserRegistro";
+            this.UserRegistro.Name = "UserRegistro";
+            this.UserRegistro.ReadOnly = true;
+            this.UserRegistro.Visible = false;
+            // 
+            // FechaRegistro
+            // 
+            this.FechaRegistro.HeaderText = "FechaRegistro";
+            this.FechaRegistro.Name = "FechaRegistro";
+            this.FechaRegistro.ReadOnly = true;
+            this.FechaRegistro.Visible = false;
+            // 
             // mdlPacientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
@@ -547,6 +598,12 @@
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox txtFecNacim;
+        private System.Windows.Forms.TextBox txtSexo;
+        private System.Windows.Forms.TextBox txtTipoDoc;
+        private System.Windows.Forms.TextBox txtNumeroDoc;
+        private System.Windows.Forms.TextBox txtAfiliado;
+        private System.Windows.Forms.TextBox txtPlan;
+        private System.Windows.Forms.TextBox txtObraSocial;
         private System.Windows.Forms.DataGridViewButtonColumn Seleccionar;
         private System.Windows.Forms.DataGridViewTextBoxColumn id_Pacte;
         private System.Windows.Forms.DataGridViewTextBoxColumn ApellidoyNombres;
@@ -560,11 +617,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Email;
         private System.Windows.Forms.DataGridViewTextBoxColumn ObraSocial;
         private System.Windows.Forms.DataGridViewTextBoxColumn PlanOS;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Afiliado;
         private System.Windows.Forms.DataGridViewTextBoxColumn Obs;
         private System.Windows.Forms.DataGridViewTextBoxColumn UserRegistro;
         private System.Windows.Forms.DataGridViewTextBoxColumn FechaRegistro;
-        private System.Windows.Forms.TextBox txtSexo;
-        private System.Windows.Forms.TextBox txtTipoDoc;
-        private System.Windows.Forms.TextBox txtNumeroDoc;
     }
 }

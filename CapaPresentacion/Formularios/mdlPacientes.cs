@@ -37,7 +37,7 @@ namespace CapaPresentacion.Formularios
             foreach (CE_Pacientes item in ListaPac)
             {
                 dgvPacientes.Rows.Add(new object[] { "", item.id_Pacte, item.ApelNombres, item.FechaNacim, item.Sexo, item.TipoDoc, item.NumeroDoc, item.Domicilio, item.CodPostal,
-                                                item.Telefono, item.Email, item.ObraSocial, item.PlanOS, item.Obs, item.UserRegistro, item.FechaRegistro, item.Afiliado });
+                                                item.Telefono, item.Email, item.ObraSocial, item.PlanOS, item.Afiliado, item.Obs, item.UserRegistro, item.FechaRegistro, item.Afiliado });
             }
         }
 
@@ -81,6 +81,9 @@ namespace CapaPresentacion.Formularios
                     txtSexo.Text = dgvPacientes.Rows[indice].Cells["Sexo"].Value.ToString();
                     txtTipoDoc.Text = dgvPacientes.Rows[indice].Cells["Tipo"].Value.ToString();
                     txtNumeroDoc.Text = dgvPacientes.Rows[indice].Cells["Numero"].Value.ToString();
+                    txtObraSocial.Text = dgvPacientes.Rows[indice].Cells["ObraSocial"].Value.ToString();
+                    txtPlan.Text = dgvPacientes.Rows[indice].Cells["PlanOS"].Value.ToString();
+                    txtAfiliado.Text = dgvPacientes.Rows[indice].Cells["Afiliado"].Value.ToString();
 
                     int pos1 = txtFecNacim.Text.IndexOf(" ");
                     txtFecNacim.Text = txtFecNacim.Text.Substring(0, pos1);
@@ -105,6 +108,9 @@ namespace CapaPresentacion.Formularios
                         HisPaciente.txtidPcte.Text = txtId.Text;
                         HisPaciente.txtNumeroDoc.Text = txtNumeroDoc.Text;
                         HisPaciente.txtApelNombres.Text = txtApelNombres.Text;
+                        HisPaciente.lblObraSocial.Text = txtObraSocial.Text;
+                        HisPaciente.lblPlan.Text = txtPlan.Text;
+                        HisPaciente.lblAfiliado.Text = txtAfiliado.Text;
                         Close();
                         Dispose();
                     }

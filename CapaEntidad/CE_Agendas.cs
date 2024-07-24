@@ -7,6 +7,8 @@ namespace CapaEntidad
         public int id_Agda { get; set; }
         public DateTime Fecha { get; set; }
         public string Profesional { get; set; }
+        public int Hora { get; set; }
+        public int Minutos { get; set; }
         public int Turno { get; set; }
         public string Tipo { get; set; }
         public int Pacte { get; set; }

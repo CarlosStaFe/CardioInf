@@ -30,12 +30,14 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmVerAgenda));
             this.pnlTitulo = new System.Windows.Forms.Panel();
             this.txtPaciente = new System.Windows.Forms.TextBox();
@@ -54,12 +56,23 @@
             this.btnGuardar = new FontAwesome.Sharp.IconButton();
             this.btnClear = new FontAwesome.Sharp.IconButton();
             this.dgvAgendas = new System.Windows.Forms.DataGridView();
+            this.label34 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.lblNombre = new System.Windows.Forms.Label();
+            this.btnAgregar = new FontAwesome.Sharp.IconButton();
+            this.lblHC = new System.Windows.Forms.Label();
+            this.lblEstado = new System.Windows.Forms.Label();
+            this.cboEstado = new System.Windows.Forms.ComboBox();
+            this.btnHC = new FontAwesome.Sharp.IconButton();
+            this.dtpFecha = new CapaPresentacion.DatePicker();
             this.Seleccionar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.id_Plan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FecTurno = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Hora = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Minutos = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Turno = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ApellidoyNombres = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TipoEst = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Pacte = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Numero = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -68,9 +81,6 @@
             this.Profesional = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.UserRegistro = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FechaRegistro = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label34 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.dtpFecha = new CapaPresentacion.DatePicker();
             this.pnlTitulo.SuspendLayout();
             this.pnlDeck.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -285,6 +295,7 @@
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Visible = false;
             // 
             // btnClear
             // 
@@ -305,6 +316,7 @@
             this.btnClear.Text = "Limpiar";
             this.btnClear.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Visible = false;
             // 
             // dgvAgendas
             // 
@@ -331,10 +343,12 @@
             this.dgvAgendas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Seleccionar,
             this.id_Plan,
-            this.Fecha,
+            this.FecTurno,
+            this.Hora,
+            this.Minutos,
             this.Turno,
             this.ApellidoyNombres,
-            this.Tipo,
+            this.TipoEst,
             this.Pacte,
             this.Numero,
             this.Estado,
@@ -343,14 +357,14 @@
             this.Profesional,
             this.UserRegistro,
             this.FechaRegistro});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvAgendas.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvAgendas.DefaultCellStyle = dataGridViewCellStyle8;
             this.dgvAgendas.EnableHeadersVisualStyles = false;
             this.dgvAgendas.GridColor = System.Drawing.Color.White;
             this.dgvAgendas.Location = new System.Drawing.Point(12, 57);
@@ -358,22 +372,154 @@
             this.dgvAgendas.Name = "dgvAgendas";
             this.dgvAgendas.ReadOnly = true;
             this.dgvAgendas.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvAgendas.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.Gray;
-            this.dgvAgendas.RowsDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvAgendas.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.Gray;
+            this.dgvAgendas.RowsDefaultCellStyle = dataGridViewCellStyle10;
             this.dgvAgendas.Size = new System.Drawing.Size(992, 471);
             this.dgvAgendas.TabIndex = 157;
             this.dgvAgendas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAgendas_CellContentClick);
             this.dgvAgendas.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dgvAgendas_CellPainting);
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.label34.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.label34.Location = new System.Drawing.Point(19, 24);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(237, 22);
+            this.label34.TabIndex = 155;
+            this.label34.Text = "Lista de Agenda Médica";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.lblNombre);
+            this.panel1.Controls.Add(this.btnAgregar);
+            this.panel1.Controls.Add(this.lblHC);
+            this.panel1.Controls.Add(this.lblEstado);
+            this.panel1.Controls.Add(this.cboEstado);
+            this.panel1.Controls.Add(this.btnHC);
+            this.panel1.Controls.Add(this.dtpFecha);
+            this.panel1.Location = new System.Drawing.Point(13, 14);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(991, 42);
+            this.panel1.TabIndex = 158;
+            // 
+            // lblNombre
+            // 
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.lblNombre.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre.ForeColor = System.Drawing.Color.Gold;
+            this.lblNombre.Location = new System.Drawing.Point(409, 11);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(12, 17);
+            this.lblNombre.TabIndex = 306;
+            this.lblNombre.Text = "-";
+            this.lblNombre.Visible = false;
+            // 
+            // btnAgregar
+            // 
+            this.btnAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.btnAgregar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAgregar.FlatAppearance.BorderSize = 0;
+            this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregar.IconChar = FontAwesome.Sharp.IconChar.ArrowTurnDown;
+            this.btnAgregar.IconColor = System.Drawing.Color.Aqua;
+            this.btnAgregar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnAgregar.IconSize = 25;
+            this.btnAgregar.Location = new System.Drawing.Point(850, 4);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(36, 32);
+            this.btnAgregar.TabIndex = 326;
+            this.btnAgregar.UseVisualStyleBackColor = false;
+            this.btnAgregar.Visible = false;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+            // 
+            // lblHC
+            // 
+            this.lblHC.AutoSize = true;
+            this.lblHC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.lblHC.Location = new System.Drawing.Point(902, 9);
+            this.lblHC.Name = "lblHC";
+            this.lblHC.Size = new System.Drawing.Size(40, 17);
+            this.lblHC.TabIndex = 325;
+            this.lblHC.Text = "H.C.:";
+            this.lblHC.Visible = false;
+            // 
+            // lblEstado
+            // 
+            this.lblEstado.AutoSize = true;
+            this.lblEstado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.lblEstado.Location = new System.Drawing.Point(635, 9);
+            this.lblEstado.Name = "lblEstado";
+            this.lblEstado.Size = new System.Drawing.Size(56, 17);
+            this.lblEstado.TabIndex = 324;
+            this.lblEstado.Text = "Estado:";
+            this.lblEstado.Visible = false;
+            // 
+            // cboEstado
+            // 
+            this.cboEstado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.cboEstado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cboEstado.ForeColor = System.Drawing.Color.White;
+            this.cboEstado.FormattingEnabled = true;
+            this.cboEstado.Items.AddRange(new object[] {
+            "EN ESPERA",
+            "ATENDIDO",
+            "CONSULTORIO",
+            "CANCELADO"});
+            this.cboEstado.Location = new System.Drawing.Point(697, 6);
+            this.cboEstado.Name = "cboEstado";
+            this.cboEstado.Size = new System.Drawing.Size(145, 25);
+            this.cboEstado.TabIndex = 323;
+            this.cboEstado.Visible = false;
+            // 
+            // btnHC
+            // 
+            this.btnHC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.btnHC.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnHC.FlatAppearance.BorderSize = 0;
+            this.btnHC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHC.IconChar = FontAwesome.Sharp.IconChar.BookOpen;
+            this.btnHC.IconColor = System.Drawing.Color.Fuchsia;
+            this.btnHC.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnHC.IconSize = 30;
+            this.btnHC.Location = new System.Drawing.Point(948, 5);
+            this.btnHC.Name = "btnHC";
+            this.btnHC.Size = new System.Drawing.Size(35, 30);
+            this.btnHC.TabIndex = 306;
+            this.btnHC.UseVisualStyleBackColor = false;
+            this.btnHC.Visible = false;
+            this.btnHC.Click += new System.EventHandler(this.btnHC_Click);
+            // 
+            // dtpFecha
+            // 
+            this.dtpFecha.BorderColor = System.Drawing.Color.White;
+            this.dtpFecha.BorderSize = 1;
+            this.dtpFecha.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFecha.Location = new System.Drawing.Point(248, 6);
+            this.dtpFecha.MinimumSize = new System.Drawing.Size(4, 23);
+            this.dtpFecha.Name = "dtpFecha";
+            this.dtpFecha.Size = new System.Drawing.Size(155, 29);
+            this.dtpFecha.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.dtpFecha.TabIndex = 322;
+            this.dtpFecha.TextColor = System.Drawing.Color.Yellow;
+            this.dtpFecha.CloseUp += new System.EventHandler(this.dtpFecha_CloseUp);
             // 
             // Seleccionar
             // 
@@ -389,37 +535,59 @@
             this.id_Plan.ReadOnly = true;
             this.id_Plan.Visible = false;
             // 
-            // Fecha
+            // FecTurno
             // 
-            this.Fecha.HeaderText = "Fecha";
-            this.Fecha.Name = "Fecha";
-            this.Fecha.ReadOnly = true;
-            this.Fecha.Visible = false;
+            this.FecTurno.HeaderText = "Fecha";
+            this.FecTurno.Name = "FecTurno";
+            this.FecTurno.ReadOnly = true;
+            this.FecTurno.Visible = false;
+            // 
+            // Hora
+            // 
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle3.Format = "N0";
+            dataGridViewCellStyle3.NullValue = null;
+            this.Hora.DefaultCellStyle = dataGridViewCellStyle3;
+            this.Hora.HeaderText = "HH";
+            this.Hora.Name = "Hora";
+            this.Hora.ReadOnly = true;
+            this.Hora.Width = 30;
+            // 
+            // Minutos
+            // 
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle4.Format = "N0";
+            dataGridViewCellStyle4.NullValue = null;
+            this.Minutos.DefaultCellStyle = dataGridViewCellStyle4;
+            this.Minutos.HeaderText = "MM";
+            this.Minutos.Name = "Minutos";
+            this.Minutos.ReadOnly = true;
+            this.Minutos.Width = 30;
             // 
             // Turno
             // 
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Turno.DefaultCellStyle = dataGridViewCellStyle3;
-            this.Turno.HeaderText = "TURNO";
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Turno.DefaultCellStyle = dataGridViewCellStyle5;
+            this.Turno.HeaderText = "ORD.";
             this.Turno.Name = "Turno";
             this.Turno.ReadOnly = true;
             this.Turno.Width = 50;
             // 
             // ApellidoyNombres
             // 
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.ApellidoyNombres.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.ApellidoyNombres.DefaultCellStyle = dataGridViewCellStyle6;
             this.ApellidoyNombres.HeaderText = "APELLIDO Y NOMBRES";
             this.ApellidoyNombres.Name = "ApellidoyNombres";
             this.ApellidoyNombres.ReadOnly = true;
-            this.ApellidoyNombres.Width = 250;
+            this.ApellidoyNombres.Width = 300;
             // 
-            // Tipo
+            // TipoEst
             // 
-            this.Tipo.HeaderText = "TIPO";
-            this.Tipo.Name = "Tipo";
-            this.Tipo.ReadOnly = true;
-            this.Tipo.Width = 200;
+            this.TipoEst.HeaderText = "TIPO";
+            this.TipoEst.Name = "TipoEst";
+            this.TipoEst.ReadOnly = true;
+            this.TipoEst.Width = 250;
             // 
             // Pacte
             // 
@@ -443,9 +611,9 @@
             // 
             // FecEstado
             // 
-            dataGridViewCellStyle5.Format = "d";
-            dataGridViewCellStyle5.NullValue = null;
-            this.FecEstado.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle7.Format = "d";
+            dataGridViewCellStyle7.NullValue = null;
+            this.FecEstado.DefaultCellStyle = dataGridViewCellStyle7;
             this.FecEstado.HeaderText = "FecEstado";
             this.FecEstado.Name = "FecEstado";
             this.FecEstado.ReadOnly = true;
@@ -456,6 +624,7 @@
             this.Obs.HeaderText = "OBS";
             this.Obs.Name = "Obs";
             this.Obs.ReadOnly = true;
+            this.Obs.Visible = false;
             this.Obs.Width = 300;
             // 
             // Profesional
@@ -463,7 +632,6 @@
             this.Profesional.HeaderText = "PROFESIONAL";
             this.Profesional.Name = "Profesional";
             this.Profesional.ReadOnly = true;
-            this.Profesional.Visible = false;
             this.Profesional.Width = 200;
             // 
             // UserRegistro
@@ -479,44 +647,6 @@
             this.FechaRegistro.Name = "FechaRegistro";
             this.FechaRegistro.ReadOnly = true;
             this.FechaRegistro.Visible = false;
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.label34.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label34.Location = new System.Drawing.Point(19, 24);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(237, 22);
-            this.label34.TabIndex = 155;
-            this.label34.Text = "Lista de Agenda Médica";
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.dtpFecha);
-            this.panel1.Location = new System.Drawing.Point(13, 14);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(991, 42);
-            this.panel1.TabIndex = 158;
-            // 
-            // dtpFecha
-            // 
-            this.dtpFecha.BorderColor = System.Drawing.Color.White;
-            this.dtpFecha.BorderSize = 1;
-            this.dtpFecha.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFecha.Location = new System.Drawing.Point(248, 6);
-            this.dtpFecha.MinimumSize = new System.Drawing.Size(4, 23);
-            this.dtpFecha.Name = "dtpFecha";
-            this.dtpFecha.Size = new System.Drawing.Size(155, 29);
-            this.dtpFecha.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.dtpFecha.TabIndex = 322;
-            this.dtpFecha.TextColor = System.Drawing.Color.Yellow;
-            this.dtpFecha.CloseUp += new System.EventHandler(this.dtpFecha_CloseUp);
             // 
             // frmVerAgenda
             // 
@@ -541,6 +671,7 @@
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAgendas)).EndInit();
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -566,12 +697,21 @@
         private System.Windows.Forms.DataGridView dgvAgendas;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Panel panel1;
+        private DatePicker dtpFecha;
+        private FontAwesome.Sharp.IconButton btnHC;
+        private System.Windows.Forms.ComboBox cboEstado;
+        private System.Windows.Forms.Label lblHC;
+        private System.Windows.Forms.Label lblEstado;
+        private FontAwesome.Sharp.IconButton btnAgregar;
+        private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.DataGridViewButtonColumn Seleccionar;
         private System.Windows.Forms.DataGridViewTextBoxColumn id_Plan;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Fecha;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FecTurno;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Hora;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Minutos;
         private System.Windows.Forms.DataGridViewTextBoxColumn Turno;
         private System.Windows.Forms.DataGridViewTextBoxColumn ApellidoyNombres;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Tipo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TipoEst;
         private System.Windows.Forms.DataGridViewTextBoxColumn Pacte;
         private System.Windows.Forms.DataGridViewTextBoxColumn Numero;
         private System.Windows.Forms.DataGridViewTextBoxColumn Estado;
@@ -580,6 +720,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Profesional;
         private System.Windows.Forms.DataGridViewTextBoxColumn UserRegistro;
         private System.Windows.Forms.DataGridViewTextBoxColumn FechaRegistro;
-        private DatePicker dtpFecha;
     }
 }

@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaNegocio", "CapaNegocio\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaEntidad", "CapaEntidad\CapaEntidad.csproj", "{7FF021B6-EB1F-43D3-ADAE-02D6C4C49BCA}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Instala CardioInf", "Instala CardioInf\Instala CardioInf.vdproj", "{5C964D6D-3B4A-4CC7-96CF-078208BCD508}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Sistema CardioInf", "Sistema CardioInf\Sistema CardioInf.vdproj", "{DA52292E-8EA3-4D2D-8896-DCBB0F7967DB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,10 +53,10 @@ Global
 		{7FF021B6-EB1F-43D3-ADAE-02D6C4C49BCA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7FF021B6-EB1F-43D3-ADAE-02D6C4C49BCA}.Release|x64.ActiveCfg = Release|x64
 		{7FF021B6-EB1F-43D3-ADAE-02D6C4C49BCA}.Release|x64.Build.0 = Release|x64
-		{5C964D6D-3B4A-4CC7-96CF-078208BCD508}.Debug|Any CPU.ActiveCfg = Debug
-		{5C964D6D-3B4A-4CC7-96CF-078208BCD508}.Debug|x64.ActiveCfg = Debug
-		{5C964D6D-3B4A-4CC7-96CF-078208BCD508}.Release|Any CPU.ActiveCfg = Release
-		{5C964D6D-3B4A-4CC7-96CF-078208BCD508}.Release|x64.ActiveCfg = Release
+		{DA52292E-8EA3-4D2D-8896-DCBB0F7967DB}.Debug|Any CPU.ActiveCfg = Debug
+		{DA52292E-8EA3-4D2D-8896-DCBB0F7967DB}.Debug|x64.ActiveCfg = Debug
+		{DA52292E-8EA3-4D2D-8896-DCBB0F7967DB}.Release|Any CPU.ActiveCfg = Release
+		{DA52292E-8EA3-4D2D-8896-DCBB0F7967DB}.Release|x64.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

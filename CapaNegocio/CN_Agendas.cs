@@ -40,6 +40,11 @@ namespace CapaNegocio
                 mensaje += "Debe ingresar un Paciente. * ";
             }
 
+            if (obj.Hora == 0)
+            {
+                mensaje += "Debe ingresar una Hora. * ";
+            }
+
             if (mensaje != string.Empty)
             {
                 return 0;
@@ -70,6 +75,11 @@ namespace CapaNegocio
                 mensaje += "Debe ingresar un Paciente. * ";
             }
 
+            if (obj.Hora == 0)
+            {
+                mensaje += "Debe ingresar una Hora. * ";
+            }
+
             if (mensaje != string.Empty)
             {
                 return false;
@@ -86,10 +96,16 @@ namespace CapaNegocio
             return cD_Agendas.Eliminar(obj, out mensaje);
         }
 
-        //***** LLAMO AL METODO PARA CANBIAR EL ESTADO *****
+        //***** LLAMO AL METODO PARA CANBIAR EL ESTADO Y NUMERO *****
         public bool ActualizoAgenda(int id, string estado, int numero)
         {
             return cD_Agendas.ActualizoAgenda(id, estado, numero);
+        }
+
+        //***** LLAMO AL METODO PARA CANBIAR EL ESTADO *****
+        public bool ActualizoEstado(int id, string estado)
+        {
+            return cD_Agendas.ActualizoEstado(id, estado);
         }
 
 

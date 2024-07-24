@@ -22,7 +22,7 @@ namespace CapaDatos
                     {
                         command.Parameters.AddWithValue("@fecha", fecha);
                         command.Connection = connection;
-                        command.CommandText = "SELECT * FROM Agendas WHERE Fecha = @fecha ORDER BY Turno ASC, Profesional";
+                        command.CommandText = "SELECT * FROM Agendas WHERE Fecha = @fecha ORDER BY Hora ASC, Minutos ASC, Turno ASC, Profesional";
                         command.CommandType = CommandType.Text;
                         MySqlDataReader dr = command.ExecuteReader();
 
@@ -36,6 +36,8 @@ namespace CapaDatos
                                     Fecha = Convert.ToDateTime(dr["Fecha"]),
                                     Profesional = dr["Profesional"].ToString(),
                                     Tipo = dr["Tipo"].ToString(),
+                                    Hora = Convert.ToInt32(dr["Hora"]),
+                                    Minutos = Convert.ToInt32(dr["Minutos"]),
                                     Turno = Convert.ToInt32(dr["Turno"]),
                                     Pacte = Convert.ToInt32(dr["Pacte"]),
                                     Detalle = dr["Detalle"].ToString(),
@@ -73,7 +75,7 @@ namespace CapaDatos
                         command.Parameters.AddWithValue("@prof", prof);
                         command.Parameters.AddWithValue("@fecha", fecha);
                         command.Connection = connection;
-                        command.CommandText = "SELECT * FROM Agendas WHERE Profesional = @prof AND Fecha = @fecha ORDER BY Turno ASC, Profesional";
+                        command.CommandText = "SELECT * FROM Agendas WHERE Profesional = @prof AND Fecha = @fecha ORDER BY Hora ASC, Minutos ASC, Turno ASC, Profesional";
                         command.CommandType = CommandType.Text;
                         MySqlDataReader dr = command.ExecuteReader();
 
@@ -87,6 +89,8 @@ namespace CapaDatos
                                     Fecha = Convert.ToDateTime(dr["Fecha"]),
                                     Profesional = dr["Profesional"].ToString(),
                                     Tipo = dr["Tipo"].ToString(),
+                                    Hora = Convert.ToInt32(dr["Hora"]),
+                                    Minutos = Convert.ToInt32(dr["Minutos"]),
                                     Turno = Convert.ToInt32(dr["Turno"]),
                                     Pacte = Convert.ToInt32(dr["Pacte"]),
                                     Detalle = dr["Detalle"].ToString(),
@@ -124,6 +128,8 @@ namespace CapaDatos
                     {
                         command.Parameters.AddWithValue("_Fecha", obj.Fecha);
                         command.Parameters.AddWithValue("_Profesional", obj.Profesional);
+                        command.Parameters.AddWithValue("_Hora", obj.Hora);
+                        command.Parameters.AddWithValue("_Minutos", obj.Minutos);
                         command.Parameters.AddWithValue("_Turno", obj.Turno);
                         command.Parameters.AddWithValue("_Tipo", obj.Tipo);
                         command.Parameters.AddWithValue("_Pacte", obj.Pacte);
@@ -167,6 +173,8 @@ namespace CapaDatos
                     {
                         command.Parameters.AddWithValue("_id_Agda", obj.id_Agda);
                         command.Parameters.AddWithValue("_Profesional", obj.Profesional);
+                        command.Parameters.AddWithValue("_Hora", obj.Hora);
+                        command.Parameters.AddWithValue("_Minutos", obj.Minutos);
                         command.Parameters.AddWithValue("_Turno", obj.Turno);
                         command.Parameters.AddWithValue("_Tipo", obj.Tipo);
                         command.Parameters.AddWithValue("_Detalle", obj.Detalle);
@@ -225,7 +233,7 @@ namespace CapaDatos
             return Resultado;
         }
 
-        //***** METODO PARA GRABAR EL ESTADO DE LA AGENDA *****
+        //***** METODO PARA GRABAR EL ESTADO DE LA AGENDA Y NUMERO *****
         public bool ActualizoAgenda(int id, string estado, int numero)
         {
             using (var connection = GetConnection())
@@ -252,6 +260,31 @@ namespace CapaDatos
             }
         }
 
+        //***** METODO PARA GRABAR EL ESTADO DE LA AGENDA *****
+        public bool ActualizoEstado(int id, string estado)
+        {
+            using (var connection = GetConnection())
+            {
+                connection.Open();
+                using (var command = new MySqlCommand())
+                {
+                    try
+                    {
+                        command.Parameters.AddWithValue("@id", id);
+                        command.Parameters.AddWithValue("@estado", estado);
+                        command.Connection = connection;
+                        command.CommandText = "UPDATE Agendas SET Estado = @estado WHERE id_Agda = @id";
+                        command.CommandType = CommandType.Text;
+                        command.ExecuteNonQuery();
+                        return true;
+                    }
+                    catch (Exception)
+                    {
+                        return false;
+                    }
+                }
+            }
+        }
 
     }
 }

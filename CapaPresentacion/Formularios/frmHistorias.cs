@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Text.RegularExpressions;
-using System.Windows.Forms;
-using CapaEntidad;
+﻿using CapaEntidad;
 using CapaNegocio;
 using CapaPresentacion.Utiles;
+using System;
+using System.Collections.Generic;
+using System.Drawing;
+using System.Windows.Forms;
 
 namespace CapaPresentacion.Formularios
 {
@@ -14,9 +13,10 @@ namespace CapaPresentacion.Formularios
         string fechistoria;
         int id;
 
-        public frmHistorias()
+        public frmHistorias(int idPcte)
         {
             InitializeComponent();
+            id = Convert.ToInt32(idPcte);
         }
 
         private void frmHistorias_Load(object sender, EventArgs e)
@@ -37,9 +37,26 @@ namespace CapaPresentacion.Formularios
 
             foreach (CE_Profesionales item in ListaProf)
             {
-                //cboProfesionales.Items.Add(item.ApelNombres);
                 cboProfesionales.Items.Add(item.Usuario);
                 cboProfesionales.SelectedIndex = -1;
+            }
+
+            cboProfesionales.Text = txtUserRegistro.Text;
+
+            if (id > 0)
+            {
+                btnSearch.Visible = true;
+                List<CE_Pacientes> BuscaPacte = new CN_Pacientes().BuscarPacte(Convert.ToString(id));
+
+                foreach (CE_Pacientes item in BuscaPacte)
+                {
+                    lblPaciente.Text = item.ApelNombres + " - " + item.FechaNacim + " - " + item.Sexo + " - " + item.TipoDoc + " - " + item.NumeroDoc;
+                    lblObraSocial.Text = item.ObraSocial;
+                    lblPlan.Text = item.PlanOS;
+                    lblAfiliado.Text = item.Afiliado;
+                }
+
+                CargarHistoria();
             }
         }
 
@@ -92,7 +109,7 @@ namespace CapaPresentacion.Formularios
             //***** CARGO EL DGV *****
             foreach (CE_Historias item in ListaHis)
             {
-                dgvHistoria.Rows.Add(new object[] { "", item.id_His, item.idPcte, item.NroDoc, item.NombreCompleto, item.Fecha,"", item.Comentario, item.Obs,
+                dgvHistoria.Rows.Add(new object[] { "", item.id_His, item.idPcte, item.NroDoc, item.NombreCompleto, item.Fecha, item.Medico, item.Comentario, item.Obs,
                                                     item.UserRegistro, item.FechaRegistro });
             }
 
@@ -109,7 +126,7 @@ namespace CapaPresentacion.Formularios
         //***** PROCEDIMIENTO PARA BUSCAR HISTORIAS VIEJAS *****
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            mdlHistoriasOld HistoriaOld = new mdlHistoriasOld("btnHistoriaOld",txtidPcte.Text,txtApelNombres.Text,txtNumeroDoc.Text);
+            mdlHistoriasOld HistoriaOld = new mdlHistoriasOld("btnHistoriaOld", txtidPcte.Text, txtApelNombres.Text, txtNumeroDoc.Text);
             AddOwnedForm(HistoriaOld);
             HistoriaOld.ShowDialog();
 
@@ -150,6 +167,7 @@ namespace CapaPresentacion.Formularios
                     txtidPcte.Text = dgvHistoria.Rows[indice].Cells["idPcte"].Value.ToString();
                     txtComentario.Text = dgvHistoria.Rows[indice].Cells["Detalle"].Value.ToString();
                     cboProfesionales.Text = dgvHistoria.Rows[indice].Cells["Medico"].Value.ToString();
+                    txtPediatra.Text = dgvHistoria.Rows[indice].Cells["Obs"].Value.ToString();
                     dtpFecha.Value = Convert.ToDateTime(dgvHistoria.Rows[indice].Cells["Fecha"].Value.ToString());
                     txtUserRegistro.Text = dgvHistoria.Rows[indice].Cells["UserRegistro"].Value.ToString();
                     txtFechaRegistro.Text = dgvHistoria.Rows[indice].Cells["FechaRegistro"].Value.ToString();
@@ -172,7 +190,7 @@ namespace CapaPresentacion.Formularios
                 Medico = cboProfesionales.Text,
                 Fecha = Convert.ToDateTime(dtpFecha.Value),
                 Comentario = txtComentario.Text,
-                Obs = "",
+                Obs = txtPediatra.Text,
                 UserRegistro = CE_UserLogin.Usuario,
                 FechaRegistro = DateTime.Today
             };

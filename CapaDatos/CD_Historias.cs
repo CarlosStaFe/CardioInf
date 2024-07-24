@@ -37,6 +37,7 @@ namespace CapaDatos
                                     NroDoc = Convert.ToInt32(dr["NroDoc"]),
                                     NombreCompleto = dr["NombreCompleto"].ToString(),
                                     Fecha = Convert.ToDateTime(dr["Fecha"]),
+                                    Medico = dr["Medico"].ToString(),
                                     Comentario = dr["Comentario"].ToString(),
                                     Obs = dr["Obs"].ToString(),
                                     UserRegistro = dr["UserRegistro"].ToString(),

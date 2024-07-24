@@ -30,7 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEcografia));
             this.pnlTitulo = new System.Windows.Forms.Panel();
-            this.dtpFecha = new CapaPresentacion.DatePicker();
+            this.txtIdDet = new System.Windows.Forms.TextBox();
+            this.txtIdCab = new System.Windows.Forms.TextBox();
             this.lblTipoEco = new System.Windows.Forms.Label();
             this.txtId = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -176,8 +177,9 @@
             this.lblAA = new System.Windows.Forms.Label();
             this.lblFecNacim = new System.Windows.Forms.Label();
             this.lblApelNombres = new System.Windows.Forms.Label();
-            this.txtIdCab = new System.Windows.Forms.TextBox();
-            this.txtIdDet = new System.Windows.Forms.TextBox();
+            this.lblHC = new System.Windows.Forms.Label();
+            this.btnHC = new FontAwesome.Sharp.IconButton();
+            this.dtpFecha = new CapaPresentacion.DatePicker();
             this.pnlTitulo.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.pnlDeck.SuspendLayout();
@@ -187,8 +189,10 @@
             // 
             this.pnlTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.pnlTitulo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlTitulo.Controls.Add(this.lblHC);
             this.pnlTitulo.Controls.Add(this.txtIdDet);
             this.pnlTitulo.Controls.Add(this.txtIdCab);
+            this.pnlTitulo.Controls.Add(this.btnHC);
             this.pnlTitulo.Controls.Add(this.dtpFecha);
             this.pnlTitulo.Controls.Add(this.lblTipoEco);
             this.pnlTitulo.Controls.Add(this.txtId);
@@ -201,20 +205,31 @@
             this.pnlTitulo.Size = new System.Drawing.Size(1239, 40);
             this.pnlTitulo.TabIndex = 12;
             // 
-            // dtpFecha
+            // txtIdDet
             // 
-            this.dtpFecha.BorderColor = System.Drawing.Color.White;
-            this.dtpFecha.BorderSize = 1;
-            this.dtpFecha.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFecha.Location = new System.Drawing.Point(907, 5);
-            this.dtpFecha.MinimumSize = new System.Drawing.Size(4, 23);
-            this.dtpFecha.Name = "dtpFecha";
-            this.dtpFecha.Size = new System.Drawing.Size(155, 29);
-            this.dtpFecha.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.dtpFecha.TabIndex = 322;
-            this.dtpFecha.TextColor = System.Drawing.Color.Yellow;
+            this.txtIdDet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.txtIdDet.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtIdDet.Enabled = false;
+            this.txtIdDet.ForeColor = System.Drawing.Color.White;
+            this.txtIdDet.Location = new System.Drawing.Point(1192, 19);
+            this.txtIdDet.Name = "txtIdDet";
+            this.txtIdDet.Size = new System.Drawing.Size(34, 16);
+            this.txtIdDet.TabIndex = 324;
+            this.txtIdDet.Text = "0";
+            this.txtIdDet.Visible = false;
+            // 
+            // txtIdCab
+            // 
+            this.txtIdCab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.txtIdCab.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtIdCab.Enabled = false;
+            this.txtIdCab.ForeColor = System.Drawing.Color.White;
+            this.txtIdCab.Location = new System.Drawing.Point(1152, 19);
+            this.txtIdCab.Name = "txtIdCab";
+            this.txtIdCab.Size = new System.Drawing.Size(34, 16);
+            this.txtIdCab.TabIndex = 323;
+            this.txtIdCab.Text = "0";
+            this.txtIdCab.Visible = false;
             // 
             // lblTipoEco
             // 
@@ -234,7 +249,7 @@
             this.txtId.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtId.Enabled = false;
             this.txtId.ForeColor = System.Drawing.Color.White;
-            this.txtId.Location = new System.Drawing.Point(1067, 3);
+            this.txtId.Location = new System.Drawing.Point(1107, 19);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(34, 16);
             this.txtId.TabIndex = 305;
@@ -2027,31 +2042,48 @@
             this.lblApelNombres.TabIndex = 0;
             this.lblApelNombres.Text = "-";
             // 
-            // txtIdCab
+            // lblHC
             // 
-            this.txtIdCab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.txtIdCab.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtIdCab.Enabled = false;
-            this.txtIdCab.ForeColor = System.Drawing.Color.White;
-            this.txtIdCab.Location = new System.Drawing.Point(1067, 19);
-            this.txtIdCab.Name = "txtIdCab";
-            this.txtIdCab.Size = new System.Drawing.Size(34, 16);
-            this.txtIdCab.TabIndex = 323;
-            this.txtIdCab.Text = "0";
-            this.txtIdCab.Visible = false;
+            this.lblHC.AutoSize = true;
+            this.lblHC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.lblHC.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHC.Location = new System.Drawing.Point(832, 11);
+            this.lblHC.Name = "lblHC";
+            this.lblHC.Size = new System.Drawing.Size(39, 16);
+            this.lblHC.TabIndex = 327;
+            this.lblHC.Text = "H.C.:";
             // 
-            // txtIdDet
+            // btnHC
             // 
-            this.txtIdDet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.txtIdDet.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtIdDet.Enabled = false;
-            this.txtIdDet.ForeColor = System.Drawing.Color.White;
-            this.txtIdDet.Location = new System.Drawing.Point(1107, 19);
-            this.txtIdDet.Name = "txtIdDet";
-            this.txtIdDet.Size = new System.Drawing.Size(34, 16);
-            this.txtIdDet.TabIndex = 324;
-            this.txtIdDet.Text = "0";
-            this.txtIdDet.Visible = false;
+            this.btnHC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.btnHC.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnHC.FlatAppearance.BorderSize = 0;
+            this.btnHC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHC.IconChar = FontAwesome.Sharp.IconChar.BookOpen;
+            this.btnHC.IconColor = System.Drawing.Color.Fuchsia;
+            this.btnHC.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnHC.IconSize = 30;
+            this.btnHC.Location = new System.Drawing.Point(878, 5);
+            this.btnHC.Name = "btnHC";
+            this.btnHC.Size = new System.Drawing.Size(35, 30);
+            this.btnHC.TabIndex = 326;
+            this.btnHC.UseVisualStyleBackColor = false;
+            this.btnHC.Click += new System.EventHandler(this.btnHC_Click);
+            // 
+            // dtpFecha
+            // 
+            this.dtpFecha.BorderColor = System.Drawing.Color.White;
+            this.dtpFecha.BorderSize = 1;
+            this.dtpFecha.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFecha.Location = new System.Drawing.Point(939, 5);
+            this.dtpFecha.MinimumSize = new System.Drawing.Size(4, 23);
+            this.dtpFecha.Name = "dtpFecha";
+            this.dtpFecha.Size = new System.Drawing.Size(155, 29);
+            this.dtpFecha.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.dtpFecha.TabIndex = 322;
+            this.dtpFecha.TextColor = System.Drawing.Color.Yellow;
             // 
             // frmEcografia
             // 
@@ -2244,5 +2276,7 @@
         private DatePicker dtpFecha;
         private System.Windows.Forms.TextBox txtIdDet;
         private System.Windows.Forms.TextBox txtIdCab;
+        private System.Windows.Forms.Label lblHC;
+        private FontAwesome.Sharp.IconButton btnHC;
     }
 }

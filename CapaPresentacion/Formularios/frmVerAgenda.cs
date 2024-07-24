@@ -11,7 +11,7 @@ namespace CapaPresentacion.Formularios
     public partial class frmVerAgenda : Form
     {
         private string estadolist;
-        string tipo, fecha, numeroeco, path, fechaagenda;
+        string tipo, fecha, numeroeco, path, fechaagenda, estadonew;
         int id, nivel;
 
         public frmVerAgenda()
@@ -42,7 +42,7 @@ namespace CapaPresentacion.Formularios
 
                 foreach (CE_Agendas item in AgdaCorta)
                 {
-                    dgvAgendas.Rows.Add(new object[] { "", item.id_Agda, item.Fecha, item.Turno, item.Detalle, item.Tipo, item.Pacte, item.NumeroEco, item.Estado, item.FechaEstado, item.Obs, item.Profesional,
+                    dgvAgendas.Rows.Add(new object[] { "", item.id_Agda, item.Fecha, item.Hora, item.Minutos, item.Turno, item.Detalle, item.Tipo, item.Pacte, item.NumeroEco, item.Estado, item.FechaEstado, item.Obs, item.Profesional,
                                                     item.UserRegistro, item.FechaRegistro });
                 }
             }
@@ -52,12 +52,35 @@ namespace CapaPresentacion.Formularios
 
                 foreach (CE_Agendas item in AgdaCorta)
                 {
-                    dgvAgendas.Rows.Add(new object[] { "", item.id_Agda, item.Fecha, item.Turno, item.Detalle, item.Tipo, item.Pacte, item.NumeroEco, item.Estado, item.FechaEstado, item.Obs, item.Profesional,
+                    dgvAgendas.Rows.Add(new object[] { "", item.id_Agda, item.Fecha, item.Hora, item.Minutos, item.Turno, item.Detalle, item.Tipo, item.Pacte, item.NumeroEco, item.Estado, item.FechaEstado, item.Obs, item.Profesional,
                                                     item.UserRegistro, item.FechaRegistro });
                 }
             }
 
             Colorear();
+        }
+
+        //***** CARGO LA PANTALLA DE HISTORIAS CLÍNICAS *****
+        private void btnHC_Click(object sender, EventArgs e)
+        {
+            frmHistorias Hist = new frmHistorias(Convert.ToInt32(txtPaciente.Text));
+            AddOwnedForm(Hist);
+            Hist.ShowDialog();
+
+            lblNombre.Visible = false;
+            lblEstado.Visible = false;
+            cboEstado.Visible = false;
+            lblHC.Visible = false;
+            btnHC.Visible = false;
+            btnAgregar.Visible = false;
+        }
+
+        //***** GRABO EL ESTADO MODIFICADO *****
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            estadonew = cboEstado.Text;
+            var ok = new CN_Agendas().ActualizoEstado(id, estadonew);
+            AgendaParticular();
         }
 
         //***** CAMBIO LA FECHA DE LA BÚSQUEDA *****
@@ -67,7 +90,6 @@ namespace CapaPresentacion.Formularios
             fechaagenda = new ProcesarFecha().Procesar(fechaagenda);
 
             AgendaParticular();
-
         }
 
         //***** COLOREO LA CELDA SI LA FECHA ES MENOR *****
@@ -82,7 +104,7 @@ namespace CapaPresentacion.Formularios
                     dgvAgendas.Rows[i].Cells["Estado"].Style.ForeColor = Color.Black;
                     dgvAgendas.Rows[i].Cells["Estado"].Style.BackColor = Color.Aquamarine;
                 }
-                if (estadolist == "COMPLETA")
+                if (estadolist == "COMPLETA" || estadolist == "ATENDIDO")
                 {
                     dgvAgendas.Rows[i].Cells["Estado"].Style.ForeColor = Color.Black;
                     dgvAgendas.Rows[i].Cells["Estado"].Style.BackColor = Color.Green;
@@ -132,16 +154,36 @@ namespace CapaPresentacion.Formularios
 
                 if (indice >= 0)
                 {
+                    lblNombre.Text = dgvAgendas.Rows[indice].Cells["ApellidoyNombres"].Value.ToString().Substring(0,30);
                     txtPaciente.Text = dgvAgendas.Rows[indice].Cells["Pacte"].Value.ToString();
-                    tipo = dgvAgendas.Rows[indice].Cells["Tipo"].Value.ToString();
-                    fecha = dgvAgendas.Rows[indice].Cells["Fecha"].Value.ToString();
+                    tipo = dgvAgendas.Rows[indice].Cells["TipoEst"].Value.ToString();
+                    fecha = dgvAgendas.Rows[indice].Cells["FecTurno"].Value.ToString();
                     id = Convert.ToInt32(dgvAgendas.Rows[indice].Cells["id_Plan"].Value.ToString());
                     numeroeco = dgvAgendas.Rows[indice].Cells["numero"].Value.ToString();
                     path = "";
 
-                    frmEcografia Eco = new frmEcografia(txtPaciente.Text, tipo, fecha, id, numeroeco, path);
-                    AddOwnedForm(Eco);
-                    Eco.ShowDialog();
+                    if (tipo.Trim() == "Ecocardiograma Doppler Color Pediátrico" || tipo == "Ecocardiograma Doppler Color Fetal")
+                    {
+                        lblNombre.Visible = false;
+                        lblEstado.Visible = false;
+                        cboEstado.Visible = false;
+                        lblHC.Visible = false;
+                        btnHC.Visible = false;
+                        btnAgregar.Visible = false;
+
+                        frmEcografia Eco = new frmEcografia(txtPaciente.Text, tipo, fecha, id, numeroeco, path);
+                        AddOwnedForm(Eco);
+                        Eco.ShowDialog();
+                    }
+                    else
+                    {
+                        lblNombre.Visible = true;
+                        lblEstado.Visible = true;
+                        cboEstado.Visible = true;
+                        lblHC.Visible = true;
+                        btnHC.Visible = true;
+                        btnAgregar.Visible = true;
+                    }
                 }
 
                 AgendaParticular();

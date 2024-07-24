@@ -45,6 +45,14 @@ namespace CapaPresentacion.Formularios
             this.txtUserRegistro = new System.Windows.Forms.TextBox();
             this.txtId = new System.Windows.Forms.TextBox();
             this.pnlDeck = new System.Windows.Forms.Panel();
+            this.lblAfiliado = new System.Windows.Forms.Label();
+            this.lblPlan = new System.Windows.Forms.Label();
+            this.lblObraSocial = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtPediatra = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.btnAgregar = new FontAwesome.Sharp.IconButton();
             this.label3 = new System.Windows.Forms.Label();
             this.btnSearch = new FontAwesome.Sharp.IconButton();
@@ -62,6 +70,16 @@ namespace CapaPresentacion.Formularios
             this.btnSalir = new FontAwesome.Sharp.IconButton();
             this.btnClear = new FontAwesome.Sharp.IconButton();
             this.dgvHistoria = new System.Windows.Forms.DataGridView();
+            this.btnLimpiar = new FontAwesome.Sharp.IconButton();
+            this.btnBuscar = new FontAwesome.Sharp.IconButton();
+            this.txtFiltro = new System.Windows.Forms.TextBox();
+            this.cboBusqueda = new System.Windows.Forms.ComboBox();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.cboProfesionales = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.Seleccionar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.id_Histo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idPcte = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -73,16 +91,6 @@ namespace CapaPresentacion.Formularios
             this.Obs = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.UserRegistro = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FechaRegistro = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnLimpiar = new FontAwesome.Sharp.IconButton();
-            this.btnBuscar = new FontAwesome.Sharp.IconButton();
-            this.txtFiltro = new System.Windows.Forms.TextBox();
-            this.cboBusqueda = new System.Windows.Forms.ComboBox();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.cboProfesionales = new System.Windows.Forms.ComboBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.pnlTitulo.SuspendLayout();
             this.pnlDeck.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -167,6 +175,14 @@ namespace CapaPresentacion.Formularios
             // pnlDeck
             // 
             this.pnlDeck.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.pnlDeck.Controls.Add(this.lblAfiliado);
+            this.pnlDeck.Controls.Add(this.lblPlan);
+            this.pnlDeck.Controls.Add(this.lblObraSocial);
+            this.pnlDeck.Controls.Add(this.label10);
+            this.pnlDeck.Controls.Add(this.txtPediatra);
+            this.pnlDeck.Controls.Add(this.label9);
+            this.pnlDeck.Controls.Add(this.label7);
+            this.pnlDeck.Controls.Add(this.label5);
             this.pnlDeck.Controls.Add(this.btnAgregar);
             this.pnlDeck.Controls.Add(this.label3);
             this.pnlDeck.Controls.Add(this.btnSearch);
@@ -197,6 +213,90 @@ namespace CapaPresentacion.Formularios
             this.pnlDeck.Size = new System.Drawing.Size(1177, 597);
             this.pnlDeck.TabIndex = 17;
             // 
+            // lblAfiliado
+            // 
+            this.lblAfiliado.AutoSize = true;
+            this.lblAfiliado.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAfiliado.ForeColor = System.Drawing.Color.Aqua;
+            this.lblAfiliado.Location = new System.Drawing.Point(811, 118);
+            this.lblAfiliado.Name = "lblAfiliado";
+            this.lblAfiliado.Size = new System.Drawing.Size(12, 17);
+            this.lblAfiliado.TabIndex = 6;
+            this.lblAfiliado.Text = "-";
+            // 
+            // lblPlan
+            // 
+            this.lblPlan.AutoSize = true;
+            this.lblPlan.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlan.ForeColor = System.Drawing.Color.Aqua;
+            this.lblPlan.Location = new System.Drawing.Point(529, 118);
+            this.lblPlan.Name = "lblPlan";
+            this.lblPlan.Size = new System.Drawing.Size(12, 17);
+            this.lblPlan.TabIndex = 5;
+            this.lblPlan.Text = "-";
+            // 
+            // lblObraSocial
+            // 
+            this.lblObraSocial.AutoSize = true;
+            this.lblObraSocial.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblObraSocial.ForeColor = System.Drawing.Color.Aqua;
+            this.lblObraSocial.Location = new System.Drawing.Point(128, 118);
+            this.lblObraSocial.Name = "lblObraSocial";
+            this.lblObraSocial.Size = new System.Drawing.Size(12, 17);
+            this.lblObraSocial.TabIndex = 4;
+            this.lblObraSocial.Text = "-";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.label10.Location = new System.Drawing.Point(554, 89);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(67, 17);
+            this.label10.TabIndex = 331;
+            this.label10.Text = "Pediatra:";
+            // 
+            // txtPediatra
+            // 
+            this.txtPediatra.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.txtPediatra.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtPediatra.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtPediatra.ForeColor = System.Drawing.Color.White;
+            this.txtPediatra.Location = new System.Drawing.Point(627, 87);
+            this.txtPediatra.Name = "txtPediatra";
+            this.txtPediatra.Size = new System.Drawing.Size(334, 23);
+            this.txtPediatra.TabIndex = 3;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.label9.Location = new System.Drawing.Point(744, 118);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(61, 17);
+            this.label9.TabIndex = 329;
+            this.label9.Text = "Afiliado:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.label7.Location = new System.Drawing.Point(483, 118);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(40, 17);
+            this.label7.TabIndex = 327;
+            this.label7.Text = "Plan:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.label5.Location = new System.Drawing.Point(35, 118);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(87, 17);
+            this.label5.TabIndex = 325;
+            this.label5.Text = "Obra Social:";
+            // 
             // btnAgregar
             // 
             this.btnAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
@@ -204,13 +304,13 @@ namespace CapaPresentacion.Formularios
             this.btnAgregar.FlatAppearance.BorderSize = 0;
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregar.IconChar = FontAwesome.Sharp.IconChar.ArrowTurnDown;
-            this.btnAgregar.IconColor = System.Drawing.Color.Aqua;
+            this.btnAgregar.IconColor = System.Drawing.Color.Gold;
             this.btnAgregar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnAgregar.IconSize = 25;
-            this.btnAgregar.Location = new System.Drawing.Point(986, 111);
+            this.btnAgregar.Location = new System.Drawing.Point(984, 142);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(36, 32);
-            this.btnAgregar.TabIndex = 5;
+            this.btnAgregar.TabIndex = 10;
             this.btnAgregar.UseVisualStyleBackColor = false;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
@@ -237,7 +337,7 @@ namespace CapaPresentacion.Formularios
             this.btnSearch.Location = new System.Drawing.Point(1073, 44);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(57, 48);
-            this.btnSearch.TabIndex = 10;
+            this.btnSearch.TabIndex = 13;
             this.btnSearch.UseVisualStyleBackColor = false;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
@@ -253,7 +353,7 @@ namespace CapaPresentacion.Formularios
             this.dtpFecha.Name = "dtpFecha";
             this.dtpFecha.Size = new System.Drawing.Size(109, 23);
             this.dtpFecha.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.dtpFecha.TabIndex = 2;
+            this.dtpFecha.TabIndex = 1;
             this.dtpFecha.TextColor = System.Drawing.Color.Yellow;
             // 
             // txtidPcte
@@ -333,7 +433,7 @@ namespace CapaPresentacion.Formularios
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.label4.Location = new System.Drawing.Point(31, 119);
+            this.label4.Location = new System.Drawing.Point(29, 150);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(91, 17);
             this.label4.TabIndex = 309;
@@ -344,11 +444,11 @@ namespace CapaPresentacion.Formularios
             this.txtComentario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.txtComentario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtComentario.ForeColor = System.Drawing.Color.White;
-            this.txtComentario.Location = new System.Drawing.Point(128, 117);
+            this.txtComentario.Location = new System.Drawing.Point(126, 148);
             this.txtComentario.Multiline = true;
             this.txtComentario.Name = "txtComentario";
             this.txtComentario.Size = new System.Drawing.Size(835, 23);
-            this.txtComentario.TabIndex = 4;
+            this.txtComentario.TabIndex = 7;
             // 
             // groupBox1
             // 
@@ -401,7 +501,7 @@ namespace CapaPresentacion.Formularios
             this.btnSalir.Location = new System.Drawing.Point(11, 364);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(70, 53);
-            this.btnSalir.TabIndex = 3;
+            this.btnSalir.TabIndex = 2;
             this.btnSalir.Text = "Salir";
             this.btnSalir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnSalir.UseVisualStyleBackColor = false;
@@ -472,7 +572,7 @@ namespace CapaPresentacion.Formularios
             this.dgvHistoria.DefaultCellStyle = dataGridViewCellStyle6;
             this.dgvHistoria.EnableHeadersVisualStyles = false;
             this.dgvHistoria.GridColor = System.Drawing.Color.White;
-            this.dgvHistoria.Location = new System.Drawing.Point(13, 192);
+            this.dgvHistoria.Location = new System.Drawing.Point(12, 231);
             this.dgvHistoria.MultiSelect = false;
             this.dgvHistoria.Name = "dgvHistoria";
             this.dgvHistoria.ReadOnly = true;
@@ -489,10 +589,133 @@ namespace CapaPresentacion.Formularios
             dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.Gray;
             this.dgvHistoria.RowsDefaultCellStyle = dataGridViewCellStyle8;
-            this.dgvHistoria.Size = new System.Drawing.Size(1040, 373);
+            this.dgvHistoria.Size = new System.Drawing.Size(1040, 334);
             this.dgvHistoria.TabIndex = 157;
             this.dgvHistoria.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHistoria_CellContentClick);
             this.dgvHistoria.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dgvHistoria_CellPainting);
+            // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.btnLimpiar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLimpiar.FlatAppearance.BorderSize = 0;
+            this.btnLimpiar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.btnLimpiar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLimpiar.IconChar = FontAwesome.Sharp.IconChar.Broom;
+            this.btnLimpiar.IconColor = System.Drawing.Color.Aqua;
+            this.btnLimpiar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnLimpiar.IconSize = 25;
+            this.btnLimpiar.Location = new System.Drawing.Point(934, 195);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(28, 28);
+            this.btnLimpiar.TabIndex = 12;
+            this.btnLimpiar.UseVisualStyleBackColor = false;
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.btnBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBuscar.FlatAppearance.BorderSize = 0;
+            this.btnBuscar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.btnBuscar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscar.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
+            this.btnBuscar.IconColor = System.Drawing.Color.Aqua;
+            this.btnBuscar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnBuscar.IconSize = 25;
+            this.btnBuscar.Location = new System.Drawing.Point(868, 195);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(28, 28);
+            this.btnBuscar.TabIndex = 11;
+            this.btnBuscar.UseVisualStyleBackColor = false;
+            // 
+            // txtFiltro
+            // 
+            this.txtFiltro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.txtFiltro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtFiltro.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtFiltro.ForeColor = System.Drawing.Color.White;
+            this.txtFiltro.Location = new System.Drawing.Point(657, 198);
+            this.txtFiltro.Name = "txtFiltro";
+            this.txtFiltro.Size = new System.Drawing.Size(193, 23);
+            this.txtFiltro.TabIndex = 9;
+            // 
+            // cboBusqueda
+            // 
+            this.cboBusqueda.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.cboBusqueda.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cboBusqueda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cboBusqueda.ForeColor = System.Drawing.Color.White;
+            this.cboBusqueda.FormattingEnabled = true;
+            this.cboBusqueda.Location = new System.Drawing.Point(432, 197);
+            this.cboBusqueda.Name = "cboBusqueda";
+            this.cboBusqueda.Size = new System.Drawing.Size(219, 25);
+            this.cboBusqueda.TabIndex = 8;
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.label33.Location = new System.Drawing.Point(347, 200);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(79, 17);
+            this.label33.TabIndex = 156;
+            this.label33.Text = "Buscar por:";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.label34.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.label34.Location = new System.Drawing.Point(19, 198);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(214, 22);
+            this.label34.TabIndex = 155;
+            this.label34.Text = "Lista de Historia Clínica";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Location = new System.Drawing.Point(13, 188);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1039, 42);
+            this.panel1.TabIndex = 158;
+            // 
+            // cboProfesionales
+            // 
+            this.cboProfesionales.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.cboProfesionales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cboProfesionales.ForeColor = System.Drawing.Color.White;
+            this.cboProfesionales.FormattingEnabled = true;
+            this.cboProfesionales.Location = new System.Drawing.Point(342, 86);
+            this.cboProfesionales.Name = "cboProfesionales";
+            this.cboProfesionales.Size = new System.Drawing.Size(190, 25);
+            this.cboProfesionales.TabIndex = 2;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.label8.Location = new System.Drawing.Point(254, 89);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(82, 17);
+            this.label8.TabIndex = 150;
+            this.label8.Text = "Profesional:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Lime;
+            this.label2.Location = new System.Drawing.Point(13, 15);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(151, 21);
+            this.label2.TabIndex = 140;
+            this.label2.Text = "Detalle de Historia";
             // 
             // Seleccionar
             // 
@@ -558,14 +781,14 @@ namespace CapaPresentacion.Formularios
             this.Detalle.HeaderText = "DETALLE";
             this.Detalle.Name = "Detalle";
             this.Detalle.ReadOnly = true;
-            this.Detalle.Width = 500;
+            this.Detalle.Width = 630;
             // 
             // Obs
             // 
-            this.Obs.HeaderText = "OBS";
+            this.Obs.HeaderText = "PEDIATRA";
             this.Obs.Name = "Obs";
             this.Obs.ReadOnly = true;
-            this.Obs.Width = 250;
+            this.Obs.Width = 155;
             // 
             // UserRegistro
             // 
@@ -580,129 +803,6 @@ namespace CapaPresentacion.Formularios
             this.FechaRegistro.Name = "FechaRegistro";
             this.FechaRegistro.ReadOnly = true;
             this.FechaRegistro.Visible = false;
-            // 
-            // btnLimpiar
-            // 
-            this.btnLimpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.btnLimpiar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLimpiar.FlatAppearance.BorderSize = 0;
-            this.btnLimpiar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.btnLimpiar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLimpiar.IconChar = FontAwesome.Sharp.IconChar.Broom;
-            this.btnLimpiar.IconColor = System.Drawing.Color.Aqua;
-            this.btnLimpiar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnLimpiar.IconSize = 25;
-            this.btnLimpiar.Location = new System.Drawing.Point(935, 156);
-            this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(28, 28);
-            this.btnLimpiar.TabIndex = 9;
-            this.btnLimpiar.UseVisualStyleBackColor = false;
-            // 
-            // btnBuscar
-            // 
-            this.btnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.btnBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBuscar.FlatAppearance.BorderSize = 0;
-            this.btnBuscar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.btnBuscar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscar.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
-            this.btnBuscar.IconColor = System.Drawing.Color.Aqua;
-            this.btnBuscar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnBuscar.IconSize = 25;
-            this.btnBuscar.Location = new System.Drawing.Point(869, 156);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(28, 28);
-            this.btnBuscar.TabIndex = 8;
-            this.btnBuscar.UseVisualStyleBackColor = false;
-            // 
-            // txtFiltro
-            // 
-            this.txtFiltro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.txtFiltro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtFiltro.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtFiltro.ForeColor = System.Drawing.Color.White;
-            this.txtFiltro.Location = new System.Drawing.Point(658, 159);
-            this.txtFiltro.Name = "txtFiltro";
-            this.txtFiltro.Size = new System.Drawing.Size(193, 23);
-            this.txtFiltro.TabIndex = 7;
-            // 
-            // cboBusqueda
-            // 
-            this.cboBusqueda.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.cboBusqueda.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cboBusqueda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cboBusqueda.ForeColor = System.Drawing.Color.White;
-            this.cboBusqueda.FormattingEnabled = true;
-            this.cboBusqueda.Location = new System.Drawing.Point(433, 158);
-            this.cboBusqueda.Name = "cboBusqueda";
-            this.cboBusqueda.Size = new System.Drawing.Size(219, 25);
-            this.cboBusqueda.TabIndex = 6;
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.label33.Location = new System.Drawing.Point(348, 161);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(79, 17);
-            this.label33.TabIndex = 156;
-            this.label33.Text = "Buscar por:";
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.label34.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label34.Location = new System.Drawing.Point(20, 159);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(214, 22);
-            this.label34.TabIndex = 155;
-            this.label34.Text = "Lista de Historia Clínica";
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Location = new System.Drawing.Point(14, 149);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1039, 42);
-            this.panel1.TabIndex = 158;
-            // 
-            // cboProfesionales
-            // 
-            this.cboProfesionales.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.cboProfesionales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cboProfesionales.ForeColor = System.Drawing.Color.White;
-            this.cboProfesionales.FormattingEnabled = true;
-            this.cboProfesionales.Location = new System.Drawing.Point(342, 86);
-            this.cboProfesionales.Name = "cboProfesionales";
-            this.cboProfesionales.Size = new System.Drawing.Size(190, 25);
-            this.cboProfesionales.TabIndex = 3;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.label8.Location = new System.Drawing.Point(254, 89);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(82, 17);
-            this.label8.TabIndex = 150;
-            this.label8.Text = "Profesional:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Lime;
-            this.label2.Location = new System.Drawing.Point(13, 15);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(151, 21);
-            this.label2.TabIndex = 140;
-            this.label2.Text = "Detalle de Historia";
             // 
             // frmHistorias
             // 
@@ -766,6 +866,14 @@ namespace CapaPresentacion.Formularios
         private System.Windows.Forms.ComboBox cboProfesionales;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label2;
+        public System.Windows.Forms.Label lblAfiliado;
+        public System.Windows.Forms.Label lblPlan;
+        public System.Windows.Forms.Label lblObraSocial;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox txtPediatra;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DataGridViewButtonColumn Seleccionar;
         private System.Windows.Forms.DataGridViewTextBoxColumn id_Histo;
         private System.Windows.Forms.DataGridViewTextBoxColumn idPcte;

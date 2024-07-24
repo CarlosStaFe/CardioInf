@@ -44,7 +44,7 @@ namespace CapaPresentacion.Formularios
             //***** CARGO EL DGV *****
             foreach (CE_Agendas item in ListaAgda)
             {
-                dgvAgendas.Rows.Add(new object[] { "", item.id_Agda, item.Fecha, item.Turno, item.Detalle, item.Tipo, item.Pacte, "", item.Estado, item.FechaEstado, item.Obs, item.Profesional,
+                dgvAgendas.Rows.Add(new object[] { "", item.id_Agda, item.Fecha, item.Hora, item.Minutos, item.Turno, item.Detalle, item.Tipo, item.Pacte, "", item.Estado, item.FechaEstado, item.Profesional, item.Obs,
                                                     item.UserRegistro, item.FechaRegistro });
             }
 
@@ -72,7 +72,7 @@ namespace CapaPresentacion.Formularios
                     dgvAgendas.Rows[i].Cells["Estado"].Style.ForeColor = Color.Black;
                     dgvAgendas.Rows[i].Cells["Estado"].Style.BackColor = Color.Aquamarine;
                 }
-                if (estadolist == "COMPLETA")
+                if (estadolist == "COMPLETA" || estadolist == "ATENDIDO")
                 {
                     dgvAgendas.Rows[i].Cells["Estado"].Style.ForeColor = Color.Black;
                     dgvAgendas.Rows[i].Cells["Estado"].Style.BackColor = Color.Green;
@@ -119,6 +119,8 @@ namespace CapaPresentacion.Formularios
                     id_Agda = Convert.ToInt32(txtId.Text),
                     Fecha = Convert.ToDateTime(fechaagenda),
                     Profesional = cboProfesionales.Text,
+                    Hora = Convert.ToInt32(nudHora.Text),
+                    Minutos = Convert.ToInt32(nudMinutos.Text),
                     Turno = Convert.ToInt32(nudTurno.Text),
                     Tipo = cboTipoConsulta.Text,
                     Pacte = Convert.ToInt32(txtPaciente.Text),
@@ -223,6 +225,8 @@ namespace CapaPresentacion.Formularios
             lblPaciente.Text = string.Empty;
             cboProfesionales.Text = string.Empty; 
             cboTipoConsulta.Text = string.Empty;
+            nudHora.Text = "0";
+            nudMinutos.Text = "0";
             nudTurno.Text = "1";
             cboEstado.Text = String.Empty;
             txtObs.Text = String.Empty;
@@ -265,6 +269,8 @@ namespace CapaPresentacion.Formularios
                     {
                         txtIndice.Text = indice.ToString();
                         txtId.Text = dgvAgendas.Rows[indice].Cells["id_Agda"].Value.ToString();
+                        nudHora.Text = dgvAgendas.Rows[indice].Cells["Hora"].Value.ToString();
+                        nudMinutos.Text = dgvAgendas.Rows[indice].Cells["Minutos"].Value.ToString();
                         cboProfesionales.Text = dgvAgendas.Rows[indice].Cells["Profesional"].Value.ToString();
                         nudTurno.Value = Convert.ToInt32(dgvAgendas.Rows[indice].Cells["Turno"].Value.ToString());
                         cboTipoConsulta.Text = dgvAgendas.Rows[indice].Cells["Tipo"].Value.ToString();
@@ -326,7 +332,7 @@ namespace CapaPresentacion.Formularios
             //***** CARGO EL DGV *****
             foreach (CE_Agendas item in AgdaCorta)
             {
-                dgvAgendas.Rows.Add(new object[] { "", item.id_Agda, item.Fecha, item.Turno, item.Detalle, item.Tipo, item.Pacte, "", item.Estado, item.FechaEstado, item.Obs, item.Profesional,
+                dgvAgendas.Rows.Add(new object[] { "", item.id_Agda, item.Fecha, item.Hora, item.Minutos, item.Turno, item.Detalle, item.Tipo, item.Pacte, "", item.Estado, item.FechaEstado, item.Profesional, item.Obs,
                                                     item.UserRegistro, item.FechaRegistro });
             }
 
