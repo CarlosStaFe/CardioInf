@@ -22,7 +22,7 @@ namespace CapaDatos
                     {
                         command.Parameters.AddWithValue("@fecha", fecha);
                         command.Connection = connection;
-                        command.CommandText = "SELECT * FROM Agendas WHERE Fecha = @fecha ORDER BY Hora ASC, Minutos ASC, Turno ASC, Profesional";
+                        command.CommandText = "SELECT * FROM Agendas WHERE Fecha = @fecha ORDER BY  Turno ASC, Hora ASC, Minutos ASC, Profesional";
                         command.CommandType = CommandType.Text;
                         MySqlDataReader dr = command.ExecuteReader();
 
@@ -75,7 +75,7 @@ namespace CapaDatos
                         command.Parameters.AddWithValue("@prof", prof);
                         command.Parameters.AddWithValue("@fecha", fecha);
                         command.Connection = connection;
-                        command.CommandText = "SELECT * FROM Agendas WHERE Profesional = @prof AND Fecha = @fecha ORDER BY Hora ASC, Minutos ASC, Turno ASC, Profesional";
+                        command.CommandText = "SELECT * FROM Agendas WHERE Profesional = @prof AND Fecha = @fecha ORDER BY  Turno ASC, Hora ASC, Minutos ASC, Profesional";
                         command.CommandType = CommandType.Text;
                         MySqlDataReader dr = command.ExecuteReader();
 

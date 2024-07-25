@@ -13,6 +13,7 @@ namespace CapaPresentacion.Formularios
     {
         private string respuesta;
         private string estadolist;
+        private int orden;
         string fechaagenda;
 
         public frmCargarAgenda()
@@ -66,31 +67,44 @@ namespace CapaPresentacion.Formularios
             for (int i = 0; i < dgvAgendas.Rows.Count; i++)
             {
                 estadolist = Convert.ToString(dgvAgendas.Rows[i].Cells["Estado"].Value);
+                orden = Convert.ToInt32(dgvAgendas.Rows[i].Cells["Turno"].Value);
 
-                if (estadolist == "EN ESPERA")
+                if (estadolist == "EN ESPERA" & orden < 99)
                 {
                     dgvAgendas.Rows[i].Cells["Estado"].Style.ForeColor = Color.Black;
                     dgvAgendas.Rows[i].Cells["Estado"].Style.BackColor = Color.Aquamarine;
+                    dgvAgendas.Rows[i].Cells["Turno"].Style.ForeColor = Color.Black;
+                    dgvAgendas.Rows[i].Cells["Turno"].Style.BackColor = Color.Aquamarine;
+
                 }
-                if (estadolist == "COMPLETA" || estadolist == "ATENDIDO")
+                if ((estadolist == "COMPLETA" || estadolist == "ATENDIDO") & orden < 99)
                 {
                     dgvAgendas.Rows[i].Cells["Estado"].Style.ForeColor = Color.Black;
                     dgvAgendas.Rows[i].Cells["Estado"].Style.BackColor = Color.Green;
+                    dgvAgendas.Rows[i].Cells["Turno"].Style.ForeColor = Color.Black;
+                    dgvAgendas.Rows[i].Cells["Turno"].Style.BackColor = Color.Green;
                 }
-                if (estadolist == "CONSULTORIO")
+                if (estadolist == "CONSULTORIO" & orden < 99)
                 {
                     dgvAgendas.Rows[i].Cells["Estado"].Style.ForeColor = Color.Black;
                     dgvAgendas.Rows[i].Cells["Estado"].Style.BackColor = Color.White;
+                    dgvAgendas.Rows[i].Cells["Turno"].Style.ForeColor = Color.Black;
+                    dgvAgendas.Rows[i].Cells["Turno"].Style.BackColor = Color.White;
+
                 }
-                if (estadolist == "CANCELADO")
+                if (estadolist == "CANCELADO" & orden < 99)
                 {
                     dgvAgendas.Rows[i].Cells["Estado"].Style.ForeColor = Color.Black;
                     dgvAgendas.Rows[i].Cells["Estado"].Style.BackColor = Color.Red;
+                    dgvAgendas.Rows[i].Cells["Turno"].Style.ForeColor = Color.Black;
+                    dgvAgendas.Rows[i].Cells["Turno"].Style.BackColor = Color.Red;
                 }
-                if (estadolist == "ENVIADO")
+                if (estadolist == "ENVIADO" & orden < 99)
                 {
                     dgvAgendas.Rows[i].Cells["Estado"].Style.ForeColor = Color.Black;
                     dgvAgendas.Rows[i].Cells["Estado"].Style.BackColor = Color.Blue;
+                    dgvAgendas.Rows[i].Cells["Turno"].Style.ForeColor = Color.Black;
+                    dgvAgendas.Rows[i].Cells["Turno"].Style.BackColor = Color.Blue;
                 }
             }
         }
@@ -225,9 +239,9 @@ namespace CapaPresentacion.Formularios
             lblPaciente.Text = string.Empty;
             cboProfesionales.Text = string.Empty; 
             cboTipoConsulta.Text = string.Empty;
-            nudHora.Text = "0";
+            nudHora.Text = "8";
             nudMinutos.Text = "0";
-            nudTurno.Text = "1";
+            nudTurno.Text = "99";
             cboEstado.Text = String.Empty;
             txtObs.Text = String.Empty;
 

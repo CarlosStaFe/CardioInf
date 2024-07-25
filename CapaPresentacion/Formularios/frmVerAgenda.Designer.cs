@@ -367,7 +367,7 @@
             this.dgvAgendas.DefaultCellStyle = dataGridViewCellStyle8;
             this.dgvAgendas.EnableHeadersVisualStyles = false;
             this.dgvAgendas.GridColor = System.Drawing.Color.White;
-            this.dgvAgendas.Location = new System.Drawing.Point(12, 57);
+            this.dgvAgendas.Location = new System.Drawing.Point(14, 57);
             this.dgvAgendas.MultiSelect = false;
             this.dgvAgendas.Name = "dgvAgendas";
             this.dgvAgendas.ReadOnly = true;
@@ -587,7 +587,7 @@
             this.TipoEst.HeaderText = "TIPO";
             this.TipoEst.Name = "TipoEst";
             this.TipoEst.ReadOnly = true;
-            this.TipoEst.Width = 250;
+            this.TipoEst.Width = 230;
             // 
             // Pacte
             // 
@@ -624,15 +624,14 @@
             this.Obs.HeaderText = "OBS";
             this.Obs.Name = "Obs";
             this.Obs.ReadOnly = true;
-            this.Obs.Visible = false;
-            this.Obs.Width = 300;
+            this.Obs.Width = 160;
             // 
             // Profesional
             // 
             this.Profesional.HeaderText = "PROFESIONAL";
             this.Profesional.Name = "Profesional";
             this.Profesional.ReadOnly = true;
-            this.Profesional.Width = 200;
+            this.Profesional.Width = 150;
             // 
             // UserRegistro
             // 

@@ -68,5 +68,11 @@ namespace CapaNegocio
             return cD_CabeceraEco.LeerCabecera(id, numero);
         }
 
+        //***** LLAMO AL METODO PARA MODIFICAR EL MAIL DE LAS CABECERAS *****
+        public bool ActualizoMail(int id, string mail)
+        {
+            return cD_CabeceraEco.ActualizoMail(id, mail);
+        }
+
     }
 }

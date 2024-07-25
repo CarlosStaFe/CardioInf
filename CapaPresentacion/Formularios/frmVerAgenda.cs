@@ -12,7 +12,7 @@ namespace CapaPresentacion.Formularios
     {
         private string estadolist;
         string tipo, fecha, numeroeco, path, fechaagenda, estadonew;
-        int id, nivel;
+        int id, nivel, orden;
 
         public frmVerAgenda()
         {
@@ -98,31 +98,43 @@ namespace CapaPresentacion.Formularios
             for (int i = 0; i < dgvAgendas.Rows.Count; i++)
             {
                 estadolist = Convert.ToString(dgvAgendas.Rows[i].Cells["Estado"].Value);
+                orden = Convert.ToInt32(dgvAgendas.Rows[i].Cells["Turno"].Value);
 
-                if (estadolist == "EN ESPERA")
+                if (estadolist == "EN ESPERA" & orden < 99)
                 {
                     dgvAgendas.Rows[i].Cells["Estado"].Style.ForeColor = Color.Black;
                     dgvAgendas.Rows[i].Cells["Estado"].Style.BackColor = Color.Aquamarine;
+                    dgvAgendas.Rows[i].Cells["Turno"].Style.ForeColor = Color.Black;
+                    dgvAgendas.Rows[i].Cells["Turno"].Style.BackColor = Color.Aquamarine;
+
                 }
-                if (estadolist == "COMPLETA" || estadolist == "ATENDIDO")
+                if ((estadolist == "COMPLETA" || estadolist == "ATENDIDO") & orden < 99)
                 {
                     dgvAgendas.Rows[i].Cells["Estado"].Style.ForeColor = Color.Black;
                     dgvAgendas.Rows[i].Cells["Estado"].Style.BackColor = Color.Green;
+                    dgvAgendas.Rows[i].Cells["Turno"].Style.ForeColor = Color.Black;
+                    dgvAgendas.Rows[i].Cells["Turno"].Style.BackColor = Color.Green;
                 }
-                if (estadolist == "CONSULTORIO")
+                if (estadolist == "CONSULTORIO" & orden < 99)
                 {
                     dgvAgendas.Rows[i].Cells["Estado"].Style.ForeColor = Color.Black;
                     dgvAgendas.Rows[i].Cells["Estado"].Style.BackColor = Color.White;
+                    dgvAgendas.Rows[i].Cells["Turno"].Style.ForeColor = Color.Black;
+                    dgvAgendas.Rows[i].Cells["Turno"].Style.BackColor = Color.White;
                 }
-                if (estadolist == "CANCELADO")
+                if (estadolist == "CANCELADO" & orden < 99)
                 {
                     dgvAgendas.Rows[i].Cells["Estado"].Style.ForeColor = Color.Black;
                     dgvAgendas.Rows[i].Cells["Estado"].Style.BackColor = Color.Red;
+                    dgvAgendas.Rows[i].Cells["Turno"].Style.ForeColor = Color.Black;
+                    dgvAgendas.Rows[i].Cells["Turno"].Style.BackColor = Color.Red;
                 }
-                if (estadolist == "ENVIADO")
+                if (estadolist == "ENVIADO" & orden < 99)
                 {
                     dgvAgendas.Rows[i].Cells["Estado"].Style.ForeColor = Color.Black;
                     dgvAgendas.Rows[i].Cells["Estado"].Style.BackColor = Color.Blue;
+                    dgvAgendas.Rows[i].Cells["Turno"].Style.ForeColor = Color.Black;
+                    dgvAgendas.Rows[i].Cells["Turno"].Style.BackColor = Color.Blue;
                 }
             }
         }

@@ -13,6 +13,8 @@ namespace CapaPresentacion.Formularios
         private string respuesta;
         private string mensaje;
         string nombreOS;
+        string mail;
+        int id;
         string texto = "";
         SoloNumeros validar = new SoloNumeros();
 
@@ -223,6 +225,9 @@ namespace CapaPresentacion.Formularios
 
             if (respuesta == "OK")
             {
+                mail = txtEmail.Text;
+                id = Convert.ToInt32(txtId.Text);
+
                 CE_Pacientes cE_Pacientes = new CE_Pacientes()
                 {
                     id_Pacte = Convert.ToInt32(txtId.Text),
@@ -285,6 +290,7 @@ namespace CapaPresentacion.Formularios
                         row.Cells["FechaRegistro"].Value = txtFechaRegistro.Text;
                         row.Cells["Afiliado"].Value = txtAfiliado.Text;
 
+                        CambiarMail();
                         Limpiar();
                     }
                     else
@@ -358,5 +364,13 @@ namespace CapaPresentacion.Formularios
         {
             txtEmail.Text = txtEmail.Text.Trim() + cboArrobas.Text;
         }
+
+        //***** PROCEDIMIENTO PARA REGRABAR EMAIL EN AGENDAS *****
+        private void CambiarMail()
+        {
+            var okcab = new CN_CabeceraEco().ActualizoMail(id, mail);
+        }
+
+
     }
 }

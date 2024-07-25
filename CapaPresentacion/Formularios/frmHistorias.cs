@@ -17,6 +17,7 @@ namespace CapaPresentacion.Formularios
         {
             InitializeComponent();
             id = Convert.ToInt32(idPcte);
+            txtidPcte.Text = Convert.ToString(idPcte);
         }
 
         private void frmHistorias_Load(object sender, EventArgs e)
@@ -54,6 +55,9 @@ namespace CapaPresentacion.Formularios
                     lblObraSocial.Text = item.ObraSocial;
                     lblPlan.Text = item.PlanOS;
                     lblAfiliado.Text = item.Afiliado;
+
+                    txtNumeroDoc.Text = Convert.ToString(item.NumeroDoc);
+                    txtApelNombres.Text = item.ApelNombres;
                 }
 
                 CargarHistoria();

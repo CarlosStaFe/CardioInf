@@ -333,6 +333,11 @@
             this.nudTurno.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.nudTurno.ForeColor = System.Drawing.Color.White;
             this.nudTurno.Location = new System.Drawing.Point(896, 88);
+            this.nudTurno.Maximum = new decimal(new int[] {
+            99,
+            0,
+            0,
+            0});
             this.nudTurno.Minimum = new decimal(new int[] {
             1,
             0,
@@ -343,7 +348,7 @@
             this.nudTurno.TabIndex = 7;
             this.nudTurno.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.nudTurno.Value = new decimal(new int[] {
-            1,
+            99,
             0,
             0,
             0});

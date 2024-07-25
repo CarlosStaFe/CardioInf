@@ -328,6 +328,31 @@ namespace CapaDatos
             return lista;
         }
 
+        //***** METODO PARA ACTUALIZAR LOS MAIL DE LAS CABECERAS *****
+        public bool ActualizoMail(int id, string mail)
+        {
+            using (var connection = GetConnection())
+            {
+                connection.Open();
+                using (var command = new MySqlCommand())
+                {
+                    try
+                    {
+                        command.Parameters.AddWithValue("@id", id);
+                        command.Parameters.AddWithValue("@mail", mail);
+                        command.Connection = connection;
+                        command.CommandText = "UPDATE CabeceraEco SET Obs = @mail WHERE Pacte = @id";
+                        command.CommandType = CommandType.Text;
+                        command.ExecuteNonQuery();
+                        return true;
+                    }
+                    catch (Exception)
+                    {
+                        return false;
+                    }
+                }
+            }
+        }
 
     }
 }
