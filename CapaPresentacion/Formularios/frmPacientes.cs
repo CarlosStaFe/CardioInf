@@ -15,15 +15,17 @@ namespace CapaPresentacion.Formularios
         string nombreOS;
         string mail;
         int id;
+        int pcte;
         string texto = "";
         SoloNumeros validar = new SoloNumeros();
 
         int codpos = 0;
         public string localidad;
 
-        public frmPacientes()
+        public frmPacientes(int idpcte)
         {
             InitializeComponent();
+            pcte = idpcte;
         }
 
         private void frmPacientes_Load(object sender, System.EventArgs e)
@@ -34,8 +36,6 @@ namespace CapaPresentacion.Formularios
             CargarComboOS();
             CargarArrobas();
             CargarDGV();
-
-            //Colorear();
 
             cboTipoDoc.Select();
         }
@@ -49,15 +49,33 @@ namespace CapaPresentacion.Formularios
             {
                 dgvPacientes.Rows.Add(new object[] { "", item.id_Pacte, item.ApelNombres, item.FechaNacim, item.Sexo, item.TipoDoc, item.NumeroDoc, item.Domicilio, item.CodPostal,
                                                 item.Telefono, item.Email, item.ObraSocial, item.PlanOS, item.Obs, item.UserRegistro, item.FechaRegistro, item.Afiliado });
-            }
-        }
 
-        //***** COLOREO LA CELDA SI LA FIANZA ESTÁ VENCIDA *****
-        private void Colorear()
-        {
-            for (int i = 0; i < dgvPacientes.Rows.Count; i++)
-            {
-                DateTime dateFecha = Convert.ToDateTime(dgvPacientes.Rows[i].Cells["FecEstado"].Value);
+                if (pcte == item.id_Pacte)
+                {
+
+                    txtId.Text = Convert.ToString(item.id_Pacte);
+                    txtApelNombres.Text = item.ApelNombres;
+                    dtpFechaNacim.Value = Convert.ToDateTime(item.FechaNacim);
+                    cboSexo.Text = item.Sexo;
+                    cboTipoDoc.Text = item.TipoDoc;
+                    txtNumeroDoc.Text = Convert.ToString(item.NumeroDoc);
+                    txtDomicilio.Text = item.Domicilio;
+                    txtCodPos.Text = Convert.ToString(item.CodPostal);
+
+                    //***** BUSCO LA LOCALIDAD DEL PACIENTE *****
+                    codpos = Convert.ToInt32(txtCodPos.Text);
+                    localidad = new CN_CodigosPostales().BuscaCodPos(codpos);
+                    lblLocalidad.Text = localidad.ToString();
+
+                    txtTelefono.Text = item.Telefono;
+                    txtEmail.Text = item.Email;
+                    cboObraSocial.Text = item.ObraSocial;
+                    cboPlanOS.Text = item.PlanOS;
+                    txtObs.Text = item.Obs;
+                    txtUserRegistro.Text = item.UserRegistro;
+                    txtFechaRegistro.Text = Convert.ToString(item.FechaRegistro);
+                    txtAfiliado.Text = item.Afiliado;
+                }
             }
         }
 
@@ -370,7 +388,6 @@ namespace CapaPresentacion.Formularios
         {
             var okcab = new CN_CabeceraEco().ActualizoMail(id, mail);
         }
-
 
     }
 }

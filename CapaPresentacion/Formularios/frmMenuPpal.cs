@@ -233,7 +233,7 @@ namespace ColegMart
 
         private void btnActualizarPac_Click(object sender, System.EventArgs e)
         {
-            AbrirFormHijo(new frmPacientes());
+            AbrirFormHijo(new frmPacientes(0));
             OcultarSubmenu();
         }
         private void btnCargarAgenda_Click(object sender, System.EventArgs e)

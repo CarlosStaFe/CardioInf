@@ -15,6 +15,7 @@ namespace CapaPresentacion.Formularios
         private string estadolist;
         private int orden;
         string fechaagenda;
+        int idpcte;
 
         public frmCargarAgenda()
         {
@@ -170,22 +171,6 @@ namespace CapaPresentacion.Formularios
                     if (resultado)
                     {
                         CargarAgenda();
-
-                        //DataGridViewRow row = dgvAgendas.Rows[Convert.ToInt32(txtIndice.Text)];
-                        //row.Cells["id_Agda"].Value = txtId.Text;
-                        //row.Cells["Fecha"].Value = DateTime.Now;
-                        //row.Cells["Profesional"].Value = cboProfesionales.Text;
-                        //row.Cells["Turno"].Value = nudTurno.Text;
-                        //row.Cells["Tipo"].Value = cboTipoConsulta.Text;
-                        //row.Cells["Pacte"].Value = txtPaciente.Text;
-                        //row.Cells["ApellidoyNombres"].Value = lblPaciente.Text;
-                        //row.Cells["NumeroEco"].Value = 0;
-                        //row.Cells["Estado"].Value = cboEstado.Text;
-                        //row.Cells["Tipo"].Value = DateTime.Now;
-                        //row.Cells["Obs"].Value = txtObs.Text;
-                        //row.Cells["UserRegistro"].Value = txtUserRegistro.Text;
-                        //row.Cells["FechaRegistro"].Value = txtFechaRegistro.Text;
-
                         Limpiar();
                     }
                     else
@@ -408,6 +393,17 @@ namespace CapaPresentacion.Formularios
             fechaagenda = new ProcesarFecha().Procesar(fechaagenda);
 
             AgendaCompleta();
+        }
+
+        //***** CARGO LA PANTALLA DE PACIENTES *****
+        private void btnPaciente_Click(object sender, EventArgs e)
+        {
+            if (txtPaciente.Text == "") txtPaciente.Text = "0";
+
+            idpcte = Convert.ToInt32(txtPaciente.Text);
+            frmPacientes Pacte = new frmPacientes(idpcte);
+            AddOwnedForm(Pacte);
+            Pacte.ShowDialog();
         }
     }
 }

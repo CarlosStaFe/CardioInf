@@ -49,7 +49,6 @@
             this.nudMinutos = new System.Windows.Forms.NumericUpDown();
             this.nudHora = new System.Windows.Forms.NumericUpDown();
             this.label9 = new System.Windows.Forms.Label();
-            this.dtpFecha = new CapaPresentacion.DatePicker();
             this.txtPaciente = new System.Windows.Forms.TextBox();
             this.txtApelNombres = new System.Windows.Forms.TextBox();
             this.nudTurno = new System.Windows.Forms.NumericUpDown();
@@ -99,6 +98,8 @@
             this.cboProfesionales = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnPaciente = new FontAwesome.Sharp.IconButton();
+            this.dtpFecha = new CapaPresentacion.DatePicker();
             this.pnlTitulo.SuspendLayout();
             this.pnlDeck.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudMinutos)).BeginInit();
@@ -186,6 +187,7 @@
             // pnlDeck
             // 
             this.pnlDeck.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.pnlDeck.Controls.Add(this.btnPaciente);
             this.pnlDeck.Controls.Add(this.nudMinutos);
             this.pnlDeck.Controls.Add(this.nudHora);
             this.pnlDeck.Controls.Add(this.label9);
@@ -221,6 +223,7 @@
             this.pnlDeck.Controls.Add(this.label2);
             this.pnlDeck.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlDeck.Location = new System.Drawing.Point(0, 40);
+            this.pnlDeck.Margin = new System.Windows.Forms.Padding(0);
             this.pnlDeck.Name = "pnlDeck";
             this.pnlDeck.Size = new System.Drawing.Size(1180, 572);
             this.pnlDeck.TabIndex = 16;
@@ -286,22 +289,6 @@
             this.label9.Size = new System.Drawing.Size(43, 17);
             this.label9.TabIndex = 323;
             this.label9.Text = "Hora:";
-            // 
-            // dtpFecha
-            // 
-            this.dtpFecha.BorderColor = System.Drawing.Color.White;
-            this.dtpFecha.BorderSize = 1;
-            this.dtpFecha.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFecha.Location = new System.Drawing.Point(180, 11);
-            this.dtpFecha.MinimumSize = new System.Drawing.Size(4, 23);
-            this.dtpFecha.Name = "dtpFecha";
-            this.dtpFecha.Size = new System.Drawing.Size(155, 29);
-            this.dtpFecha.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.dtpFecha.TabIndex = 0;
-            this.dtpFecha.TextColor = System.Drawing.Color.Yellow;
-            this.dtpFecha.CloseUp += new System.EventHandler(this.dtpFecha_CloseUp);
             // 
             // txtPaciente
             // 
@@ -949,6 +936,42 @@
             this.label2.TabIndex = 140;
             this.label2.Text = "Detalle de Agenda";
             // 
+            // btnPaciente
+            // 
+            this.btnPaciente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.btnPaciente.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPaciente.FlatAppearance.BorderSize = 0;
+            this.btnPaciente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPaciente.IconChar = FontAwesome.Sharp.IconChar.ChalkboardTeacher;
+            this.btnPaciente.IconColor = System.Drawing.Color.Chartreuse;
+            this.btnPaciente.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnPaciente.IconSize = 40;
+            this.btnPaciente.Location = new System.Drawing.Point(1069, 14);
+            this.btnPaciente.Margin = new System.Windows.Forms.Padding(0);
+            this.btnPaciente.Name = "btnPaciente";
+            this.btnPaciente.Size = new System.Drawing.Size(72, 64);
+            this.btnPaciente.TabIndex = 324;
+            this.btnPaciente.Text = "Buscar";
+            this.btnPaciente.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnPaciente.UseVisualStyleBackColor = false;
+            this.btnPaciente.Click += new System.EventHandler(this.btnPaciente_Click);
+            // 
+            // dtpFecha
+            // 
+            this.dtpFecha.BorderColor = System.Drawing.Color.White;
+            this.dtpFecha.BorderSize = 1;
+            this.dtpFecha.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFecha.Location = new System.Drawing.Point(180, 11);
+            this.dtpFecha.MinimumSize = new System.Drawing.Size(4, 23);
+            this.dtpFecha.Name = "dtpFecha";
+            this.dtpFecha.Size = new System.Drawing.Size(155, 29);
+            this.dtpFecha.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.dtpFecha.TabIndex = 0;
+            this.dtpFecha.TextColor = System.Drawing.Color.Yellow;
+            this.dtpFecha.CloseUp += new System.EventHandler(this.dtpFecha_CloseUp);
+            // 
             // frmCargarAgenda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
@@ -1040,5 +1063,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Obs;
         private System.Windows.Forms.DataGridViewTextBoxColumn UserRegistro;
         private System.Windows.Forms.DataGridViewTextBoxColumn FechaRegistro;
+        private FontAwesome.Sharp.IconButton btnPaciente;
     }
 }

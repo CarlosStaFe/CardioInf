@@ -68,7 +68,7 @@ namespace CapaDatos
                         command.Parameters.AddWithValue("_Estudio", obj.Estudio);
                         command.Parameters.AddWithValue("_Valor", obj.Valor);
                         command.Parameters.AddWithValue("_Estado", obj.Estado);
-                        command.Parameters.AddWithValue("_FechaEstado", obj.FechaEstado);
+                        command.Parameters.AddWithValue("_FecEstado", obj.FechaEstado);
                         command.Parameters.AddWithValue("_Obs", obj.Obs);
                         command.Parameters.AddWithValue("_UserRegistro", obj.UserRegistro);
                         command.Parameters.AddWithValue("_FechaRegistro", DateTime.Now);

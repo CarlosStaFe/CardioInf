@@ -81,7 +81,7 @@ namespace CapaPresentacion.Formularios
 
                     if (idValor != 0)
                     {
-                        dgvValores.Rows.Add(new object[] {"",idValor,cboEstudio.Text,txtValor.Text,cboEstado.Text,txtFechaRegistro.Text,txtObs.Text,txtUserRegistro.Text,txtFechaRegistro.Text});
+                        dgvValores.Rows.Add(new object[] {"",idValor,cboEstudio.Text,txtValor.Text,cboEstado.Text, DateTime.Now, txtObs.Text,txtUserRegistro.Text,txtFechaRegistro.Text});
                         Limpiar();
                     }
                     else
