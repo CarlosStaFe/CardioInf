@@ -128,6 +128,7 @@
     <Compile Include="CN_Pacientes.cs" />
     <Compile Include="CN_Permisos.cs" />
     <Compile Include="CN_PlanesOS.cs" />
+    <Compile Include="CN_Planificacion.cs" />
     <Compile Include="CN_Profesionales.cs" />
     <Compile Include="CN_Provincias.cs" />
     <Compile Include="CN_Usuarios.cs" />

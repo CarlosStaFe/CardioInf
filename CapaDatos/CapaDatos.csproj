@@ -128,6 +128,7 @@
     <Compile Include="CD_Pacientes.cs" />
     <Compile Include="CD_Permisos.cs" />
     <Compile Include="CD_PlanesOS.cs" />
+    <Compile Include="CD_Planificacion.cs" />
     <Compile Include="CD_Profesionales.cs" />
     <Compile Include="CD_Provincias.cs" />
     <Compile Include="CD_Usuarios.cs" />

@@ -251,6 +251,11 @@ namespace ColegMart
             AbrirFormHijo(new frmEnviarMail());
             OcultarSubmenu();
         }
+        private void btnPlanificacion_Click(object sender, System.EventArgs e)
+        {
+            AbrirFormHijo(new frmPlanificacion());
+            OcultarSubmenu();
+        }
 
         #endregion
 

@@ -38,7 +38,7 @@ namespace CapaPresentacion.Formularios
         {
             string mensaje = string.Empty;
 
-            mensaje += "DESEA REGISTRAR EST ARROBA...???";
+            mensaje += "DESEA REGISTRAR ESTA ARROBA...???";
             frmMsgBox msg = new frmMsgBox(mensaje, "question", 2);
             DialogResult dr = msg.ShowDialog();
             respuesta = dr.ToString();

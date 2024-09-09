@@ -16,6 +16,7 @@ namespace CapaPresentacion.Formularios
         private int orden;
         string fechaagenda;
         int idpcte;
+        int cont;
 
         public frmCargarAgenda()
         {
@@ -60,6 +61,8 @@ namespace CapaPresentacion.Formularios
                     cboBusqueda.Items.Add(columna.HeaderText);
                 }
             }
+
+            MostrarPlan();
         }
 
         //***** COLOREO LA CELDA SI LA FECHA ES MENOR *****
@@ -347,6 +350,8 @@ namespace CapaPresentacion.Formularios
             }
 
             btnEliminar.Visible = true;
+
+            MostrarPlan();
         }
 
         //***** PROCESO PARA ELIMINAR PACIENTE DE LA AGENDA *****
@@ -405,5 +410,25 @@ namespace CapaPresentacion.Formularios
             AddOwnedForm(Pacte);
             Pacte.ShowDialog();
         }
+
+        //***** CARGO LA PANTALLA DE PACIENTES *****
+        private void MostrarPlan()
+        {
+            cont = 0;
+            lblPlan1.Text = "";
+            lblPlan2.Text = "";
+            lblPlan3.Text = "";
+
+            List<CE_Planificacion> Plan = new CN_Planificacion().LeePlan(fechaagenda);
+
+            foreach (CE_Planificacion item in Plan)
+            {
+                cont = cont + 1;
+                if (cont == 1) lblPlan1.Text = item.Medico + " - " + item.DesdeHr + ":" + item.DesdeMin + " / " + item.HastaHr + ":" + item.HastaMin + " - " + item.Tipo;
+                if (cont == 2) lblPlan2.Text = item.Medico + " - " + item.DesdeHr + ":" + item.DesdeMin + " / " + item.HastaHr + ":" + item.HastaMin + " - " + item.Tipo;
+                if (cont == 3) lblPlan3.Text = item.Medico + " - " + item.DesdeHr + ":" + item.DesdeMin + " / " + item.HastaHr + ":" + item.HastaMin + " - " + item.Tipo;
+            }
+        }
+
     }
 }

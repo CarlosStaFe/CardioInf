@@ -169,6 +169,18 @@
     <Compile Include="DatePicker.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Formularios\ControlBlanco.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\ControlBlanco.Designer.cs">
+      <DependentUpon>ControlBlanco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ControlDia.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\ControlDia.Designer.cs">
+      <DependentUpon>ControlDia.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\frmArrobas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -265,6 +277,12 @@
     <Compile Include="Formularios\frmPlanesOS.Designer.cs">
       <DependentUpon>frmPlanesOS.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\frmPlanificacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmPlanificacion.Designer.cs">
+      <DependentUpon>frmPlanificacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\frmProfesionales.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -313,6 +331,12 @@
     <Compile Include="Formularios\mdlPacientes.Designer.cs">
       <DependentUpon>mdlPacientes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\mdlPlan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\mdlPlan.Designer.cs">
+      <DependentUpon>mdlPlan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Limpiar.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -324,6 +348,12 @@
     <Compile Include="Utiles\Restaurar.cs" />
     <Compile Include="Utiles\SoloNumeros.cs" />
     <Compile Include="VarGlobales.cs" />
+    <EmbeddedResource Include="Formularios\ControlBlanco.resx">
+      <DependentUpon>ControlBlanco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ControlDia.resx">
+      <DependentUpon>ControlDia.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmArrobas.resx">
       <DependentUpon>frmArrobas.cs</DependentUpon>
     </EmbeddedResource>
@@ -372,6 +402,9 @@
     <EmbeddedResource Include="Formularios\frmPlanesOS.resx">
       <DependentUpon>frmPlanesOS.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmPlanificacion.resx">
+      <DependentUpon>frmPlanificacion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmProfesionales.resx">
       <DependentUpon>frmProfesionales.cs</DependentUpon>
     </EmbeddedResource>
@@ -395,6 +428,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\mdlPacientes.resx">
       <DependentUpon>mdlPacientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\mdlPlan.resx">
+      <DependentUpon>mdlPlan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

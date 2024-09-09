@@ -361,3 +361,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/CapaPresentacion/Formularios/ControlDias.Designer.cs
+/CapaPresentacion/Formularios/ControlDias.cs
+/CapaPresentacion/Formularios/ControlDias.resx

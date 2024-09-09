@@ -46,6 +46,10 @@
             this.txtUserRegistro = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pnlDeck = new System.Windows.Forms.Panel();
+            this.lblPlan3 = new System.Windows.Forms.Label();
+            this.lblPlan2 = new System.Windows.Forms.Label();
+            this.lblPlan1 = new System.Windows.Forms.Label();
+            this.btnPaciente = new FontAwesome.Sharp.IconButton();
             this.nudMinutos = new System.Windows.Forms.NumericUpDown();
             this.nudHora = new System.Windows.Forms.NumericUpDown();
             this.label9 = new System.Windows.Forms.Label();
@@ -98,7 +102,6 @@
             this.cboProfesionales = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnPaciente = new FontAwesome.Sharp.IconButton();
             this.dtpFecha = new CapaPresentacion.DatePicker();
             this.pnlTitulo.SuspendLayout();
             this.pnlDeck.SuspendLayout();
@@ -187,6 +190,9 @@
             // pnlDeck
             // 
             this.pnlDeck.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.pnlDeck.Controls.Add(this.lblPlan3);
+            this.pnlDeck.Controls.Add(this.lblPlan2);
+            this.pnlDeck.Controls.Add(this.lblPlan1);
             this.pnlDeck.Controls.Add(this.btnPaciente);
             this.pnlDeck.Controls.Add(this.nudMinutos);
             this.pnlDeck.Controls.Add(this.nudHora);
@@ -225,8 +231,61 @@
             this.pnlDeck.Location = new System.Drawing.Point(0, 40);
             this.pnlDeck.Margin = new System.Windows.Forms.Padding(0);
             this.pnlDeck.Name = "pnlDeck";
-            this.pnlDeck.Size = new System.Drawing.Size(1180, 572);
+            this.pnlDeck.Size = new System.Drawing.Size(1180, 649);
             this.pnlDeck.TabIndex = 16;
+            // 
+            // lblPlan3
+            // 
+            this.lblPlan3.AutoSize = true;
+            this.lblPlan3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlan3.ForeColor = System.Drawing.Color.Olive;
+            this.lblPlan3.Location = new System.Drawing.Point(34, 614);
+            this.lblPlan3.Name = "lblPlan3";
+            this.lblPlan3.Size = new System.Drawing.Size(16, 19);
+            this.lblPlan3.TabIndex = 330;
+            this.lblPlan3.Text = "-";
+            // 
+            // lblPlan2
+            // 
+            this.lblPlan2.AutoSize = true;
+            this.lblPlan2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlan2.ForeColor = System.Drawing.Color.Green;
+            this.lblPlan2.Location = new System.Drawing.Point(34, 592);
+            this.lblPlan2.Name = "lblPlan2";
+            this.lblPlan2.Size = new System.Drawing.Size(16, 19);
+            this.lblPlan2.TabIndex = 329;
+            this.lblPlan2.Text = "-";
+            // 
+            // lblPlan1
+            // 
+            this.lblPlan1.AutoSize = true;
+            this.lblPlan1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlan1.ForeColor = System.Drawing.Color.Teal;
+            this.lblPlan1.Location = new System.Drawing.Point(34, 569);
+            this.lblPlan1.Name = "lblPlan1";
+            this.lblPlan1.Size = new System.Drawing.Size(16, 19);
+            this.lblPlan1.TabIndex = 328;
+            this.lblPlan1.Text = "-";
+            // 
+            // btnPaciente
+            // 
+            this.btnPaciente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.btnPaciente.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPaciente.FlatAppearance.BorderSize = 0;
+            this.btnPaciente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPaciente.IconChar = FontAwesome.Sharp.IconChar.ChalkboardTeacher;
+            this.btnPaciente.IconColor = System.Drawing.Color.Chartreuse;
+            this.btnPaciente.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnPaciente.IconSize = 40;
+            this.btnPaciente.Location = new System.Drawing.Point(1069, 14);
+            this.btnPaciente.Margin = new System.Windows.Forms.Padding(0);
+            this.btnPaciente.Name = "btnPaciente";
+            this.btnPaciente.Size = new System.Drawing.Size(72, 64);
+            this.btnPaciente.TabIndex = 324;
+            this.btnPaciente.Text = "Buscar";
+            this.btnPaciente.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnPaciente.UseVisualStyleBackColor = false;
+            this.btnPaciente.Click += new System.EventHandler(this.btnPaciente_Click);
             // 
             // nudMinutos
             // 
@@ -248,11 +307,6 @@
             this.nudMinutos.Size = new System.Drawing.Size(44, 23);
             this.nudMinutos.TabIndex = 6;
             this.nudMinutos.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.nudMinutos.Value = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
             // 
             // nudHora
             // 
@@ -936,26 +990,6 @@
             this.label2.TabIndex = 140;
             this.label2.Text = "Detalle de Agenda";
             // 
-            // btnPaciente
-            // 
-            this.btnPaciente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.btnPaciente.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPaciente.FlatAppearance.BorderSize = 0;
-            this.btnPaciente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPaciente.IconChar = FontAwesome.Sharp.IconChar.ChalkboardTeacher;
-            this.btnPaciente.IconColor = System.Drawing.Color.Chartreuse;
-            this.btnPaciente.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnPaciente.IconSize = 40;
-            this.btnPaciente.Location = new System.Drawing.Point(1069, 14);
-            this.btnPaciente.Margin = new System.Windows.Forms.Padding(0);
-            this.btnPaciente.Name = "btnPaciente";
-            this.btnPaciente.Size = new System.Drawing.Size(72, 64);
-            this.btnPaciente.TabIndex = 324;
-            this.btnPaciente.Text = "Buscar";
-            this.btnPaciente.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnPaciente.UseVisualStyleBackColor = false;
-            this.btnPaciente.Click += new System.EventHandler(this.btnPaciente_Click);
-            // 
             // dtpFecha
             // 
             this.dtpFecha.BorderColor = System.Drawing.Color.White;
@@ -977,7 +1011,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1180, 612);
+            this.ClientSize = new System.Drawing.Size(1180, 689);
             this.Controls.Add(this.pnlDeck);
             this.Controls.Add(this.pnlTitulo);
             this.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1064,5 +1098,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn UserRegistro;
         private System.Windows.Forms.DataGridViewTextBoxColumn FechaRegistro;
         private FontAwesome.Sharp.IconButton btnPaciente;
+        public System.Windows.Forms.Label lblPlan3;
+        public System.Windows.Forms.Label lblPlan2;
+        public System.Windows.Forms.Label lblPlan1;
     }
 }
