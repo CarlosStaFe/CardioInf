@@ -78,6 +78,15 @@ namespace CapaPresentacion.Formularios
 
             mes--;
 
+            if (mes < 1)
+            {
+                mes = 12;
+                anio--;
+            }
+
+            static_mes = mes;
+            static_anio = anio;
+
             ArmarCalendario();
         }
 
@@ -87,6 +96,15 @@ namespace CapaPresentacion.Formularios
             fpnlContenedor.Controls.Clear();
 
             mes++;
+
+            if (mes > 12)
+            {
+                mes = 1;
+                anio++;
+            }
+
+            static_mes = mes;
+            static_anio = anio;
 
             ArmarCalendario();
         }

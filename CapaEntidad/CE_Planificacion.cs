@@ -12,6 +12,7 @@ namespace CapaEntidad
         public string DesdeMin { get; set; }
         public string HastaHr { get; set; }
         public string HastaMin { get; set; }
+        public string Rango { get; set; }
         public string UserRegistro { get; set; }
         public DateTime FechaRegistro { get; set; }
     }

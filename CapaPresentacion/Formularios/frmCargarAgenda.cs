@@ -14,22 +14,44 @@ namespace CapaPresentacion.Formularios
         private string respuesta;
         private string estadolist;
         private int orden;
-        string fechaagenda;
+        string fechaAgenda;
         int idpcte;
         int cont;
+        string fechaHoy, medico;
 
-        public frmCargarAgenda()
+        public frmCargarAgenda(string FechaHoy, string Medico)
         {
             InitializeComponent();
+            fechaHoy = FechaHoy;
+            medico = Medico;
         }
 
         private void frmCargarAgenda_Load(object sender, EventArgs e)
         {
-            txtUserRegistro.Text = CE_UserLogin.Usuario;
-            fechaagenda = new ProcesarFecha().Procesar(dtpFecha.Text);
-
             CargarCombos();
-            AgendaCompleta();
+
+            fechaAgenda = fechaHoy;
+
+            if (fechaAgenda != "")
+            {
+                dtpFecha.Text = fechaAgenda;
+            }
+
+            if (medico != "")
+            {
+                cboProfesionales.Text = medico;
+                AgendaCorta();
+            }
+            else
+            {
+                CargarAgenda();
+            }
+
+            txtUserRegistro.Text = CE_UserLogin.Usuario;
+            fechaAgenda = new ProcesarFecha().Procesar(dtpFecha.Text);
+
+            //CargarCombos();
+            //AgendaCompleta();
         }
 
         //***** CARGO LA AGENDA DE TODOS LOS PROFESIONALES *****
@@ -42,7 +64,7 @@ namespace CapaPresentacion.Formularios
         //***** PROCEDIMIENTO PARA CARGAR LA AGENDA *****
         private void CargarAgenda()
         {
-            List<CE_Agendas> ListaAgda = new CN_Agendas().ListaAgendas(fechaagenda);
+            List<CE_Agendas> ListaAgda = new CN_Agendas().ListaAgendas(fechaAgenda);
 
             //***** CARGO EL DGV *****
             foreach (CE_Agendas item in ListaAgda)
@@ -110,6 +132,13 @@ namespace CapaPresentacion.Formularios
                     dgvAgendas.Rows[i].Cells["Turno"].Style.ForeColor = Color.Black;
                     dgvAgendas.Rows[i].Cells["Turno"].Style.BackColor = Color.Blue;
                 }
+                if (estadolist == "LIBRE" & orden == 99)
+                {
+                    dgvAgendas.Rows[i].Cells["Estado"].Style.ForeColor = Color.Black;
+                    dgvAgendas.Rows[i].Cells["Estado"].Style.BackColor = Color.LimeGreen;
+                    dgvAgendas.Rows[i].Cells["Hora"].Style.ForeColor = Color.Lime;
+                    dgvAgendas.Rows[i].Cells["Minutos"].Style.ForeColor = Color.Lime;
+                }
             }
         }
 
@@ -135,7 +164,7 @@ namespace CapaPresentacion.Formularios
                 CE_Agendas cE_Agendas = new CE_Agendas()
                 {
                     id_Agda = Convert.ToInt32(txtId.Text),
-                    Fecha = Convert.ToDateTime(fechaagenda),
+                    Fecha = Convert.ToDateTime(fechaAgenda),
                     Profesional = cboProfesionales.Text,
                     Hora = Convert.ToInt32(nudHora.Text),
                     Minutos = Convert.ToInt32(nudMinutos.Text),
@@ -326,31 +355,32 @@ namespace CapaPresentacion.Formularios
         //***** CARGO LA AGENDA DEL PROFESIONAL SELECCIONADO *****
         private void cboProfesionales_SelectedIndexChanged(object sender, EventArgs e)
         {
-            dgvAgendas.Rows.Clear();
-            fechaagenda = new ProcesarFecha().Procesar(dtpFecha.Text);
+            //dgvAgendas.Rows.Clear();
+            //fechaAgenda = new ProcesarFecha().Procesar(dtpFecha.Text);
 
-            List<CE_Agendas> AgdaCorta = new CN_Agendas().AgendaCorta(cboProfesionales.Text,fechaagenda);
+            //List<CE_Agendas> AgdaCorta = new CN_Agendas().AgendaCorta(cboProfesionales.Text,fechaAgenda);
 
-            //***** CARGO EL DGV *****
-            foreach (CE_Agendas item in AgdaCorta)
-            {
-                dgvAgendas.Rows.Add(new object[] { "", item.id_Agda, item.Fecha, item.Hora, item.Minutos, item.Turno, item.Detalle, item.Tipo, item.Pacte, "", item.Estado, item.FechaEstado, item.Profesional, item.Obs,
-                                                    item.UserRegistro, item.FechaRegistro });
-            }
+            ////***** CARGO EL DGV *****
+            //foreach (CE_Agendas item in AgdaCorta)
+            //{
+            //    dgvAgendas.Rows.Add(new object[] { "", item.id_Agda, item.Fecha, item.Hora, item.Minutos, item.Turno, item.Detalle, item.Tipo, item.Pacte, "", item.Estado, item.FechaEstado, item.Profesional, item.Obs,
+            //                                        item.UserRegistro, item.FechaRegistro });
+            //}
 
-            Colorear();
+            //Colorear();
 
-            //***** CARGO EL COMBO DE BUSQUEDA *****
-            foreach (DataGridViewColumn columna in dgvAgendas.Columns)
-            {
-                if (columna.Visible == true && columna.Name != "Seleccionar")
-                {
-                    cboBusqueda.Items.Add(columna.HeaderText);
-                }
-            }
+            ////***** CARGO EL COMBO DE BUSQUEDA *****
+            //foreach (DataGridViewColumn columna in dgvAgendas.Columns)
+            //{
+            //    if (columna.Visible == true && columna.Name != "Seleccionar")
+            //    {
+            //        cboBusqueda.Items.Add(columna.HeaderText);
+            //    }
+            //}
 
-            btnEliminar.Visible = true;
+            //btnEliminar.Visible = true;
 
+            AgendaCorta();
             MostrarPlan();
         }
 
@@ -393,9 +423,9 @@ namespace CapaPresentacion.Formularios
         //***** CAMBIO LA FECHA DE BÚSQUEDA DE LA AGENDA *****
         private void dtpFecha_CloseUp(object sender, EventArgs e)
         {
-            fechaagenda = dtpFecha.Text;
+            fechaAgenda = dtpFecha.Text;
 
-            fechaagenda = new ProcesarFecha().Procesar(fechaagenda);
+            fechaAgenda = new ProcesarFecha().Procesar(fechaAgenda);
 
             AgendaCompleta();
         }
@@ -419,7 +449,7 @@ namespace CapaPresentacion.Formularios
             lblPlan2.Text = "";
             lblPlan3.Text = "";
 
-            List<CE_Planificacion> Plan = new CN_Planificacion().LeePlan(fechaagenda);
+            List<CE_Planificacion> Plan = new CN_Planificacion().LeePlan(fechaAgenda);
 
             foreach (CE_Planificacion item in Plan)
             {
@@ -429,6 +459,37 @@ namespace CapaPresentacion.Formularios
                 if (cont == 3) lblPlan3.Text = item.Medico + " - " + item.DesdeHr + ":" + item.DesdeMin + " / " + item.HastaHr + ":" + item.HastaMin + " - " + item.Tipo;
             }
         }
+
+        //***** CARGO LA AGENDA CORTA DE PROFESIONALES *****
+        private void AgendaCorta()
+        {
+            dgvAgendas.Rows.Clear();
+            fechaAgenda = new ProcesarFecha().Procesar(dtpFecha.Text);
+
+            List<CE_Agendas> AgdaCorta = new CN_Agendas().AgendaCorta(cboProfesionales.Text, fechaAgenda);
+
+            //***** CARGO EL DGV *****
+            foreach (CE_Agendas item in AgdaCorta)
+            {
+                dgvAgendas.Rows.Add(new object[] { "", item.id_Agda, item.Fecha, item.Hora, item.Minutos, item.Turno, item.Detalle, item.Tipo, item.Pacte, "", item.Estado, item.FechaEstado, item.Profesional, item.Obs,
+                                                    item.UserRegistro, item.FechaRegistro });
+            }
+
+            Colorear();
+
+            //***** CARGO EL COMBO DE BUSQUEDA *****
+            foreach (DataGridViewColumn columna in dgvAgendas.Columns)
+            {
+                if (columna.Visible == true && columna.Name != "Seleccionar")
+                {
+                    cboBusqueda.Items.Add(columna.HeaderText);
+                }
+            }
+
+            btnEliminar.Visible = true;
+
+        }
+
 
     }
 }

@@ -116,7 +116,7 @@ namespace CapaDatos
         //***** METODO PARA REGISTRAR UNA AGENDA *****
         public int Registrar(CE_Agendas obj, out string Mensaje)
         {
-            int idUsuario = 0;
+            int idAgenda = 0;
             Mensaje = string.Empty;
 
             using (var connection = GetConnection())
@@ -145,17 +145,17 @@ namespace CapaDatos
                         command.CommandType = CommandType.StoredProcedure;
                         command.ExecuteNonQuery();
 
-                        idUsuario = Convert.ToInt32(command.Parameters["_idResultado"].Value);
+                        idAgenda = Convert.ToInt32(command.Parameters["_idResultado"].Value);
                         Mensaje = command.Parameters["_Mensaje"].Value.ToString();
                     }
                     catch (Exception ex)
                     {
-                        idUsuario = 0;
+                        idAgenda = 0;
                         Mensaje = ex.Message;
                     }
                 }
             }
-            return idUsuario;
+            return idAgenda;
         }
 
         //***** METODO PARA EDITAR UNA AGENDA *****
@@ -274,6 +274,32 @@ namespace CapaDatos
                         command.Parameters.AddWithValue("@estado", estado);
                         command.Connection = connection;
                         command.CommandText = "UPDATE Agendas SET Estado = @estado WHERE id_Agda = @id";
+                        command.CommandType = CommandType.Text;
+                        command.ExecuteNonQuery();
+                        return true;
+                    }
+                    catch (Exception)
+                    {
+                        return false;
+                    }
+                }
+            }
+        }
+
+        //***** METODO PARA ELIMINAR UNA AGENDA *****
+        public bool BorrarAgda(string fecha, string medico)
+        {
+            using (var connection = GetConnection())
+            {
+                connection.Open();
+                using (var command = new MySqlCommand())
+                {
+                    try
+                    {
+                        command.Parameters.AddWithValue("@fecha", fecha);
+                        command.Parameters.AddWithValue("@medico", medico);
+                        command.Connection = connection;
+                        command.CommandText = "DELETE FROM Agendas WHERE Fecha = @fecha AND Profesional = @medico AND Estado = 'LIBRE' ";
                         command.CommandType = CommandType.Text;
                         command.ExecuteNonQuery();
                         return true;

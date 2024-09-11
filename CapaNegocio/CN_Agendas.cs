@@ -35,10 +35,10 @@ namespace CapaNegocio
                 mensaje += "Debe ingresar un Tipo de Consulta. * ";
             }
 
-            if (obj.Pacte == 0)
-            {
-                mensaje += "Debe ingresar un Paciente. * ";
-            }
+            //if (obj.Pacte == 0)
+            //{
+            //    mensaje += "Debe ingresar un Paciente. * ";
+            //}
 
             if (obj.Hora == 0)
             {
@@ -108,6 +108,11 @@ namespace CapaNegocio
             return cD_Agendas.ActualizoEstado(id, estado);
         }
 
+        //***** LLAMO AL METODO PARA ELIMINAR UNA AGENDA *****
+        public bool BorrarAgda(string fecha, string medico)
+        {
+            return cD_Agendas.BorrarAgda(fecha, medico);
+        }
 
     }
 }

@@ -9,7 +9,8 @@ namespace CapaPresentacion.Formularios
     public partial class mdlPlan : Form
     {
         private string respuesta;
-        string fecha, idPlan, desdeMin, hastaMin;
+        string fecha, idPlan, desde, hasta, senial;
+        int desdeHr, desdeMin, hastaHr, hastaMin, rango, minutos, paso;
 
         public mdlPlan(string id)
         {
@@ -28,7 +29,6 @@ namespace CapaPresentacion.Formularios
                 LeerPlan();
             }
         }
-
 
         //***** CARGO EL COMBO DE LOS PROFESIONALES *****
         private void CargarCombos()
@@ -64,8 +64,8 @@ namespace CapaPresentacion.Formularios
 
             if (respuesta == "OK")
             {
-                if (nudMinutosDes.Value == 0) desdeMin = "00";
-                if (nudMinutosHas.Value == 0) hastaMin = "00";
+                if (nudMinutosDes.Value == 0) desde = "00";
+                if (nudMinutosHas.Value == 0) hasta = "00";
 
                 CE_Planificacion cEPlanificacion = new CE_Planificacion()
                 {
@@ -75,10 +75,11 @@ namespace CapaPresentacion.Formularios
                     Tipo = cboTipoConsulta.Text,
                     DesdeHr = Convert.ToString(nudHoraDes.Value),
                     //DesdeMin = Convert.ToString(nudMinutosDes.Value),
-                    DesdeMin = desdeMin,
+                    DesdeMin = desde,
                     HastaHr = Convert.ToString(nudHoraHas.Value),
                     //HastaMin = Convert.ToString(nudMinutosHas.Value),
-                    HastaMin = hastaMin,
+                    HastaMin = hasta,
+                    Rango = Convert.ToString(nudRango.Value),
                     UserRegistro = txtUserRegistro.Text,
                     FechaRegistro = DateTime.Now
                 };
@@ -90,6 +91,8 @@ namespace CapaPresentacion.Formularios
 
                     if (idPlan != 0)
                     {
+                        senial = "0";
+                        ArmarAgenda();
                         Limpiar();
                     }
                     else
@@ -105,7 +108,8 @@ namespace CapaPresentacion.Formularios
 
                     if (resultado)
                     {
-
+                        senial = "1";
+                        ArmarAgenda();
                         Limpiar();
                     }
                     else
@@ -128,6 +132,7 @@ namespace CapaPresentacion.Formularios
             nudMinutosDes.Value = 0;
             nudHoraHas.Value = 20;
             nudMinutosHas.Value = 0;
+            nudRango.Value = 10;
         }
 
         //***** PROCEDIMIENTO DEL BOTON ELIMINAR *****
@@ -153,7 +158,7 @@ namespace CapaPresentacion.Formularios
 
                     if (resultado)
                     {
-
+                        EliminarAgda();
                     }
                     else
                     {
@@ -178,7 +183,64 @@ namespace CapaPresentacion.Formularios
                 nudMinutosDes.Value = Convert.ToInt32(item.DesdeMin);
                 nudHoraHas.Value = Convert.ToInt32(item.HastaHr);
                 nudMinutosHas.Value = Convert.ToInt32(item.HastaMin);
+                nudRango.Value = Convert.ToInt32(item.Rango);
             }
         }
+
+        //***** LEO EL PLAN SELECCIONADO PARA MOSTRARLO *****
+        private void ArmarAgenda()
+        {
+            string mensaje = string.Empty;
+
+            if (senial == "1")
+            {
+                EliminarAgda();
+            }
+
+            desdeHr = Convert.ToInt32(nudHoraDes.Value);
+            desdeMin = Convert.ToInt32(nudMinutosDes.Value);
+            hastaHr = Convert.ToInt32(nudHoraHas.Value);
+            hastaMin = Convert.ToInt32(nudMinutosDes.Value);
+            rango = Convert.ToInt32(nudRango.Value);
+            minutos = 59;
+            paso = 0;
+
+            for (int i = desdeHr; i < hastaHr; i++)
+            {
+                for (int j = desdeMin; j < minutos; j = j + rango)
+                {
+                    CE_Agendas cE_Agendas = new CE_Agendas()
+                    {
+                        id_Agda = 0,
+                        Fecha = Convert.ToDateTime(fecha),
+                        Profesional = cboProfesionales.Text,
+                        Hora = i,
+                        Minutos = j,
+                        Turno = 99,
+                        Tipo = cboTipoConsulta.Text,
+                        Pacte = 0,
+                        Detalle = "",
+                        NumeroEco = 0,
+                        Estado = "LIBRE",
+                        FechaEstado = DateTime.Now,
+                        Obs = "",
+                        UserRegistro = CE_UserLogin.Usuario,
+                        FechaRegistro = DateTime.Today
+                    };
+
+                    int idAgda = new CN_Agendas().Registrar(cE_Agendas, out mensaje);
+                }
+            }
+        }
+
+        //***** ELIMINO LA PLANIFICACIÓN EN LA AGENDA *****
+        private void EliminarAgda()
+        {
+            string mensaje = string.Empty;
+
+            bool resultado = new CN_Agendas().BorrarAgda(fecha, cboProfesionales.Text);
+        }
+
+
     }
 }

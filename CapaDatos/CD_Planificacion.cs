@@ -40,6 +40,7 @@ namespace CapaDatos
                                     DesdeMin = dr["DesdeMin"].ToString(),
                                     HastaHr = dr["HastaHr"].ToString(),
                                     HastaMin = dr["HastaMin"].ToString(),
+                                    Rango = dr["Rango"].ToString(),
                                     UserRegistro = dr["UserRegistro"].ToString(),
                                     FechaRegistro = Convert.ToDateTime(dr["FechaRegistro"])
                                 });
@@ -75,6 +76,7 @@ namespace CapaDatos
                         command.Parameters.AddWithValue("_DesdeMin", obj.DesdeMin);
                         command.Parameters.AddWithValue("_HastaHr", obj.HastaHr);
                         command.Parameters.AddWithValue("_HastaMin", obj.HastaMin);
+                        command.Parameters.AddWithValue("_Rango", obj.Rango);
                         command.Parameters.AddWithValue("_UserRegistro", obj.UserRegistro);
                         command.Parameters.AddWithValue("_FechaRegistro", DateTime.Now);
                         command.Parameters.Add("_idResultado", MySqlDbType.Int32).Direction = ParameterDirection.Output;
@@ -115,6 +117,7 @@ namespace CapaDatos
                         command.Parameters.AddWithValue("_DesdeMin", obj.DesdeMin);
                         command.Parameters.AddWithValue("_HastaHr", obj.HastaHr);
                         command.Parameters.AddWithValue("_HastaMin", obj.HastaMin);
+                        command.Parameters.AddWithValue("_Rango", obj.Rango);
                         command.Parameters.AddWithValue("_UserRegistro", obj.UserRegistro);
                         command.Parameters.AddWithValue("_FechaRegistro", DateTime.Now);
                         command.Parameters.Add("_Resultado", MySqlDbType.Int32).Direction = ParameterDirection.Output;
@@ -226,6 +229,7 @@ namespace CapaDatos
                                     DesdeMin = dr["DesdeMin"].ToString(),
                                     HastaHr = dr["HastaHr"].ToString(),
                                     HastaMin = dr["HastaMin"].ToString(),
+                                    Rango = dr["Rango"].ToString(),
                                     UserRegistro = dr["UserRegistro"].ToString(),
                                     FechaRegistro = Convert.ToDateTime(dr["FechaRegistro"])
                                 });
@@ -273,6 +277,7 @@ namespace CapaDatos
                                     DesdeMin = dr["DesdeMin"].ToString(),
                                     HastaHr = dr["HastaHr"].ToString(),
                                     HastaMin = dr["HastaMin"].ToString(),
+                                    Rango = dr["Rango"].ToString(),
                                     UserRegistro = dr["UserRegistro"].ToString(),
                                     FechaRegistro = Convert.ToDateTime(dr["FechaRegistro"])
                                 });

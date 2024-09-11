@@ -50,12 +50,15 @@ namespace CapaPresentacion.Formularios
             this.txtDia = new System.Windows.Forms.TextBox();
             this.txtId = new System.Windows.Forms.TextBox();
             this.txtUserRegistro = new System.Windows.Forms.TextBox();
+            this.nudRango = new System.Windows.Forms.NumericUpDown();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudMinutosDes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudHoraDes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudMinutosHas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudHoraHas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudRango)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -65,7 +68,7 @@ namespace CapaPresentacion.Formularios
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(437, 41);
+            this.panel1.Size = new System.Drawing.Size(477, 41);
             this.panel1.TabIndex = 0;
             // 
             // label1
@@ -132,7 +135,7 @@ namespace CapaPresentacion.Formularios
             "Consulta S/R"});
             this.cboTipoConsulta.Location = new System.Drawing.Point(97, 110);
             this.cboTipoConsulta.Name = "cboTipoConsulta";
-            this.cboTipoConsulta.Size = new System.Drawing.Size(326, 24);
+            this.cboTipoConsulta.Size = new System.Drawing.Size(354, 24);
             this.cboTipoConsulta.TabIndex = 1;
             // 
             // label3
@@ -155,7 +158,7 @@ namespace CapaPresentacion.Formularios
             this.groupBox1.ForeColor = System.Drawing.Color.White;
             this.groupBox1.Location = new System.Drawing.Point(21, 169);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(402, 86);
+            this.groupBox1.Size = new System.Drawing.Size(430, 86);
             this.groupBox1.TabIndex = 317;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Controles";
@@ -195,7 +198,7 @@ namespace CapaPresentacion.Formularios
             this.btnEliminar.IconColor = System.Drawing.Color.Aqua;
             this.btnEliminar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnEliminar.IconSize = 30;
-            this.btnEliminar.Location = new System.Drawing.Point(164, 22);
+            this.btnEliminar.Location = new System.Drawing.Point(184, 22);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(70, 53);
             this.btnEliminar.TabIndex = 1;
@@ -217,7 +220,7 @@ namespace CapaPresentacion.Formularios
             this.btnSalir.IconColor = System.Drawing.Color.Aqua;
             this.btnSalir.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnSalir.IconSize = 30;
-            this.btnSalir.Location = new System.Drawing.Point(316, 22);
+            this.btnSalir.Location = new System.Drawing.Point(347, 22);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(70, 53);
             this.btnSalir.TabIndex = 2;
@@ -240,7 +243,7 @@ namespace CapaPresentacion.Formularios
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(215, 139);
+            this.label4.Location = new System.Drawing.Point(201, 139);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(47, 16);
             this.label4.TabIndex = 321;
@@ -306,7 +309,7 @@ namespace CapaPresentacion.Formularios
             0,
             0,
             0});
-            this.nudMinutosHas.Location = new System.Drawing.Point(318, 137);
+            this.nudMinutosHas.Location = new System.Drawing.Point(304, 137);
             this.nudMinutosHas.Maximum = new decimal(new int[] {
             50,
             0,
@@ -323,7 +326,7 @@ namespace CapaPresentacion.Formularios
             this.nudHoraHas.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.nudHoraHas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nudHoraHas.ForeColor = System.Drawing.Color.White;
-            this.nudHoraHas.Location = new System.Drawing.Point(268, 137);
+            this.nudHoraHas.Location = new System.Drawing.Point(254, 137);
             this.nudHoraHas.Maximum = new decimal(new int[] {
             23,
             0,
@@ -380,12 +383,51 @@ namespace CapaPresentacion.Formularios
             this.txtUserRegistro.TabIndex = 324;
             this.txtUserRegistro.Visible = false;
             // 
+            // nudRango
+            // 
+            this.nudRango.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.nudRango.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.nudRango.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudRango.ForeColor = System.Drawing.Color.White;
+            this.nudRango.Location = new System.Drawing.Point(407, 137);
+            this.nudRango.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.nudRango.Minimum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.nudRango.Name = "nudRango";
+            this.nudRango.Size = new System.Drawing.Size(44, 22);
+            this.nudRango.TabIndex = 325;
+            this.nudRango.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.nudRango.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(354, 139);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(52, 16);
+            this.label5.TabIndex = 326;
+            this.label5.Text = "Rango:";
+            // 
             // mdlPlan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.ClientSize = new System.Drawing.Size(437, 271);
+            this.ClientSize = new System.Drawing.Size(477, 271);
+            this.Controls.Add(this.nudRango);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.txtUserRegistro);
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.txtDia);
@@ -415,6 +457,7 @@ namespace CapaPresentacion.Formularios
             ((System.ComponentModel.ISupportInitialize)(this.nudHoraDes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudMinutosHas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudHoraHas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudRango)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -442,5 +485,7 @@ namespace CapaPresentacion.Formularios
         private System.Windows.Forms.TextBox txtDia;
         private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.TextBox txtUserRegistro;
+        private System.Windows.Forms.NumericUpDown nudRango;
+        private System.Windows.Forms.Label label5;
     }
 }

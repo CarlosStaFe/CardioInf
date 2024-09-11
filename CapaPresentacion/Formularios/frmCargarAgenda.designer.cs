@@ -53,6 +53,7 @@
             this.nudMinutos = new System.Windows.Forms.NumericUpDown();
             this.nudHora = new System.Windows.Forms.NumericUpDown();
             this.label9 = new System.Windows.Forms.Label();
+            this.dtpFecha = new CapaPresentacion.DatePicker();
             this.txtPaciente = new System.Windows.Forms.TextBox();
             this.txtApelNombres = new System.Windows.Forms.TextBox();
             this.nudTurno = new System.Windows.Forms.NumericUpDown();
@@ -102,7 +103,6 @@
             this.cboProfesionales = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.dtpFecha = new CapaPresentacion.DatePicker();
             this.pnlTitulo.SuspendLayout();
             this.pnlDeck.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudMinutos)).BeginInit();
@@ -344,6 +344,22 @@
             this.label9.TabIndex = 323;
             this.label9.Text = "Hora:";
             // 
+            // dtpFecha
+            // 
+            this.dtpFecha.BorderColor = System.Drawing.Color.White;
+            this.dtpFecha.BorderSize = 1;
+            this.dtpFecha.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFecha.Location = new System.Drawing.Point(180, 11);
+            this.dtpFecha.MinimumSize = new System.Drawing.Size(4, 23);
+            this.dtpFecha.Name = "dtpFecha";
+            this.dtpFecha.Size = new System.Drawing.Size(155, 29);
+            this.dtpFecha.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.dtpFecha.TabIndex = 0;
+            this.dtpFecha.TextColor = System.Drawing.Color.Yellow;
+            this.dtpFecha.CloseUp += new System.EventHandler(this.dtpFecha_CloseUp);
+            // 
             // txtPaciente
             // 
             this.txtPaciente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
@@ -417,6 +433,7 @@
             "COMPLETA",
             "CONSULTORIO",
             "CANCELADO",
+            "LIBRE",
             "OCUPADO"});
             this.cboEstado.Location = new System.Drawing.Point(1005, 87);
             this.cboEstado.Name = "cboEstado";
@@ -989,22 +1006,6 @@
             this.label2.Size = new System.Drawing.Size(161, 21);
             this.label2.TabIndex = 140;
             this.label2.Text = "Detalle de Agenda";
-            // 
-            // dtpFecha
-            // 
-            this.dtpFecha.BorderColor = System.Drawing.Color.White;
-            this.dtpFecha.BorderSize = 1;
-            this.dtpFecha.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFecha.Location = new System.Drawing.Point(180, 11);
-            this.dtpFecha.MinimumSize = new System.Drawing.Size(4, 23);
-            this.dtpFecha.Name = "dtpFecha";
-            this.dtpFecha.Size = new System.Drawing.Size(155, 29);
-            this.dtpFecha.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.dtpFecha.TabIndex = 0;
-            this.dtpFecha.TextColor = System.Drawing.Color.Yellow;
-            this.dtpFecha.CloseUp += new System.EventHandler(this.dtpFecha_CloseUp);
             // 
             // frmCargarAgenda
             // 

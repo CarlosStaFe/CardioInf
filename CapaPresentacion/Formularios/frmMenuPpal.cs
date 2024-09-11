@@ -1,10 +1,9 @@
 ﻿using CapaEntidad;
-using CapaNegocio;
+using CapaPresentacion.Utiles;
 using CapaPresentacion.Formularios;
 using FontAwesome.Sharp;
-using System.Collections.Generic;
+using System;
 using System.Drawing;
-using System.Linq;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using Color = System.Drawing.Color;
@@ -18,6 +17,7 @@ namespace ColegMart
         private Form activoForm = null;
         private Control formu;
         private int idUsuario;
+        string fechaHoy;
 
         public frmMenuPpal()
         {
@@ -26,6 +26,7 @@ namespace ColegMart
             pnlBorde.Size = new Size(111, 7);
             pnlMenu.Controls.Add(pnlBorde);
             Personalizar();
+            fechaHoy = Convert.ToString(DateTime.Now);
 
             //***** CAJA DEL FORMULARIO *****
             this.Text = string.Empty;
@@ -122,7 +123,7 @@ namespace ColegMart
                 DesactivarBoton();
                 CerrarFormulario();
                 btnActual = (IconButton)senderBtn;
-                btnActual.BackColor = Color.FromArgb(30,30,30);
+                btnActual.BackColor = Color.FromArgb(30, 30, 30);
                 btnActual.ForeColor = Color.White;
                 btnActual.IconColor = Color.Green;
                 pnlBorde.BackColor = Color.Green;
@@ -194,7 +195,7 @@ namespace ColegMart
 
         private void MostrarSubmenu(Panel SubMenu)
         {
-            if (SubMenu.Visible ==false)
+            if (SubMenu.Visible == false)
             {
                 OcultarSubmenu();
                 SubMenu.Visible = true;
@@ -238,7 +239,8 @@ namespace ColegMart
         }
         private void btnCargarAgenda_Click(object sender, System.EventArgs e)
         {
-            AbrirFormHijo(new frmCargarAgenda());
+            fechaHoy = new ProcesarFecha().Procesar(fechaHoy);
+            AbrirFormHijo(new frmCargarAgenda(fechaHoy, " "));
             OcultarSubmenu();
         }
         private void btnVerEcografias_Click(object sender, System.EventArgs e)
