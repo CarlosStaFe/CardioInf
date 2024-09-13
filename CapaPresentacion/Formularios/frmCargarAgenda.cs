@@ -44,7 +44,7 @@ namespace CapaPresentacion.Formularios
             }
             else
             {
-                CargarAgenda();
+                AgendaCompleta();
             }
 
             txtUserRegistro.Text = CE_UserLogin.Usuario;
@@ -138,6 +138,13 @@ namespace CapaPresentacion.Formularios
                     dgvAgendas.Rows[i].Cells["Estado"].Style.BackColor = Color.LimeGreen;
                     dgvAgendas.Rows[i].Cells["Hora"].Style.ForeColor = Color.Lime;
                     dgvAgendas.Rows[i].Cells["Minutos"].Style.ForeColor = Color.Lime;
+                }
+                if (estadolist == "OCUPADO")
+                {
+                    dgvAgendas.Rows[i].Cells["Estado"].Style.ForeColor = Color.LimeGreen;
+                    dgvAgendas.Rows[i].Cells["Estado"].Style.BackColor = Color.Black;
+                    dgvAgendas.Rows[i].Cells["Hora"].Style.ForeColor = Color.White;
+                    dgvAgendas.Rows[i].Cells["Minutos"].Style.ForeColor = Color.White;
                 }
             }
         }
@@ -355,31 +362,6 @@ namespace CapaPresentacion.Formularios
         //***** CARGO LA AGENDA DEL PROFESIONAL SELECCIONADO *****
         private void cboProfesionales_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //dgvAgendas.Rows.Clear();
-            //fechaAgenda = new ProcesarFecha().Procesar(dtpFecha.Text);
-
-            //List<CE_Agendas> AgdaCorta = new CN_Agendas().AgendaCorta(cboProfesionales.Text,fechaAgenda);
-
-            ////***** CARGO EL DGV *****
-            //foreach (CE_Agendas item in AgdaCorta)
-            //{
-            //    dgvAgendas.Rows.Add(new object[] { "", item.id_Agda, item.Fecha, item.Hora, item.Minutos, item.Turno, item.Detalle, item.Tipo, item.Pacte, "", item.Estado, item.FechaEstado, item.Profesional, item.Obs,
-            //                                        item.UserRegistro, item.FechaRegistro });
-            //}
-
-            //Colorear();
-
-            ////***** CARGO EL COMBO DE BUSQUEDA *****
-            //foreach (DataGridViewColumn columna in dgvAgendas.Columns)
-            //{
-            //    if (columna.Visible == true && columna.Name != "Seleccionar")
-            //    {
-            //        cboBusqueda.Items.Add(columna.HeaderText);
-            //    }
-            //}
-
-            //btnEliminar.Visible = true;
-
             AgendaCorta();
             MostrarPlan();
         }
@@ -436,9 +418,16 @@ namespace CapaPresentacion.Formularios
             if (txtPaciente.Text == "") txtPaciente.Text = "0";
 
             idpcte = Convert.ToInt32(txtPaciente.Text);
+
+            VarGlobales.pacienteId = idpcte;
+
             frmPacientes Pacte = new frmPacientes(idpcte);
             AddOwnedForm(Pacte);
             Pacte.ShowDialog();
+            txtPaciente.Text = Convert.ToString(VarGlobales.pacienteId);
+
+            LeerPaciente();
+
         }
 
         //***** CARGO LA PANTALLA DE PACIENTES *****
@@ -487,9 +476,28 @@ namespace CapaPresentacion.Formularios
             }
 
             btnEliminar.Visible = true;
-
         }
 
+        //***** PROCEDIMIENTO PARA LEER EL PACIENTE ENVIADO *****
+        private void LeerPaciente()
+        {
+            List<CE_Pacientes> BuscaPacte = new CN_Pacientes().BuscarPacte(txtPaciente.Text);
+
+            foreach (CE_Pacientes item in BuscaPacte)
+            {
+                txtPaciente.Text = Convert.ToString(item.id_Pacte);
+                txtFecNacim.Text = Convert.ToString(item.FechaNacim);
+                int pos1 = txtFecNacim.Text.IndexOf(" ");
+                txtFecNacim.Text = txtFecNacim.Text.Substring(0, pos1);
+
+                txtSexo.Text = item.Sexo;
+                txtTipoDoc.Text = item.TipoDoc;
+                txtNumeroDoc.Text = Convert.ToString(item.NumeroDoc);
+                txtApelNombres.Text = item.ApelNombres;
+
+                lblPaciente.Text = txtApelNombres.Text + " - " + txtFecNacim.Text + " - " + txtSexo.Text + " - " + txtTipoDoc.Text + ": " + txtNumeroDoc.Text;
+            }
+        }
 
     }
 }

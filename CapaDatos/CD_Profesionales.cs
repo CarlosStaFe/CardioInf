@@ -71,26 +71,26 @@ namespace CapaDatos
                 {
                     try
                     {
-                        command.Parameters.AddWithValue("Matricula", obj.Matricula);
-                        command.Parameters.AddWithValue("ApelNombres", obj.ApelNombres);
-                        command.Parameters.AddWithValue("Usuario", obj.Usuario);
-                        command.Parameters.AddWithValue("TipoDoc", obj.TipoDoc);
-                        command.Parameters.AddWithValue("NumeroDoc", obj.NumeroDoc);
-                        command.Parameters.AddWithValue("Sexo", obj.Sexo);
-                        command.Parameters.AddWithValue("Telefono", obj.Telefono);
-                        command.Parameters.AddWithValue("Email", obj.Email);
-                        command.Parameters.AddWithValue("Estado", obj.Estado);
-                        command.Parameters.AddWithValue("FechaEstado", obj.FechaEstado);
-                        command.Parameters.AddWithValue("Obs", obj.Obs);
-                        command.Parameters.AddWithValue("UserRegistro", obj.UserRegistro);
-                        command.Parameters.AddWithValue("FechaRegistro", DateTime.Now);
-                        command.Parameters.Add("idResultado", MySqlDbType.Int32).Direction = ParameterDirection.Output;
-                        command.Parameters.Add("Mensaje", MySqlDbType.VarChar, 500).Direction = ParameterDirection.Output;
+                        command.Parameters.AddWithValue("_Matricula", obj.Matricula);
+                        command.Parameters.AddWithValue("_ApelNombres", obj.ApelNombres);
+                        command.Parameters.AddWithValue("_Usuario", obj.Usuario);
+                        command.Parameters.AddWithValue("_TipoDoc", obj.TipoDoc);
+                        command.Parameters.AddWithValue("_NumeroDoc", obj.NumeroDoc);
+                        command.Parameters.AddWithValue("_Sexo", obj.Sexo);
+                        command.Parameters.AddWithValue("_Telefono", obj.Telefono);
+                        command.Parameters.AddWithValue("_Email", obj.Email);
+                        command.Parameters.AddWithValue("_Estado", obj.Estado);
+                        command.Parameters.AddWithValue("_FechaEstado", obj.FechaEstado);
+                        command.Parameters.AddWithValue("_Obs", obj.Obs);
+                        command.Parameters.AddWithValue("_UserRegistro", obj.UserRegistro);
+                        command.Parameters.AddWithValue("_FechaRegistro", DateTime.Now);
+                        command.Parameters.Add("_idResultado", MySqlDbType.Int32).Direction = ParameterDirection.Output;
+                        command.Parameters.Add("_Mensaje", MySqlDbType.VarChar, 500).Direction = ParameterDirection.Output;
                         command.CommandType = CommandType.StoredProcedure;
                         command.ExecuteNonQuery();
 
-                        idProfesional = Convert.ToInt32(command.Parameters["idResultado"].Value);
-                        mensaje = command.Parameters["Mensaje"].Value.ToString();
+                        idProfesional = Convert.ToInt32(command.Parameters["_idResultado"].Value);
+                        mensaje = command.Parameters["_Mensaje"].Value.ToString();
                     }
                     catch (Exception ex)
                     {
@@ -115,27 +115,27 @@ namespace CapaDatos
                 {
                     try
                     {
-                        command.Parameters.AddWithValue("id_Prof", obj.id_Prof);
-                        command.Parameters.AddWithValue("Matricula", obj.Matricula);
-                        command.Parameters.AddWithValue("ApelNombres", obj.ApelNombres);
-                        command.Parameters.AddWithValue("Usuario", obj.Usuario);
-                        command.Parameters.AddWithValue("TipoDoc", obj.TipoDoc);
-                        command.Parameters.AddWithValue("NumeroDoc", obj.NumeroDoc);
-                        command.Parameters.AddWithValue("Sexo", obj.Sexo);
-                        command.Parameters.AddWithValue("Telefono", obj.Telefono);
-                        command.Parameters.AddWithValue("Email", obj.Email);
-                        command.Parameters.AddWithValue("Estado", obj.Estado);
-                        command.Parameters.AddWithValue("FechaEstado", obj.FechaEstado);
-                        command.Parameters.AddWithValue("Obs", obj.Obs);
-                        command.Parameters.AddWithValue("UserRegistro", obj.UserRegistro);
-                        command.Parameters.AddWithValue("FechaRegistro", DateTime.Now);
-                        command.Parameters.Add("Resultado", MySqlDbType.Int32).Direction = ParameterDirection.Output;
-                        command.Parameters.Add("Mensaje", MySqlDbType.VarChar, 500).Direction = ParameterDirection.Output;
+                        command.Parameters.AddWithValue("_id_Prof", obj.id_Prof);
+                        command.Parameters.AddWithValue("_Matricula", obj.Matricula);
+                        command.Parameters.AddWithValue("_ApelNombres", obj.ApelNombres);
+                        command.Parameters.AddWithValue("_Usuario", obj.Usuario);
+                        command.Parameters.AddWithValue("_TipoDoc", obj.TipoDoc);
+                        command.Parameters.AddWithValue("_NumeroDoc", obj.NumeroDoc);
+                        command.Parameters.AddWithValue("_Sexo", obj.Sexo);
+                        command.Parameters.AddWithValue("_Telefono", obj.Telefono);
+                        command.Parameters.AddWithValue("_Email", obj.Email);
+                        command.Parameters.AddWithValue("_Estado", obj.Estado);
+                        command.Parameters.AddWithValue("_FechaEstado", obj.FechaEstado);
+                        command.Parameters.AddWithValue("_Obs", obj.Obs);
+                        command.Parameters.AddWithValue("_UserRegistro", obj.UserRegistro);
+                        command.Parameters.AddWithValue("_FechaRegistro", DateTime.Now);
+                        command.Parameters.Add("_Resultado", MySqlDbType.Int32).Direction = ParameterDirection.Output;
+                        command.Parameters.Add("_Mensaje", MySqlDbType.VarChar, 500).Direction = ParameterDirection.Output;
                         command.CommandType = CommandType.StoredProcedure;
                         command.ExecuteNonQuery();
 
-                        Resultado = Convert.ToBoolean(command.Parameters["Resultado"].Value);
-                        mensaje = command.Parameters["Mensaje"].Value.ToString();
+                        Resultado = Convert.ToBoolean(command.Parameters["_Resultado"].Value);
+                        mensaje = command.Parameters["_Mensaje"].Value.ToString();
                     }
                     catch (Exception ex)
                     {

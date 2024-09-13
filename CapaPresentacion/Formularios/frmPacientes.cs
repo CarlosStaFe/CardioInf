@@ -22,10 +22,10 @@ namespace CapaPresentacion.Formularios
         int codpos = 0;
         public string localidad;
 
-        public frmPacientes(int idpcte)
+        public frmPacientes(int idPacte)
         {
             InitializeComponent();
-            pcte = idpcte;
+            pcte = idPacte;
         }
 
         private void frmPacientes_Load(object sender, System.EventArgs e)
@@ -52,7 +52,7 @@ namespace CapaPresentacion.Formularios
 
                 if (pcte == item.id_Pacte)
                 {
-
+                    txtIndice.Text = dgvPacientes.RowCount.ToString();
                     txtId.Text = Convert.ToString(item.id_Pacte);
                     txtApelNombres.Text = item.ApelNombres;
                     dtpFechaNacim.Value = Convert.ToDateTime(item.FechaNacim);
@@ -246,6 +246,8 @@ namespace CapaPresentacion.Formularios
                 mail = txtEmail.Text;
                 id = Convert.ToInt32(txtId.Text);
 
+                VarGlobales.pacienteId = id;
+
                 CE_Pacientes cE_Pacientes = new CE_Pacientes()
                 {
                     id_Pacte = Convert.ToInt32(txtId.Text),
@@ -271,8 +273,11 @@ namespace CapaPresentacion.Formularios
                 {
                     int idPacte = new CN_Pacientes().Registrar(cE_Pacientes, out mensaje);
 
+                    VarGlobales.pacienteId = idPacte;
+
                     if (idPacte != 0)
                     {
+
                         dgvPacientes.Rows.Add(new object[] {"",idPacte,txtApelNombres.Text,dtpFechaNacim.Text,cboSexo.Text,cboTipoDoc.Text,txtNumeroDoc.Text,txtDomicilio.Text,
                                                     txtCodPos.Text, txtTelefono.Text,txtEmail.Text,cboObraSocial.Text,cboPlanOS.Text,txtObs.Text,txtUserRegistro.Text,txtFechaRegistro.Text,txtAfiliado.Text});
                         Limpiar();
@@ -319,7 +324,6 @@ namespace CapaPresentacion.Formularios
                     }
                 }
             }
-
         }
 
         //***** ELIMINO UN PACIENTE *****

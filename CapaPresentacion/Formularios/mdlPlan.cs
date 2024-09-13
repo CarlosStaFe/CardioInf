@@ -74,10 +74,8 @@ namespace CapaPresentacion.Formularios
                     Medico = cboProfesionales.Text,
                     Tipo = cboTipoConsulta.Text,
                     DesdeHr = Convert.ToString(nudHoraDes.Value),
-                    //DesdeMin = Convert.ToString(nudMinutosDes.Value),
                     DesdeMin = desde,
                     HastaHr = Convert.ToString(nudHoraHas.Value),
-                    //HastaMin = Convert.ToString(nudMinutosHas.Value),
                     HastaMin = hasta,
                     Rango = Convert.ToString(nudRango.Value),
                     UserRegistro = txtUserRegistro.Text,
@@ -92,7 +90,12 @@ namespace CapaPresentacion.Formularios
                     if (idPlan != 0)
                     {
                         senial = "0";
-                        ArmarAgenda();
+
+                        if (chbTurnos.Checked)
+                        {
+                            ArmarAgenda();
+                        }
+
                         Limpiar();
                     }
                     else
@@ -109,7 +112,12 @@ namespace CapaPresentacion.Formularios
                     if (resultado)
                     {
                         senial = "1";
-                        ArmarAgenda();
+
+                        if (chbTurnos.Checked)
+                        {
+                            ArmarAgenda();
+                        }
+
                         Limpiar();
                     }
                     else

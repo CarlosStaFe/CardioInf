@@ -277,12 +277,13 @@
             this.btnPaciente.IconColor = System.Drawing.Color.Chartreuse;
             this.btnPaciente.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnPaciente.IconSize = 40;
-            this.btnPaciente.Location = new System.Drawing.Point(1069, 14);
+            this.btnPaciente.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnPaciente.Location = new System.Drawing.Point(1028, 14);
             this.btnPaciente.Margin = new System.Windows.Forms.Padding(0);
             this.btnPaciente.Name = "btnPaciente";
-            this.btnPaciente.Size = new System.Drawing.Size(72, 64);
+            this.btnPaciente.Size = new System.Drawing.Size(130, 64);
             this.btnPaciente.TabIndex = 324;
-            this.btnPaciente.Text = "Buscar";
+            this.btnPaciente.Text = "Nuevo/Actualizar";
             this.btnPaciente.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnPaciente.UseVisualStyleBackColor = false;
             this.btnPaciente.Click += new System.EventHandler(this.btnPaciente_Click);

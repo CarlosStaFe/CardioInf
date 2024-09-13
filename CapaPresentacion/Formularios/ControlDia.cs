@@ -55,6 +55,7 @@ namespace CapaPresentacion.Formularios
                 if (item.Medico == "PASTOREC") senial = 1;
                 if (item.Medico == "CONSTANZA") senial = 2;
                 if (item.Medico == "ENZOP") senial = 3;
+                if (item.Medico == "WEIDMANN") senial = 4;
 
                 if (cont == 1)
                 {
@@ -67,8 +68,8 @@ namespace CapaPresentacion.Formularios
                     if (senial == 1)
                     {
                         lblDoctor1.BackColor = Color.DodgerBlue;
-                        btn1.ForeColor = Color.Teal;
-                        btn1.IconColor = Color.Teal;
+                        btn1.ForeColor = Color.DodgerBlue;
+                        btn1.IconColor = Color.DodgerBlue;
                         txtDoctor1.Text = "PASTOREC";
                     }
                     if (senial == 2)
@@ -85,6 +86,13 @@ namespace CapaPresentacion.Formularios
                         btn1.IconColor = Color.Orchid;
                         txtDoctor1.Text = "ENZOP";
                     }
+                    if (senial == 4)
+                    {
+                        lblDoctor1.BackColor = Color.DarkOrange;
+                        btn1.ForeColor = Color.DarkOrange;
+                        btn1.IconColor = Color.DarkOrange;
+                        txtDoctor1.Text = "WEIDMANN";
+                    }
                 }
 
                 if (cont == 2)
@@ -98,8 +106,8 @@ namespace CapaPresentacion.Formularios
                     if (senial == 1)
                     {
                         lblDoctor2.BackColor = Color.DodgerBlue;
-                        btn2.ForeColor = Color.Teal;
-                        btn2.IconColor = Color.Teal;
+                        btn2.ForeColor = Color.DodgerBlue;
+                        btn2.IconColor = Color.DodgerBlue;
                         txtDoctor2.Text = "PASTOREC";
                     }
                     if (senial == 2)
@@ -116,6 +124,13 @@ namespace CapaPresentacion.Formularios
                         btn2.IconColor = Color.Orchid;
                         txtDoctor2.Text = "ENZOP";
                     }
+                    if (senial == 4)
+                    {
+                        lblDoctor2.BackColor = Color.DarkOrange;
+                        btn2.ForeColor = Color.DarkOrange;
+                        btn2.IconColor = Color.DarkOrange;
+                        txtDoctor2.Text = "WEIDMANN";
+                    }
                 }
 
                 if (cont == 3)
@@ -129,8 +144,8 @@ namespace CapaPresentacion.Formularios
                     if (senial == 1)
                     {
                         lblDoctor3.BackColor = Color.DodgerBlue;
-                        btn3.ForeColor = Color.Teal;
-                        btn3.IconColor = Color.Teal;
+                        btn3.ForeColor = Color.DodgerBlue;
+                        btn3.IconColor = Color.DodgerBlue;
                         txtDoctor3.Text = "PASTOREC";
                     }
                     if (senial == 2)
@@ -146,6 +161,13 @@ namespace CapaPresentacion.Formularios
                         btn3.ForeColor = Color.Orchid;
                         btn3.IconColor = Color.Orchid;
                         txtDoctor3.Text = "ENZOP";
+                    }
+                    if (senial == 4)
+                    {
+                        lblDoctor3.BackColor = Color.DarkOrange;
+                        btn3.ForeColor = Color.DarkOrange;
+                        btn3.IconColor = Color.DarkOrange;
+                        txtDoctor3.Text = "WEIDMANN";
                     }
                 }
             }

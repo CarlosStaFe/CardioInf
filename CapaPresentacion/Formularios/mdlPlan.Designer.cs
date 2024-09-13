@@ -52,6 +52,7 @@ namespace CapaPresentacion.Formularios
             this.txtUserRegistro = new System.Windows.Forms.TextBox();
             this.nudRango = new System.Windows.Forms.NumericUpDown();
             this.label5 = new System.Windows.Forms.Label();
+            this.chbTurnos = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudMinutosDes)).BeginInit();
@@ -136,7 +137,7 @@ namespace CapaPresentacion.Formularios
             this.cboTipoConsulta.Location = new System.Drawing.Point(97, 110);
             this.cboTipoConsulta.Name = "cboTipoConsulta";
             this.cboTipoConsulta.Size = new System.Drawing.Size(354, 24);
-            this.cboTipoConsulta.TabIndex = 1;
+            this.cboTipoConsulta.TabIndex = 2;
             // 
             // label3
             // 
@@ -268,7 +269,7 @@ namespace CapaPresentacion.Formularios
             0});
             this.nudMinutosDes.Name = "nudMinutosDes";
             this.nudMinutosDes.Size = new System.Drawing.Size(44, 22);
-            this.nudMinutosDes.TabIndex = 3;
+            this.nudMinutosDes.TabIndex = 4;
             this.nudMinutosDes.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // nudHoraDes
@@ -290,7 +291,7 @@ namespace CapaPresentacion.Formularios
             0});
             this.nudHoraDes.Name = "nudHoraDes";
             this.nudHoraDes.Size = new System.Drawing.Size(44, 22);
-            this.nudHoraDes.TabIndex = 2;
+            this.nudHoraDes.TabIndex = 3;
             this.nudHoraDes.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.nudHoraDes.Value = new decimal(new int[] {
             8,
@@ -317,7 +318,7 @@ namespace CapaPresentacion.Formularios
             0});
             this.nudMinutosHas.Name = "nudMinutosHas";
             this.nudMinutosHas.Size = new System.Drawing.Size(44, 22);
-            this.nudMinutosHas.TabIndex = 5;
+            this.nudMinutosHas.TabIndex = 6;
             this.nudMinutosHas.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // nudHoraHas
@@ -339,7 +340,7 @@ namespace CapaPresentacion.Formularios
             0});
             this.nudHoraHas.Name = "nudHoraHas";
             this.nudHoraHas.Size = new System.Drawing.Size(44, 22);
-            this.nudHoraHas.TabIndex = 4;
+            this.nudHoraHas.TabIndex = 5;
             this.nudHoraHas.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.nudHoraHas.Value = new decimal(new int[] {
             20,
@@ -364,9 +365,9 @@ namespace CapaPresentacion.Formularios
             this.txtId.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtId.Enabled = false;
             this.txtId.ForeColor = System.Drawing.Color.White;
-            this.txtId.Location = new System.Drawing.Point(367, 53);
+            this.txtId.Location = new System.Drawing.Point(367, 48);
             this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(49, 13);
+            this.txtId.Size = new System.Drawing.Size(41, 13);
             this.txtId.TabIndex = 323;
             this.txtId.Text = "0";
             this.txtId.Visible = false;
@@ -377,9 +378,9 @@ namespace CapaPresentacion.Formularios
             this.txtUserRegistro.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtUserRegistro.Enabled = false;
             this.txtUserRegistro.ForeColor = System.Drawing.Color.White;
-            this.txtUserRegistro.Location = new System.Drawing.Point(367, 72);
+            this.txtUserRegistro.Location = new System.Drawing.Point(414, 48);
             this.txtUserRegistro.Name = "txtUserRegistro";
-            this.txtUserRegistro.Size = new System.Drawing.Size(68, 13);
+            this.txtUserRegistro.Size = new System.Drawing.Size(41, 13);
             this.txtUserRegistro.TabIndex = 324;
             this.txtUserRegistro.Visible = false;
             // 
@@ -402,7 +403,7 @@ namespace CapaPresentacion.Formularios
             0});
             this.nudRango.Name = "nudRango";
             this.nudRango.Size = new System.Drawing.Size(44, 22);
-            this.nudRango.TabIndex = 325;
+            this.nudRango.TabIndex = 7;
             this.nudRango.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.nudRango.Value = new decimal(new int[] {
             10,
@@ -420,12 +421,26 @@ namespace CapaPresentacion.Formularios
             this.label5.TabIndex = 326;
             this.label5.Text = "Rango:";
             // 
+            // chbTurnos
+            // 
+            this.chbTurnos.AutoSize = true;
+            this.chbTurnos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.chbTurnos.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chbTurnos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.chbTurnos.Location = new System.Drawing.Point(320, 83);
+            this.chbTurnos.Name = "chbTurnos";
+            this.chbTurnos.Size = new System.Drawing.Size(133, 22);
+            this.chbTurnos.TabIndex = 1;
+            this.chbTurnos.Text = "Genera Turnos";
+            this.chbTurnos.UseVisualStyleBackColor = false;
+            // 
             // mdlPlan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.ClientSize = new System.Drawing.Size(477, 271);
+            this.Controls.Add(this.chbTurnos);
             this.Controls.Add(this.nudRango);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtUserRegistro);
@@ -487,5 +502,6 @@ namespace CapaPresentacion.Formularios
         private System.Windows.Forms.TextBox txtUserRegistro;
         private System.Windows.Forms.NumericUpDown nudRango;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.CheckBox chbTurnos;
     }
 }

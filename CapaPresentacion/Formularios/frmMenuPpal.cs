@@ -234,13 +234,13 @@ namespace ColegMart
 
         private void btnActualizarPac_Click(object sender, System.EventArgs e)
         {
-            AbrirFormHijo(new frmPacientes(0));
+            //AbrirFormHijo(new frmPacientes(0));
             OcultarSubmenu();
         }
         private void btnCargarAgenda_Click(object sender, System.EventArgs e)
         {
             fechaHoy = new ProcesarFecha().Procesar(fechaHoy);
-            AbrirFormHijo(new frmCargarAgenda(fechaHoy, " "));
+            AbrirFormHijo(new frmCargarAgenda(fechaHoy, ""));
             OcultarSubmenu();
         }
         private void btnVerEcografias_Click(object sender, System.EventArgs e)

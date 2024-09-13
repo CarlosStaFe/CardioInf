@@ -32,6 +32,12 @@ namespace CapaPresentacion.Formularios
             ArmarCalendario();
         }
 
+        //***** BOTÓN SALIR DE LA PANTALLA *****
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
         private void ArmarCalendario()
         {
             contador = 0;

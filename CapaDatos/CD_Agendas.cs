@@ -177,6 +177,7 @@ namespace CapaDatos
                         command.Parameters.AddWithValue("_Minutos", obj.Minutos);
                         command.Parameters.AddWithValue("_Turno", obj.Turno);
                         command.Parameters.AddWithValue("_Tipo", obj.Tipo);
+                        command.Parameters.AddWithValue("_Pacte", obj.Pacte);
                         command.Parameters.AddWithValue("_Detalle", obj.Detalle);
                         command.Parameters.AddWithValue("_Estado", obj.Estado);
                         command.Parameters.AddWithValue("_FechaEstado", DateTime.Now);

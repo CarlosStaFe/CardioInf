@@ -42,12 +42,14 @@ namespace CapaPresentacion.Formularios
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.fpnlContenedor = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnSalir = new FontAwesome.Sharp.IconButton();
             this.pnlTitulo.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlTitulo
             // 
             this.pnlTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.pnlTitulo.Controls.Add(this.btnSalir);
             this.pnlTitulo.Controls.Add(this.lblNombre);
             this.pnlTitulo.Controls.Add(this.btnSiguiente);
             this.pnlTitulo.Controls.Add(this.btnAnterior);
@@ -186,6 +188,29 @@ namespace CapaPresentacion.Formularios
             this.fpnlContenedor.Size = new System.Drawing.Size(1428, 800);
             this.fpnlContenedor.TabIndex = 9;
             // 
+            // btnSalir
+            // 
+            this.btnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.btnSalir.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSalir.FlatAppearance.BorderSize = 0;
+            this.btnSalir.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.btnSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.IconChar = FontAwesome.Sharp.IconChar.MailForward;
+            this.btnSalir.IconColor = System.Drawing.Color.Aqua;
+            this.btnSalir.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnSalir.IconSize = 30;
+            this.btnSalir.Location = new System.Drawing.Point(1167, 4);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(90, 29);
+            this.btnSalir.TabIndex = 10;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSalir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
             // frmPlanificacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
@@ -230,5 +255,6 @@ namespace CapaPresentacion.Formularios
         private FontAwesome.Sharp.IconButton btnAnterior;
         private System.Windows.Forms.FlowLayoutPanel fpnlContenedor;
         private System.Windows.Forms.Label lblNombre;
+        private FontAwesome.Sharp.IconButton btnSalir;
     }
 }

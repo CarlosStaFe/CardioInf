@@ -106,9 +106,9 @@ namespace CapaPresentacion.Formularios
             this.lblDoctor3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblDoctor3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDoctor3.ForeColor = System.Drawing.Color.White;
-            this.lblDoctor3.Location = new System.Drawing.Point(25, 68);
+            this.lblDoctor3.Location = new System.Drawing.Point(23, 68);
             this.lblDoctor3.Name = "lblDoctor3";
-            this.lblDoctor3.Size = new System.Drawing.Size(121, 13);
+            this.lblDoctor3.Size = new System.Drawing.Size(124, 13);
             this.lblDoctor3.TabIndex = 4;
             this.lblDoctor3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.lblDoctor3.Visible = false;
@@ -120,9 +120,9 @@ namespace CapaPresentacion.Formularios
             this.lblDoctor2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblDoctor2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDoctor2.ForeColor = System.Drawing.Color.White;
-            this.lblDoctor2.Location = new System.Drawing.Point(25, 38);
+            this.lblDoctor2.Location = new System.Drawing.Point(23, 38);
             this.lblDoctor2.Name = "lblDoctor2";
-            this.lblDoctor2.Size = new System.Drawing.Size(121, 13);
+            this.lblDoctor2.Size = new System.Drawing.Size(124, 13);
             this.lblDoctor2.TabIndex = 5;
             this.lblDoctor2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.lblDoctor2.Visible = false;
@@ -134,9 +134,9 @@ namespace CapaPresentacion.Formularios
             this.lblDoctor1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblDoctor1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDoctor1.ForeColor = System.Drawing.Color.White;
-            this.lblDoctor1.Location = new System.Drawing.Point(25, 8);
+            this.lblDoctor1.Location = new System.Drawing.Point(23, 8);
             this.lblDoctor1.Name = "lblDoctor1";
-            this.lblDoctor1.Size = new System.Drawing.Size(121, 13);
+            this.lblDoctor1.Size = new System.Drawing.Size(124, 13);
             this.lblDoctor1.TabIndex = 6;
             this.lblDoctor1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.lblDoctor1.Visible = false;

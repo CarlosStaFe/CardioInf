@@ -70,10 +70,10 @@ namespace CapaNegocio
                 mensaje += "Debe ingresar un Tipo de Consulta. * ";
             }
 
-            if (obj.Pacte == 0)
-            {
-                mensaje += "Debe ingresar un Paciente. * ";
-            }
+            //if (obj.Pacte == 0)
+            //{
+            //    mensaje += "Debe ingresar un Paciente. * ";
+            //}
 
             if (obj.Hora == 0)
             {
